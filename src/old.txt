@@ -1,0 +1,58 @@
+import "./ActivityCard.css";
+
+export default function ActivityCard() {
+  return (
+    <div className="activity-card">
+      <img
+        src="https://via.placeholder.com/150"
+        alt="activity"
+        className="activity-image"
+      />
+      <div className="activity-text">
+        <h3 className="activity-title">Activity title</h3>
+        <p className="activity-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          tincidunt, nisl non tincidunt ultrices, nisl nisl tincidunt ultrices.
+        </p>
+        <a href="https://www.nrk.no" target="_blank" rel="noopener noreferrer">
+          Les mer
+        </a>
+      </div>
+    </div>
+  );
+}
+
+
+
+.activity-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: #F4F0E7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-image {
+    /* Add styles for the image */
+  }
+  
+  .activity-text {
+    /* Add styles for the text container */
+  }
+  
+  .activity-title {
+    /* Add styles for the title */
+  }
+  
+  .activity-description {
+    /* Add styles for the description */
+  }
+  
+  .activity-text a {
+    /* Add styles for the link */
+  }
