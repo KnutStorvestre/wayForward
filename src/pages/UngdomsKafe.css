@@ -1,0 +1,43 @@
+.ungdoms-kafe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Change as needed */
+  }
+  
+  .image-section img {
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
+  }
+  
+  .info-section {
+    width: 50%; /* Adjust the width as needed */
+    padding: 20px;
+  }
+  
+  .info-section h1 {
+    font-size: 32px; /* Adjust the font size as needed */
+    /* Add additional styles for the heading */
+  }
+  
+  .info-section .address {
+    /* Styles for address */
+  }
+  
+  .opening-hours,
+  .age-group {
+    display: flex;
+    align-items: center;
+    /* Add additional styles */
+  }
+  
+  .opening-hours .icon-calendar,
+  .age-group .icon-user {
+    /* Add styles for icons here */
+  }
+  
+  .description {
+    /* Styles for description text */
+  }
+  

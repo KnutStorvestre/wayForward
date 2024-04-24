@@ -1,0 +1,76 @@
+.activity-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin: 5rem auto;
+    background-color: #F4F0E7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-image {
+    /* Add styles for the image */
+  } 
+  .activity-text {
+    /* Add styles for the text container */
+    padding: 1rem 16px 1rem 34px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .activity-title {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .age-group {
+    display: flex;
+  }
+
+  .age-group p {
+    padding-top: 10px;
+  }
+
+  .age-group img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .time {
+    display: flex;
+  }
+
+  .time p {
+    padding-top: 13px;
+  }
+
+  .time img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .activity-description {
+    /* Add styles for the description */
+  }
+  
+  .activity-text a {
+    /* Add styles for the link */
+  }
