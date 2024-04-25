@@ -4,6 +4,14 @@ import calender from "../assets/calender.png";
 import people from "../assets/people.png";
 
 // postnumber and street address
+interface ActivityCardProps {
+  activityTitle: string;
+  postnumber: string;
+  street: string;
+  time: string;
+  ageGroup: string;
+  description: string;
+}
 
 export default function ActivityCard() {
   return (
