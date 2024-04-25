@@ -6,7 +6,12 @@ export default function Navbar() {
     <nav className="nav">
       <Link to="/">Homes</Link>
       <ul>
-        <Link to="/Landaas">Landaas</Link>
+        <li>
+          <Link to="/Landaas">Landaas</Link>
+        </li>
+        <li>
+          <Link to="/Leie">Leie</Link>
+        </li>
       </ul>
     </nav>
   );

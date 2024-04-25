@@ -1,6 +1,5 @@
-import React from "react";
 import ActivityCard from "./ActivityCard";
-import "./pages.css";
+import "./Landaas.css";
 
 const activityData = [
   {
