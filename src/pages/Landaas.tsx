@@ -5,10 +5,14 @@ export default function Landaas() {
   return (
     <div>
       <TopText />
-      <div className="activity-cards">
-        <ActivityCard />
-        <ActivityCard />
-        <ActivityCard />
+      <div className="the-container">
+        <div className="activity-cards">
+          <ActivityCard />
+          <ActivityCard />
+          <ActivityCard />
+          <ActivityCard />
+          <ActivityCard />
+        </div>
       </div>
     </div>
   );
