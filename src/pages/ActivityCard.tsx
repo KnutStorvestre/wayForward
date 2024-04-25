@@ -3,47 +3,50 @@ import bergenImage from "../assets/Bergen.png";
 import calender from "../assets/calender.png";
 import people from "../assets/people.png";
 
-// postnumber and street address
 interface ActivityCardProps {
   activityTitle: string;
-  postnumber: string;
+  googleMapsLink: string;
   street: string;
+  zipCode: string;
   time: string;
   ageGroup: string;
   description: string;
 }
 
-export default function ActivityCard() {
+const ActivityCard: React.FC<ActivityCardProps> = ({
+  activityTitle,
+  googleMapsLink,
+  street,
+  zipCode: postNumber,
+  time,
+  ageGroup,
+  description,
+}) => {
   return (
     <div>
       <div className="activity-card">
         <img src={bergenImage} alt="activity" className="activity-image" />
         <div className="activity-text">
-          <h3 className="activity-title">Leksehjelp</h3>
+          <h3 className="activity-title">{activityTitle}</h3>
           <div>
-            <a
-              href="https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18.04z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="address">museplassen 3</p>
-              <p className="address">5007 Bergen</p>
+            <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
+              <p className="address">{street}</p>
+              <p className="address">{postNumber}</p>
             </a>
           </div>
           <div className="time">
             <img src={calender} alt="calender" />
-            <p>Mandag 14:00 - 16:00</p>
+            <p>{time}</p>
           </div>
           <div className="age-group">
             <img src={people} alt="people" />
-            <p>1 - 4 klasse</p>
+            <p>{ageGroup}</p>
           </div>
-          <p className="activity-description">
-            Dette er et åpent tilbud for alle barn i Årstad bydel. Husk å ta med
-            klær for å leke ute.
-          </p>
+          <p className="activity-description">{description}</p>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default ActivityCard;
