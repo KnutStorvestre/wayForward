@@ -1,6 +1,7 @@
 import Navbar from "./content/Navbar";
 import Home from "./pages/Home";
 import Landaas from "./pages/Landaas";
+import Leie from "./pages/Leie";
 import Footer from "./content/Footer";
 import { Route, Routes } from "react-router-dom";
 import "./styes.css";
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/landaas" element={<Landaas />} />
+          <Route path="/leie" element={<Leie />} />
         </Routes>
       </div>
       <Footer />
