@@ -38,6 +38,7 @@
 
   .age-group p {
     padding-top: 10px;
+    justify-content: center;
   }
 
   .age-group img {
@@ -64,11 +65,32 @@
     .activity-card {
       flex-direction: column;
       max-width: 300px;
+      min-height: 650px;
     }
     .age-group img {
       width: 30px;
       height: 30px;
       margin-right: 10px;
+    }
+    .time img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    .age-group p {
+      padding-top: 5px;
+      font-size: 20px;
+    }
+    .time p {
+      padding-top: 5px;
+      font-size: 20px;
+    }
+    .activity-text {
+      padding: 1rem 16px 1rem 16px;
+      font-size: 14px;
+    }
+    .activity-title {
+      font-size: 34px;
     }
   } 
 
