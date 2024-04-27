@@ -8,9 +8,6 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
   
-  .activity-image {
-    /* Add styles for the image */
-  } 
   .activity-text {
     /* Add styles for the text container */
     padding: 1rem 16px 1rem 34px;
@@ -62,11 +59,16 @@
     height: 60px;
     margin-right: 10px;
   }
-  
-  .activity-description {
-    /* Add styles for the description */
-  }
-  
-  .activity-text a {
-    /* Add styles for the link */
-  }
+
+  @media (max-width: 1200px) {
+    .activity-card {
+      flex-direction: column;
+      max-width: 300px;
+    }
+    .age-group img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  } 
+
