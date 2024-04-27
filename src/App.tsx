@@ -4,7 +4,6 @@ import Landaas from "./pages/Landaas";
 import Leie from "./pages/Leie";
 import Footer from "./content/Footer";
 import { Route, Routes } from "react-router-dom";
-import "./styes.css";
 
 function App() {
   return (
