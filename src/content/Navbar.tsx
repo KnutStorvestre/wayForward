@@ -4,10 +4,13 @@ import "./styles/Navbar.css";
 const Navbar = () => {
   return (
     <nav className="nav">
-      <Link to="/">Homes</Link>
+      <Link to="/">WayForward</Link>
       <ul>
         <li>
-          <Link to="/Landaas">Landaas</Link>
+          <Link to="/Landaas">Landås</Link>
+        </li>
+        <li>
+          <Link to="/Sotra">Sotra</Link>
         </li>
         <li>
           <Link to="/Leie">Leie</Link>

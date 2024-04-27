@@ -11,7 +11,7 @@ const activityData = [
     time: "Mandag 16:30 - 17:30",
     ageGroup: "1 - 4 klasse",
     description:
-      "Ønsker du hjep med leksene dine eller hjelpe andre med lekser? Da er dette tilbudet for deg. Husk å ta med klær for utelek.",
+      "Ønsker du hjep med lekser eller hjelpe andre med lekser? Da er dette tilbudet for deg. Husk å ta med klær for utelek.",
   },
   {
     activityTitle: "Leksehjelp 2",
@@ -22,7 +22,7 @@ const activityData = [
     time: "Mandag 17:30 - 19:00",
     ageGroup: "5 - 7 klasse",
     description:
-      "Ønsker du hjep med leksene dine eller hjelpe andre med lekser? Da er dette tilbudet for deg. Husk å ta med klær for utelek.",
+      "Ønsker du hjep med lekser eller hjelpe andre med lekser? Da er dette tilbudet for deg. Husk å ta med klær for utelek.",
   },
   {
     activityTitle: "Sykkelverksted",
@@ -33,7 +33,7 @@ const activityData = [
     time: "Tirsdag 15:00 - 19:00",
     ageGroup: "1 - 7 klasse",
     description:
-      "Kan fikse alle typer sykler. Det er bare å ta med sykkelen din og komme innom.",
+      "Kan fikse alle typer sykler. Det er bare å ta med sykkelen din og kom innom.",
   },
   {
     activityTitle: "Jentegruppe",
@@ -86,7 +86,7 @@ const Landaas = () => {
 function TopText() {
   return (
     <div className="top-text">
-      <h1 className="extra-bold-inter">Landås aktiviteter</h1>
+      <h1 className="extra-bold-inter">Sotra aktiviteter</h1>
       <p className="semibold-inter">
         Disse aktivitetene er for barn og unge i Årstad bydel. Ting endrer seg
         hele tiden. Husk å sjekk vår{" "}
@@ -105,7 +105,7 @@ function TopText() {
         >
           Instagram
         </a>{" "}
-        for Landås.
+        for Sotra.
       </p>
     </div>
   );

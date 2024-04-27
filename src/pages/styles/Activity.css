@@ -8,11 +8,13 @@
     font-family: 'Inter', sans-serif;
     font-weight: 600; /* Semi Bold */
     font-size: 32px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .the-container {
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 .activity-cards {
@@ -22,7 +24,15 @@
     max-width: 3000px;  /* Sets the maximum width of the container */
     justify-content: center; /* Aligns items to the start of the container */
     gap: 4rem;          /* Optional: Adds space between items */
-    margin-top: 3rem;   /* Adds space above the container */
+    margin-top: 2rem;   /* Adds space above the container */
+}
+
+.top-text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi Bold */
+    font-size: 24px;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 @media (max-width: 1200px){

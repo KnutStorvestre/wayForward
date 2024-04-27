@@ -8,11 +8,6 @@ body {
   margin: 0;
 }
 
-.container {
-  margin: 2rem;
-  text-align: center;
-}
-
 .nav {
   background-color: #A7E198;
   display: flex;
