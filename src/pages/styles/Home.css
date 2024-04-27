@@ -18,3 +18,39 @@ body {
     object-fit: cover;
     object-position: center;
 }
+
+.area-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 3000px;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.area-card {
+    min-width: 250px;
+    min-height: 200px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: #99C4CA;
+    display: flex;        /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    text-align: center;   /* Center text alignment */
+}
+
+.area-card header {
+    width: 100%; /* Take full width of the container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    flex-direction: column;  /* Stack children vertically */
+    gap: 16px;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
