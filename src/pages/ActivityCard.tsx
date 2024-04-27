@@ -1,4 +1,4 @@
-import "./ActivityCard.css";
+import "./styles/ActivityCard.css";
 import bergenImage from "../assets/Bergen.png";
 import calender from "../assets/calender.png";
 import people from "../assets/people.png";
