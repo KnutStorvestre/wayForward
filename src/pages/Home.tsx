@@ -5,12 +5,14 @@ import "./styles/Home.css";
 const Home = () => {
   return (
     <div>
-      <img className="main-img" src={skywoods} alt="Sky Woods" />
-      <h1>Home</h1>
-      <div className="area-cards">
-        <AreaCard areaName="Landås" backgroundColor="#99C4CA" />
-        <AreaCard areaName="Sotra" backgroundColor="#FAB46E" />
+      <div className="image-container">
+        <img className="main-img" src={skywoods} alt="Sky Woods" />
+        <div className="area-cards">
+          <AreaCard areaName="Landås" backgroundColor="#99C4CA" />
+          <AreaCard areaName="Sotra" backgroundColor="#FAB46E" />
+        </div>
       </div>
+      <h1>Home</h1>
     </div>
   );
 };
