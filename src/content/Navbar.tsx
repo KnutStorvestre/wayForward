@@ -4,7 +4,9 @@ import "./styles/Navbar.css";
 const Navbar = () => {
   return (
     <nav className="nav">
-      <Link to="/">WayForward</Link>
+      <div className="site-title">
+        <Link to="/">WayForward</Link>
+      </div>
       <ul>
         <li>
           <Link to="/Landaas">Landås</Link>

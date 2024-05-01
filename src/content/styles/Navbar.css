@@ -19,7 +19,8 @@ body {
 }
 
 .site-title {
-  font-size: 2rem;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .nav ul {
@@ -28,6 +29,8 @@ body {
   list-style: none;
   display: flex;
   gap: 1rem;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .nav a {
