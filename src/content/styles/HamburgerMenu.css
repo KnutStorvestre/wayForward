@@ -91,7 +91,7 @@ body {
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
   background-color: var(--foreground);
   color: var(--background);
-  width: 100%;
+  width: 100vw;
   max-width: 100%;
   min-height: 100vh;
 }
