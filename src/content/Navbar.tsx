@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./styles/Navbar.css";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
   return (
@@ -8,6 +9,7 @@ const Navbar = () => {
         <Link to="/">WayForward</Link>
       </div>
       <ul>
+        <HamburgerMenu />
         <li>
           <Link to="/Landaas">Landås</Link>
         </li>
