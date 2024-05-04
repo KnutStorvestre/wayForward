@@ -3,8 +3,10 @@ import Home from "./pages/Home";
 import Landaas from "./pages/Landaas";
 import Sotra from "./pages/Sotra";
 import Leie from "./pages/Leie";
+import Partners from "./pages/Partnere";
 import Footer from "./content/Footer";
 import { Route, Routes } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Route path="/landaas" element={<Landaas />} />
         <Route path="/leie" element={<Leie />} />
         <Route path="/sotra" element={<Sotra />} />
+        <Route path="/partnere" element={<Partners />} />
       </Routes>
       <Footer />
     </>
