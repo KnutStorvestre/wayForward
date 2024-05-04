@@ -14,7 +14,7 @@ const HamburgerMenu = () => {
       <label className="hamburger-menu" onClick={toggleMenu}>
         <input type="checkbox" />
       </label>
-      <aside className="sidebar">
+      <aside className="menu">
         <nav>
           <div>
             <Link to="/">WayForward</Link>
@@ -27,6 +27,9 @@ const HamburgerMenu = () => {
           </div>
           <div>
             <Link to="/Leie">Leie</Link>
+          </div>
+          <div>
+            <Link to="/Partnere">Partnere</Link>
           </div>
         </nav>
       </aside>

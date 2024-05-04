@@ -2,6 +2,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  font-family: inter;
 }
 
 body {
@@ -26,11 +27,17 @@ body {
   flex-direction: column;
   gap: var(--hamburger-gap);
   width: max-content;
-  position: absolute;
+  /* Changed from absolute*/
+  position: fixed;
+
   top: var(--hamburger-margin);
   left: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;
+
+  /* For later I should use other variables */
+  padding-top: 2vh;
+  padding-left: 2vw;
 }
 
 .hamburger-menu:has(input:checked) {
@@ -84,7 +91,7 @@ body {
   width: 0;
 }
 
-.sidebar {
+.menu {
   transition: translate var(--animation-timing);
   translate: 0 -100%;
   padding: 0.5rem 1rem;
@@ -96,6 +103,27 @@ body {
   min-height: 100vh;
 }
 
-.hamburger-menu:has(input:checked) + .sidebar {
+.hamburger-menu:has(input:checked) + .menu {
   translate: 0;
 }
+
+.menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  font-size: 3rem;
+  padding: 120px 0 0 3rem;
+  font-weight: 600;
+}
+
+.menu nav div a {
+  color: inherit; /* Ensures link color matches the parent div */
+  transition: color 1s ease; /* Smooth transition for color change */
+}
+
+.menu nav div a:hover {
+  color: yellow; /* Changes text color to yellow on hover */
+}
+
+
