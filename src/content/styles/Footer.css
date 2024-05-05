@@ -1,5 +1,56 @@
-* {
+/* Footer.css */
+.footer {
+  margin-top: 4vh;
+  background-color: #5C9D5F; /* Dark background for the footer */
+  text-align: left; /* Centering the text */
+  font-size: 14px; /* Font size */
+}
+  
+.footer-content {
+  display: flex;
+  flex-direction: row; /* Stacking children vertically */
+  gap: 100px; /* Space between items */
+}
+
+.footer-content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between items */
+  margin: 0;
+}
+
+.footer-content-left p {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+.footer a {
+  color: #9acd32; /* A light green color for links */
+  text-decoration: none; /* No underline */
+}
+  
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
+}
+  
+.social-media {
+  display: flex;
+  align-items:last baseline; /* Align items to the baseline */
+  gap: 20px; /* Space between social media links */
+}
+
+.social-media a img {
+  width: 40px; /* Set the width of the Twitter logo */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align the image vertically if alongside text or other elements */
+}
+
+.social-media a img:hover {
+  opacity: 0.6; /* Slightly reduce opacity on hover */
+}
+  
+.social-media a {
+  display: inline-block; /* For better control over alignment and spacing */
+  margin-right: 10px; /* Add some space to the right of the link if needed */
 }

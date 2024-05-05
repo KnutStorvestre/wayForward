@@ -1,3 +1,15 @@
 body {
     padding-top: 120px;
 }
+
+html, body {
+  height: 100%; /* Make sure the html and body fill the height of the viewport */
+  margin: 0;
+}
+
+#main-container {
+  min-height: 100vh; /* Viewport height */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Space between content and footer */
+}
