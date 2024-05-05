@@ -11,11 +11,14 @@ const HamburgerMenu = () => {
 
   return (
     <div>
-      <label className="hamburger-menu" onClick={toggleMenu}>
-        <input type="checkbox" id="paddy" />
+      <label className="hamburger-menu">
+        <button
+          onClick={toggleMenu}
+          className={`menu-btn ${isOpen ? "active" : ""}`}
+        ></button>
       </label>
       <aside className="menu">
-        <nav>
+        <nav onClick={toggleMenu}>
           <div>
             <Link to="/">WayForward</Link>
           </div>
