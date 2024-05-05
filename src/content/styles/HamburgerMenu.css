@@ -29,25 +29,25 @@
   padding-left: 2vw;
 }
 
-.hamburger-menu:has(input:checked) {
+.hamburger-menu:has(.menu-btn.active) {
   --foreground: white;
   --background: #333;
 }
 
-.hamburger-menu:has(input:checked):hover {
+.hamburger-menu:has(.menu-btn.active):hover {
   --foreground: yellow;
 }
 
-.hamburger-menu:has(input:focus-visible)::before,
-.hamburger-menu:has(input:focus-visible)::after,
-.hamburger-menu input:focus-visible {
+.hamburger-menu:has(button:focus-visible)::before,
+.hamburger-menu:has(button:focus-visible)::after,
+.hamburger-menu button  :focus-visible {
   border: 1px solid var(--background);
   box-shadow: 0 0 0 1px var(--foreground);
 }
 
 .hamburger-menu::before,
 .hamburger-menu::after,
-.hamburger-menu input {
+.hamburger-menu .menu-btn{
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
@@ -59,27 +59,29 @@
     background-color var(--animation-timing);
 }
 
-.hamburger-menu input {
+.hamburger-menu .menu-btn,
+.hamburger-menu .menu-btn.active {
   appearance: none;
   padding: 0;
   margin: 0;
   outline: none;
   pointer-events: none;
+  border: none;
 }
 
-.hamburger-menu:has(input:checked)::before {
+.hamburger-menu:has(.menu-btn.active)::before {
   rotate: 45deg;
   width: var(--x-width);
   translate: 0 calc(var(--bar-height) / -2);
 }
 
-.hamburger-menu:has(input:checked)::after {
+.hamburger-menu:has(.menu-btn.active)::after {
   rotate: -45deg;
   width: var(--x-width);
   translate: 0 calc(var(--bar-height) / 2);
 }
 
-.hamburger-menu input:checked {
+.hamburger-menu .menu-btn.active {
   opacity: 0;
   width: 0;
 }
@@ -96,7 +98,7 @@
   min-height: 100vh;
 }
 
-.hamburger-menu:has(input:checked) + .menu {
+.hamburger-menu:has(.menu-btn.active) + .menu {
   translate: 0;
 }
 
