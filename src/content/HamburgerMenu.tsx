@@ -23,6 +23,9 @@ const HamburgerMenu = () => {
             <Link to="/">WayForward</Link>
           </div>
           <div>
+            <Link to="/kontakt">Kontakt oss</Link>
+          </div>
+          <div>
             <Link to="/Landaas">Landås</Link>
           </div>
           <div>

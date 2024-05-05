@@ -1,5 +1,6 @@
 import Navbar from "./content/Navbar";
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 import Landaas from "./pages/Landaas";
 import Sotra from "./pages/Sotra";
 import Leie from "./pages/Leie";
@@ -14,9 +15,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/kontakt" element={<Contact />} />
         <Route path="/landaas" element={<Landaas />} />
-        <Route path="/leie" element={<Leie />} />
         <Route path="/sotra" element={<Sotra />} />
+        <Route path="/leie" element={<Leie />} />
         <Route path="/partnere" element={<Partners />} />
       </Routes>
       <Footer />
