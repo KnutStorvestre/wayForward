@@ -12,7 +12,7 @@ const HamburgerMenu = () => {
   return (
     <div>
       <label className="hamburger-menu" onClick={toggleMenu}>
-        <input type="checkbox" />
+        <input type="checkbox" id="paddy" />
       </label>
       <aside className="menu">
         <nav>
