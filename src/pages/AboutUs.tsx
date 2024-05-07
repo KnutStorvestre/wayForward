@@ -1,4 +1,5 @@
 import "./styles/AboutUs.css";
+import EmployeeCard from "./EmployeeCard";
 
 const AboutUs = () => {
   return (
@@ -28,6 +29,50 @@ const AboutUs = () => {
       </div>
       <div>
         <h1>Ansatte</h1>
+        <div className="employee-cards">
+          <EmployeeCard
+            image="https://via.placeholder.com/150"
+            name="Ola Nordmann"
+            position="CEO"
+          />
+          <EmployeeCard
+            image="https://via.placeholder.com/150"
+            name="Ola Nordmann"
+            position="CEO"
+          />
+          <EmployeeCard
+            image="https://via.placeholder.com/150"
+            name="Ola Nordmann"
+            position="CEO"
+          />
+          <EmployeeCard
+            image="https://via.placeholder.com/150"
+            name="Ola Nordmann"
+            position="CEO"
+          />
+        </div>
+        <div className="employee-cards">
+          <EmployeeCard
+            image="https://via.placeholder.com/150"
+            name="Ola Nordmann"
+            position="CEO"
+          />
+          <EmployeeCard
+            image="https://via.placeholder.com/150"
+            name="Ola Nordmann"
+            position="CEO"
+          />
+          <EmployeeCard
+            image="https://via.placeholder.com/150"
+            name="Ola Nordmann"
+            position="CEO"
+          />
+          <EmployeeCard
+            image="https://via.placeholder.com/150"
+            name="Ola Nordmann"
+            position="CEO"
+          />
+        </div>
       </div>
     </div>
   );
