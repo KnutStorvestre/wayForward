@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <Link to="/kontakt">
+          <Link to="/om-oss">
             <span>Om oss</span>
           </Link>
           <Link to="/partnere">

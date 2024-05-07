@@ -1,10 +1,10 @@
-import "./styles/Contact.css";
+import "./styles/AboutUs.css";
 
-const Contact = () => {
+const AboutUs = () => {
   return (
-    <div>
+    <div className="about-us">
       <div className="contact-text">
-        <h1>Kontakt oss</h1>
+        <h1>Om oss</h1>
         <div className="center-text">
           <p>
             Har du spørsmål eller ønsker å komme i kontakt med oss? Send oss en
@@ -26,8 +26,11 @@ const Contact = () => {
           </p>
         </div>
       </div>
+      <div>
+        <h1>Ansatte</h1>
+      </div>
     </div>
   );
 };
 
-export default Contact;
+export default AboutUs;
