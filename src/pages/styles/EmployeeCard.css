@@ -1,0 +1,32 @@
+.employee-card {
+    width: 250px; /* Set the width of the card */
+    border: 1px solid #ccc; /* Add a border around the card */
+    border-radius: 8px; /* Optional: round corners */
+    overflow: hidden; /* Ensures nothing overflows the border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visual effect */
+    background-color: #fff; /* Background color */
+    text-align: center; /* Center text and content */
+  }
+  
+  .employee-image {
+    width: 100%; /* Make the image cover the full width of the card */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the space without distorting */
+  }
+  
+  .employee-info {
+    padding: 16px; /* Padding inside the info area */
+  }
+  
+  .employee-name {
+    margin: 10px 0 5px 0; /* Spacing around the name */
+    font-size: 1.25rem; /* Font size of the name */
+    color: #333; /* Color of the text */
+  }
+  
+  .employee-position {
+    margin: 0; /* Remove default paragraph margin */
+    font-size: 1rem; /* Smaller font size for position */
+    color: #666; /* Lighter text color for position */
+  }
+  
