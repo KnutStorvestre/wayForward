@@ -1,6 +1,6 @@
 import Navbar from "./content/Navbar";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs";
 import Landaas from "./pages/Landaas";
 import Sotra from "./pages/Sotra";
 import Leie from "./pages/Leie";
@@ -19,7 +19,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/kontakt" element={<Contact />} />
+        <Route path="/om-oss" element={<AboutUs />} />
         <Route path="/landaas" element={<Landaas />} />
         <Route path="/sotra" element={<Sotra />} />
         <Route path="/leie" element={<Leie />} />
