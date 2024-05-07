@@ -35,6 +35,10 @@ body {
     gap: 4rem;
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
 .area-card {
     min-width: 200px;
     min-height: 150px;
