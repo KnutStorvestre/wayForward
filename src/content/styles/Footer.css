@@ -3,13 +3,16 @@
 .footer {
   margin-top: 4vh;
   background-color: #5C9D5F; /* Dark background for the footer */
+  min-width: 100vw;
   text-align: left; /* Centering the text */
   font-size: 14px; /* Font size */
+  padding: 3vh 0; /* Padding on the top and bottom */
 }
   
 .footer-content {
   display: flex;
   flex-direction: row; /* Stacking children vertically */
+  justify-content: space-around; /* Space between items */
   gap: 100px; /* Space between items */
 }
 
@@ -19,15 +22,11 @@
   gap: 15px; /* Space between items */
   margin: 0;
 }
-
-.footer-content-left p {
-    margin: 0;
-    font-weight: 600;
-    font-size: 1rem;
-  }
   
 .footer a {
-  color: #9acd32; /* A light green color for links */
+  font-weight: 600;
+  font-size: 1rem;
+  color: black; /* A light green color for links */
   text-decoration: none; /* No underline */
 }
   
@@ -54,4 +53,18 @@
 .social-media a {
   display: inline-block; /* For better control over alignment and spacing */
   margin-right: 10px; /* Add some space to the right of the link if needed */
+}
+
+@media (max-width: 425px) {
+  .footer-content-left, .social-media {
+    align-items: center;
+    gap: 10px;
+    align-items: baseline;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between items */
+  }
 }
