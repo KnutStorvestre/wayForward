@@ -88,8 +88,8 @@ function TopText() {
     <div className="top-text">
       <h1 className="extra-bold-inter">Sotra aktiviteter</h1>
       <p className="semibold-inter">
-        Disse aktivitetene er for barn og unge i Årstad bydel. Ting endrer seg
-        hele tiden. Husk å sjekk vår{" "}
+        Disse aktivitetene er for barn og unge på Sotra. Ting endrer seg hele
+        tiden. Husk å sjekk vår{" "}
         <a
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           target="_blank"
