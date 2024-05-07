@@ -9,12 +9,14 @@ import Building2 from "./pages/Building2";
 import Partners from "./pages/Partnere";
 import Footer from "./content/Footer";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./util/ScrollToTop";
 import "./App.css";
 
 function App() {
   return (
     <div id="main-container">
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/kontakt" element={<Contact />} />

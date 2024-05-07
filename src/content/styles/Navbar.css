@@ -55,3 +55,13 @@ body {
   align-items: center;
   padding: .25rem;
 }
+
+@media (max-width: 374px) {
+  .site-title {
+    font-size: 30px;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+}

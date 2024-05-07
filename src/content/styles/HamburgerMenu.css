@@ -121,4 +121,11 @@
   color: yellow; /* Changes text color to yellow on hover */
 }
 
+@media (max-width: 768px) {
+  .menu nav {
+    font-size: 2rem;
+    padding: 40px 0 0 2rem;
+  }
+}
+
 

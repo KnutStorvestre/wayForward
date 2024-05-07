@@ -1,0 +1,6 @@
+* When you enter a new page thru the hamburger menu it automatically goes to the top of the page
+* The hamburger menu should fit on mobile screens
+* add aria-label to everything
+* add languages
+* Parnere endrer farge når du går nedover
+* When you enter a new page you enter on top

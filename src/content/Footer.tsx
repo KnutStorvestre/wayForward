@@ -1,16 +1,21 @@
 import "./styles/Footer.css";
 import Facebook from "../assets/facebookLogo.png";
 import Instagram from "../assets/instagramLogo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <p>Om oss</p>
-          <p>Partnere</p>
-          <p>post@wayforward.no</p>
-          <p>Telefon: 55 55 55 55</p>
+          <Link to="/kontakt">
+            <span>Om oss</span>
+          </Link>
+          <Link to="/partnere">
+            <span>Partnere</span>
+          </Link>
+          <a href="mailto:post@wayforward.no">post@wayforward.no</a>
+          <a href="tel:+47 55 55 55 55">+47 55 55 55 55</a>
         </div>
         <div className="social-media">
           <a
