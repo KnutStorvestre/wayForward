@@ -1,0 +1,27 @@
+.contact-text {
+    background-color: #FFF1D0;
+}
+
+.contact-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #000;
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+}
+
+.center-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.contact-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    padding: 0 0 2rem 0;
+    text-align: left;
+    max-width: 700px;
+}
