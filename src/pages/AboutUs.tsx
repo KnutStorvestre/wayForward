@@ -1,5 +1,5 @@
 import "./styles/AboutUs.css";
-import EmployeeCard from "./EmployeeCard";
+import EmployeeCard from "./components/EmployeeCard";
 import GroupPhoto from "../assets/group-people.jpg";
 
 const AboutUs = () => {

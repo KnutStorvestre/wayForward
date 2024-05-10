@@ -1,4 +1,4 @@
-import "./styles/RentalCard.css";
+import "../styles/RentalCard.css";
 /*import bergenImage from "../assets/troldhaugenx.jpeg";*/
 import { Link } from "react-router-dom";
 

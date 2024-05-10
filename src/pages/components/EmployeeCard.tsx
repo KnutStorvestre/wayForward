@@ -1,4 +1,4 @@
-import "./styles/EmployeeCard.css"; // Make sure to import the CSS file
+import "../styles/EmployeeCard.css"; // Make sure to import the CSS file
 
 interface EmployeeCardProps {
   image: string;
