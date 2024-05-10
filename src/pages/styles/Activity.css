@@ -12,6 +12,19 @@
     margin: auto;   
 }
 
+.top-text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi Bold */
+    font-size: 24px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center
+}
+
 .activity-cards {
     display: flex;      /* Establishes a flex container */
     flex-direction: row; /* Arranges items in a row */
@@ -22,13 +35,7 @@
     margin-top: 2rem;   /* Adds space above the container */
 }
 
-.top-text{
-    font-family: 'Inter', sans-serif;
-    font-weight: 600; /* Semi Bold */
-    font-size: 24px;
-    margin-top: 2rem;
-    text-align: center;
-}
+
 
 @media (max-width: 1200px){
     .extra-bold-inter {
