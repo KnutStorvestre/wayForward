@@ -28,6 +28,18 @@
     max-width: 900px;
 }
 
+.group-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.group-photo img {
+    width: 1200px;
+}
+
 .employee-cards {
     display: flex;
     flex-direction: row;
