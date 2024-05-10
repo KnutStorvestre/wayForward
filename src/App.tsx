@@ -22,9 +22,9 @@ function App() {
         <Route path="/om-oss" element={<AboutUs />} />
         <Route path="/landaas" element={<Landaas />} />
         <Route path="/sotra" element={<Sotra />} />
-        <Route path="/leie" element={<Rental />} />
-        <Route path="/leie/bygg1" element={<Building1 />} />
-        <Route path="/leie/bygg2" element={<Building2 />} />
+        <Route path="/utleie" element={<Rental />} />
+        <Route path="/utleie/bygg1" element={<Building1 />} />
+        <Route path="/utleie/bygg2" element={<Building2 />} />
         <Route path="/partnere" element={<Partners />} />
       </Routes>
       <Footer />

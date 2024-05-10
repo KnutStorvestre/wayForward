@@ -1,38 +1,45 @@
 import "./styles/RentalCard.css";
-import bergenImage from "../assets/Bergen.png";
+/*import bergenImage from "../assets/troldhaugenx.jpeg";*/
+import { Link } from "react-router-dom";
 
 interface RentalCardProps {
   activityTitle: string;
+  image: string;
   googleMapsLink: string;
   street: string;
   zipCode: string;
   description: string;
+  linkBuilding: string;
 }
 
 const RentalCard: React.FC<RentalCardProps> = ({
   activityTitle,
+  image,
   googleMapsLink,
   street,
   zipCode: postNumber,
   description,
+  linkBuilding,
 }) => {
   return (
     <div>
       <div className="activity-card">
-        <img src={bergenImage} alt="activity" className="activity-image" />
+        <img src={image} alt="activity" className="activity-image" />
         <div className="top-bottom">
           <div>
             {" "}
             <div className="activity-text">
               <h3 className="activity-title">{activityTitle}</h3>
-              <div>
+              <div className="flex-row">
                 <a
                   href={googleMapsLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="address">{street}</p>
-                  <p className="address">{postNumber}</p>
+                  <div className="flex-column">
+                    <span className="address">{street}</span>
+                    <span className="address">{postNumber}</span>
+                  </div>
                 </a>
               </div>
               <p className="activity-description">{description}</p>
@@ -44,9 +51,9 @@ const RentalCard: React.FC<RentalCardProps> = ({
               <span>tlf: +47 555 55 555</span>
               <span>e-post: post@wayforward.com</span>
             </div>
-            <div className="button-container">
+            <Link to={linkBuilding}>
               <button className="button">Les mer</button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
