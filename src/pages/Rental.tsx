@@ -1,5 +1,5 @@
 import "./styles/Rental.css";
-import RentalCard from "./RentalCard";
+import RentalCard from "./components/RentalCard";
 import italyVilla from "../assets/Italy-house.jpg";
 import modernHouse from "../assets/modern-house.jpg";
 
