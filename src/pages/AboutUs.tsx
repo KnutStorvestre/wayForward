@@ -1,5 +1,6 @@
 import "./styles/AboutUs.css";
 import EmployeeCard from "./EmployeeCard";
+import GroupPhoto from "../assets/group-people.jpg";
 
 const AboutUs = () => {
   return (
@@ -26,6 +27,9 @@ const AboutUs = () => {
             Quisquam, quos.
           </p>
         </div>
+      </div>
+      <div className="group-photo">
+        <img src={GroupPhoto} alt="placeholder" />
       </div>
       <div>
         <h1>Ansatte</h1>
