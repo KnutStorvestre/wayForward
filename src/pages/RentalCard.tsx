@@ -20,15 +20,24 @@ const RentalCard: React.FC<RentalCardProps> = ({
     <div>
       <div className="activity-card">
         <img src={bergenImage} alt="activity" className="activity-image" />
-        <div className="activity-text">
-          <h3 className="activity-title">{activityTitle}</h3>
+        <div className="top-bottom">
           <div>
-            <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
-              <p className="address">{street}</p>
-              <p className="address">{postNumber}</p>
-            </a>
+            {" "}
+            <div className="activity-text">
+              <h3 className="activity-title">{activityTitle}</h3>
+              <div>
+                <a
+                  href={googleMapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="address">{street}</p>
+                  <p className="address">{postNumber}</p>
+                </a>
+              </div>
+              <p className="activity-description">{description}</p>
+            </div>
           </div>
-          <p className="activity-description">{description}</p>
           <div className="bottom-info">
             <div className="contact-info">
               <span>Kontakt: Rasmus Solberg</span>
