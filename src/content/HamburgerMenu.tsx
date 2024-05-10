@@ -32,7 +32,7 @@ const HamburgerMenu = () => {
             <Link to="/Sotra">Sotra</Link>
           </div>
           <div>
-            <Link to="/Leie">Leie</Link>
+            <Link to="/Utleie">Utleie/Utlån av lokaler</Link>
           </div>
           <div>
             <Link to="/Partnere">Partnere</Link>
