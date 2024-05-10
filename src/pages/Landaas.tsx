@@ -63,19 +63,21 @@ const Landaas = () => {
   return (
     <div>
       <TopText />
-      <div className="activity-cards">
-        {activityData.map((activity, index) => (
-          <ActivityCard
-            key={index}
-            activityTitle={activity.activityTitle}
-            googleMapsLink={activity.googleMapsLink}
-            street={activity.street}
-            zipCode={activity.zipCode}
-            time={activity.time}
-            ageGroup={activity.ageGroup}
-            description={activity.description}
-          />
-        ))}
+      <div className="center-content">
+        <div className="activity-cards">
+          {activityData.map((activity, index) => (
+            <ActivityCard
+              key={index}
+              activityTitle={activity.activityTitle}
+              googleMapsLink={activity.googleMapsLink}
+              street={activity.street}
+              zipCode={activity.zipCode}
+              time={activity.time}
+              ageGroup={activity.ageGroup}
+              description={activity.description}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

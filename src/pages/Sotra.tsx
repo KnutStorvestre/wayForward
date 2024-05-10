@@ -63,7 +63,7 @@ const Landaas = () => {
   return (
     <div>
       <TopText />
-      <div className="the-container">
+      <div className="center-content">
         <div className="activity-cards">
           {activityData.map((activity, index) => (
             <ActivityCard

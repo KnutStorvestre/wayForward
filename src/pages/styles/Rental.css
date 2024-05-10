@@ -20,6 +20,21 @@
     text-align: center;
 }
 
+.center-content {
+    display: flex;
+    justify-content: center
+}
+
+.rental-cards {
+    display: flex;      /* Establishes a flex container */
+    flex-direction: row; /* Arranges items in a row */
+    flex-wrap: wrap;    /* Enables flex items to wrap onto the next line */
+    max-width: 3000px;  /* Sets the maximum width of the container */
+    justify-content: center; /* Aligns items to the start of the container */
+    gap: 4rem;          /* Optional: Adds space between items */
+    margin-top: 2rem;   /* Adds space above the container */
+}
+
 @media (max-width: 1200px){
     .extra-bold-inter {
         font-size: 54px;
