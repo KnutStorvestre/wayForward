@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Landaas from "./pages/Landaas";
 import Sotra from "./pages/Sotra";
-import Leie from "./pages/Leie";
+import Rental from "./pages/Rental";
 import Building1 from "./pages/Building1";
 import Building2 from "./pages/Building2";
 import Partners from "./pages/Partnere";
@@ -22,7 +22,7 @@ function App() {
         <Route path="/om-oss" element={<AboutUs />} />
         <Route path="/landaas" element={<Landaas />} />
         <Route path="/sotra" element={<Sotra />} />
-        <Route path="/leie" element={<Leie />} />
+        <Route path="/leie" element={<Rental />} />
         <Route path="/leie/bygg1" element={<Building1 />} />
         <Route path="/leie/bygg2" element={<Building2 />} />
         <Route path="/partnere" element={<Partners />} />
