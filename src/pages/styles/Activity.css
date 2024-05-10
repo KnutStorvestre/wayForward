@@ -9,12 +9,7 @@
     font-weight: 600; /* Semi Bold */
     font-size: 32px;
     max-width: 1000px;
-    margin: auto;
-}
-
-.the-container {
-    display: flex;
-    justify-content: center
+    margin: auto;   
 }
 
 .activity-cards {

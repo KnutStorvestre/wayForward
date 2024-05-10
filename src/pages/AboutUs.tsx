@@ -32,7 +32,7 @@ const AboutUs = () => {
         <img src={GroupPhoto} alt="placeholder" />
       </div>
       <div>
-        <h1>Ansatte</h1>
+        <h1>Ansatte/Frivilige</h1>
         <div className="employee-cards">
           <EmployeeCard
             image="https://via.placeholder.com/150"
