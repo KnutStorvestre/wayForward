@@ -1,0 +1,65 @@
+.wide-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.extra-bold-inter {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800; /* Extra Bold */
+    font-size: 96px;
+}
+
+.semibold-inter {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Semi Bold */
+    font-size: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.top-text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi Bold */
+    font-size: 24px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center
+}
+
+.rental-cards {
+    display: flex;      /* Establishes a flex container */
+    flex-direction: row; /* Arranges items in a row */
+    flex-wrap: wrap;    /* Enables flex items to wrap onto the next line */
+    max-width: 3000px;  /* Sets the maximum width of the container */
+    justify-content: center; /* Aligns items to the start of the container */
+    gap: 4rem;          /* Optional: Adds space between items */
+    margin-top: 2rem;   /* Adds space above the container */
+}
+
+@media (max-width: 1200px){
+    .extra-bold-inter {
+        font-size: 54px;
+    }
+    .semibold-inter {
+        font-size: 20px;
+    }
+}

@@ -3,7 +3,7 @@ import RentalCard from "./components/RentalCard";
 import italyVilla from "../assets/Italy-house.jpg";
 import modernHouse from "../assets/modern-house.jpg";
 
-const rentalData = [
+const rentalCardData = [
   {
     activityTitle: "Moderne hus i Bergen",
     image: modernHouse,
@@ -34,7 +34,7 @@ const Rental = () => {
       <TopText />
       <div className="center-content">
         <div className="activity-cards">
-          {rentalData.map((activity, index) => (
+          {rentalCardData.map((activity, index) => (
             <RentalCard
               key={index}
               activityTitle={activity.activityTitle}
