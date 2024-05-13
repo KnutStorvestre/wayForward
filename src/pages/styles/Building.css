@@ -12,6 +12,12 @@
   margin-top: 2rem;
 }
 
+.address-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -99,7 +105,6 @@ hr {
     gap: 2rem;
 }
 
-
 .contact-info-building {
     display: flex;
     flex-direction: column;
@@ -114,6 +119,9 @@ hr {
     gap: 2rem;
 }
 
+.bottom-infobox {
+    padding: 1.2rem 0 0 .5rem;
+}
 
 @media (max-width: 1200px){
     .extra-bold-inter {
