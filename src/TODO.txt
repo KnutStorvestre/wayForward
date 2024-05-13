@@ -4,3 +4,10 @@
 * add languages
 * Parnere endrer farge når du går nedover
 * When you enter a new page you enter on top
+
+
+
+      <div className="container-lists">
+        {InfoBoxData.map((infoBox, index) => (
+          <InfoBox key={index} title={infoBox.title} data={infoBox.data} />
+        ))}
