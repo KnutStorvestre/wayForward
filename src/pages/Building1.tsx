@@ -116,12 +116,29 @@ const Building1 = () => {
         </ul>
       </div>
       <InfoBox title="Kalender" />
-      <p>Sjekk vår kalender for når lokalet er ledig</p>
+      <p>
+        Sjekk vår kalender for når lokalet er ledig trykk{" "}
+        <a
+          href={
+            "https://docs.google.com/spreadsheets/d/155uVn2gt71zkFXzGeMBP0O9ZgEG5O5raqgvOM-GO_Z8/edit?usp=sharing"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          her.
+        </a>
+      </p>
       <InfoBox title="Kontakt" />
-      <p>hi</p>
-      <p>hi</p>
-      <p>hi</p>
-      <p>hi</p>
+      <div className="justify-space-between">
+        <div>
+          <p>Noe du lurer på?</p>
+        </div>
+        <div className="contact-info-building">
+          <span>Kontakt: Rasmus Solberg</span>
+          <span>tlf: +47 555 55 555</span>
+          <span>e-post: post@wayforward.com</span>
+        </div>
+      </div>
       <InfoBox title="Pris" />
       <p>Dette er et 100% gratis tilbud av Bergen kommune</p>
     </div>
