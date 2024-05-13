@@ -5,6 +5,7 @@ import car3 from "../assets/car-3.jpg";
 import car4 from "../assets/car-4.jpg";
 import car5 from "../assets/car-5.jpg";
 import "./styles/Building.css";
+import { ArrowRight } from "lucide-react";
 
 const IMAGES = [
   { url: car1, alt: "Car One" },
@@ -85,18 +86,44 @@ const Building1 = () => {
         eos corporis. Exercitationem et aut nam velit aspernatur eos eum
         assumenda beatae debitis distinctio laudantium vitae tempore neque ullam
       </p>
-      <div className="info-box-header-br">
-        <header className="header-info-box">Nøkkelinfo</header>
-        <hr />
+      <div>
+        <InfoBox title="Nøkkelinfo" />
+        <div className="list-rows">
+          <ul className="custom-list">
+            <CustomListItem>Størrelse: 200m2</CustomListItem>
+            <CustomListItem>Antall rom: 5</CustomListItem>
+            <CustomListItem>Antall toaletter: 2</CustomListItem>
+            <CustomListItem>Etasje: 1</CustomListItem>
+          </ul>
+          <ul className="custom-list">
+            <CustomListItem>Parkeringsplasser: 10</CustomListItem>
+            <CustomListItem>Antall stoler: 10</CustomListItem>
+            <CustomListItem>Antall benker: 12</CustomListItem>
+            <CustomListItem>Antall bord: 4</CustomListItem>
+          </ul>
+          <ul className="custom-list">
+            <CustomListItem>Byggeår: 1970</CustomListItem>
+            <CustomListItem>Tomteareal: 6764 m²</CustomListItem>
+          </ul>
+        </div>
       </div>
-      <hr />
-      <header className="header-info-box">Fasiliteter</header>
-      <hr />
-      <header className="header-info-box">Kalender for ledige dager</header>
-      <hr />
-      <header className="header-info-box">Kontakt</header>
-      <hr />
-      <header className="header-info-box">Pris</header>
+      <InfoBox title="Fasiliteter" />
+      <div className="list-rows">
+        <ul className="custom-list">
+          <CustomListItem>God tilgang for rullestol</CustomListItem>
+          <CustomListItem>Nært bybane</CustomListItem>
+          <CustomListItem>Uteområde</CustomListItem>
+        </ul>
+      </div>
+      <InfoBox title="Kalender" />
+      <p>Sjekk vår kalender for når lokalet er ledig</p>
+      <InfoBox title="Kontakt" />
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+      <p>hi</p>
+      <InfoBox title="Pris" />
+      <p>Dette er et 100% gratis tilbud av Bergen kommune</p>
     </div>
   );
 };
@@ -109,12 +136,40 @@ function TopText() {
   );
 }
 
+interface CustomListItemProps {
+  children: React.ReactNode;
+}
+
+const CustomListItem: React.FC<CustomListItemProps> = ({ children }) => {
+  return (
+    <li className="custom-list-item">
+      <ArrowRight color="black" size={16} />
+      {children}
+    </li>
+  );
+};
+
 interface InfoBoxProps {
+  title: string;
+}
+
+const InfoBox: React.FC<InfoBoxProps> = ({ title }) => {
+  return (
+    <div>
+      <div className="info-box-header-br">
+        <header className="header-info-box">{title}</header>
+        <hr />
+      </div>
+    </div>
+  );
+};
+
+interface InfoBoxPropsX {
   title: string;
   data: { key: string; value: string }[];
 }
 
-const InfoBox: React.FC<InfoBoxProps> = ({ title, data }) => {
+const InfoBoxX: React.FC<InfoBoxPropsX> = ({ title, data }) => {
   return (
     <div>
       <h1>{title}</h1>
