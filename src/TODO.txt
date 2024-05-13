@@ -11,3 +11,59 @@
         {InfoBoxData.map((infoBox, index) => (
           <InfoBox key={index} title={infoBox.title} data={infoBox.data} />
         ))}
+
+
+        interface InfoBoxPropsX {
+  title: string;
+  data: { key: string; value: string }[];
+}
+
+const InfoBoxX: React.FC<InfoBoxPropsX> = ({ title, data }) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <ul className="list">
+        {data.map((item, index) => (
+          <li key={index}>
+            <span>{item.key}</span>
+            <span>{item.value}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+
+const InfoBoxData = [
+  {
+    title: "Fasiliteter",
+    data: [
+      { key: "Kjøkken: ", value: "ja" },
+      { key: "Antall parkeringsplasser: ", value: "10" },
+    ],
+  },
+  {
+    title: "Nøkkelinfo",
+    data: [
+      { key: "Størrelse: ", value: "200m2" },
+      { key: "Antall rom: ", value: "5" },
+      { key: "Antall toaletter: ", value: "2" },
+      { key: "Etasjer: ", value: "2" },
+      { key: "Byggeår: ", value: "1970" },
+      { key: "Tomteareal: ", value: "6 763 m²" },
+      { key: "Hovedrom: ", value: "200 m²" },
+    ],
+  },
+  {
+    title: "Fasiliteter",
+    data: [
+      { key: "Kjøkken: ", value: "ja" },
+      { key: "Antall parkeringsplasser: ", value: "10" },
+    ],
+  },
+  {
+    title: "Pris",
+    data: [{ key: "Pris per kveld: ", value: "3000kr" }],
+  },
+];

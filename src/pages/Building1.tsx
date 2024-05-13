@@ -15,37 +15,22 @@ const IMAGES = [
   { url: car5, alt: "Car Five" },
 ];
 
-const InfoBoxData = [
-  {
-    title: "Fasiliteter",
-    data: [
-      { key: "Kjøkken: ", value: "ja" },
-      { key: "Antall parkeringsplasser: ", value: "10" },
-    ],
-  },
-  {
-    title: "Nøkkelinfo",
-    data: [
-      { key: "Størrelse: ", value: "200m2" },
-      { key: "Antall rom: ", value: "5" },
-      { key: "Antall toaletter: ", value: "2" },
-      { key: "Etasjer: ", value: "2" },
-      { key: "Byggeår: ", value: "1970" },
-      { key: "Tomteareal: ", value: "6 763 m²" },
-      { key: "Hovedrom: ", value: "200 m²" },
-    ],
-  },
-  {
-    title: "Fasiliteter",
-    data: [
-      { key: "Kjøkken: ", value: "ja" },
-      { key: "Antall parkeringsplasser: ", value: "10" },
-    ],
-  },
-  {
-    title: "Pris",
-    data: [{ key: "Pris per kveld: ", value: "3000kr" }],
-  },
+const keyInfo = [
+  ["Størrelse: 200m2", "Antall rom: 5", "Antall toaletter: 2", "Etasje: 1"],
+  [
+    "Parkeringsplasser: 10",
+    "Antall stoler: 10",
+    "Antall benker: 12",
+    "Antall bord: 4",
+  ],
+  ["Byggeår: 1970", "Tomteareal: 6764 m²"],
+];
+
+const facilities = [
+  "God tilgang for rullestol",
+  "Nært bybane",
+  "Uteområde",
+  "Kjøkken",
 ];
 
 const Building1 = () => {
@@ -69,7 +54,7 @@ const Building1 = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="flex-column">
+        <div className="address-container">
           <span className="address">museplassen 3</span>
           <span className="address">5007 Bergen</span>
         </div>
@@ -113,34 +98,41 @@ const Building1 = () => {
           <CustomListItem>God tilgang for rullestol</CustomListItem>
           <CustomListItem>Nært bybane</CustomListItem>
           <CustomListItem>Uteområde</CustomListItem>
+          <CustomListItem>Kjøkken</CustomListItem>
         </ul>
       </div>
       <InfoBox title="Kalender" />
-      <p>
-        Sjekk vår kalender for når lokalet er ledig trykk{" "}
-        <a
-          href={
-            "https://docs.google.com/spreadsheets/d/155uVn2gt71zkFXzGeMBP0O9ZgEG5O5raqgvOM-GO_Z8/edit?usp=sharing"
-          }
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          her.
-        </a>
-      </p>
+      <div className="bottom-infobox">
+        <p>
+          Sjekk vår kalender for når lokalet er ledig trykk{" "}
+          <a
+            href={
+              "https://docs.google.com/spreadsheets/d/155uVn2gt71zkFXzGeMBP0O9ZgEG5O5raqgvOM-GO_Z8/edit?usp=sharing"
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            her.
+          </a>
+        </p>
+      </div>
       <InfoBox title="Kontakt" />
-      <div className="justify-space-between">
-        <div>
-          <p>Noe du lurer på?</p>
-        </div>
-        <div className="contact-info-building">
-          <span>Kontakt: Rasmus Solberg</span>
-          <span>tlf: +47 555 55 555</span>
-          <span>e-post: post@wayforward.com</span>
+      <div className="bottom-infobox">
+        <div className="justify-space-between">
+          <div>
+            <p>Noe du lurer på?</p>
+          </div>
+          <div className="contact-info-building">
+            <span>Kontakt: Rasmus Solberg</span>
+            <span>tlf: +47 555 55 555</span>
+            <span>e-post: post@wayforward.com</span>
+          </div>
         </div>
       </div>
       <InfoBox title="Pris" />
-      <p>Dette er et 100% gratis tilbud av Bergen kommune</p>
+      <div className="bottom-infobox">
+        <p>Dette er et 100% gratis tilbud av Bergen kommune</p>
+      </div>
     </div>
   );
 };
@@ -177,27 +169,6 @@ const InfoBox: React.FC<InfoBoxProps> = ({ title }) => {
         <header className="header-info-box">{title}</header>
         <hr />
       </div>
-    </div>
-  );
-};
-
-interface InfoBoxPropsX {
-  title: string;
-  data: { key: string; value: string }[];
-}
-
-const InfoBoxX: React.FC<InfoBoxPropsX> = ({ title, data }) => {
-  return (
-    <div>
-      <h1>{title}</h1>
-      <ul className="list">
-        {data.map((item, index) => (
-          <li key={index}>
-            <span>{item.key}</span>
-            <span>{item.value}</span>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
