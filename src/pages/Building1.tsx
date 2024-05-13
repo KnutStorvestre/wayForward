@@ -5,9 +5,9 @@ import car3 from "../assets/car-3.jpg";
 import car4 from "../assets/car-4.jpg";
 import car5 from "../assets/car-5.jpg";
 import "./styles/Building.css";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Info } from "lucide-react";
 
-const IMAGES = [
+const images = [
   { url: car1, alt: "Car One" },
   { url: car2, alt: "Car Two" },
   { url: car3, alt: "Car Three" },
@@ -27,25 +27,16 @@ const keyInfo = [
 ];
 
 const facilities = [
-  "God tilgang for rullestol",
-  "Nært bybane",
-  "Uteområde",
-  "Kjøkken",
+  ["God tilgang for rullestol", "Nært bybane", "Uteområde", "Kjøkken"],
+  ["God tilgang for rullestol", "Nært bybane", "Uteområde"],
 ];
 
 const Building1 = () => {
   return (
     <div className="wide-container">
       <TopText />
-      <div
-        style={{
-          maxWidth: "1200px",
-          width: "100%",
-          aspectRatio: "10 / 6",
-          margin: "0 auto",
-        }}
-      >
-        <ImageSlider images={IMAGES} />
+      <div className="img-slider">
+        <ImageSlider images={images} />
       </div>
       <a
         href={
@@ -71,36 +62,10 @@ const Building1 = () => {
         eos corporis. Exercitationem et aut nam velit aspernatur eos eum
         assumenda beatae debitis distinctio laudantium vitae tempore neque ullam
       </p>
-      <div>
-        <InfoBox title="Nøkkelinfo" />
-        <div className="list-rows">
-          <ul className="custom-list">
-            <CustomListItem>Størrelse: 200m2</CustomListItem>
-            <CustomListItem>Antall rom: 5</CustomListItem>
-            <CustomListItem>Antall toaletter: 2</CustomListItem>
-            <CustomListItem>Etasje: 1</CustomListItem>
-          </ul>
-          <ul className="custom-list">
-            <CustomListItem>Parkeringsplasser: 10</CustomListItem>
-            <CustomListItem>Antall stoler: 10</CustomListItem>
-            <CustomListItem>Antall benker: 12</CustomListItem>
-            <CustomListItem>Antall bord: 4</CustomListItem>
-          </ul>
-          <ul className="custom-list">
-            <CustomListItem>Byggeår: 1970</CustomListItem>
-            <CustomListItem>Tomteareal: 6764 m²</CustomListItem>
-          </ul>
-        </div>
-      </div>
+      <InfoBox title="Nøkkelinfo" />
+      <InfoLists keyInfo={keyInfo} />
       <InfoBox title="Fasiliteter" />
-      <div className="list-rows">
-        <ul className="custom-list">
-          <CustomListItem>God tilgang for rullestol</CustomListItem>
-          <CustomListItem>Nært bybane</CustomListItem>
-          <CustomListItem>Uteområde</CustomListItem>
-          <CustomListItem>Kjøkken</CustomListItem>
-        </ul>
-      </div>
+      <InfoLists keyInfo={facilities} />
       <InfoBox title="Kalender" />
       <div className="bottom-infobox">
         <p>
@@ -133,17 +98,39 @@ const Building1 = () => {
       <div className="bottom-infobox">
         <p>Dette er et 100% gratis tilbud av Bergen kommune</p>
       </div>
+      <InfoBox title="Beliggenhet" />
+      <div className="bottom-infobox">
+        <p>Kansje kart her</p>
+      </div>
     </div>
   );
 };
 
 function TopText() {
   return (
-    <div className="top-text">
+    <div className="top-text-box">
       <h1 className="extra-bold-inter">Bygg1</h1>
     </div>
   );
 }
+
+interface InfoListsProps {
+  keyInfo: string[][];
+}
+
+const InfoLists: React.FC<InfoListsProps> = ({ keyInfo }) => {
+  return (
+    <div className="list-rows">
+      {keyInfo.map((list, index) => (
+        <ul key={index} className="custom-list">
+          {list.map((item, idx) => (
+            <CustomListItem key={idx}>{item}</CustomListItem>
+          ))}
+        </ul>
+      ))}
+    </div>
+  );
+};
 
 interface CustomListItemProps {
   children: React.ReactNode;
