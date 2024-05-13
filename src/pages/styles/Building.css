@@ -5,7 +5,8 @@
 
 .container-lists {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
   margin-top: 2rem;
@@ -53,6 +54,28 @@
     justify-content: center; /* Aligns items to the start of the container */
     gap: 4rem;          /* Optional: Adds space between items */
     margin-top: 2rem;   /* Adds space above the container */
+}
+
+.header-info-box {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Semi Bold */
+    font-size: 28px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.info-box-header-br {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+hr {
+    margin: 20px 0;
+    width: 100%;
+    border: 1px solid #000;
 }
 
 @media (max-width: 1200px){

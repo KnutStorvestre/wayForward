@@ -16,56 +16,34 @@ const IMAGES = [
 
 const InfoBoxData = [
   {
-    title: "Nøkkelinfo",
+    title: "Fasiliteter",
     data: [
-      { key: "Adresse", value: "museplassen 3, 5007 Bergen" },
-      { key: "Størrelse", value: "200m2" },
-      { key: "Pris", value: "2000kr per time" },
-      { key: "Antall rom", value: "5" },
-      { key: "Antall toaletter", value: "2" },
-      { key: "Antall dusjer", value: "1" },
-      { key: "Antall kjøkken", value: "1" },
-      { key: "Antall parkeringsplasser", value: "2" },
+      { key: "Kjøkken: ", value: "ja" },
+      { key: "Antall parkeringsplasser: ", value: "10" },
     ],
   },
   {
     title: "Nøkkelinfo",
     data: [
-      { key: "Adresse", value: "museplassen 3, 5007 Bergen" },
-      { key: "Størrelse", value: "200m2" },
-      { key: "Pris", value: "2000kr per time" },
-      { key: "Antall rom", value: "5" },
-      { key: "Antall toaletter", value: "2" },
-      { key: "Antall dusjer", value: "1" },
-      { key: "Antall kjøkken", value: "1" },
-      { key: "Antall parkeringsplasser", value: "2" },
+      { key: "Størrelse: ", value: "200m2" },
+      { key: "Antall rom: ", value: "5" },
+      { key: "Antall toaletter: ", value: "2" },
+      { key: "Etasjer: ", value: "2" },
+      { key: "Byggeår: ", value: "1970" },
+      { key: "Tomteareal: ", value: "6 763 m²" },
+      { key: "Hovedrom: ", value: "200 m²" },
     ],
   },
   {
-    title: "Nøkkelinfo",
+    title: "Fasiliteter",
     data: [
-      { key: "Adresse", value: "museplassen 3, 5007 Bergen" },
-      { key: "Størrelse", value: "200m2" },
-      { key: "Pris", value: "2000kr per time" },
-      { key: "Antall rom", value: "5" },
-      { key: "Antall toaletter", value: "2" },
-      { key: "Antall dusjer", value: "1" },
-      { key: "Antall kjøkken", value: "1" },
-      { key: "Antall parkeringsplasser", value: "2" },
+      { key: "Kjøkken: ", value: "ja" },
+      { key: "Antall parkeringsplasser: ", value: "10" },
     ],
   },
   {
-    title: "Nøkkelinfo",
-    data: [
-      { key: "Adresse", value: "museplassen 3, 5007 Bergen" },
-      { key: "Størrelse", value: "200m2" },
-      { key: "Pris", value: "2000kr per time" },
-      { key: "Antall rom", value: "5" },
-      { key: "Antall toaletter", value: "2" },
-      { key: "Antall dusjer", value: "1" },
-      { key: "Antall kjøkken", value: "1" },
-      { key: "Antall parkeringsplasser", value: "2" },
-    ],
+    title: "Pris",
+    data: [{ key: "Pris per kveld: ", value: "3000kr" }],
   },
 ];
 
@@ -107,13 +85,18 @@ const Building1 = () => {
         eos corporis. Exercitationem et aut nam velit aspernatur eos eum
         assumenda beatae debitis distinctio laudantium vitae tempore neque ullam
       </p>
-      <div className="container-list">
-        {InfoBoxData.map((infoBox, index) => (
-          <InfoBox key={index} title={infoBox.title} data={infoBox.data} />
-        ))}
+      <div className="info-box-header-br">
+        <header className="header-info-box">Nøkkelinfo</header>
+        <hr />
       </div>
-      <p>"Ta gjerne Kontakt:)"</p>
-      <p>Sjekk her når bygget er ledig</p>
+      <hr />
+      <header className="header-info-box">Fasiliteter</header>
+      <hr />
+      <header className="header-info-box">Kalender for ledige dager</header>
+      <hr />
+      <header className="header-info-box">Kontakt</header>
+      <hr />
+      <header className="header-info-box">Pris</header>
     </div>
   );
 };
