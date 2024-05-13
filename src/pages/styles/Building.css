@@ -78,6 +78,27 @@ hr {
     border: 1px solid #000;
 }
 
+.custom-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 0 20px 10px;
+}
+
+.custom-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-rows {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 @media (max-width: 1200px){
     .extra-bold-inter {
         font-size: 54px;
