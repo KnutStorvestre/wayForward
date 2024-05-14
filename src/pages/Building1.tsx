@@ -35,67 +35,91 @@ const Building1 = () => {
   return (
     <div className="wide-container">
       <TopText />
-      <div className="img-slider">
-        <ImageSlider images={images} />
-      </div>
-      <a
-        href={
-          "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu"
-        }
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="address-container">
-          <span className="address">museplassen 3</span>
-          <span className="address">5007 Bergen</span>
-        </div>
-      </a>
-      <p className="semibold-inter">
-        Leiligheten er lys og romslig med en gjennomgående god standard. Delikat
-        IKEA-kjøkken med kjøkkenøy og åpen løsning mot stuen. Stor og
-        møbleringsvennlig stue med peisovn og utgang til balkong med kveldssol.
-        Pent, flislagt baderom med både badekar og dusjsone, som ble utvidet og
-        rehabilitert i regi av sameiet i 2022. Tre gode soverom ligger
-        barnevennlig i tilknytning til hverandre. Hovedsoverommet har utgang til
-        sørvestvendt balkong med hyggelig utsyn. Videre har man en praktisk
-        entré med god skapplass. Leiligheten har gode lagringsmuligheter.
-      </p>
-      <InfoBoxHeader title="Nøkkelinfo" />
-      <InfoLists keyInfo={keyInfo} />
-      <InfoBoxHeader title="Fasiliteter" />
-      <InfoLists keyInfo={facilities} />
-      <InfoBoxHeader title="Kalender" />
-      <div className="bottom-infobox">
-        <p>
-          Sjekk vår kalender for når lokalet er ledig trykk{" "}
-          <a
-            href={
-              "https://docs.google.com/spreadsheets/d/155uVn2gt71zkFXzGeMBP0O9ZgEG5O5raqgvOM-GO_Z8/edit?usp=sharing"
-            }
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            her.
-          </a>
-        </p>
-      </div>
-      <InfoBoxHeader title="Kontakt" />
+      <ImageSliderWrapper images={images} />
+      <MapLink />
+      <ApartmentDescription />
+      <InfoSection title="Nøkkelinfo" content={keyInfo} />
+      <InfoSection title="Fasiliteter" content={facilities} />
+      <CalendarSection />
       <ContactInfo
         contactName="Rasmus Solberg"
         phoneNumber="+47 555 55 555"
         email="post@wayforward.com"
       />
-      <InfoBoxHeader title="Pris" />
-      <div className="bottom-infobox">
-        <p>Dette er et 100% gratis tilbud av Bergen kommune</p>
-      </div>
-      <InfoBoxHeader title="Beliggenhet" />
-      <div className="bottom-infobox">
-        <p>Kansje kart her</p>
-      </div>
+      <PriceSection />
+      <LocationSection />
     </div>
   );
 };
+
+interface ImageSliderWrapperProps {
+  images: { url: string; alt: string }[];
+}
+
+const ImageSliderWrapper: React.FC<ImageSliderWrapperProps> = ({ images }) => (
+  <div className="img-slider">
+    <ImageSlider images={images} />
+  </div>
+);
+
+const MapLink = () => (
+  <a
+    href="https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div className="address-container">
+      <span className="address">museplassen 3</span>
+      <span className="address">5007 Bergen</span>
+    </div>
+  </a>
+);
+
+const ApartmentDescription = () => {
+  return (
+    <p className="semibold-inter">
+      Leiligheten er lys og romslig med en gjennomgående god standard. Delikat
+      IKEA-kjøkken med kjøkkenøy og åpen løsning mot stuen. Stor og
+      møbleringsvennlig stue med peisovn og utgang til balkong med kveldssol.
+      Pent, flislagt baderom med både badekar og dusjsone, som ble utvidet og
+      rehabilitert i regi av sameiet i 2022. Tre gode soverom ligger
+      barnevennlig i tilknytning til hverandre. Hovedsoverommet har utgang til
+      sørvestvendt balkong med hyggelig utsyn. Videre har man en praktisk entré
+      med god skapplass. Leiligheten har gode lagringsmuligheter.
+    </p>
+  );
+};
+
+interface InfoSectionProps {
+  title: string;
+  content: string[][];
+}
+
+const InfoSection: React.FC<InfoSectionProps> = ({ title, content }) => (
+  <>
+    <InfoBoxHeader title={title} />
+    <InfoLists keyInfo={content} />
+  </>
+);
+
+const CalendarSection = () => (
+  <div>
+    <InfoBoxHeader title="Kalender" />
+    <div className="bottom-infobox">
+      <p>
+        Check our calendar{" "}
+        <a
+          href="https://link.to/calendar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here
+        </a>
+        .
+      </p>
+    </div>
+  </div>
+);
 
 interface ContactInfoProps {
   contactName: string;
@@ -109,20 +133,41 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
   email,
 }) => {
   return (
-    <div className="bottom-infobox">
-      <div className="justify-space-between">
-        <div>
-          <p>Noe du lurer på?</p>
-        </div>
-        <div className="contact-info-building">
-          <span>Kontakt: {contactName}</span>
-          <span>tlf: {phoneNumber}</span>
-          <span>e-post: {email}</span>
+    <div>
+      <InfoBoxHeader title="Kontakt" />
+      <div className="bottom-infobox">
+        <div className="justify-space-between">
+          <div>
+            <p>Noe du lurer på?</p>
+          </div>
+          <div className="contact-info-building">
+            <span>Kontakt: {contactName}</span>
+            <span>tlf: {phoneNumber}</span>
+            <span>e-post: {email}</span>
+          </div>
         </div>
       </div>
     </div>
   );
 };
+
+const PriceSection = () => (
+  <div>
+    <InfoBoxHeader title="Pris" />
+    <div className="bottom-infobox">
+      <p>Dette er et 100% gratis tilbud av Bergen kommune</p>
+    </div>
+  </div>
+);
+
+const LocationSection = () => (
+  <div>
+    <InfoBoxHeader title="Beliggenhet" />
+    <div className="bottom-infobox">
+      <p>Kansje kart her</p>
+    </div>
+  </div>
+);
 
 function TopText() {
   return (
