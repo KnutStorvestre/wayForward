@@ -65,6 +65,5 @@ function TopText() {
     </div>
   );
 }
-/*https://www.google.com/maps/dir//Troldhaugvegen+65,+5232+Paradis/@60.3192674,5.3293567,190m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x463cf99177a78e9b:0x8511c1fd93c7c06!2m2!1d5.329447!2d60.319625?entry=ttu*/
 
 export default Rental;

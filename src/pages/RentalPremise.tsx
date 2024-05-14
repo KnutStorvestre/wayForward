@@ -1,19 +1,21 @@
 import { ImageSlider } from "./components/ImageSlider";
 import "./styles/Building.css";
 import { ArrowRight } from "lucide-react";
-import {
+import { rentalPremiseData } from "./data/FemmerenDataN";
+
+const {
   rentalPremiseName,
   images,
-  keyInfo,
-  facilities,
-  apartmentDescription,
-  contactInfo,
   mapLink,
   address,
   zipCode,
-  calenderLink,
+  apartmentDescription,
+  keyInfo,
+  facilities,
+  calendarLink,
+  contactInfo,
   priceDescription,
-} from "./data/FemmerenData";
+} = rentalPremiseData;
 
 const RentalPremise: React.FC = () => {
   return (
@@ -24,7 +26,7 @@ const RentalPremise: React.FC = () => {
       <ApartmentDescription description={apartmentDescription} />
       <InfoSection title="Nøkkelinfo" content={keyInfo} />
       <InfoSection title="Fasiliteter" content={facilities} />
-      <CalendarSection link={calenderLink} />
+      <CalendarSection link={calendarLink} />
       <ContactInfo
         contactName={contactInfo.contactName}
         phoneNumber={contactInfo.phoneNumber}
