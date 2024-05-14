@@ -2,6 +2,7 @@ import { ImageSlider } from "./components/ImageSlider";
 import "./styles/Building.css";
 import { ArrowRight } from "lucide-react";
 import {
+  rentalPremiseName,
   images,
   keyInfo,
   facilities,
@@ -11,12 +12,13 @@ import {
   address,
   zipCode,
   calenderLink,
+  priceDescription,
 } from "./data/FemmerenData";
 
-const RentalPremise = () => {
+const RentalPremise: React.FC = () => {
   return (
     <div className="wide-container">
-      <TopText />
+      <TopText title={rentalPremiseName} />
       <ImageSliderWrapper images={images} />
       <MapLink mapLink={mapLink} address={address} zipCode={zipCode} />
       <ApartmentDescription description={apartmentDescription} />
@@ -28,7 +30,7 @@ const RentalPremise = () => {
         phoneNumber={contactInfo.phoneNumber}
         email={contactInfo.email}
       />
-      <PriceSection />
+      <PriceSection description={priceDescription} />
       <LocationSection />
     </div>
   );
@@ -92,7 +94,7 @@ const CalendarSection: React.FC<CalendarSectionProps> = ({ link }) => (
       <p>
         Se vår kalender for når lokalet er ledig{" "}
         <a href={link} target="_blank" rel="noopener noreferrer">
-          here
+          her
         </a>
         .
       </p>
@@ -130,31 +132,37 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
   );
 };
 
-const PriceSection = () => (
+interface PriceSectionProps {
+  description: string;
+}
+
+const PriceSection: React.FC<PriceSectionProps> = ({ description }) => (
   <div>
     <InfoBoxHeader title="Pris" />
     <div className="bottom-infobox">
-      <p>Dette er et 100% gratis tilbud av Bergen kommune</p>
+      <p>{description}</p>
     </div>
   </div>
 );
 
-const LocationSection = () => (
+const LocationSection: React.FC = () => (
   <div>
     <InfoBoxHeader title="Beliggenhet" />
     <div className="bottom-infobox">
-      <p>Kansje kart her</p>
+      <p>Kanskje kart her</p>
     </div>
   </div>
 );
 
-function TopText() {
-  return (
-    <div className="top-text-box">
-      <h1 className="extra-bold-inter">Bygg1</h1>
-    </div>
-  );
+interface TopTextProps {
+  title: string;
 }
+
+const TopText: React.FC<TopTextProps> = ({ title }) => (
+  <div className="top-text-box">
+    <h1 className="extra-bold-inter">{title}</h1>
+  </div>
+);
 
 interface InfoListsProps {
   keyInfo: string[][];
