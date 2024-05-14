@@ -13,7 +13,7 @@ import {
   calenderLink,
 } from "./data/FemmerenData";
 
-const Building1 = () => {
+const RentalPremise = () => {
   return (
     <div className="wide-container">
       <TopText />
@@ -202,4 +202,4 @@ const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => {
   );
 };
 
-export default Building1;
+export default RentalPremise;
