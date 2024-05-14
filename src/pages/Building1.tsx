@@ -5,7 +5,7 @@ import car3 from "../assets/car-3.jpg";
 import car4 from "../assets/car-4.jpg";
 import car5 from "../assets/car-5.jpg";
 import "./styles/Building.css";
-import { ArrowRight, Info } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const images = [
   { url: car1, alt: "Car One" },
@@ -51,22 +51,20 @@ const Building1 = () => {
         </div>
       </a>
       <p className="semibold-inter">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        voluptates voluptate eum ipsum iure? Commodi quia, laudantium maiores
-        dignissimos non quod perferendis consectetur debitis accusamus sequi,
-        iusto aspernatur rerum possimus, sapiente nisi placeat ipsum nulla
-        doloribus doloremque eum explicabo officiis labore. Atque quisquam ab ad
-        totam ex ducimus, dolore dignissimos libero eligendi iste ipsum.
-        Asperiores quaerat error in praesentium impedit dolorem natus, veniam ut
-        commodi minima necessitatibus ex enim totam odio perferendis, dolores,
-        eos corporis. Exercitationem et aut nam velit aspernatur eos eum
-        assumenda beatae debitis distinctio laudantium vitae tempore neque ullam
+        Leiligheten er lys og romslig med en gjennomgående god standard. Delikat
+        IKEA-kjøkken med kjøkkenøy og åpen løsning mot stuen. Stor og
+        møbleringsvennlig stue med peisovn og utgang til balkong med kveldssol.
+        Pent, flislagt baderom med både badekar og dusjsone, som ble utvidet og
+        rehabilitert i regi av sameiet i 2022. Tre gode soverom ligger
+        barnevennlig i tilknytning til hverandre. Hovedsoverommet har utgang til
+        sørvestvendt balkong med hyggelig utsyn. Videre har man en praktisk
+        entré med god skapplass. Leiligheten har gode lagringsmuligheter.
       </p>
-      <InfoBox title="Nøkkelinfo" />
+      <InfoBoxHeader title="Nøkkelinfo" />
       <InfoLists keyInfo={keyInfo} />
-      <InfoBox title="Fasiliteter" />
+      <InfoBoxHeader title="Fasiliteter" />
       <InfoLists keyInfo={facilities} />
-      <InfoBox title="Kalender" />
+      <InfoBoxHeader title="Kalender" />
       <div className="bottom-infobox">
         <p>
           Sjekk vår kalender for når lokalet er ledig trykk{" "}
@@ -81,26 +79,46 @@ const Building1 = () => {
           </a>
         </p>
       </div>
-      <InfoBox title="Kontakt" />
-      <div className="bottom-infobox">
-        <div className="justify-space-between">
-          <div>
-            <p>Noe du lurer på?</p>
-          </div>
-          <div className="contact-info-building">
-            <span>Kontakt: Rasmus Solberg</span>
-            <span>tlf: +47 555 55 555</span>
-            <span>e-post: post@wayforward.com</span>
-          </div>
-        </div>
-      </div>
-      <InfoBox title="Pris" />
+      <InfoBoxHeader title="Kontakt" />
+      <ContactInfo
+        contactName="Rasmus Solberg"
+        phoneNumber="+47 555 55 555"
+        email="post@wayforward.com"
+      />
+      <InfoBoxHeader title="Pris" />
       <div className="bottom-infobox">
         <p>Dette er et 100% gratis tilbud av Bergen kommune</p>
       </div>
-      <InfoBox title="Beliggenhet" />
+      <InfoBoxHeader title="Beliggenhet" />
       <div className="bottom-infobox">
         <p>Kansje kart her</p>
+      </div>
+    </div>
+  );
+};
+
+interface ContactInfoProps {
+  contactName: string;
+  phoneNumber: string;
+  email: string;
+}
+
+const ContactInfo: React.FC<ContactInfoProps> = ({
+  contactName,
+  phoneNumber,
+  email,
+}) => {
+  return (
+    <div className="bottom-infobox">
+      <div className="justify-space-between">
+        <div>
+          <p>Noe du lurer på?</p>
+        </div>
+        <div className="contact-info-building">
+          <span>Kontakt: {contactName}</span>
+          <span>tlf: {phoneNumber}</span>
+          <span>e-post: {email}</span>
+        </div>
       </div>
     </div>
   );
@@ -145,11 +163,11 @@ const CustomListItem: React.FC<CustomListItemProps> = ({ children }) => {
   );
 };
 
-interface InfoBoxProps {
+interface InfoBoxHeaderProps {
   title: string;
 }
 
-const InfoBox: React.FC<InfoBoxProps> = ({ title }) => {
+const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => {
   return (
     <div>
       <div className="info-box-header-br">
