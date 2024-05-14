@@ -1,7 +1,7 @@
 import { ImageSlider } from "./components/ImageSlider";
 import "./styles/Building.css";
 import { ArrowRight } from "lucide-react";
-import { rentalPremiseData } from "./data/FemmerenDataN";
+import { rentalPremiseData } from "./data/FemmerenData";
 
 const {
   rentalPremiseName,
