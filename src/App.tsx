@@ -4,7 +4,7 @@ import AboutUs from "./pages/AboutUs";
 import Landaas from "./pages/Landaas";
 import Sotra from "./pages/Sotra";
 import Rental from "./pages/Rental";
-import Building1 from "./pages/Building1";
+import RentalPremise from "./pages/RentalPremise";
 import Building2 from "./pages/Building2";
 import Partners from "./pages/Partnere";
 import Footer from "./content/Footer";
@@ -23,7 +23,7 @@ function App() {
         <Route path="/landaas" element={<Landaas />} />
         <Route path="/sotra" element={<Sotra />} />
         <Route path="/utleie" element={<Rental />} />
-        <Route path="/utleie/bygg1" element={<Building1 />} />
+        <Route path="/utleie/bygg1" element={<RentalPremise />} />
         <Route path="/utleie/bygg2" element={<Building2 />} />
         <Route path="/partnere" element={<Partners />} />
       </Routes>
