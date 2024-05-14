@@ -50,4 +50,6 @@ export const images = [
   export const address = "museplassen 3";
 
   export const zipCode = "5007 Bergen";
+
+  export const calenderLink = "https://www.google.com/calendar";
   

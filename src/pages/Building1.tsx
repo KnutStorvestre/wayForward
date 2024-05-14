@@ -10,6 +10,7 @@ import {
   mapLink,
   address,
   zipCode,
+  calenderLink,
 } from "./data/FemmerenData";
 
 const Building1 = () => {
@@ -21,7 +22,7 @@ const Building1 = () => {
       <ApartmentDescription description={apartmentDescription} />
       <InfoSection title="Nøkkelinfo" content={keyInfo} />
       <InfoSection title="Fasiliteter" content={facilities} />
-      <CalendarSection />
+      <CalendarSection link={calenderLink} />
       <ContactInfo
         contactName={contactInfo.contactName}
         phoneNumber={contactInfo.phoneNumber}
@@ -80,17 +81,17 @@ const InfoSection: React.FC<InfoSectionProps> = ({ title, content }) => (
   </>
 );
 
-const CalendarSection = () => (
+interface CalendarSectionProps {
+  link: string;
+}
+
+const CalendarSection: React.FC<CalendarSectionProps> = ({ link }) => (
   <div>
     <InfoBoxHeader title="Kalender" />
     <div className="bottom-infobox">
       <p>
-        Check our calendar{" "}
-        <a
-          href="https://link.to/calendar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        Se vår kalender for når lokalet er ledig{" "}
+        <a href={link} target="_blank" rel="noopener noreferrer">
           here
         </a>
         .
