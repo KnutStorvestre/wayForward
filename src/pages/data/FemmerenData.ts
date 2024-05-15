@@ -5,7 +5,7 @@ import car4 from "../../assets/car-4.jpg";
 import car5 from "../../assets/car-5.jpg";
 import { RentalPremiseData } from "./DataInterface";
 
-export const rentalPremiseData: RentalPremiseData = {
+const rentalPremiseData: RentalPremiseData = {
   rentalPremiseName: "Femmeren",
   images: [
     { url: car1, alt: "Car One" },
@@ -44,3 +44,5 @@ export const rentalPremiseData: RentalPremiseData = {
   },
   priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune"
 };
+
+export default rentalPremiseData;
