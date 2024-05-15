@@ -24,10 +24,7 @@ function App() {
         <Route path="/sotra" element={<Sotra />} />
         <Route path="/utleie" element={<Rental />} />
         <Route path="/utleie/femmeren" element={<Femmeren />} />
-        <Route
-          path="/utleie/SotraRentalPremise"
-          element={<SotraRentalPremise />}
-        />
+        <Route path="/utleie/sotra-utleie" element={<SotraRentalPremise />} />
         <Route path="/partnere" element={<Partners />} />
       </Routes>
       <Footer />
