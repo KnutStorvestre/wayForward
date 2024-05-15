@@ -1,6 +1,6 @@
 import "./styles/Rental.css";
-import RentalCard from "./components/RentalCard";
-import rentalCardsData from "./data/RentalCardsData";
+import RentalCard from "../components/common/RentalCard";
+import rentalCardsData from "../data/RentalCardsData";
 
 const Rental = () => {
   return (

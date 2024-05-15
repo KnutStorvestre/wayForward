@@ -1,11 +1,11 @@
-import Navbar from "./content/Navbar";
+import Navbar from "./components/layout/Navbar";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Landaas from "./pages/Landaas";
 import Sotra from "./pages/Sotra";
 import Rental from "./pages/Rental";
 import Partners from "./pages/Partnere";
-import Footer from "./content/Footer";
+import Footer from "./components/layout/Footer";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./util/ScrollToTop";
 import "./App.css";

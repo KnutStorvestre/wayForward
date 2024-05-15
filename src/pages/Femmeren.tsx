@@ -1,5 +1,5 @@
 import RentalPremise from "./RentalPremise";
-import FemmerenData from "./data/FemmerenData";
+import FemmerenData from "../data/FemmerenData";
 
 const Femmeren = () => {
   return <RentalPremise data={FemmerenData} />;

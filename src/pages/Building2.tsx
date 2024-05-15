@@ -1,4 +1,4 @@
-import { ImageSlider } from "./components/ImageSlider";
+import { ImageSlider } from "../components/common/ImageSlider";
 import car1 from "../assets/car-1.jpg";
 import car2 from "../assets/car-2.jpg";
 import car3 from "../assets/car-3.jpg";
