@@ -1,24 +1,15 @@
 import "../styles/RentalCard.css";
-/*import bergenImage from "../assets/troldhaugenx.jpeg";*/
 import { Link } from "react-router-dom";
+import { RentalCardData } from "../types";
 
-interface RentalCardProps {
-  activityTitle: string;
-  image: string;
-  googleMapsLink: string;
-  street: string;
-  zipCode: string;
-  description: string;
-  linkBuilding: string;
-}
-
-const RentalCard: React.FC<RentalCardProps> = ({
+const RentalCard: React.FC<RentalCardData> = ({
   activityTitle,
   image,
   googleMapsLink,
   street,
   zipCode: postNumber,
   description,
+  contactInfo,
   linkBuilding,
 }) => {
   return (
@@ -47,9 +38,9 @@ const RentalCard: React.FC<RentalCardProps> = ({
           </div>
           <div className="bottom-info">
             <div className="contact-info">
-              <span>Kontakt: Rasmus Solberg</span>
-              <span>tlf: +47 555 55 555</span>
-              <span>e-post: post@wayforward.com</span>
+              <span>Kontakt: {contactInfo.contactName}</span>
+              <span>tlf: {contactInfo.phoneNumber}</span>
+              <span>e-post: {contactInfo.email}</span>
             </div>
             <Link to={linkBuilding}>
               <button className="button">Les mer</button>
