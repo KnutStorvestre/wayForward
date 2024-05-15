@@ -4,6 +4,11 @@
 * add languages
 * Parnere endrer farge når du går nedover
 * When you enter a new page you enter on top
+* Remove yellow hoover when using phone. Solution remove hoover for screen under a certain with
+
+Viktig
+* Partnere
+* Home page
 
 
 

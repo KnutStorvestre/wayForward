@@ -33,7 +33,7 @@ const rentalCardsData: RentalCardsData = [
       phoneNumber: "+47 555 55 555",
       email: "post@wayforward.com",
     },
-    linkBuilding: "/utleie/SotraRentalPremise",
+    linkBuilding: "/utleie/sotra-utleie",
   },
 ];
 
