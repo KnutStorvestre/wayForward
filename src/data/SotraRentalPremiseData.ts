@@ -1,18 +1,14 @@
-import car1 from "../assets/rentals/car-1.jpg";
-import car2 from "../assets/rentals/car-2.jpg";
-import car3 from "../assets/rentals/car-3.jpg";
-import car4 from "../assets/rentals/car-4.jpg";
-import car5 from "../assets/rentals/car-5.jpg";
+import interior1 from "../assets/rentals/interior-1.jpg";
+import interior2 from "../assets/rentals/interior-2.jpg";
+import interior3 from "../assets/rentals/interior-3.jpg";
 import { RentalPremiseData } from "../types";
 
 const sotraRentalPremiseData: RentalPremiseData = {
   rentalPremiseName: "Femmeren",
   images: [
-    { url: car1, alt: "Car One" },
-    { url: car2, alt: "Car Two" },
-    { url: car3, alt: "Car Three" },
-    { url: car4, alt: "Car Four" },
-    { url: car5, alt: "Car Five" },
+    { url: interior1, alt: "Interior One" },
+    { url: interior2, alt: "Interior Two" },
+    { url: interior3, alt: "Interior Three" },
   ],
   mapLink: "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
   address: "museplassen 3",
