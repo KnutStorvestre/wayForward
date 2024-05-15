@@ -1,5 +1,5 @@
-import italyVilla from "../../assets/images/Italy-house.jpg";
-import modernHouse from "../../assets/images/modern-house.jpg";
+import italyVilla from "../assets/images/Italy-house.jpg";
+import modernHouse from "../assets/images/modern-house.jpg";
 import { RentalCardsData } from "../types";
 
 const rentalCardsData: RentalCardsData = [

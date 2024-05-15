@@ -1,6 +1,6 @@
 import "../styles/RentalCard.css";
 import { Link } from "react-router-dom";
-import { RentalCardData } from "../types";
+import { RentalCardData } from "../../types";
 
 const RentalCard: React.FC<RentalCardData> = ({
   activityTitle,

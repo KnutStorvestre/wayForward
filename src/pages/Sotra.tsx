@@ -1,4 +1,4 @@
-import ActivityCard from "./components/ActivityCard";
+import ActivityCard from "../components/common/ActivityCard";
 import "./styles/Activity.css";
 
 const activityData = [

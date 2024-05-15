@@ -1,4 +1,4 @@
-import { ImageSlider } from "./components/ImageSlider";
+import { ImageSlider } from "../components/common/ImageSlider";
 import "./styles/Building.css";
 import { ArrowRight } from "lucide-react";
 
