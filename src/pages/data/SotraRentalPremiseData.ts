@@ -5,7 +5,7 @@ import car4 from "../../assets/car-4.jpg";
 import car5 from "../../assets/car-5.jpg";
 import { RentalPremiseData } from "../types";
 
-const femmerenData: RentalPremiseData = {
+const sotraRentalPremiseData: RentalPremiseData = {
   rentalPremiseName: "Femmeren",
   images: [
     { url: car1, alt: "Car One" },
@@ -18,14 +18,7 @@ const femmerenData: RentalPremiseData = {
   address: "museplassen 3",
   zipCode: "5007 Bergen",
   apartmentDescription: `
-  Leiligheten er lys og romslig med en gjennomgående god standard. Delikat
-  IKEA-kjøkken med kjøkkenøy og åpen løsning mot stuen. Stor og
-  møbleringsvennlig stue med peisovn og utgang til balkong med kveldssol.
-  Pent, flislagt baderom med både badekar og dusjsone, som ble utvidet og
-  rehabilitert i regi av sameiet i 2022. Tre gode soverom ligger
-  barnevennlig i tilknytning til hverandre. Hovedsoverommet har utgang til
-  sørvestvendt balkong med hyggelig utsyn. Videre har man en praktisk entré
-  med god skapplass. Leiligheten har gode lagringsmuligheter.
+  yolo
   `,
   keyInfo: [
     ["Størrelse: 200m2", "Antall rom: 5", "Antall toaletter: 2", "Etasje: 1"],
@@ -45,4 +38,4 @@ const femmerenData: RentalPremiseData = {
   priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune"
 };
 
-export default femmerenData;
+export default sotraRentalPremiseData;
