@@ -13,7 +13,7 @@ const rentalCardData = [
     zipCode: "5007 Bergen",
     description:
       "Ønsker du å bo i et moderne hus i Bergen? Da er dette tilbudet for deg.",
-    linkBuilding: "/utleie/bygg1",
+    linkBuilding: "/utleie/Femmeren",
   },
   {
     activityTitle: "Luksusvilla i Italia",

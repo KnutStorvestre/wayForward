@@ -1,38 +1,47 @@
 import { ImageSlider } from "./components/ImageSlider";
 import "./styles/Building.css";
 import { ArrowRight } from "lucide-react";
-import { rentalPremiseData } from "./data/FemmerenData";
 
-const {
-  rentalPremiseName,
-  images,
-  mapLink,
-  address,
-  zipCode,
-  apartmentDescription,
-  keyInfo,
-  facilities,
-  calendarLink,
-  contactInfo,
-  priceDescription,
-} = rentalPremiseData;
+interface RentalPremiseProps {
+  data: {
+    rentalPremiseName: string;
+    images: { url: string; alt: string }[];
+    mapLink: string;
+    address: string;
+    zipCode: string;
+    apartmentDescription: string;
+    keyInfo: string[][];
+    facilities: string[][];
+    calendarLink: string;
+    contactInfo: {
+      contactName: string;
+      phoneNumber: string;
+      email: string;
+    };
+    priceDescription: string;
+  };
+}
 
-const RentalPremise: React.FC = () => {
+const RentalPremise: React.FC<RentalPremiseProps> = ({ data }) => {
   return (
     <div className="wide-container">
-      <TopText title={rentalPremiseName} />
-      <ImageSliderWrapper images={images} />
-      <MapLink mapLink={mapLink} address={address} zipCode={zipCode} />
-      <ApartmentDescription description={apartmentDescription} />
-      <InfoSection title="Nøkkelinfo" content={keyInfo} />
-      <InfoSection title="Fasiliteter" content={facilities} />
-      <CalendarSection link={calendarLink} />
-      <ContactInfo
-        contactName={contactInfo.contactName}
-        phoneNumber={contactInfo.phoneNumber}
-        email={contactInfo.email}
+      <TopText title={data.rentalPremiseName} />
+      <ImageSliderWrapper images={data.images} />
+      <MapLink
+        mapLink={data.mapLink}
+        address={data.address}
+        zipCode={data.zipCode}
       />
-      <PriceSection description={priceDescription} />
+      <ApartmentDescription description={data.apartmentDescription} />
+      <InfoSection title="Nøkkelinfo" content={data.keyInfo} />
+      <InfoSection title="Fasiliteter" content={data.facilities} />
+      <CalendarSection link={data.calendarLink} />
+      <ContactInfo
+        contactName={data.contactInfo.contactName}
+        phoneNumber={data.contactInfo.phoneNumber}
+        email={data.contactInfo.email}
+      />
+      <PriceSection description={data.priceDescription} />
       <LocationSection />
     </div>
   );
