@@ -121,10 +121,36 @@
   color: yellow; /* Changes text color to yellow on hover */
 }
 
-@media (max-width: 768px) {
+
+@media (max-height: 1000px) {
+  .menu nav {
+    font-size: 3rem;
+    gap: 1rem;
+    padding: 100px 0 0 3rem;
+  }
+}
+
+@media (max-height: 800px) {
+  .menu nav {
+    font-size: 2.5rem;
+    gap: 1rem;
+    padding: 40px 0 0 2rem;
+  }
+}
+
+@media (max-height: 700px) {
   .menu nav {
     font-size: 2rem;
+    gap: 1rem;
     padding: 40px 0 0 2rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .menu nav {
+    font-size: 1.5rem;
+    gap: 1.3rem;
+    padding: 20px 0 0 2rem;
   }
 }
 
