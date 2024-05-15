@@ -1,5 +1,5 @@
 import React from "react";
-import skywoods from "../assets/sky-woods.jpg";
+import skywoods from "../assets/images/sky-woods.jpg";
 import "./styles/Home.css";
 import { Link } from "react-router-dom";
 

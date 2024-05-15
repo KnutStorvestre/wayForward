@@ -1,7 +1,7 @@
 import "../styles/ActivityCard.css";
-import bergenImage from "../../assets/Bergen.png";
-import calender from "../../assets/calender.png";
-import people from "../../assets/people.png";
+import bergenImage from "../../assets/images/Bergen.png";
+import calender from "../../assets/images/calender.png";
+import people from "../../assets/images/people.png";
 
 interface ActivityCardProps {
   activityTitle: string;

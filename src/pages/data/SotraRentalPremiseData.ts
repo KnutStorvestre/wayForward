@@ -1,8 +1,8 @@
-import car1 from "../../assets/car-1.jpg";
-import car2 from "../../assets/car-2.jpg";
-import car3 from "../../assets/car-3.jpg";
-import car4 from "../../assets/car-4.jpg";
-import car5 from "../../assets/car-5.jpg";
+import car1 from "../../assets/rentals/car-1.jpg";
+import car2 from "../../assets/rentals/car-2.jpg";
+import car3 from "../../assets/rentals/car-3.jpg";
+import car4 from "../../assets/rentals/car-4.jpg";
+import car5 from "../../assets/rentals/car-5.jpg";
 import { RentalPremiseData } from "../types";
 
 const sotraRentalPremiseData: RentalPremiseData = {
