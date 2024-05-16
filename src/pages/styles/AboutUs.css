@@ -4,11 +4,11 @@
     margin: auto;
   }
   
-  .contact-text {
+  .top-content-background {
     background-color: #fff1d0;
   }
   
-  .content h1 {
+  .normal-header {
     font-size: 3.5rem;
     font-weight: 800;
     color: #000;
@@ -23,7 +23,7 @@
     min-height: 40vh;
   }
   
-  .contact-text p {
+  .about-us-text {
     font-size: 1.5rem;
     font-weight: 400;
     color: #000;
