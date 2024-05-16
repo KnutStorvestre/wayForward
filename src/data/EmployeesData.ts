@@ -1,9 +1,9 @@
-import { Employees } from "../types";
+import { EmployeeArray } from "../types";
 
 
 const placeholderImage = "https://via.placeholder.com/150";
 
-const employees: Employees = [
+const employees: EmployeeArray = [
     {
       image: {url: placeholderImage, alt: "placeholder"},
       name: "Ola Nordmann",
