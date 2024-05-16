@@ -23,12 +23,6 @@ const AboutUs = () => {
               exercitationem. Lorem, ipsum dolor sit amet consectetur
               adipisicing elit. Animi temporibus harum suscipit quis, quia
               dolores odit dolorem architecto sint officiis fugit, qui nulla
-              deserunt excepturi amet velit repellat fugiat. Illum ea id sequi,
-              quaerat omnis repellat vitae suscipit exercitationem officiis!
-              Quisquam, quos. Quisquam, quos. Quisquam, quos. Quisquam, quos.
-              Quisquam, quos. Quisquam, quos. Quisquam, quos. Quisquam, quos.
-              Quisquam, quos. Quisquam, quos. Quisquam, quos. Quisquam, quos.
-              Quisquam, quos. Quisquam, quos.
             </p>
           </article>
         </div>

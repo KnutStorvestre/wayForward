@@ -154,4 +154,8 @@
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 

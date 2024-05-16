@@ -14,7 +14,7 @@ const sotraRentalPremiseData: RentalPremiseData = {
   address: "museplassen 3",
   zipCode: "5007 Bergen",
   apartmentDescription: `
-  yolo
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   `,
   keyInfo: [
     ["Størrelse: 200m2", "Antall rom: 5", "Antall toaletter: 2", "Etasje: 1"],
