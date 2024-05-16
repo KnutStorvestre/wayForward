@@ -39,7 +39,7 @@ const AboutUs = () => {
         </div>
         <div>
           <header>
-            <h1 className="main-header">Ansatte/Frivilige</h1>
+            <h1 className="main-header">Ansatte/Frivillige</h1>
           </header>
           <div className="employee-cards">
             {employees.map((employee, index) => (
