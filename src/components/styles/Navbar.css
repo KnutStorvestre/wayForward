@@ -7,21 +7,22 @@ body {
   margin: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .nav {
-  background-color: #A7E198;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
   padding: 0;
   height: 120px;
-
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Optional: adds shadow for better visibility */
   z-index: 1000;  /* Ensures navbar stays on top of other content */
 }
 
