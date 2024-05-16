@@ -6,10 +6,12 @@ import employees from "../data/EmployeesData";
 const AboutUs = () => {
   return (
     <div>
-      <div className="top-content-background">
+      <section className="top-content-background">
         <div className="content">
-          <h1 className="normal-header">Om oss</h1>
-          <div className="center-text">
+          <header>
+            <h1 className="main-header">Om oss</h1>
+          </header>
+          <article className="center-text">
             <p className="about-us-text">
               Har du spørsmål eller ønsker å komme i kontakt med oss? Send oss
               en melding på e-post eller ring oss.
@@ -28,15 +30,17 @@ const AboutUs = () => {
               Quisquam, quos. Quisquam, quos. Quisquam, quos. Quisquam, quos.
               Quisquam, quos. Quisquam, quos.
             </p>
-          </div>
+          </article>
         </div>
-      </div>
-      <div className="content">
+      </section>
+      <section className="content">
         <div className="group-photo">
-          <img src={GroupPhoto} alt="placeholder" />
+          <img src={GroupPhoto} alt="Group of people" />
         </div>
         <div>
-          <h1 className="normal-header">Ansatte/Frivilige</h1>
+          <header>
+            <h1 className="main-header">Ansatte/Frivilige</h1>
+          </header>
           <div className="employee-cards">
             {employees.map((employee, index) => (
               <EmployeeCard
@@ -48,7 +52,7 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
