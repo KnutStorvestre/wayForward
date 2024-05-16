@@ -1,19 +1,14 @@
 import "../styles/EmployeeCard.css"; // Make sure to import the CSS file
+import { Employee } from "../../types"; // Import the Employee interface from types.ts
 
-interface EmployeeCardProps {
-  image: string;
-  name: string;
-  position: string;
-}
-
-const EmployeeCard: React.FC<EmployeeCardProps> = ({
+const EmployeeCard: React.FC<Employee> = ({
   image,
   name,
   position,
-}) => {
+}: Employee) => {
   return (
     <div className="employee-card">
-      <img src={image} alt={name} className="employee-image" />
+      <img src={image.url} alt={image.alt} className="employee-image" />
       <div className="employee-info">
         <h3 className="employee-name">{name}</h3>
         <p className="employee-position">{position}</p>

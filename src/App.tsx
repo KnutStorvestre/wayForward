@@ -3,8 +3,8 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Landaas from "./pages/Landaas";
 import Sotra from "./pages/Sotra";
-import Rental from "./pages/Rental";
-import Partners from "./pages/Partnere";
+import RentalChoice from "./pages/RentalChoice";
+import Partners from "./pages/Partners";
 import Footer from "./components/layout/Footer";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./util/ScrollToTop";
@@ -22,7 +22,7 @@ function App() {
         <Route path="/om-oss" element={<AboutUs />} />
         <Route path="/landaas" element={<Landaas />} />
         <Route path="/sotra" element={<Sotra />} />
-        <Route path="/utleie" element={<Rental />} />
+        <Route path="/utleie" element={<RentalChoice />} />
         <Route path="/utleie/femmeren" element={<Femmeren />} />
         <Route path="/utleie/sotra-utleie" element={<SotraRentalPremise />} />
         <Route path="/partnere" element={<Partners />} />

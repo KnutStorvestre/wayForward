@@ -1,50 +1,61 @@
-
-.contact-text {
-    background-color: #FFF1D0;
-}
-
-
-.about-us h1 {
+/* General content styling */
+.content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .contact-text {
+    background-color: #fff1d0;
+  }
+  
+  .content h1 {
     font-size: 3.5rem;
     font-weight: 800;
     color: #000;
     padding: 4rem 0 2rem 0;
     text-align: center;
-}
-
-.center-text {
+  }
+  
+  .center-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 40vh;
-}
-
-.contact-text p {
+  }
+  
+  .contact-text p {
     font-size: 1.5rem;
     font-weight: 400;
     color: #000;
     padding: 0 0 2rem 0;
     text-align: left;
     max-width: 900px;
-}
-
-.group-photo {
+  }
+  
+  .group-photo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
     padding: 2rem 0;
-}
-
-.group-photo img {
-    width: 1200px;
-}
-
-.employee-cards {
+  }
+  
+  .group-photo img {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .employee-cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     padding: 2rem 0;
-}
+  }
+  
+  .employee-card {
+    flex: 1 1 calc(25% - 2rem); /* 25% width minus gap for 4 cards per line */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    max-width: calc(25% - 2rem); /* Ensure maximum width does not exceed 25% minus gap */
+  }
+  
