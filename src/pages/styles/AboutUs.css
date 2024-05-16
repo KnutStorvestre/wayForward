@@ -20,6 +20,14 @@
   text-align: center;
 }
 
+.bottom-header {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #000;
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+}
+
 .center-text {
   display: flex;
   flex-direction: column;
@@ -67,5 +75,16 @@
   .employee-card {
     flex: 1 1 calc(25% - 2rem); /* Four cards per row with gap */
     max-width: calc(25% - 2rem); /* Ensure max width */
+  }
+
+}
+
+@media (max-width: 600px) {
+  .bottom-header {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #000;
+    padding: 4rem 0 2rem 0;
+    text-align: center;
   }
 }

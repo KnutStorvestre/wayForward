@@ -37,12 +37,6 @@ const HamburgerMenu = () => {
           <div>
             <Link to="/Partnere">Partnere</Link>
           </div>
-          <div>
-            <Link to="/Partnere">Partnere</Link>
-          </div>
-          <div>
-            <Link to="/Partnere">Partnere</Link>
-          </div>
         </nav>
       </aside>
     </div>
