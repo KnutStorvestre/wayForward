@@ -1,75 +1,14 @@
-* When you enter a new page thru the hamburger menu it automatically goes to the top of the page
-* The hamburger menu should fit on mobile screens
-* add aria-label to everything
-* add languages
-* Parnere endrer farge når du går nedover
-* When you enter a new page you enter on top
-* Remove yellow hoover when using phone. Solution remove hoover for screen under a certain with
-
 Viktig
 * Partnere
 * Home page
 * Legge til fine bilder
 
-
-
-      <div className="container-lists">
-        {InfoBoxData.map((infoBox, index) => (
-          <InfoBox key={index} title={infoBox.title} data={infoBox.data} />
-        ))}
-
-
-        interface InfoBoxPropsX {
-  title: string;
-  data: { key: string; value: string }[];
-}
-
-const InfoBoxX: React.FC<InfoBoxPropsX> = ({ title, data }) => {
-  return (
-    <div>
-      <h1>{title}</h1>
-      <ul className="list">
-        {data.map((item, index) => (
-          <li key={index}>
-            <span>{item.key}</span>
-            <span>{item.value}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-
-const InfoBoxData = [
-  {
-    title: "Fasiliteter",
-    data: [
-      { key: "Kjøkken: ", value: "ja" },
-      { key: "Antall parkeringsplasser: ", value: "10" },
-    ],
-  },
-  {
-    title: "Nøkkelinfo",
-    data: [
-      { key: "Størrelse: ", value: "200m2" },
-      { key: "Antall rom: ", value: "5" },
-      { key: "Antall toaletter: ", value: "2" },
-      { key: "Etasjer: ", value: "2" },
-      { key: "Byggeår: ", value: "1970" },
-      { key: "Tomteareal: ", value: "6 763 m²" },
-      { key: "Hovedrom: ", value: "200 m²" },
-    ],
-  },
-  {
-    title: "Fasiliteter",
-    data: [
-      { key: "Kjøkken: ", value: "ja" },
-      { key: "Antall parkeringsplasser: ", value: "10" },
-    ],
-  },
-  {
-    title: "Pris",
-    data: [{ key: "Pris per kveld: ", value: "3000kr" }],
-  },
-];
+TODO
+* add aria-label to everything
+* add languages
+* Parnere endrer farge når du går nedover
+* Remove yellow hoover when using phone. Solution remove hoover for screen under a certain with
+* Stop horizontal scroll
+* Padding for text on mobile or small screen.
+* KeyInfo and Fasiliteter fix this for small screens
+* fix image size on about us
