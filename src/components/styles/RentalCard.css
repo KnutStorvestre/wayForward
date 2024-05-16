@@ -110,4 +110,18 @@
     .activity-title {
       font-size: 34px;
     }
+    .bottom-info {
+      flex-wrap: wrap;
+      padding: 0 16px 1rem 16px;
+      gap: 16px;
+    }
+    .contact-info {
+      font-size: 14px;
+    }
+    .button {
+      min-width: 80px;
+      min-height: 55px;
+      font-size: 14px;
+      margin-left: 0;
+    }
   } 
