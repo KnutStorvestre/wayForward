@@ -2,13 +2,14 @@
 .content {
   max-width: 1200px;
   margin: auto;
+  padding: 0 1rem; /* Add padding to prevent content from touching the edges */
 }
 
 .top-content-background {
   background-color: #fff1d0;
-  width: 100%; /* Ensure it covers the entire width */
-  padding: 2rem 0; /* Add some padding for spacing */
-  text-align: center; /* Center the text */
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .main-header {
@@ -33,17 +34,20 @@
   padding: 0 0 2rem 0;
   text-align: left;
   max-width: 900px;
-  margin: auto; /* Center the paragraph */
+  margin: auto;
 }
 
 .group-photo {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
+  width: 100%;
+  overflow: hidden; /* Prevent overflow */
 }
 
 .group-photo img {
   width: 100%;
+  height: auto; /* Maintain aspect ratio */
   max-width: 1200px;
 }
 
