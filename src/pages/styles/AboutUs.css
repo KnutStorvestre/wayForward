@@ -58,3 +58,14 @@
   gap: 2rem;
   padding: 2rem 0;
 }
+
+@media (min-width: 1200px) {
+  .employee-cards {
+    justify-content: space-between; /* Ensure space between cards */
+  }
+
+  .employee-card {
+    flex: 1 1 calc(25% - 2rem); /* Four cards per row with gap */
+    max-width: calc(25% - 2rem); /* Ensure max width */
+  }
+}
