@@ -6,9 +6,9 @@ Viktig
 TODO
 * add aria-label to everything
 * add languages
-* Parnere endrer farge når du går nedover
+* Partnere endrer farge når du går nedover
 * Remove yellow hoover when using phone. Solution remove hoover for screen under a certain with
 * Stop horizontal scroll
 * Padding for text on mobile or small screen.
 * KeyInfo and Fasiliteter fix this for small screens
-* fix image size on about us
+* the slideshow should fit the entire image on small laptop screen
