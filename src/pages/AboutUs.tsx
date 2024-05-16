@@ -1,10 +1,11 @@
 import "./styles/AboutUs.css";
 import EmployeeCard from "../components/common/EmployeeCard";
 import GroupPhoto from "../assets/images/group-people.jpg";
+import employees from "../data/EmployeesData";
 
 const AboutUs = () => {
   return (
-    <div className="about-us">
+    <div className="content">
       <div className="contact-text">
         <h1>Om oss</h1>
         <div className="center-text">
@@ -34,48 +35,14 @@ const AboutUs = () => {
       <div>
         <h1>Ansatte/Frivilige</h1>
         <div className="employee-cards">
-          <EmployeeCard
-            image="https://via.placeholder.com/150"
-            name="Ola Nordmann"
-            position="CEO"
-          />
-          <EmployeeCard
-            image="https://via.placeholder.com/150"
-            name="Ola Nordmann"
-            position="CEO"
-          />
-          <EmployeeCard
-            image="https://via.placeholder.com/150"
-            name="Ola Nordmann"
-            position="CEO"
-          />
-          <EmployeeCard
-            image="https://via.placeholder.com/150"
-            name="Ola Nordmann"
-            position="CEO"
-          />
-        </div>
-        <div className="employee-cards">
-          <EmployeeCard
-            image="https://via.placeholder.com/150"
-            name="Ola Nordmann"
-            position="CEO"
-          />
-          <EmployeeCard
-            image="https://via.placeholder.com/150"
-            name="Ola Nordmann"
-            position="CEO"
-          />
-          <EmployeeCard
-            image="https://via.placeholder.com/150"
-            name="Ola Nordmann"
-            position="CEO"
-          />
-          <EmployeeCard
-            image="https://via.placeholder.com/150"
-            name="Ola Nordmann"
-            position="CEO"
-          />
+          {employees.map((employee, index) => (
+            <EmployeeCard
+              key={index}
+              image={employee.image}
+              name={employee.name}
+              position={employee.position}
+            />
+          ))}
         </div>
       </div>
     </div>

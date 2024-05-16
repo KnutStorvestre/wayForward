@@ -1,5 +1,13 @@
 // types.ts
 
+export type Employees = Employee[];
+
+export interface Employee {
+  image: Image;
+  name: string;
+  position: string;
+}
+
 export interface Image {
   url: string;
   alt: string;

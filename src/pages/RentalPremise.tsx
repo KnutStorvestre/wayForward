@@ -1,5 +1,5 @@
 import { ImageSlider } from "../components/common/ImageSlider";
-import "./styles/Building.css";
+import "./styles/RentalPremise.css";
 import { ArrowRight } from "lucide-react";
 
 interface RentalPremiseProps {
