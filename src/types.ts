@@ -1,13 +1,4 @@
 // types.ts
-
-export type Employees = Employee[];
-
-export interface Employee {
-  image: Image;
-  name: string;
-  position: string;
-}
-
 export interface Image {
   url: string;
   alt: string;
@@ -19,9 +10,17 @@ export interface ContactInfo {
   email: string;
 }
 
+export interface Employee {
+  image: Image;
+  name: string;
+  position: string;
+}
+
+export type EmployeeArray = Employee[];
+
 export interface RentalCardData {
   activityTitle: string;
-  image: string;
+  image: Image;
   googleMapsLink: string;
   street: string;
   zipCode: string;
@@ -30,7 +29,7 @@ export interface RentalCardData {
   linkBuilding: string;
 }
 
-export type RentalCardsData = RentalCardData[];
+export type RentalCardDataArray = RentalCardData[];
 
 export interface RentalPremiseData {
   rentalPremiseName: string;
