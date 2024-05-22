@@ -29,3 +29,44 @@
   font-size: 1rem; /* Smaller font size for position */
   color: #666; /* Lighter text color for position */
 }
+
+@media (max-width: 768px) {
+
+  .employee-card {
+    width: 200px; /* Smaller width for card */
+  }
+
+  .employee-image {
+    height: 150px; /* Smaller height for image */
+  }
+
+  .employee-name {
+    font-size: 1rem; /* Smaller font size for name */
+  }
+
+  .employee-position {
+    font-size: 0.875rem; /* Smaller font size for position */
+  }
+}
+
+@media (max-width: 576px) {
+
+  .employee-card {
+    width: 150px; /* Full width for card */
+  }
+
+  .employee-image {
+    height: 150px; /* Reset height for image */
+  }
+}
+
+@media (max-width: 400px) {
+
+  .employee-card {
+    width: 120px; /* Full width for card */
+  }
+
+  .employee-image {
+    height: 110px; /* Reset height for image */
+  }
+}

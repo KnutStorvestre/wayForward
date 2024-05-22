@@ -1,11 +1,12 @@
 import { EmployeeArray } from "../types";
+import squareGuy from "../assets/images/square-guy.jpg";
 
 
 const placeholderImage = "https://via.placeholder.com/150";
 
 const employees: EmployeeArray = [
     {
-      image: {url: placeholderImage, alt: "placeholder"},
+      image: {url: squareGuy, alt: "placeholder"},
       name: "Ola Nordmann",
       position: "CEO",
     },
