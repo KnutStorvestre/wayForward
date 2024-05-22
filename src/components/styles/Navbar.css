@@ -1,14 +1,5 @@
-* {
-  box-sizing: border-box;
-  font-family: inter;
-}
-
 body {
   margin: 0;
-}
-
-.hidden {
-  display: none;
 }
 
 .nav {
