@@ -11,11 +11,23 @@ const HamburgerMenu = () => {
   };
 
   useEffect(() => {
+    const disableScroll = (e: TouchEvent) => {
+      e.preventDefault();
+    };
+
     if (isOpen) {
       document.body.classList.add("no-scroll");
+      document.body.addEventListener("touchmove", disableScroll, {
+        passive: false,
+      });
     } else {
       document.body.classList.remove("no-scroll");
+      document.body.removeEventListener("touchmove", disableScroll);
     }
+
+    return () => {
+      document.body.removeEventListener("touchmove", disableScroll);
+    };
   }, [isOpen]);
 
   return (
