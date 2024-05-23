@@ -28,8 +28,8 @@
 }
 
 .area-card {
-    min-width: 7vw;
-    min-height: 7vw;
+    width: 150px;
+    height: 150px;
     border: 0;
     border-radius: 5px;
     background-color: #99C4CA;
@@ -51,6 +51,32 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+@media (max-width: 768px) {
+    .area-cards {
+        gap: 2rem;
+    }
+
+    .area-card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .area-card header {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .area-card {
+        width: 70px;
+        height: 70px;
+    }
+
+    .area-card header {
+        font-size: 18px;
+    }
 }
 
 
