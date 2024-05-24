@@ -27,7 +27,7 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
       <div className="activity-card">
         <img src={bergenImage} alt="activity" className="activity-image" />
         <div className="activity-text">
-          <h3 className="activity-title">{activityTitle}</h3>
+          <p className="activity-title">{activityTitle}</p>
           <div>
             <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
               <p className="address">{street}</p>
