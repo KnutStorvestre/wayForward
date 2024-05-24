@@ -53,6 +53,22 @@
     line-height: normal;
 }
 
+.hr-header {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.hr-header h1 {
+    white-space: nowrap;
+  }
+  
+  .hr-header hr {
+    width: 100%;
+  }
+
 @media (max-width: 768px) {
     .area-cards {
         gap: 2rem;
