@@ -17,7 +17,25 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <h1>Home</h1>
+      <HrHeader title="Aktiviteter" />
+      <HrHeader title="Utleie" />
+      <HrHeader title="Om oss" />
+      <h1>Logo</h1>
+      <HrHeader title="Partnere" />
+    </div>
+  );
+};
+
+interface HrHeaderProps {
+  title: string;
+}
+
+const HrHeader: React.FC<HrHeaderProps> = ({ title }) => {
+  return (
+    <div className="hr-header">
+      <hr />
+      <h1>{title}</h1>
+      <hr />
     </div>
   );
 };
