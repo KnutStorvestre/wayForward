@@ -24,6 +24,17 @@ const AboutUs = () => {
               adipisicing elit. Animi temporibus harum suscipit quis, quia
               dolores odit dolorem architecto sint officiis fugit, qui nulla
             </p>
+            <header>
+              <h1 className="our-values-header">Våre verdier</h1>
+            </header>
+            <p className="about-us-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              inventore ut soluta ad unde odit, tempora obcaecati iure? Est,
+              qui, repellat laborum maxime excepturi optio nobis quidem fuga
+              eveniet molestiae error exercitationem vel autem nostrum debitis
+              sit et. Corrupti ex pariatur facilis eius atque excepturi sequi
+              similique provident dolor dolore!
+            </p>
           </article>
         </div>
       </section>
