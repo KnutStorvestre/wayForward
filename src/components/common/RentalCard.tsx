@@ -14,13 +14,13 @@ const RentalCard: React.FC<RentalCardData> = ({
 }) => {
   return (
     <div>
-      <div className="activity-card">
+      <div className="rental-card">
         <img src={image.url} alt={image.alt} className="activity-image" />
         <div className="top-bottom">
           <div>
             {" "}
-            <div className="activity-text">
-              <h3 className="activity-title">{activityTitle}</h3>
+            <div className="rental-card-text">
+              <h3 className="rental-card-title">{activityTitle}</h3>
               <div className="flex-row">
                 <a
                   href={googleMapsLink}
@@ -33,7 +33,7 @@ const RentalCard: React.FC<RentalCardData> = ({
                   </div>
                 </a>
               </div>
-              <p className="activity-description">{description}</p>
+              <p>{description}</p>
             </div>
           </div>
           <div className="bottom-info">

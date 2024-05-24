@@ -24,25 +24,31 @@ interface RentalPremiseProps {
 
 const RentalPremise: React.FC<RentalPremiseProps> = ({ data }) => {
   return (
-    <div className="wide-container">
-      <TopText title={data.rentalPremiseName} />
-      <ImageSliderWrapper images={data.images} />
-      <MapLink
-        mapLink={data.mapLink}
-        address={data.address}
-        zipCode={data.zipCode}
-      />
-      <ApartmentDescription description={data.apartmentDescription} />
-      <InfoSection title="Nøkkelinfo" content={data.keyInfo} />
-      <InfoSection title="Fasiliteter" content={data.facilities} />
-      <CalendarSection link={data.calendarLink} />
-      <ContactInfo
-        contactName={data.contactInfo.contactName}
-        phoneNumber={data.contactInfo.phoneNumber}
-        email={data.contactInfo.email}
-      />
-      <PriceSection description={data.priceDescription} />
-      <LocationSection />
+    <div>
+      <div className="top-content-background">
+        <div className="wide-container-top">
+          <TopText title={data.rentalPremiseName} />
+          <ImageSliderWrapper images={data.images} />
+          <MapLink
+            mapLink={data.mapLink}
+            address={data.address}
+            zipCode={data.zipCode}
+          />
+          <ApartmentDescription description={data.apartmentDescription} />
+        </div>
+      </div>
+      <div className="wide-container-bottom">
+        <InfoSection title="Nøkkelinfo" content={data.keyInfo} />
+        <InfoSection title="Fasiliteter" content={data.facilities} />
+        <CalendarSection link={data.calendarLink} />
+        <ContactInfo
+          contactName={data.contactInfo.contactName}
+          phoneNumber={data.contactInfo.phoneNumber}
+          email={data.contactInfo.email}
+        />
+        <PriceSection description={data.priceDescription} />
+        <LocationSection />
+      </div>
     </div>
   );
 };

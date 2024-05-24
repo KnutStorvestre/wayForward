@@ -2,7 +2,7 @@ import { EmployeeArray } from "../types";
 import squareGuy from "../assets/images/square-guy.jpg";
 
 
-const placeholderImage = "https://via.placeholder.com/150";
+/* const placeholderImage = "https://via.placeholder.com/150"; */
 
 const employees: EmployeeArray = [
     {

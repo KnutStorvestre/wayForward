@@ -20,7 +20,7 @@ const Home = () => {
       <HrHeader title="Aktiviteter" />
       <HrHeader title="Utleie" />
       <HrHeader title="Om oss" />
-      <h1>Logo</h1>
+      <p style={{ textAlign: "center" }}>Logo her</p>
       <HrHeader title="Partnere" />
     </div>
   );

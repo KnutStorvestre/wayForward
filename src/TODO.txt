@@ -12,3 +12,6 @@ TODO
 * Padding for text on mobile or small screen.
 * KeyInfo and Fasiliteter fix this for small screens
 * the slideshow should fit the entire image on small laptop screen
+* Legg til fade på hovedside maybe
+* Endre hvitfarge
+* Legge til kart
