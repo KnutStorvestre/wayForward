@@ -1,3 +1,7 @@
+.home-container {
+    background-color: #FCF8F3;
+}
+
 .image-container {
     width: 100%;
 }
@@ -59,7 +63,12 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 16px;
     max-width: 600px;
+    transition: transform 0.2s;
 }
+
+.home-card:hover {
+    transform: scale(1.05);
+  }
   
 .home-card-image {
     width: 40%;
