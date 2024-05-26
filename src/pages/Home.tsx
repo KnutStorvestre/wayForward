@@ -8,21 +8,64 @@ const Home = () => {
     <div>
       <div className="image-container">
         <img className="main-img" src={skywoods} alt="Sky Woods" />
-        <div className="area-cards">
-          <Link to="/landaas" className="no-underline">
-            <AreaCard areaName="Landås" backgroundColor="#99C4CA" />
-          </Link>
-          <Link to="/sotra" className="no-underline">
-            <AreaCard areaName="Sotra" backgroundColor="#FAB46E" />
-          </Link>
-        </div>
       </div>
       <HrHeader title="Aktiviteter" />
+      <div className="home-cards">
+        <Card
+          image="https://via.placeholder.com/250"
+          title="Landås"
+          text="Hvilken type aktiviteter tilbyr vi."
+          path="/landaas"
+        />
+        <Card
+          image="https://via.placeholder.com/250"
+          title="Sotra"
+          text="Hvilken type aktiviteter tilbyr vi."
+          path="/sotra"
+        />
+      </div>
       <HrHeader title="Utleie" />
+      <div className="home-cards">
+        <Card
+          image="https://via.placeholder.com/250"
+          title="Lokaler til leie"
+          text="Hva kan du leie og hvem kan leie og hvorfor leier vi ut lokaler"
+          path="/utleie"
+        />
+      </div>
       <HrHeader title="Om oss" />
-      <p style={{ textAlign: "center" }}>Logo her</p>
+      <div className="home-cards">
+        <Card
+          image="https://via.placeholder.com/250"
+          title="Hvem er vi"
+          text="Hva gjør vi og hvorfor gjør vi det"
+          path="/om-oss"
+        />
+      </div>
       <HrHeader title="Partnere" />
+      <p>Kan trykke på sponsorer</p>
     </div>
+  );
+};
+
+interface CardProps {
+  image: string;
+  title: string;
+  text: string;
+  path: string;
+}
+
+const Card: React.FC<CardProps> = ({ image, title, text, path }) => {
+  return (
+    <Link className="no-underline" to={path}>
+      <div className="home-card">
+        <img src={image} alt={title} className="home-card-image" />
+        <div className="home-card-content">
+          <h2>{title}</h2>
+          <p>{text}</p>
+        </div>
+      </div>
+    </Link>
   );
 };
 
@@ -36,24 +79,6 @@ const HrHeader: React.FC<HrHeaderProps> = ({ title }) => {
       <hr />
       <h1>{title}</h1>
       <hr />
-    </div>
-  );
-};
-
-interface AreaCardProps {
-  areaName: string;
-  backgroundColor: string;
-}
-
-const AreaCard: React.FC<AreaCardProps> = ({ areaName, backgroundColor }) => {
-  return (
-    <div
-      className="area-card"
-      style={{
-        backgroundColor: backgroundColor,
-      }}
-    >
-      <header>{areaName}</header>
     </div>
   );
 };

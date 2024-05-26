@@ -25,6 +25,7 @@
 
 .no-underline {
     text-decoration: none;
+    color: inherit;
 }
 
 .area-card {
@@ -65,9 +66,52 @@
     white-space: nowrap;
   }
   
-  .hr-header hr {
-    width: 100%;
+.hr-header hr {
+width: 100%;
+}
+
+/* src/Card.css */
+
+.home-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.home-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    max-width: 600px;
   }
+  
+  .home-card-image {
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .home-card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .home-card-content h2 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+  }
+  
+  .home-card-content p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+  }
+  
 
 @media (max-width: 768px) {
     .area-cards {
