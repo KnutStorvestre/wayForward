@@ -1,7 +1,3 @@
-.home-container {
-    background-color: #FCF8F3;
-}
-
 .image-container {
     width: 100%;
 }
@@ -56,6 +52,7 @@
 }
 
 .home-card {
+    background-color: white;
     display: flex;
     border: 1px solid #ddd;
     border-radius: 8px;

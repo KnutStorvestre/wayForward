@@ -24,7 +24,7 @@ interface RentalPremiseProps {
 
 const RentalPremise: React.FC<RentalPremiseProps> = ({ data }) => {
   return (
-    <div>
+    <div className="page-container">
       <div className="top-content-background">
         <div className="wide-container-top">
           <TopText title={data.rentalPremiseName} />
