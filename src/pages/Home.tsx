@@ -27,11 +27,11 @@ const Home = () => {
           path="/sotra"
         />
       </div>
-      <HrHeader title="Utleie" />
+      <HrHeader title="Utleie og utlån" />
       <div className="home-cards">
         <Card
           image={OldGermanHouse}
-          title="Lokaler til leie"
+          title="Se våre lokaler"
           text="Hva kan du leie og hvem kan leie og hvorfor leier vi ut lokaler"
           path="/utleie"
         />
