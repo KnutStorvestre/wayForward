@@ -1,7 +1,6 @@
-/* Home.css */
 .image-container {
     width: 100%;
-  }
+}
 
 /* Image styling */
 .main-img {
@@ -11,47 +10,9 @@
     max-height: 1100px;
 }
 
-.area-cards {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4rem;
-}
-
 .no-underline {
     text-decoration: none;
     color: inherit;
-}
-
-.area-card {
-    width: 150px;
-    height: 150px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #99C4CA;
-    display: flex;        /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center;  /* Center vertically */
-    text-align: center;   /* Center text alignment */
-}
-
-.area-card header {
-    width: 100%; /* Take full width of the container */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    flex-direction: column;  /* Stack children vertically */
-    gap: 16px;
-    color: #000;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
 }
 
 .hr-header {
@@ -64,13 +25,24 @@
 
 .hr-header h1 {
     white-space: nowrap;
-  }
+}
   
 .hr-header hr {
-width: 100%;
+    width: 100%;
 }
 
-/* src/Card.css */
+.header-title {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.header-line {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
 
 .home-cards {
     display: flex;
@@ -87,30 +59,30 @@ width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 16px;
     max-width: 600px;
-  }
+}
   
-  .home-card-image {
+.home-card-image {
     width: 40%;
     object-fit: cover;
-  }
+}
   
-  .home-card-content {
+.home-card-content {
     padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+}
   
-  .home-card-content h2 {
+.home-card-content h2 {
     margin: 0 0 8px;
     font-size: 1.5em;
-  }
+}
   
-  .home-card-content p {
+.home-card-content p {
     margin: 0;
     font-size: 1em;
     color: #666;
-  }
+}
   
 
 @media (max-width: 768px) {

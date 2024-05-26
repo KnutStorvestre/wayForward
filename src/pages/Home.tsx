@@ -76,9 +76,9 @@ interface HrHeaderProps {
 const HrHeader: React.FC<HrHeaderProps> = ({ title }) => {
   return (
     <div className="hr-header">
-      <hr />
-      <h1>{title}</h1>
-      <hr />
+      <hr className="header-line" />
+      <h1 className="header-title">{title}</h1>
+      <hr className="header-line" />
     </div>
   );
 };
