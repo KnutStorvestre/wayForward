@@ -44,6 +44,31 @@ const employees: EmployeeArray = [
         image: {url: squareGuy, alt: "placeholder"},
         name: "Anne Larsen",
         position: "COO",
+      },   
+      {
+        image: {url: squareGuy, alt: "placeholder"},
+        name: "Anne Larsen",
+        position: "COO",
+      },   
+      {
+        image: {url: squareGuy, alt: "placeholder"},
+        name: "Anne Larsen",
+        position: "COO",
+      },   
+      {
+        image: {url: squareGuy, alt: "placeholder"},
+        name: "Anne Larsen",
+        position: "COO",
+      },   
+      {
+        image: {url: squareGuy, alt: "placeholder"},
+        name: "Anne Larsen",
+        position: "COO",
+      },   
+      {
+        image: {url: squareGuy, alt: "placeholder"},
+        name: "Anne Larsen",
+        position: "COO",
       },    
   ];
 

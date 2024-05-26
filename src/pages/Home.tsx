@@ -2,6 +2,9 @@ import React from "react";
 import skywoods from "../assets/images/sky-woods.jpg";
 import "./styles/Home.css";
 import { Link } from "react-router-dom";
+import OldHouse from "../assets/images/old-house.jpg";
+import OldGermanHouse from "../assets/images/old-german-house.jpg";
+import ManOnMountain from "../assets/images/man-on-mountain.jpg";
 
 const Home = () => {
   return (
@@ -12,13 +15,13 @@ const Home = () => {
       <HrHeader title="Aktiviteter" />
       <div className="home-cards">
         <Card
-          image="https://via.placeholder.com/250"
+          image={OldHouse}
           title="Landås"
           text="Hvilken type aktiviteter tilbyr vi."
           path="/landaas"
         />
         <Card
-          image="https://via.placeholder.com/250"
+          image={OldHouse}
           title="Sotra"
           text="Hvilken type aktiviteter tilbyr vi."
           path="/sotra"
@@ -27,7 +30,7 @@ const Home = () => {
       <HrHeader title="Utleie" />
       <div className="home-cards">
         <Card
-          image="https://via.placeholder.com/250"
+          image={OldGermanHouse}
           title="Lokaler til leie"
           text="Hva kan du leie og hvem kan leie og hvorfor leier vi ut lokaler"
           path="/utleie"
@@ -36,7 +39,7 @@ const Home = () => {
       <HrHeader title="Om oss" />
       <div className="home-cards">
         <Card
-          image="https://via.placeholder.com/250"
+          image={ManOnMountain}
           title="Hvem er vi"
           text="Hva gjør vi og hvorfor gjør vi det"
           path="/om-oss"
