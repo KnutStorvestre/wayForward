@@ -15,3 +15,32 @@ TODO
 * Legg til fade på hovedside maybe
 * Endre hvitfarge
 * Legge til kart
+
+
+        <div className="area-cards">
+          <Link to="/landaas" className="no-underline">
+            <AreaCard areaName="Landås" backgroundColor="#99C4CA" />
+          </Link>
+          <Link to="/sotra" className="no-underline">
+            <AreaCard areaName="Sotra" backgroundColor="#FAB46E" />
+          </Link>
+        </div>
+
+
+        interface AreaCardProps {
+  areaName: string;
+  backgroundColor: string;
+}
+
+const AreaCard: React.FC<AreaCardProps> = ({ areaName, backgroundColor }) => {
+  return (
+    <div
+      className="area-card"
+      style={{
+        backgroundColor: backgroundColor,
+      }}
+    >
+      <header>{areaName}</header>
+    </div>
+  );
+};
