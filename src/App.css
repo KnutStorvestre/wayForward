@@ -24,3 +24,9 @@ html, body {
   flex-direction: column; /* Stack content vertically */
   justify-content: space-between; /* Space between content and footer */
 }
+
+.page-container {
+  padding-bottom: 90px;
+  background-color: #FCF8F3;
+  min-height: 100vh;
+}

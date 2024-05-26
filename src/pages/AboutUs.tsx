@@ -5,7 +5,7 @@ import employees from "../data/EmployeesData";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className="page-container">
       <section className="top-content-background">
         <div className="content">
           <header>

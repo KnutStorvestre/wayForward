@@ -12,7 +12,7 @@ import UlvsnesoySkolehjem from "../assets/sponsorer/ulvsnesoy-skolehjem-logo.jpe
 
 const Partners = () => {
   return (
-    <div>
+    <div className="page-container">
       <h1 style={{ padding: "6rem 0 2rem 2rem" }}>Partnere</h1>
       <div className="partners">
         <img src={BergenKommuneLogo} alt="Bergen Kommune" />
