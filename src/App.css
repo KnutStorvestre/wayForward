@@ -50,6 +50,19 @@ body {
   margin: auto;
 }
 
+.header-title {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.header-line {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
 @media (max-width: 1200px) {
   .extra-bold-inter {
     font-size: 54px;

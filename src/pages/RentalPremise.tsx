@@ -204,9 +204,10 @@ interface InfoBoxHeaderProps {
 
 const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => (
   <div>
-    <div className="info-box-header-br">
-      <header className="header-info-box">{title}</header>
-      <hr />
+    <div className="hr-header">
+      <hr className="header-line" />
+      <h1 className="header-title">{title}</h1>
+      <hr className="header-line" />
     </div>
   </div>
 );
