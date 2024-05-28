@@ -61,7 +61,7 @@ const activityData = [
 
 const Landaas = () => {
   return (
-    <div className="page-container">
+    <div className="page-container padding-top-4rem">
       <TopText />
       <div className="center-content">
         <div className="activity-cards">
