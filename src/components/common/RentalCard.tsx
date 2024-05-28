@@ -9,7 +9,6 @@ const RentalCard: React.FC<RentalCardData> = ({
   street,
   zipCode: postNumber,
   description,
-  contactInfo,
   linkBuilding,
 }) => {
   return (
@@ -37,11 +36,6 @@ const RentalCard: React.FC<RentalCardData> = ({
             </div>
           </div>
           <div className="bottom-info">
-            <div className="contact-info">
-              <span>Kontakt: {contactInfo.contactName}</span>
-              <span>tlf: {contactInfo.phoneNumber}</span>
-              <span>e-post: {contactInfo.email}</span>
-            </div>
             <Link to={linkBuilding}>
               <button className="button">Les mer</button>
             </Link>

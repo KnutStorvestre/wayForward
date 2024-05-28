@@ -25,7 +25,6 @@ export interface RentalCardData {
   street: string;
   zipCode: string;
   description: string;
-  contactInfo: ContactInfo;
   linkBuilding: string;
 }
 
