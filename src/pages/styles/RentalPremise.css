@@ -5,15 +5,15 @@
 }
 
 .wide-container-bottom {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 2rem 10rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem 10rem 2rem;
 }
 
 .top-content-background {
-    background-color: #fff1d0;
-    width: 100%;
-    text-align: left;
+  background-color: #fff1d0;
+  width: 100%;
+  text-align: left;
 }
 
 .img-slider {
@@ -46,109 +46,109 @@
 }
 
 .extra-bold-inter {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800; /* Extra Bold */
-    font-size: 96px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800; /* Extra Bold */
+  font-size: 96px;
 }
 
 .semibold-inter {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500; /* Semi Bold */
-    font-size: 20px;
-    max-width: 1400px;
-    margin: auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 500; /* Semi Bold */
+  font-size: 20px;
+  max-width: 1400px;
+  margin: auto;
 }
 
-.top-text-box{
-    font-family: 'Inter', sans-serif;
-    font-weight: 600; /* Semi Bold */
-    font-size: 24px;
-    margin: 2rem 0 1rem 0;
-    text-align: center;
+.top-text-box {
+  font-family: "Inter", sans-serif;
+  font-weight: 600; /* Semi Bold */
+  font-size: 24px;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
 }
 
 .center-content {
-    display: flex;
-    justify-content: center
+  display: flex;
+  justify-content: center;
 }
 
 .rental-cards {
-    display: flex;      /* Establishes a flex container */
-    flex-direction: row; /* Arranges items in a row */
-    flex-wrap: wrap;    /* Enables flex items to wrap onto the next line */
-    max-width: 3000px;  /* Sets the maximum width of the container */
-    justify-content: center; /* Aligns items to the start of the container */
-    gap: 4rem;          /* Optional: Adds space between items */
-    margin-top: 2rem;   /* Adds space above the container */
+  display: flex; /* Establishes a flex container */
+  flex-direction: row; /* Arranges items in a row */
+  flex-wrap: wrap; /* Enables flex items to wrap onto the next line */
+  max-width: 3000px; /* Sets the maximum width of the container */
+  justify-content: center; /* Aligns items to the start of the container */
+  gap: 4rem; /* Optional: Adds space between items */
+  margin-top: 2rem; /* Adds space above the container */
 }
 
 .header-info-box {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500; /* Semi Bold */
-    font-size: 28px;
-    max-width: 1400px;
-    margin: auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 500; /* Semi Bold */
+  font-size: 28px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .info-box-header-br {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 hr {
-    margin: 20px 0;
-    width: 100%;
-    border: 1px solid #000;
+  margin: 20px 0;
+  width: 100%;
+  border: 1px solid #000;
 }
 
 .custom-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style-type: none;
-    padding-left: 0;
-    margin: 20px 0 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 20px 0 20px 10px;
 }
 
 .custom-list-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .list-rows {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .contact-info-building {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
 }
 
 .justify-space-between {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .bottom-infobox {
-    padding: 1.2rem 0 0 .5rem;
+  padding: 1.2rem 0 0 0.5rem;
 }
 
-@media (max-width: 1200px){
-    .extra-bold-inter {
-        font-size: 54px;
-    }
-    .semibold-inter {
-        font-size: 20px;
-    }
+@media (max-width: 1200px) {
+  .extra-bold-inter {
+    font-size: 54px;
+  }
+  .semibold-inter {
+    font-size: 20px;
+  }
 }

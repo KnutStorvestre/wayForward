@@ -40,22 +40,25 @@
 
 .hamburger-menu:has(button:focus-visible)::before,
 .hamburger-menu:has(button:focus-visible)::after,
-.hamburger-menu button  :focus-visible {
+.hamburger-menu button :focus-visible {
   border: 1px solid var(--background);
   box-shadow: 0 0 0 1px var(--foreground);
 }
 
 .hamburger-menu::before,
 .hamburger-menu::after,
-.hamburger-menu .menu-btn{
+.hamburger-menu .menu-btn {
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
   background-color: var(--foreground);
   border-radius: 9999px;
   transform-origin: left center;
-  transition: opacity var(--animation-timing), width var(--animation-timing),
-    rotate var(--animation-timing), translate var(--animation-timing),
+  transition:
+    opacity var(--animation-timing),
+    width var(--animation-timing),
+    rotate var(--animation-timing),
+    translate var(--animation-timing),
     background-color var(--animation-timing);
 }
 
@@ -121,7 +124,6 @@
   color: yellow; /* Changes text color to yellow on hover */
 }
 
-
 @media (max-height: 1000px) {
   .menu nav {
     font-size: 3rem;
@@ -158,5 +160,3 @@
   overflow: hidden;
   touch-action: none;
 }
-
-

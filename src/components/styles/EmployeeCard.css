@@ -31,7 +31,6 @@
 }
 
 @media (max-width: 768px) {
-
   .employee-card {
     width: 200px; /* Smaller width for card */
   }
@@ -50,7 +49,6 @@
 }
 
 @media (max-width: 576px) {
-
   .employee-card {
     width: 150px; /* Full width for card */
   }
@@ -61,7 +59,6 @@
 }
 
 @media (max-width: 400px) {
-
   .employee-card {
     width: 120px; /* Full width for card */
   }
