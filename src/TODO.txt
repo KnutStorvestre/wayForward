@@ -21,6 +21,7 @@ TODO
 * legge til sommeraktiviteter paa hjemmesiden
 * legge til kart 
 * legge til kalender
+* kan et av husene leies ut flere ganger paa en dag
 
 import "../styles/RentalCard.css";
 import { Link } from "react-router-dom";
