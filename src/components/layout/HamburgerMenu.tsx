@@ -47,16 +47,16 @@ const HamburgerMenu = () => {
             <Link to="/om-oss">Om oss</Link>
           </div>
           <div>
-            <Link to="/Landaas-aktiviteter">Landås aktiviteter</Link>
+            <Link to="/landaas-aktiviteter">Landås aktiviteter</Link>
           </div>
           <div>
             <Link to="/sotra-aktiviteter">Sotra aktiviteter</Link>
           </div>
           <div>
-            <Link to="/Utleie">Utleie/Utlån av lokaler</Link>
+            <Link to="/utleie">Utleie/Utlån av lokaler</Link>
           </div>
           <div>
-            <Link to="/Partnere">Partnere</Link>
+            <Link to="/partnere">Partnere</Link>
           </div>
         </nav>
       </aside>

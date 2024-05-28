@@ -17,7 +17,7 @@ const rentalCardsData: RentalCardDataArray = [
       phoneNumber: "+47 555 55 555",
       email: "post@wayforward.com",
     },
-    linkBuilding: "/utleie/Femmeren",
+    linkBuilding: "/utleie/femmeren",
   },
   {
     activityTitle: "Luksusvilla i Italia",
