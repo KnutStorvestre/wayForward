@@ -1,12 +1,12 @@
 /* Footer.css */
 .footer {
-  background-color: #5C9D5F; /* Dark background for the footer */
+  background-color: #5c9d5f; /* Dark background for the footer */
   min-width: 100vw;
   text-align: left; /* Centering the text */
   font-size: 14px; /* Font size */
   padding: 3vh 0; /* Padding on the top and bottom */
 }
-  
+
 .footer-content {
   display: flex;
   flex-direction: row; /* Stacking children vertically */
@@ -20,21 +20,21 @@
   gap: 15px; /* Space between items */
   margin: 0;
 }
-  
+
 .footer a {
   font-weight: 600;
   font-size: 1rem;
   color: black; /* A light green color for links */
   text-decoration: none; /* No underline */
 }
-  
+
 .footer a:hover {
   text-decoration: underline; /* Underline on hover for better UX */
 }
-  
+
 .social-media {
   display: flex;
-  align-items:last baseline; /* Align items to the baseline */
+  align-items: last baseline; /* Align items to the baseline */
   gap: 20px; /* Space between social media links */
 }
 
@@ -47,14 +47,15 @@
 .social-media a img:hover {
   opacity: 0.6; /* Slightly reduce opacity on hover */
 }
-  
+
 .social-media a {
   display: inline-block; /* For better control over alignment and spacing */
   margin-right: 10px; /* Add some space to the right of the link if needed */
 }
 
 @media (max-width: 425px) {
-  .footer-content-left, .social-media {
+  .footer-content-left,
+  .social-media {
     align-items: center;
     gap: 10px;
     align-items: baseline;

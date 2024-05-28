@@ -80,7 +80,6 @@
     flex: 1 1 calc(25% - 2rem); /* Four cards per row with gap */
     max-width: calc(25% - 2rem); /* Ensure max width */
   }
-
 }
 
 @media (max-width: 600px) {
