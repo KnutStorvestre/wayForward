@@ -44,3 +44,21 @@ export interface RentalPremiseData {
   contactInfo: ContactInfo;
   priceDescription: string;
 }
+
+export interface Activity {
+  activityTitle: string;
+  googleMapsLink: string;
+  street: string;
+  zipCode: string;
+  time: string;
+  ageGroup: string;
+  description: string;
+}
+
+export interface ActivitiesPageData {
+  title: string;
+  topText: string;
+  facebookLink: string;
+  instagramLink: string;
+  activities: Activity[];
+}
