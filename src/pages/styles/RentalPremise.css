@@ -8,13 +8,13 @@
     max-width: 1200px;
     margin: auto;
     padding: 0 2rem 10rem 2rem;
-  }
+}
 
 .top-content-background {
     background-color: #fff1d0;
     width: 100%;
     text-align: left;
-  }
+}
 
 .img-slider {
   max-width: 1200px;
@@ -65,7 +65,6 @@
     font-size: 24px;
     margin: 2rem 0 1rem 0;
     text-align: center;
-    padding: 4rem 0 0 0;
 }
 
 .center-content {

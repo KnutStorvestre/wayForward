@@ -89,7 +89,10 @@
     font-size: 1em;
     color: #666;
 }
-  
+
+.padding-top-home {
+    padding-top: 7rem;
+}
 
 @media (max-width: 768px) {
     .area-cards {
@@ -104,6 +107,10 @@
     .area-card header {
         font-size: 24px;
     }
+
+    .padding-top-home {
+        padding-top: 0;
+      }
 }
 
 @media (max-width: 480px) {

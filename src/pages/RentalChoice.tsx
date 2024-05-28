@@ -1,10 +1,10 @@
-import "./styles/Rental.css";
+import "./styles/RentalChoice.css";
 import RentalCard from "../components/common/RentalCard";
 import rentalCardsData from "../data/RentalCardsData";
 
 const Rental = () => {
   return (
-    <div className="page-container">
+    <div className="page-container padding-top-4rem">
       <TopText />
       <div className="center-content">
         <div className="activity-cards">

@@ -8,7 +8,7 @@ import ManOnMountain from "../assets/images/man-on-mountain.jpg";
 
 const Home = () => {
   return (
-    <div className="page-container">
+    <div className="page-container padding-top-home">
       <div className="image-container">
         <img className="main-img" src={skywoods} alt="Sky Woods" />
       </div>

@@ -30,3 +30,7 @@ html, body {
   background-color: #FCF8F3;
   min-height: 100vh;
 }
+
+.padding-top-4rem {
+  padding-top: 4rem;
+}
