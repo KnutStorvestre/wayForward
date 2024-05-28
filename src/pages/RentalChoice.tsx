@@ -7,7 +7,7 @@ const Rental = () => {
     <div className="page-container padding-top-4rem">
       <TopText />
       <div className="center-content">
-        <div className="activity-cards">
+        <div className="rental-cards">
           {rentalCardsData.map((activity, index) => (
             <RentalCard
               key={index}
@@ -31,7 +31,7 @@ function TopText() {
   return (
     <div className="top-text">
       <h1 className="extra-bold-inter">Utleie/Utlån av lokaler</h1>
-      <p className="semibold-inter">
+      <p className="semi-bold-inter">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, error,
         iste vel commodi possimus rem accusantium numquam consectetur magni id
         hic ullam blanditiis adipisci labore debitis voluptatem ab porro

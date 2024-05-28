@@ -65,7 +65,7 @@ const TopText: React.FC<TopTextProps> = ({
   return (
     <div className="top-text">
       <h1 className="extra-bold-inter">{title}</h1>
-      <p className="semibold-inter">
+      <p className="semi-bold-inter">
         {topText}{" "}
         <a href={facebookLink} target="_blank" rel="noopener noreferrer">
           Facebook

@@ -1,11 +1,3 @@
-.semibold-inter {
-  font-family: "Inter", sans-serif;
-  font-weight: 600; /* Semi Bold */
-  font-size: 32px;
-  max-width: 1000px;
-  margin: auto;
-}
-
 .top-text {
   font-family: "Inter", sans-serif;
   font-weight: 600; /* Semi Bold */
@@ -31,12 +23,6 @@
 }
 
 @media (max-width: 1200px) {
-  .extra-bold-inter {
-    font-size: 54px;
-  }
-  .semibold-inter {
-    font-size: 20px;
-  }
   .activity-cards {
     max-width: 100%;
     gap: 2rem;

@@ -85,7 +85,7 @@ interface ApartmentDescriptionProps {
 const ApartmentDescription: React.FC<ApartmentDescriptionProps> = ({
   description,
 }) => {
-  return <p className="semibold-inter">{description}</p>;
+  return <p className="semi-bold-inter">{description}</p>;
 };
 
 interface InfoSectionProps {
