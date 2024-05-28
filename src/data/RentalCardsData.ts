@@ -11,8 +11,8 @@ const rentalCardsData: RentalCardDataArray = [
     street: "museplassen 3",
     zipCode: "5007 Bergen",
     description:
-      `Ønsker du å bo i et moderne hus i Bergen? Da er dette tilbudet for deg.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, error, iste vel commodi possimus rem accusantium numquam consectetur magni id hic ullam blanditiis adipisci labore debitis voluptatem ab porro officiis consequatur. Tempore ipsum incidunt blanditiis molestias et`,
+      `Ønsker dullam blanditiis adipis porro officiis consequatur. Tempore ipsum incidunt blanditiis molestias et adipis porro officiis consequatur. Tempore ipsum incidunt blanditiis molestias et
+      adipis porro officiis consequatur. Tempore ipsum incidunt blanditiis molestias et`,
     linkBuilding: "/utleie/femmeren",
   },
   {
@@ -23,7 +23,7 @@ const rentalCardsData: RentalCardDataArray = [
     street: "museplassen 3",
     zipCode: "5007 Bergen",
     description:
-      `Ønsker du å bo i en luksusvilla i Italia? Da er dette tilbudet for deg. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, error, iste vel commodi possimus rem accusantium numquam consectetur magni id hic ullam blanditiis adipisci labore debitis voluptatem ab porro officiis consequatur. Tempore ipsum incidunt blanditiis molestias et`,
+      `Ønsker du å bo i en`,
     linkBuilding: "/utleie/sotra-utleie",
   },
 ];
