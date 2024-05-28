@@ -35,3 +35,26 @@ body {
 .padding-top-4rem {
   padding-top: 4rem;
 }
+
+.extra-bold-inter {
+  font-family: "Inter", sans-serif;
+  font-weight: 800; /* Extra Bold */
+  font-size: 76px;
+}
+
+.semi-bold-inter {
+  font-family: "Inter", sans-serif;
+  font-weight: 500; /* Semi Bold */
+  font-size: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .extra-bold-inter {
+    font-size: 54px;
+  }
+  .semi-bold-inter {
+    font-size: 20px;
+  }
+}
