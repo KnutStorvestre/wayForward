@@ -22,36 +22,30 @@ interface RentalPremiseProps {
   };
 }
 
-const RentalPremise: React.FC<RentalPremiseProps> = ({ data }) => {
-  return (
-    <div className="page-container">
-      <div className="top-content-background">
-        <div className="wide-container-top">
-          <TopText title={data.rentalPremiseName} />
-          <ImageSliderWrapper images={data.images} />
-          <MapLink
-            mapLink={data.mapLink}
-            address={data.address}
-            zipCode={data.zipCode}
-          />
-          <ApartmentDescription description={data.apartmentDescription} />
-        </div>
-      </div>
-      <div className="wide-container-bottom">
-        <InfoSection title="Nøkkelinfo" content={data.keyInfo} />
-        <InfoSection title="Fasiliteter" content={data.facilities} />
-        <CalendarSection link={data.calendarLink} />
-        <ContactInfo
-          contactName={data.contactInfo.contactName}
-          phoneNumber={data.contactInfo.phoneNumber}
-          email={data.contactInfo.email}
+const RentalPremise: React.FC<RentalPremiseProps> = ({ data }) => (
+  <div className="page-container">
+    <div className="top-content-background">
+      <div className="wide-container-top">
+        <TopText title={data.rentalPremiseName} />
+        <ImageSliderWrapper images={data.images} />
+        <MapLink
+          mapLink={data.mapLink}
+          address={data.address}
+          zipCode={data.zipCode}
         />
-        <PriceSection description={data.priceDescription} />
-        <LocationSection />
+        <ApartmentDescription description={data.apartmentDescription} />
       </div>
     </div>
-  );
-};
+    <div className="wide-container-bottom">
+      <InfoSection title="Nøkkelinfo" content={data.keyInfo} />
+      <InfoSection title="Fasiliteter" content={data.facilities} />
+      <CalendarSection link={data.calendarLink} />
+      <ContactInfo {...data.contactInfo} />
+      <PriceSection description={data.priceDescription} />
+      <LocationSection />
+    </div>
+  </div>
+);
 
 interface ImageSliderWrapperProps {
   images: { url: string; alt: string }[];
@@ -84,9 +78,7 @@ interface ApartmentDescriptionProps {
 
 const ApartmentDescription: React.FC<ApartmentDescriptionProps> = ({
   description,
-}) => {
-  return <p className="semi-bold-inter">{description}</p>;
-};
+}) => <p className="semi-bold-inter">{description}</p>;
 
 interface InfoSectionProps {
   title: string;
@@ -129,25 +121,23 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
   contactName,
   phoneNumber,
   email,
-}) => {
-  return (
-    <div>
-      <InfoBoxHeader title="Kontakt" />
-      <div className="bottom-infobox">
-        <div className="justify-space-between">
-          <div>
-            <p>Noe du lurer på?</p>
-          </div>
-          <div className="contact-info-building">
-            <span>Kontakt: {contactName}</span>
-            <span>tlf: {phoneNumber}</span>
-            <span>e-post: {email}</span>
-          </div>
+}) => (
+  <div>
+    <InfoBoxHeader title="Kontakt" />
+    <div className="bottom-infobox">
+      <div className="justify-space-between">
+        <div>
+          <p>Noe du lurer på?</p>
+        </div>
+        <div className="contact-info-building">
+          <span>Kontakt: {contactName}</span>
+          <span>tlf: {phoneNumber}</span>
+          <span>e-post: {email}</span>
         </div>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 interface PriceSectionProps {
   description: string;
@@ -185,46 +175,40 @@ interface InfoListsProps {
   keyInfo: string[][];
 }
 
-const InfoLists: React.FC<InfoListsProps> = ({ keyInfo }) => {
-  return (
-    <div className="list-rows">
-      {keyInfo.map((list, index) => (
-        <ul key={index} className="custom-list">
-          {list.map((item, idx) => (
-            <CustomListItem key={idx}>{item}</CustomListItem>
-          ))}
-        </ul>
-      ))}
-    </div>
-  );
-};
+const InfoLists: React.FC<InfoListsProps> = ({ keyInfo }) => (
+  <div className="list-rows">
+    {keyInfo.map((list, index) => (
+      <ul key={index} className="custom-list">
+        {list.map((item, idx) => (
+          <CustomListItem key={idx}>{item}</CustomListItem>
+        ))}
+      </ul>
+    ))}
+  </div>
+);
 
 interface CustomListItemProps {
   children: React.ReactNode;
 }
 
-const CustomListItem: React.FC<CustomListItemProps> = ({ children }) => {
-  return (
-    <li className="custom-list-item">
-      <ArrowRight color="black" size={16} />
-      {children}
-    </li>
-  );
-};
+const CustomListItem: React.FC<CustomListItemProps> = ({ children }) => (
+  <li className="custom-list-item">
+    <ArrowRight color="black" size={16} />
+    {children}
+  </li>
+);
 
 interface InfoBoxHeaderProps {
   title: string;
 }
 
-const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => {
-  return (
-    <div>
-      <div className="info-box-header-br">
-        <header className="header-info-box">{title}</header>
-        <hr />
-      </div>
+const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => (
+  <div>
+    <div className="info-box-header-br">
+      <header className="header-info-box">{title}</header>
+      <hr />
     </div>
-  );
-};
+  </div>
+);
 
 export default RentalPremise;
