@@ -15,6 +15,12 @@ TODO
 * Legg til fade på hovedside maybe
 * Endre hvitfarge
 * Legge til kart
+* legge til fane ikon
+* legge til margin på toppen av hovedsiden slik at hamburger menyen er mer synlig.
+* legge til padding på toppen av aktiviteter
+* legge til sommeraktiviteter paa hjemmesiden
+* legge til kart 
+* legge til kalender
 
 
         <div className="area-cards">
