@@ -17,7 +17,6 @@ const Rental = () => {
               street={activity.street}
               zipCode={activity.zipCode}
               description={activity.description}
-              contactInfo={activity.contactInfo}
               linkBuilding={activity.linkBuilding}
             />
           ))}

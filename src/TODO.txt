@@ -22,70 +22,62 @@ TODO
 * legge til kart 
 * legge til kalender
 
-
-        <div className="area-cards">
-          <Link to="/landaas" className="no-underline">
-            <AreaCard areaName="Landås" backgroundColor="#99C4CA" />
-          </Link>
-          <Link to="/sotra" className="no-underline">
-            <AreaCard areaName="Sotra" backgroundColor="#FAB46E" />
-          </Link>
-        </div>
+import "../styles/RentalCard.css";
+import { Link } from "react-router-dom";
+import { RentalCardData } from "../../types";
 
 
-        interface AreaCardProps {
-  areaName: string;
-  backgroundColor: string;
-}
 
-const AreaCard: React.FC<AreaCardProps> = ({ areaName, backgroundColor }) => {
+
+
+const RentalCard: React.FC<RentalCardData> = ({
+  activityTitle,
+  image,
+  googleMapsLink,
+  street,
+  zipCode: postNumber,
+  description,
+  contactInfo,
+  linkBuilding,
+}) => {
   return (
-    <div
-      className="area-card"
-      style={{
-        backgroundColor: backgroundColor,
-      }}
-    >
-      <header>{areaName}</header>
+    <div>
+      <div className="rental-card">
+        <img src={image.url} alt={image.alt} className="activity-image" />
+        <div className="top-bottom">
+          <div>
+            {" "}
+            <div className="rental-card-text">
+              <h3 className="rental-card-title">{activityTitle}</h3>
+              <div className="flex-row">
+                <a
+                  href={googleMapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="flex-column">
+                    <span className="address">{street}</span>
+                    <span className="address">{postNumber}</span>
+                  </div>
+                </a>
+              </div>
+              <p>{description}</p>
+            </div>
+          </div>
+          <div className="bottom-info">
+            <div className="contact-info">
+              <span>Kontakt: {contactInfo.contactName}</span>
+              <span>tlf: {contactInfo.phoneNumber}</span>
+              <span>e-post: {contactInfo.email}</span>
+            </div>
+            <Link to={linkBuilding}>
+              <button className="button">Les mer</button>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-.area-cards {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.area-card header {
-    width: 100%; /* Take full width of the container */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    flex-direction: column;  /* Stack children vertically */
-    gap: 16px;
-    color: #000;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-
-.area-card {
-    width: 150px;
-    height: 150px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #99C4CA;
-    display: flex;        /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center;  /* Center vertically */
-    text-align: center;   /* Center text alignment */
-}
+export default RentalCard;

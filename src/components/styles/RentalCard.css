@@ -48,20 +48,8 @@
 .bottom-info {
   display: flex;
   flex-direction: row;
+  justify-content: right;
   padding: 0 16px 1rem 34px;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  width: 100%;
-
-  color: #000;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .button {
