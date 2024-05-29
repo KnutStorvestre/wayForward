@@ -22,6 +22,7 @@ TODO
 * legge til kart 
 * legge til kalender
 * kan et av husene leies ut flere ganger paa en dag
+* gammel farge #A7E198
 
 import "../styles/RentalCard.css";
 import { Link } from "react-router-dom";

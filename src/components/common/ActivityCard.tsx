@@ -30,8 +30,8 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
           <p className="activity-title">{activityTitle}</p>
           <div>
             <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
-              <p className="address">{street}</p>
-              <p className="address">{postNumber}</p>
+              <p className="address-activity">{street}</p>
+              <p className="address-activity">{postNumber}</p>
             </a>
           </div>
           <div className="time">
