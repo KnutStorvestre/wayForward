@@ -1,16 +1,22 @@
 /* Footer.css */
 .footer {
-  background-color: #5c9d5f; /* Dark background for the footer */
+  background-color: #5c9d5f; /* 5c9d5f Dark background for the footer */
   min-width: 100vw;
   text-align: left; /* Centering the text */
   font-size: 14px; /* Font size */
   padding: 3vh 0; /* Padding on the top and bottom */
 }
 
+.wide-container-footer {
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+}
+
 .footer-content {
   display: flex;
   flex-direction: row; /* Stacking children vertically */
-  justify-content: space-around; /* Space between items */
+  justify-content: space-between; /* Space between items */
   gap: 100px; /* Space between items */
 }
 
@@ -29,7 +35,7 @@
 }
 
 .footer a:hover {
-  text-decoration: underline; /* Underline on hover for better UX */
+  text-decoration: underline;
 }
 
 .social-media {
