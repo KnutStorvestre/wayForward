@@ -14,7 +14,7 @@ const RentalCard: React.FC<RentalCardData> = ({
   return (
     <div>
       <div className="rental-card">
-        <img src={image.url} alt={image.alt} className="activity-image" />
+        <img src={image.url} alt={image.alt} />
         <div className="top-bottom">
           <div>
             {" "}
