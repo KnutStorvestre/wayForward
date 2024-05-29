@@ -24,25 +24,27 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
 }) => {
   return (
     <div>
-      <div className="activity-card">
-        <img src={bergenImage} alt="activity" className="activity-image" />
-        <div className="activity-text">
-          <p className="activity-title">{activityTitle}</p>
+      <div className="card-activity">
+        <img src={bergenImage} alt="activity" className="image-activity" />
+        <div className="text-activity">
+          <p className="title-activity">{activityTitle}</p>
           <div>
             <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
               <p className="address-activity">{street}</p>
               <p className="address-activity">{postNumber}</p>
             </a>
           </div>
-          <div className="time">
-            <img src={calender} alt="calender" />
-            <p>{time}</p>
+          <div className="time-age-activity">
+            <div className="time">
+              <img src={calender} alt="calender" />
+              <p>{time}</p>
+            </div>
+            <div className="age-group">
+              <img src={people} alt="people" />
+              <p>{ageGroup}</p>
+            </div>
           </div>
-          <div className="age-group">
-            <img src={people} alt="people" />
-            <p>{ageGroup}</p>
-          </div>
-          <p className="activity-description">{description}</p>
+          <p className="description-activity">{description}</p>
         </div>
       </div>
     </div>

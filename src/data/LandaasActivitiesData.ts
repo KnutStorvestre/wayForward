@@ -37,7 +37,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       time: "Tirsdag 15:00 - 19:00",
       ageGroup: "1 - 7 klasse",
       description:
-        "Kan fikse alle typer sykler. Det er bare å ta med sykkelen din og komme innom.",
+        "Kan fikse alle typer sykler. Det er bare å ta med sykkelen din og komme innom. lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       activityTitle: "Jentegruppe",
@@ -48,7 +48,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       time: "Tirsdag 15:00 - 17:00",
       ageGroup: "1 - 4 klasse",
       description:
-        "Nye aktiviteter hver uke. aktiviteter som gocart, sykling, klatring, og mye mer.",
+        "Nye aktiviteter hver uke. aktiviteter som gocart, sykling, klatring, og mye mer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       activityTitle: "Leksehjelp 2",
