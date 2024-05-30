@@ -18,6 +18,10 @@ TODO
 * add arrow to activity boxes
 * show that a box is clickable by making it larger
 * make the rental premises choise smaller 
+* Kansje putte overskriften nedenfor image slider
+* Endre bakgrunnsfarge 
+* lage overskrift i lysere farge 
+* legge til at det er paa landaas eller Sotra 
 
 
 
