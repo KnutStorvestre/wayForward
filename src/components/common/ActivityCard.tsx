@@ -17,9 +17,6 @@ interface ActivityCardProps {
 
 const ActivityCard: React.FC<ActivityCardProps> = ({
   activityTitle,
-  googleMapsLink,
-  street,
-  zipCode: postNumber,
   time,
   ageGroup,
   description,
