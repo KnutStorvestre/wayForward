@@ -3,6 +3,7 @@ import bergenImage from "../../assets/images/Bergen.png";
 import calender from "../../assets/images/calender.png";
 import people from "../../assets/images/people.png";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ActivityCardProps {
   activityTitle: string;
@@ -25,32 +26,38 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
 }) => {
   return (
     <div>
-      <div className="card-activity">
-        <img src={bergenImage} alt="activity" className="image-activity" />
-        <div className="text-activity">
-          <p className="title-activity">{activityTitle}</p>
-          <div>
-            <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
-              <p className="address-activity">{street}</p>
-              <p className="address-activity">{postNumber}</p>
-            </a>
-          </div>
-          <div className="time-age-activity">
-            <div className="time">
-              <img src={calender} alt="calender" />
-              <p>{time}</p>
+      <Link to="/landaas-aktiviteter/leksehjelp" className="card-activity-link">
+        <div className="card-activity">
+          <img src={bergenImage} alt="activity" className="image-activity" />
+          <div className="text-activity">
+            <p className="title-activity">{activityTitle}</p>
+            <div>
+              <a
+                href={googleMapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="address-activity">{street}</p>
+                <p className="address-activity">{postNumber}</p>
+              </a>
             </div>
-            <div className="age-group">
-              <img src={people} alt="people" />
-              <p>{ageGroup}</p>
+            <div className="time-age-activity">
+              <div className="time">
+                <img src={calender} alt="calender" />
+                <p>{time}</p>
+              </div>
+              <div className="age-group">
+                <img src={people} alt="people" />
+                <p>{ageGroup}</p>
+              </div>
             </div>
-          </div>
-          <p className="description-activity">{description}</p>
-          <div className="bottom-arrow-activity">
-            <ArrowRight className="arrow-icon" color="black" size={22} />
+            <p className="description-activity">{description}</p>
+            <div className="bottom-arrow-activity">
+              <ArrowRight className="arrow-icon" color="black" size={24} />
+            </div>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
