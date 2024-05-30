@@ -29,19 +29,21 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
       <Link to="/landaas-aktiviteter/leksehjelp" className="card-activity-link">
         <div className="card-activity">
           <img src={bergenImage} alt="activity" className="image-activity" />
-          <div className="text-activity">
-            <p className="title-activity">{activityTitle}</p>
-            <div className="time-age-activity">
-              <div className="time">
-                <img src={calender} alt="calender" />
-                <p>{time}</p>
+          <div className="text-arrow-activity">
+            <div className="text-activity">
+              <p className="title-activity">{activityTitle}</p>
+              <div className="time-age-activity">
+                <div className="time">
+                  <img src={calender} alt="calender" />
+                  <p>{time}</p>
+                </div>
+                <div className="age-group">
+                  <img src={people} alt="people" />
+                  <p>{ageGroup}</p>
+                </div>
               </div>
-              <div className="age-group">
-                <img src={people} alt="people" />
-                <p>{ageGroup}</p>
-              </div>
+              <p className="description-activity">{description}</p>
             </div>
-            <p className="description-activity">{description}</p>
             <div className="bottom-arrow-activity">
               <ArrowRight className="arrow-icon" color="black" size={24} />
             </div>
