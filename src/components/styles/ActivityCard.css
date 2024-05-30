@@ -27,6 +27,12 @@
   transform: translateX(5px);
 }
 
+.text-arrow-activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .text-activity {
   padding: 1rem 16px 1rem 34px;
   text-align: left;
@@ -102,6 +108,7 @@
 
 .arrow-icon {
   transition: transform 0.3s ease;
+  margin: 0 20px 16px 0;
 }
 
 @media (max-width: 1200px) {
