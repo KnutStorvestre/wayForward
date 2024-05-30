@@ -27,12 +27,6 @@
   transform: translateX(5px);
 }
 
-.text-arrow-activity {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .text-activity {
   padding: 1rem 16px 1rem 34px;
   text-align: left;
@@ -101,14 +95,13 @@
 }
 
 .bottom-arrow-activity {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
+  align-self: flex-end; /* Align to the bottom */
+  margin-top: auto; /* Push it to the bottom */
+  margin-right: 16px;
 }
 
 .arrow-icon {
   transition: transform 0.3s ease;
-  margin: 0 20px 16px 0;
 }
 
 @media (max-width: 1200px) {
@@ -118,7 +111,6 @@
   .card-activity {
     flex-direction: column;
     max-width: 300px;
-    min-height: 590px;
   }
   .age-group img {
     width: 30px;
@@ -140,6 +132,7 @@
   }
   .text-activity {
     padding: 1rem 16px 1rem 16px;
+    min-height: 310px;
   }
   .title-activity {
     font-size: 34px;
