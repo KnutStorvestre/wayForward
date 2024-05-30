@@ -9,7 +9,6 @@
 }
 
 .text-activity {
-  /* Add styles for the text container */
   padding: 1rem 16px 1rem 34px;
   text-align: left;
   display: flex;
@@ -66,8 +65,6 @@
 }
 
 .image-activity {
-  /* Add styles for the image container */
-
   width: 400px;
   height: 330px;
 }
