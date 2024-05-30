@@ -2,6 +2,7 @@ import Navbar from "./components/layout/Navbar";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import LandaasActivities from "./pages/LandaasActivities";
+import HomeWorkHelp from "./pages/HomeworkHelp";
 import SotraActivities from "./pages/SotraActivities";
 import RentalChoice from "./pages/RentalChoice";
 import Partners from "./pages/Partners";
@@ -21,6 +22,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/om-oss" element={<AboutUs />} />
         <Route path="/landaas-aktiviteter" element={<LandaasActivities />} />
+        <Route
+          path="/landaas-aktiviteter/leksehjelp"
+          element={<HomeWorkHelp />}
+        />
         <Route path="/sotra-aktiviteter" element={<SotraActivities />} />
         <Route path="/utleie" element={<RentalChoice />} />
         <Route path="/utleie/femmeren" element={<Femmeren />} />
