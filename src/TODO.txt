@@ -20,12 +20,14 @@ TODO
 * make the rental premises choise smaller 
 
 
+
 TODO spørsmål til møte 
 * farge på footer
 * legge til kart
 * Kan hus leies flere ganger på en dag
 * Hvordan vise sponsorer
 * Legge til fine bilder
+* Hoover bli større eller endre farge
 
 
 

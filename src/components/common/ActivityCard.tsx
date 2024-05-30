@@ -2,6 +2,7 @@ import "../styles/ActivityCard.css";
 import bergenImage from "../../assets/images/Bergen.png";
 import calender from "../../assets/images/calender.png";
 import people from "../../assets/images/people.png";
+import { ArrowRight } from "lucide-react";
 
 interface ActivityCardProps {
   activityTitle: string;
@@ -45,6 +46,9 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
             </div>
           </div>
           <p className="description-activity">{description}</p>
+          <div className="bottom-arrow-activity">
+            <ArrowRight color="black" size={22} />
+          </div>
         </div>
       </div>
     </div>
