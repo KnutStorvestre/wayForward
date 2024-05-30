@@ -47,7 +47,7 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
           </div>
           <p className="description-activity">{description}</p>
           <div className="bottom-arrow-activity">
-            <ArrowRight color="black" size={22} />
+            <ArrowRight className="arrow-icon" color="black" size={22} />
           </div>
         </div>
       </div>
