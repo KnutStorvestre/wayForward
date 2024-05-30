@@ -14,6 +14,11 @@
   transition: box-shadow 0.3s ease;
 }
 
+.card-activity:hover .text-activity {
+  text-decoration: underline;
+  /* What is best all text underline or just the title */
+}
+
 .card-activity:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
