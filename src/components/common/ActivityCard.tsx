@@ -31,16 +31,6 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
           <img src={bergenImage} alt="activity" className="image-activity" />
           <div className="text-activity">
             <p className="title-activity">{activityTitle}</p>
-            <div>
-              <a
-                href={googleMapsLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p className="address-activity">{street}</p>
-                <p className="address-activity">{postNumber}</p>
-              </a>
-            </div>
             <div className="time-age-activity">
               <div className="time">
                 <img src={calender} alt="calender" />
