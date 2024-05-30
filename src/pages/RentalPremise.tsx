@@ -22,26 +22,36 @@ interface RentalPremiseProps {
   };
 }
 
-const RentalPremise: React.FC<RentalPremiseProps> = ({ data }) => (
+const RentalPremise: React.FC<RentalPremiseProps> = ({
+  data: {
+    rentalPremiseName,
+    images,
+    mapLink,
+    address,
+    zipCode,
+    apartmentDescription,
+    keyInfo,
+    facilities,
+    calendarLink,
+    contactInfo,
+    priceDescription,
+  },
+}) => (
   <div className="page-container">
     <div className="top-content-background">
       <div className="wide-container-top">
-        <TopText title={data.rentalPremiseName} />
-        <ImageSliderWrapper images={data.images} />
-        <MapLink
-          mapLink={data.mapLink}
-          address={data.address}
-          zipCode={data.zipCode}
-        />
-        <ApartmentDescription description={data.apartmentDescription} />
+        <TopText title={rentalPremiseName} />
+        <ImageSliderWrapper images={images} />
+        <MapLink mapLink={mapLink} address={address} zipCode={zipCode} />
+        <ApartmentDescription description={apartmentDescription} />
       </div>
     </div>
     <div className="wide-container-bottom">
-      <InfoSection title="Nøkkelinfo" content={data.keyInfo} />
-      <InfoSection title="Fasiliteter" content={data.facilities} />
-      <CalendarSection link={data.calendarLink} />
-      <ContactInfo {...data.contactInfo} />
-      <PriceSection description={data.priceDescription} />
+      <InfoSection title="Nøkkelinfo" content={keyInfo} />
+      <InfoSection title="Fasiliteter" content={facilities} />
+      <CalendarSection link={calendarLink} />
+      <ContactInfo {...contactInfo} />
+      <PriceSection description={priceDescription} />
       <LocationSection />
     </div>
   </div>
