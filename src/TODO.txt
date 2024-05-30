@@ -22,6 +22,7 @@ TODO
 * Endre bakgrunnsfarge 
 * lage overskrift i lysere farge 
 * legge til at det er paa landaas eller Sotra 
+* make the header smaller for activitis when user has a small phone
 
 
 
