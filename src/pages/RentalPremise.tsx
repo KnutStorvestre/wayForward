@@ -88,7 +88,11 @@ interface ApartmentDescriptionProps {
 
 const ApartmentDescription: React.FC<ApartmentDescriptionProps> = ({
   description,
-}) => <p className="semi-bold-inter">{description}</p>;
+}) => (
+  <div className={styles.paddingBottom2rem}>
+    <p className="semi-bold-inter">{description}</p>
+  </div>
+);
 
 interface InfoSectionProps {
   title: string;
