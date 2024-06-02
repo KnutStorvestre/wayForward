@@ -1,22 +1,22 @@
-import "./styles/AboutUs.css";
 import EmployeeCard from "../components/common/EmployeeCard";
 import GroupPhoto from "../assets/images/group-people.jpg";
 import employees from "../data/EmployeesData";
+import styles from "./styles/AboutUs.module.css"; // Import CSS module
 
 const AboutUs = () => {
   return (
-    <div className="page-container">
-      <section className="top-content-background">
-        <div className="content">
+    <div className={styles.pageContainer}>
+      <section className={styles.topContentBackground}>
+        <div className={styles.content}>
           <header>
-            <h1 className="main-header">Om oss</h1>
+            <h1 className={styles.mainHeader}>Om oss</h1>
           </header>
-          <article className="center-text">
-            <p className="about-us-text">
+          <article className={styles.centerText}>
+            <p className={styles.aboutUsText}>
               Har du spørsmål eller ønsker å komme i kontakt med oss? Send oss
               en melding på e-post eller ring oss.
             </p>
-            <p className="about-us-text">
+            <p className={styles.aboutUsText}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem id
               saepe nihil! Voluptatum magnam eligendi aut quisquam iure, ea
               placeat eaque, aperiam optio sed non qui, nemo laborum doloribus
@@ -25,9 +25,9 @@ const AboutUs = () => {
               dolores odit dolorem architecto sint officiis fugit, qui nulla
             </p>
             <header>
-              <h1 className="our-values-header">Våre verdier</h1>
+              <h1 className={styles.ourValuesHeader}>Våre verdier</h1>
             </header>
-            <p className="about-us-text">
+            <p className={styles.aboutUsText}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               inventore ut soluta ad unde odit, tempora obcaecati iure? Est,
               qui, repellat laborum maxime excepturi optio nobis quidem fuga
@@ -38,15 +38,15 @@ const AboutUs = () => {
           </article>
         </div>
       </section>
-      <section className="content">
-        <div className="group-photo">
+      <section className={styles.content}>
+        <div className={styles.groupPhoto}>
           <img src={GroupPhoto} alt="Group of people" />
         </div>
         <div>
           <header>
-            <h1 className="bottom-header">Ansatte/Frivillige</h1>
+            <h1 className={styles.bottomHeader}>Ansatte/Frivillige</h1>
           </header>
-          <div className="employee-cards">
+          <div className={styles.employeeCards}>
             {employees.map((employee, index) => (
               <EmployeeCard
                 key={index}

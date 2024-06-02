@@ -1,46 +1,46 @@
-/* AboutUs.css */
+/* AboutUs.module.css */
 
-.content {
+.pageContainer {
   max-width: 1200px;
   margin: auto;
   padding: 0 1rem; /* Add padding to prevent content from touching the edges */
 }
 
-.top-content-background {
+.topContentBackground {
   background-color: #fff1d0;
   width: 100%;
   padding: 2rem 0;
   text-align: center;
 }
 
-.main-header {
+.mainHeader {
   font-size: 3.5rem;
   font-weight: 800;
   padding: 4rem 0 2rem 0;
   text-align: center;
 }
 
-.our-values-header {
+.ourValuesHeader {
   font-size: 2.5rem;
   font-weight: 800;
   padding: 2rem 0 2rem 0;
   text-align: center;
 }
 
-.bottom-header {
+.bottomHeader {
   font-size: 3.5rem;
   font-weight: 800;
   padding: 4rem 0 2rem 0;
   text-align: center;
 }
 
-.center-text {
+.centerText {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.center-text p {
+.centerText p {
   font-size: 1.5rem;
   font-weight: 400;
   padding: 0 0 2rem 0;
@@ -49,7 +49,7 @@
   margin: auto;
 }
 
-.group-photo {
+.groupPhoto {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
@@ -57,13 +57,13 @@
   overflow: hidden; /* Prevent overflow */
 }
 
-.group-photo img {
+.groupPhoto img {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   max-width: 1200px;
 }
 
-.employee-cards {
+.employeeCards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -72,18 +72,18 @@
 }
 
 @media (min-width: 1200px) {
-  .employee-cards {
+  .employeeCards {
     justify-content: space-between; /* Ensure space between cards */
   }
 
-  .employee-card {
+  .employeeCard {
     flex: 1 1 calc(25% - 2rem); /* Four cards per row with gap */
     max-width: calc(25% - 2rem); /* Ensure max width */
   }
 }
 
 @media (max-width: 600px) {
-  .bottom-header {
+  .bottomHeader {
     font-size: 2.2rem;
     font-weight: 800;
     color: #000;
