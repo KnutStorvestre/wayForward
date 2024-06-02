@@ -1,4 +1,4 @@
-import italyVilla from "../assets/images/Italy-house.jpg";
+import italyVilla from "../assets/images/italy-house.jpg";
 import modernHouse from "../assets/images/modern-house.jpg";
 import { RentalCardDataArray } from "../types";
 

@@ -1,9 +1,11 @@
-.card-activity-link {
+/* ActivityCard.module.css */
+
+.cardActivityLink {
   text-decoration: none;
   color: inherit;
 }
 
-.card-activity {
+.cardActivity {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
@@ -14,20 +16,19 @@
   transition: box-shadow 0.3s ease;
 }
 
-.card-activity:hover .text-activity {
+.cardActivity:hover .textActivity {
   text-decoration: underline;
-  /* What is best all text underline or just the title */
 }
 
-.card-activity:hover {
+.cardActivity:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card-activity:hover .arrow-icon {
+.cardActivity:hover .arrowIcon {
   transform: translateX(5px);
 }
 
-.text-activity {
+.textActivity {
   padding: 1rem 16px 1rem 34px;
   text-align: left;
   display: flex;
@@ -35,7 +36,7 @@
   gap: 16px;
 }
 
-.title-activity {
+.titleActivity {
   color: #000;
   font-size: 40px;
   font-style: normal;
@@ -43,26 +44,26 @@
   line-height: normal;
 }
 
-.description-activity {
+.descriptionActivity {
   font-size: 20px;
   max-width: 400px;
 }
 
-.address-activity {
+.addressActivity {
   font-size: 20px;
 }
 
-.age-group {
+.ageGroup {
   display: flex;
 }
 
-.age-group p {
+.ageGroup p {
   padding-top: 8px;
   justify-content: center;
   font-size: 18px;
 }
 
-.age-group img {
+.ageGroup img {
   width: 40px;
   height: 40px;
   margin-right: 10px;
@@ -83,36 +84,36 @@
   margin-right: 10px;
 }
 
-.image-activity {
+.imageActivity {
   width: 400px;
   height: 330px;
 }
 
-.time-age-activity {
+.timeAgeActivity {
   display: flex;
   justify-content: left;
   gap: 10px;
 }
 
-.bottom-arrow-activity {
-  align-self: flex-end; /* Align to the bottom */
-  margin-top: auto; /* Push it to the bottom */
+.bottomArrowActivity {
+  align-self: flex-end;
+  margin-top: auto;
   margin-right: 16px;
 }
 
-.arrow-icon {
+.arrowIcon {
   transition: transform 0.3s ease;
 }
 
 @media (max-width: 1200px) {
-  .time-age-activity {
+  .timeAgeActivity {
     flex-direction: column;
   }
-  .card-activity {
+  .cardActivity {
     flex-direction: column;
     max-width: 300px;
   }
-  .age-group img {
+  .ageGroup img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -122,7 +123,7 @@
     height: 30px;
     margin-right: 10px;
   }
-  .age-group p {
+  .ageGroup p {
     padding-top: 5px;
     font-size: 16px;
   }
@@ -130,20 +131,20 @@
     padding-top: 5px;
     font-size: 16px;
   }
-  .text-activity {
+  .textActivity {
     padding: 1rem 16px 1rem 16px;
     min-height: 310px;
   }
-  .title-activity {
+  .titleActivity {
     font-size: 34px;
   }
-  .description-activity {
+  .descriptionActivity {
     font-size: 14px;
   }
-  .address-activity {
+  .addressActivity {
     font-size: 14px;
   }
-  .image-activity {
+  .imageActivity {
     width: 300px;
     height: 250px;
   }
