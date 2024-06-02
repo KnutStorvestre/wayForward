@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
-import "../styles/ImageSlider.css";
+import styles from "../styles/ImageSlider.module.css"; // Import CSS module
 
 type ImageSliderProps = {
   images: {
@@ -27,35 +27,25 @@ export function ImageSlider({ images }: ImageSliderProps) {
   }
 
   return (
-    <section
-      aria-label="Image Slider"
-      style={{ width: "100%", height: "100%", position: "relative" }}
-    >
-      <a href="#after-image-slider-controls" className="skip-link">
+    <section aria-label="Image Slider" className={styles.imageSliderContainer}>
+      <a href="#after-image-slider-controls" className={styles.skipLink}>
         Skip Image Slider Controls
       </a>
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          overflow: "hidden",
-        }}
-      >
+      <div className={styles.sliderContainer}>
         {images.map(({ url, alt }, index) => (
           <img
             key={url}
             src={url}
             alt={alt}
             aria-hidden={imageIndex !== index}
-            className="img-slider-img"
-            style={{ translate: `${-100 * imageIndex}%` }}
+            className={styles.imgSliderImg}
+            style={{ transform: `translateX(${-100 * imageIndex}%)` }}
           />
         ))}
       </div>
       <button
         onClick={showPrevImage}
-        className="img-slider-btn"
+        className={styles.imgSliderBtn}
         style={{ left: 0 }}
         aria-label="View Previous Image"
       >
@@ -63,26 +53,17 @@ export function ImageSlider({ images }: ImageSliderProps) {
       </button>
       <button
         onClick={showNextImage}
-        className="img-slider-btn"
+        className={styles.imgSliderBtn}
         style={{ right: 0 }}
         aria-label="View Next Image"
       >
         <ArrowBigRight aria-hidden />
       </button>
-      <div
-        style={{
-          position: "absolute",
-          bottom: ".5rem",
-          left: "50%",
-          translate: "-50%",
-          display: "flex",
-          gap: ".25rem",
-        }}
-      >
+      <div className={styles.imageSliderDotsContainer}>
         {images.map((_, index) => (
           <button
             key={index}
-            className="img-slider-dot-btn"
+            className={styles.imgSliderDotBtn}
             aria-label={`View Image ${index + 1}`}
             onClick={() => setImageIndex(index)}
           >
