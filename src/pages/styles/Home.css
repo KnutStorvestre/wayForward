@@ -81,6 +81,19 @@
   padding-top: 7rem;
 }
 
+.header-title {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.header-line {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
 @media (max-width: 768px) {
   .area-cards {
     gap: 2rem;
