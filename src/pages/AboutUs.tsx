@@ -5,7 +5,7 @@ import styles from "./styles/AboutUs.module.css"; // Import CSS module
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className="page-container">
       <section className={styles.topContentBackground}>
         <div className={styles.pageContainer}>
           <div className={styles.content}>
