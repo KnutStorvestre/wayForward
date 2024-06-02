@@ -1,5 +1,5 @@
 import { ImageSlider } from "../components/common/ImageSlider";
-import "./styles/RentalPremise.css";
+import styles from "./styles/RentalPremise.module.css";
 import { ArrowRight } from "lucide-react";
 
 interface RentalPremiseProps {
@@ -37,16 +37,16 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
     priceDescription,
   },
 }) => (
-  <div className="page-container">
-    <div className="top-content-background">
-      <div className="wide-container-top">
+  <div className={styles.pageContainer}>
+    <div className={styles.topContentBackground}>
+      <div className={styles.wideContainerTop}>
         <TopText title={rentalPremiseName} />
         <ImageSliderWrapper images={images} />
         <MapLink mapLink={mapLink} address={address} zipCode={zipCode} />
         <ApartmentDescription description={apartmentDescription} />
       </div>
     </div>
-    <div className="wide-container-bottom">
+    <div className={styles.wideContainerBottom}>
       <InfoSection title="Nøkkelinfo" content={keyInfo} />
       <InfoSection title="Fasiliteter" content={facilities} />
       <CalendarSection link={calendarLink} />
@@ -62,7 +62,7 @@ interface ImageSliderWrapperProps {
 }
 
 const ImageSliderWrapper: React.FC<ImageSliderWrapperProps> = ({ images }) => (
-  <div className="img-slider">
+  <div className={styles.imgSlider}>
     <ImageSlider images={images} />
   </div>
 );
@@ -75,9 +75,9 @@ interface MapLinkProps {
 
 const MapLink: React.FC<MapLinkProps> = ({ mapLink, address, zipCode }) => (
   <a href={mapLink} target="_blank" rel="noopener noreferrer">
-    <div className="address-container">
-      <span className="address">{address}</span>
-      <span className="address">{zipCode}</span>
+    <div className={styles.addressContainer}>
+      <span>{address}</span>
+      <span>{zipCode}</span>
     </div>
   </a>
 );
@@ -109,7 +109,7 @@ interface CalendarSectionProps {
 const CalendarSection: React.FC<CalendarSectionProps> = ({ link }) => (
   <div>
     <InfoBoxHeader title="Kalender" />
-    <div className="bottom-infobox">
+    <div className={styles.bottomInfoBox}>
       <p>
         Se vår kalender for når lokalet er ledig{" "}
         <a href={link} target="_blank" rel="noopener noreferrer">
@@ -134,12 +134,12 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
 }) => (
   <div>
     <InfoBoxHeader title="Kontakt" />
-    <div className="bottom-infobox">
-      <div className="justify-space-between">
+    <div className={styles.bottomInfoBox}>
+      <div className={styles.justifySpaceBetween}>
         <div>
           <p>Noe du lurer på?</p>
         </div>
-        <div className="contact-info-building">
+        <div className={styles.contactInfoBuilding}>
           <span>Kontakt: {contactName}</span>
           <span>tlf: {phoneNumber}</span>
           <span>e-post: {email}</span>
@@ -156,7 +156,7 @@ interface PriceSectionProps {
 const PriceSection: React.FC<PriceSectionProps> = ({ description }) => (
   <div>
     <InfoBoxHeader title="Pris" />
-    <div className="bottom-infobox">
+    <div className={styles.bottomInfoBox}>
       <p>{description}</p>
     </div>
   </div>
@@ -165,7 +165,7 @@ const PriceSection: React.FC<PriceSectionProps> = ({ description }) => (
 const LocationSection: React.FC = () => (
   <div>
     <InfoBoxHeader title="Beliggenhet" />
-    <div className="bottom-infobox">
+    <div className={styles.bottomInfoBox}>
       <p>Kanskje kart her</p>
     </div>
   </div>
@@ -176,7 +176,7 @@ interface TopTextProps {
 }
 
 const TopText: React.FC<TopTextProps> = ({ title }) => (
-  <div className="top-text-box">
+  <div className={styles.topTextBox}>
     <h1 className="extra-bold-inter">{title}</h1>
   </div>
 );
@@ -186,9 +186,9 @@ interface InfoListsProps {
 }
 
 const InfoLists: React.FC<InfoListsProps> = ({ keyInfo }) => (
-  <div className="list-rows">
+  <div className={styles.listRows}>
     {keyInfo.map((list, index) => (
-      <ul key={index} className="custom-list">
+      <ul key={index} className={styles.customList}>
         {list.map((item, idx) => (
           <CustomListItem key={idx}>{item}</CustomListItem>
         ))}
@@ -202,7 +202,7 @@ interface CustomListItemProps {
 }
 
 const CustomListItem: React.FC<CustomListItemProps> = ({ children }) => (
-  <li className="custom-list-item">
+  <li className={styles.customListItem}>
     <ArrowRight color="black" size={16} />
     {children}
   </li>
@@ -214,10 +214,10 @@ interface InfoBoxHeaderProps {
 
 const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => (
   <div>
-    <div className="hr-header">
-      <hr className="header-line" />
-      <h1 className="header-title">{title}</h1>
-      <hr className="header-line" />
+    <div className={styles.hrHeader}>
+      <hr className={styles.headerLine} />
+      <h1 className={styles.headerTitle}>{title}</h1>
+      <hr className={styles.headerLine} />
     </div>
   </div>
 );

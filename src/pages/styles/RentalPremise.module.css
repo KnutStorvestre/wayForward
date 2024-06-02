@@ -1,29 +1,35 @@
-.wide-container-top {
+.pageContainer {
+  padding-bottom: 90px;
+  background-color: #fcf8f3;
+  min-height: 100vh;
+}
+
+.wideContainerTop {
   max-width: 1200px;
   margin: auto;
   padding: 0 2rem 0 2rem;
 }
 
-.wide-container-bottom {
+.wideContainerBottom {
   max-width: 1200px;
   margin: auto;
   padding: 0 2rem 10rem 2rem;
 }
 
-.top-content-background {
+.topContentBackground {
   background-color: #fff1d0;
   width: 100%;
   text-align: left;
 }
 
-.img-slider {
+.imgSlider {
   max-width: 1200px;
   width: 100%;
   aspect-ratio: 10 / 6;
   margin: 0 auto;
 }
 
-.container-lists {
+.containerLists {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -32,7 +38,7 @@
   margin-top: 2rem;
 }
 
-.address-container {
+.addressContainer {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 0;
@@ -45,20 +51,21 @@
   list-style-type: none;
 }
 
-.top-text-box {
+.topTextBox {
   font-family: "Inter", sans-serif;
   font-weight: 600; /* Semi Bold */
   font-size: 24px;
-  margin: 2rem 0 1rem 0;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 
-.center-content {
+.centerContent {
   display: flex;
   justify-content: center;
 }
 
-.rental-cards {
+.rentalCards {
   display: flex; /* Establishes a flex container */
   flex-direction: row; /* Arranges items in a row */
   flex-wrap: wrap; /* Enables flex items to wrap onto the next line */
@@ -68,7 +75,7 @@
   margin-top: 2rem; /* Adds space above the container */
 }
 
-.header-info-box {
+.headerInfoBox {
   font-family: "Inter", sans-serif;
   font-weight: 500; /* Semi Bold */
   font-size: 28px;
@@ -76,7 +83,7 @@
   margin: auto;
 }
 
-.info-box-header-br {
+.infoBoxHeaderBr {
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -84,7 +91,7 @@
   margin-top: 2rem;
 }
 
-.custom-list {
+.customList {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -93,34 +100,34 @@
   margin: 20px 0 20px 10px;
 }
 
-.custom-list-item {
+.customListItem {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.list-rows {
+.listRows {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.contact-info-building {
+.contactInfoBuilding {
   display: flex;
   flex-direction: column;
   gap: 6px;
   width: 100%;
 }
 
-.justify-space-between {
+.justifySpaceBetween {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
 }
 
-.bottom-infobox {
+.bottomInfoBox {
   padding: 1.2rem 0 0 0.5rem;
 }
 
@@ -130,7 +137,7 @@ hr {
   border: 1px solid #000;
 }
 
-.hr-header {
+.hrHeader {
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -138,13 +145,13 @@ hr {
   margin-top: 2rem;
 }
 
-.header-title {
+.headerTitle {
   margin: 0;
   font-size: 1.5em;
   color: #333;
 }
 
-.header-line {
+.headerLine {
   border: none;
   height: 1px;
   background: #ddd;
