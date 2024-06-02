@@ -1,4 +1,16 @@
-.top-text {
+/* Activity.module.css */
+
+.pageContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem; /* Add padding to prevent content from touching the edges */
+}
+
+.paddingTop4rem {
+  padding-top: 4rem; /* Add top padding */
+}
+
+.topText {
   font-family: "Inter", sans-serif;
   font-weight: 600; /* Semi Bold */
   font-size: 24px;
@@ -7,12 +19,20 @@
   padding: 4rem 0 2rem 0;
 }
 
-.center-content {
+.extraBoldInter {
+  font-weight: 800; /* Extra Bold */
+}
+
+.semiBoldInter {
+  font-weight: 600; /* Semi Bold */
+}
+
+.centerContent {
   display: flex;
   justify-content: center;
 }
 
-.activity-cards {
+.activityCards {
   display: flex; /* Establishes a flex container */
   flex-direction: row; /* Arranges items in a row */
   flex-wrap: wrap; /* Enables flex items to wrap onto the next line */
@@ -23,7 +43,7 @@
 }
 
 @media (max-width: 1200px) {
-  .activity-cards {
+  .activityCards {
     max-width: 100%;
     gap: 2rem;
   }
