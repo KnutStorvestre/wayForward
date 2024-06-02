@@ -84,12 +84,6 @@
   margin-top: 2rem;
 }
 
-hr {
-  margin: 20px 0;
-  width: 100%;
-  border: 1px solid #000;
-}
-
 .custom-list {
   display: flex;
   flex-direction: column;
@@ -128,4 +122,31 @@ hr {
 
 .bottom-infobox {
   padding: 1.2rem 0 0 0.5rem;
+}
+
+hr {
+  margin: 20px 0;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.hr-header {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.header-line {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
 }
