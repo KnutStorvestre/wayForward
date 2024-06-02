@@ -1,14 +1,14 @@
-import "../styles/Footer.css";
+import { Link } from "react-router-dom";
 import Facebook from "../../assets/logos/facebook-logo.png";
 import Instagram from "../../assets/logos/instagram-logo.png";
-import { Link } from "react-router-dom";
+import styles from "../styles/Footer.module.css"; // Import CSS module
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="wide-container-footer">
-        <div className="footer-content">
-          <div className="footer-content-left">
+    <footer className={styles.footer}>
+      <div className={styles.wideContainerFooter}>
+        <div className={styles.footerContent}>
+          <div className={styles.footerContentLeft}>
             <Link to="/om-oss">
               <span>Om oss</span>
             </Link>
@@ -18,7 +18,7 @@ const Footer = () => {
             <a href="mailto:post@wayforward.no">post@wayforward.no</a>
             <a href="tel:+47 55 55 55 55">+47 55 55 55 55</a>
           </div>
-          <div className="social-media">
+          <div className={styles.socialMedia}>
             <a
               aria-label="Gå til WayForward sin Facebook-side"
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
