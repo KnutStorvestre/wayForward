@@ -1,4 +1,11 @@
-.rental-card {
+/* RentalCard.module.css */
+
+.rentalCardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.rentalCard {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
@@ -6,30 +13,28 @@
   border-radius: 5px;
   background-color: #f4f0e7;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-
   overflow: hidden;
   height: 100%;
 }
 
-.flex-row {
+.flexRow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.flex-column {
+.flexColumn {
   display: flex;
   flex-direction: column;
   gap: 1px;
 }
 
-.rental-card-text {
+.rentalCardText {
   padding: 1rem 16px 1rem 34px;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 16px;
-
   color: #000;
   font-size: 24px;
   font-style: normal;
@@ -37,7 +42,7 @@
   line-height: normal;
 }
 
-.top-bottom {
+.topBottom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,7 +51,7 @@
   height: 100%;
 }
 
-.bottom-info {
+.bottomInfo {
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -56,7 +61,6 @@
 .button {
   min-width: 160px;
   min-height: 90px;
-
   color: #000;
   font-size: 24px;
   font-style: normal;
@@ -65,7 +69,7 @@
   cursor: pointer;
 }
 
-.rental-card-title {
+.rentalCardTitle {
   color: #000;
   font-size: 50px;
   font-style: normal;
@@ -74,24 +78,24 @@
 }
 
 @media (max-width: 1200px) {
-  .rental-card {
+  .rentalCard {
     flex-direction: column;
     max-width: 300px;
     min-height: 650px;
   }
-  .rental-card-text {
+  .rentalCardText {
     padding: 1rem 16px 1rem 16px;
     font-size: 14px;
   }
-  .rental-card-title {
+  .rentalCardTitle {
     font-size: 34px;
   }
-  .bottom-info {
+  .bottomInfo {
     flex-wrap: wrap;
     padding: 0 16px 1rem 16px;
     gap: 16px;
   }
-  .contact-info {
+  .contactInfo {
     font-size: 14px;
   }
   .button {

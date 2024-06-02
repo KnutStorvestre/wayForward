@@ -1,0 +1,71 @@
+/* EmployeeCard.module.css */
+
+.employeeCard {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.employeeImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.employeeInfo {
+  padding: 16px;
+}
+
+.employeeName {
+  margin: 10px 0 5px 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.employeePosition {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .employeeCard {
+    width: 200px;
+  }
+
+  .employeeImage {
+    height: 150px;
+  }
+
+  .employeeName {
+    font-size: 1rem;
+  }
+
+  .employeePosition {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .employeeCard {
+    width: 150px;
+  }
+
+  .employeeImage {
+    height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .employeeCard {
+    width: 120px;
+  }
+
+  .employeeImage {
+    height: 110px;
+  }
+}
