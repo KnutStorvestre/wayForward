@@ -1,14 +1,14 @@
 import "./styles/Partners.css";
-import BergenKommuneLogo from "../assets/sponsorer/bergen-kommune-vertikal-logo.png";
-import BufdirLogo from "../assets/sponsorer/bufdir-logo.png";
-import EquinorLogo from "../assets/sponsorer/equinor-logo.png";
-import FanaSparebank from "../assets/sponsorer/fana-sparebank-logo.webp";
-import NavLogo from "../assets/sponsorer/nav-logo.png";
-import NorskFolkeHjelpLogo from "../assets/sponsorer/norsk-folkehjelp-logo.png";
-import OygardenLogo from "../assets/sponsorer/oygarden-logo.png";
-import SparebankenVest from "../assets/sponsorer/sparebanken-vest-logo.png";
-import StiftelsenDam from "../assets/sponsorer/stiftelsen-dam-logo.png";
-import UlvsnesoySkolehjem from "../assets/sponsorer/ulvsnesoy-skolehjem-logo.jpeg";
+import BergenKommuneLogo from "../assets/sponsors/bergen-kommune-vertikal-logo.png";
+import BufdirLogo from "../assets/sponsors/bufdir-logo.png";
+import EquinorLogo from "../assets/sponsors/equinor-logo.png";
+import FanaSparebank from "../assets/sponsors/fana-sparebank-logo.webp";
+import NavLogo from "../assets/sponsors/nav-logo.png";
+import NorskFolkeHjelpLogo from "../assets/sponsors/norsk-folkehjelp-logo.png";
+import OygardenLogo from "../assets/sponsors/oygarden-logo.png";
+import SparebankenVest from "../assets/sponsors/sparebanken-vest-logo.png";
+import StiftelsenDam from "../assets/sponsors/stiftelsen-dam-logo.png";
+import UlvsnesoySkolehjem from "../assets/sponsors/ulvsnesoy-skolehjem-logo.jpeg";
 
 const Partners = () => {
   return (
