@@ -1,5 +1,6 @@
+import React from "react";
 import ActivityCard from "../components/common/ActivityCard";
-import "./styles/Activity.css";
+import styles from "./styles/ActivitiesPage.module.css"; // Import CSS module
 
 interface ActivitiesPageProps {
   data: {
@@ -22,22 +23,19 @@ interface ActivitiesPageProps {
 const ActivitiesPage: React.FC<ActivitiesPageProps> = ({ data }) => {
   const { title, topText, instagramLink, facebookLink, activities } = data;
   return (
-    <div className="page-container padding-top-4rem">
+    <div className={`${styles.pageContainer} ${styles.paddingTop4rem}`}>
       <TopText
         title={title}
         topText={topText}
         instagramLink={instagramLink}
         facebookLink={facebookLink}
       />
-      <div className="center-content">
-        <div className="activity-cards">
+      <div className={styles.centerContent}>
+        <div className={styles.activityCards}>
           {activities.map((activity, index) => (
             <ActivityCard
               key={index}
               activityTitle={activity.activityTitle}
-              googleMapsLink={activity.googleMapsLink}
-              street={activity.street}
-              zipCode={activity.zipCode}
               time={activity.time}
               ageGroup={activity.ageGroup}
               description={activity.description}
@@ -63,9 +61,9 @@ const TopText: React.FC<TopTextProps> = ({
   facebookLink,
 }) => {
   return (
-    <div className="top-text">
-      <h1 className="extra-bold-inter">{title}</h1>
-      <p className="semi-bold-inter">
+    <div className={styles.topText}>
+      <h1 className={styles.extraBoldInter}>{title}</h1>
+      <p className={styles.semiBoldInter}>
         {topText}{" "}
         <a href={facebookLink} target="_blank" rel="noopener noreferrer">
           Facebook
