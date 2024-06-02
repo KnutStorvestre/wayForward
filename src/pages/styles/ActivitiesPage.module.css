@@ -1,15 +1,5 @@
 /* Activity.module.css */
 
-.pageContainer {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 1rem; /* Add padding to prevent content from touching the edges */
-}
-
-.paddingTop4rem {
-  padding-top: 4rem; /* Add top padding */
-}
-
 .topText {
   font-family: "Inter", sans-serif;
   font-weight: 600; /* Semi Bold */
