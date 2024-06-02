@@ -23,7 +23,8 @@ TODO
 * lage overskrift i lysere farge 
 * legge til at det er paa landaas eller Sotra 
 * make the header smaller for activitis when user has a small phone
-
+* Fix the margin on the top and padding on the bottom of the top text in RentalPremise.tsx
+* Fix the padding or maring or whatever to create space on the bottom of the activity page between the footer and the content. 
 
 
 TODO spørsmål til møte 
