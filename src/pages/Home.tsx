@@ -1,6 +1,6 @@
 import React from "react";
 import skywoods from "../assets/images/sky-woods.jpg";
-import "./styles/Home.css";
+import styles from "./styles/Home.module.css";
 import { Link } from "react-router-dom";
 import OldHouse from "../assets/images/old-house.jpg";
 import OldGermanHouse from "../assets/images/old-german-house.jpg";
@@ -8,12 +8,12 @@ import ManOnMountain from "../assets/images/man-on-mountain.jpg";
 
 const Home = () => {
   return (
-    <div className="page-container padding-top-home">
-      <div className="image-container">
-        <img className="main-img" src={skywoods} alt="Sky Woods" />
+    <div className={styles.pageContainer + " " + styles.paddingTopHome}>
+      <div className={styles.imageContainer}>
+        <img className={styles.mainImg} src={skywoods} alt="Sky Woods" />
       </div>
       <HrHeader title="Aktiviteter" />
-      <div className="home-cards">
+      <div className={styles.homeCards}>
         <Card
           image={OldHouse}
           title="Landås"
@@ -28,7 +28,7 @@ const Home = () => {
         />
       </div>
       <HrHeader title="Utleie og utlån" />
-      <div className="home-cards">
+      <div className={styles.homeCards}>
         <Card
           image={OldGermanHouse}
           title="Se våre lokaler"
@@ -37,7 +37,7 @@ const Home = () => {
         />
       </div>
       <HrHeader title="Om oss" />
-      <div className="home-cards">
+      <div className={styles.homeCards}>
         <Card
           image={ManOnMountain}
           title="Hvem er vi"
@@ -60,10 +60,10 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, title, text, path }) => {
   return (
-    <Link className="no-underline" to={path}>
-      <div className="home-card">
-        <img src={image} alt={title} className="home-card-image" />
-        <div className="home-card-content">
+    <Link className={styles.noUnderline} to={path}>
+      <div className={styles.homeCard}>
+        <img src={image} alt={title} className={styles.homeCardImage} />
+        <div className={styles.homeCardContent}>
           <h2>{title}</h2>
           <p>{text}</p>
         </div>
@@ -78,10 +78,10 @@ interface HrHeaderProps {
 
 const HrHeader: React.FC<HrHeaderProps> = ({ title }) => {
   return (
-    <div className="hr-header">
-      <hr className="header-line" />
-      <h1 className="header-title">{title}</h1>
-      <hr className="header-line" />
+    <div className={styles.hrHeader}>
+      <hr className={styles.headerLine} />
+      <h1 className={styles.headerTitle}>{title}</h1>
+      <hr className={styles.headerLine} />
     </div>
   );
 };
