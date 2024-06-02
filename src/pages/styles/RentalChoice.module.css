@@ -1,4 +1,4 @@
-.top-text {
+.topText {
   font-family: "Inter", sans-serif;
   font-weight: 600; /* Semi Bold */
   font-size: 24px;
@@ -7,12 +7,12 @@
   padding: 0 2rem;
 }
 
-.center-content {
+.centerContent {
   display: flex;
   justify-content: center;
 }
 
-.rental-cards {
+.rentalCards {
   display: flex; /* Establishes a flex container */
   flex-direction: row; /* Arranges items in a row */
   flex-wrap: wrap; /* Enables flex items to wrap onto the next line */

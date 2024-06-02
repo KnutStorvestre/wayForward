@@ -1,4 +1,4 @@
-import "./styles/RentalChoice.css";
+import styles from "./styles/RentalChoice.module.css";
 import RentalCard from "../components/common/RentalCard";
 import rentalCardsData from "../data/RentalCardsData";
 
@@ -6,8 +6,8 @@ const Rental = () => {
   return (
     <div className="page-container padding-top-4rem">
       <TopText />
-      <div className="center-content">
-        <div className="rental-cards">
+      <div className={styles.centerContent}>
+        <div className={styles.rentalCards}>
           {rentalCardsData.map((activity, index) => (
             <RentalCard
               key={index}
@@ -28,7 +28,7 @@ const Rental = () => {
 
 function TopText() {
   return (
-    <div className="top-text">
+    <div className={styles.topText}>
       <h1 className="extra-bold-inter">Utleie/Utlån av lokaler</h1>
       <p className="semi-bold-inter">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, error,
