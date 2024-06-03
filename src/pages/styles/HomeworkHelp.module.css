@@ -4,6 +4,16 @@
   margin-bottom: 1rem;
 }
 
+.topText {
+  margin-bottom: 1rem;
+}
+
+.location {
+  font-weight: 300;
+  color: #666;
+  font-size: 1.75rem;
+}
+
 .largeImage {
   max-width: 100%;
   height: auto;

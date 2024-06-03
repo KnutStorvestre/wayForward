@@ -11,7 +11,10 @@ const HomeWorkHelp = () => {
           className={styles.largeImage}
         />
         <div className="text-container">
-          <h1 className={styles.mainHeader}>Leksehjelp</h1>
+          <p className={styles.topText}>
+            <span className={styles.mainHeader}>Leksehjelp,</span>
+            <span className={styles.location}> Landås</span>
+          </p>
           <div className={styles.bodyText}>
             <p className={styles.strongText}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
