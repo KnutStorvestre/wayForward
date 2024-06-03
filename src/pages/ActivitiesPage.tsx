@@ -23,7 +23,7 @@ interface ActivitiesPageProps {
 const ActivitiesPage: React.FC<ActivitiesPageProps> = ({ data }) => {
   const { title, topText, instagramLink, facebookLink, activities } = data;
   return (
-    <div className="page-container padding-top-7rem">
+    <div className="page-container padding-top-7rem horizontal-padding">
       <TopText
         title={title}
         topText={topText}
