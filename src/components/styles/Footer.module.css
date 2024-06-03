@@ -5,7 +5,7 @@
   min-width: 100vw;
   text-align: left; /* Centering the text */
   font-size: 14px; /* Font size */
-  padding: 3vh 0; /* Padding on the top and bottom */
+  padding: 3vh 2rem; /* Padding on the top and bottom */
 }
 
 .wideContainerFooter {
