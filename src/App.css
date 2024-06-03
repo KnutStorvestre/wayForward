@@ -32,6 +32,20 @@ body {
   min-height: 100vh;
 }
 
+.max-width-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.horizontal-padding {
+  padding: 0 2rem;
+}
+
 .padding-top-4rem {
   padding-top: 4rem;
 }
