@@ -6,18 +6,22 @@ import styles from "./styles/AboutUs.module.css";
 const AboutUs = () => {
   return (
     <div className="page-container">
-      <section className={styles.topContentBackground + " padding-top-7rem"}>
-        <div className={styles.pageContainer}>
-          <div className={styles.content}>
+      <section
+        className={
+          styles.topContentBackground + " padding-top-7rem horizontal-padding"
+        }
+      >
+        <div>
+          <div className="text-container">
             <header>
               <h1 className={styles.mainHeader}>Om oss</h1>
             </header>
             <article className={styles.centerText}>
-              <p className={styles.aboutUsText}>
+              <p>
                 Har du spørsmål eller ønsker å komme i kontakt med oss? Send oss
                 en melding på e-post eller ring oss.
               </p>
-              <p className={styles.aboutUsText}>
+              <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
                 id saepe nihil! Voluptatum magnam eligendi aut quisquam iure, ea
                 placeat eaque, aperiam optio sed non qui, nemo laborum doloribus
@@ -28,7 +32,7 @@ const AboutUs = () => {
               <header>
                 <h1 className={styles.ourValuesHeader}>Våre verdier</h1>
               </header>
-              <p className={styles.aboutUsText}>
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
                 inventore ut soluta ad unde odit, tempora obcaecati iure? Est,
                 qui, repellat laborum maxime excepturi optio nobis quidem fuga
@@ -40,12 +44,12 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <div className={styles.pageContainer}>
+      <div className="max-width-container">
         <section className={styles.content}>
           <div className={styles.groupPhoto}>
             <img src={GroupPhoto} alt="Group of people" />
           </div>
-          <div>
+          <div className="horizontal-padding">
             <header>
               <h1 className={styles.bottomHeader}>Ansatte/Frivillige</h1>
             </header>

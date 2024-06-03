@@ -1,13 +1,7 @@
 /* AboutUs.module.css */
 
-.pageContainer {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 1rem; /* Add padding to prevent content from touching the edges */
-}
-
 .topContentBackground {
-  background-color: #fff1d0;
+  background-color: #fff1d0; /* Light yellow */
   width: 100%;
   text-align: center;
 }
@@ -15,37 +9,36 @@
 .mainHeader {
   font-size: 3.5rem;
   font-weight: 800;
-  padding: 0 0 2rem 0;
+  padding-bottom: 2rem;
   text-align: center;
 }
 
 .ourValuesHeader {
   font-size: 2.5rem;
   font-weight: 800;
-  padding: 2rem 0 2rem 0;
+  padding-top: 2rem;
   text-align: center;
 }
 
 .bottomHeader {
   font-size: 3.5rem;
   font-weight: 800;
-  padding: 4rem 0 2rem 0;
+  padding: 4rem 0 2rem;
   text-align: center;
 }
 
 .centerText {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: right;
+  gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 .centerText p {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 400;
-  padding: 0 0 2rem 0;
   text-align: left;
-  max-width: 900px;
-  margin: auto;
 }
 
 .groupPhoto {
@@ -72,7 +65,7 @@
 
 @media (min-width: 1200px) {
   .employeeCards {
-    justify-content: space-between; /* Ensure space between cards */
+    justify-content: space-between;
   }
 
   .employeeCard {
