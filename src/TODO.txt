@@ -43,3 +43,20 @@ TODO generelt viktig
 * Stop horizontal scroll
 * Padding for text on mobile or small screen.
 * Legge til fine bilder
+
+
+
+interface MapLinkProps {
+  mapLink: string;
+  address: string;
+  zipCode: string;
+}
+
+const MapLink: React.FC<MapLinkProps> = ({ mapLink, address, zipCode }) => (
+  <a href={mapLink} target="_blank" rel="noopener noreferrer">
+    <div className={styles.addressContainer}>
+      <span>{address}</span>
+      <span>{zipCode}</span>
+    </div>
+  </a>
+);
