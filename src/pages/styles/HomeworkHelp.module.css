@@ -1,0 +1,26 @@
+.mainHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.largeImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.bodyText {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.bodyText p {
+  margin: 10px 0;
+}
+
+.lightText {
+  font-weight: 300;
+  color: #666;
+}
