@@ -6,7 +6,7 @@ import styles from "./styles/AboutUs.module.css"; // Import CSS module
 const AboutUs = () => {
   return (
     <div className="page-container">
-      <section className={styles.topContentBackground}>
+      <section className={styles.topContentBackground + " padding-top-7rem"}>
         <div className={styles.pageContainer}>
           <div className={styles.content}>
             <header>

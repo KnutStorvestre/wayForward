@@ -24,6 +24,8 @@ TODO
 * legge til at det er paa landaas eller Sotra 
 * make the header smaller for activitis when user has a small phone
 * At some point change the hamburgerMenu.css to hamburgerMenu.module.css
+* Create horizontal padding at footer
+* Maybe have the same header fonts everywhere
 
 TODO spørsmål til møte 
 * farge på footer

@@ -1,4 +1,3 @@
-import React from "react";
 import skywoods from "../assets/images/sky-woods.jpg";
 import styles from "./styles/Home.module.css";
 import { Link } from "react-router-dom";
@@ -8,7 +7,7 @@ import ManOnMountain from "../assets/images/man-on-mountain.jpg";
 
 const Home = () => {
   return (
-    <div className={styles.pageContainer + " " + styles.paddingTopHome}>
+    <div className={"page-container padding-top-7rem"}>
       <div className={styles.imageContainer}>
         <img className={styles.mainImg} src={skywoods} alt="Sky Woods" />
       </div>

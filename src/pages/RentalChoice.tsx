@@ -4,7 +4,7 @@ import rentalCardsData from "../data/RentalCardsData";
 
 const Rental = () => {
   return (
-    <div className="page-container padding-top-4rem">
+    <div className="page-container padding-top-7rem">
       <TopText />
       <div className={styles.centerContent}>
         <div className={styles.rentalCards}>
