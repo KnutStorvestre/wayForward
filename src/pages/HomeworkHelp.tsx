@@ -10,7 +10,7 @@ const HomeWorkHelp = () => {
           alt="Large top image"
           className={styles.largeImage}
         />
-        <div className="text-container">
+        <div className="text-container horizontal-padding">
           <p className={styles.topText}>
             <span className={styles.mainHeader}>Leksehjelp,</span>
             <span className={styles.location}> Landås</span>
@@ -50,8 +50,26 @@ const HomeWorkHelp = () => {
           </div>
         </div>
       </div>
+      <div className={styles.wideContainerBottom}>
+        <InfoBoxHeader title="Tidspunkt" />
+        <InfoBoxHeader title="Kart" />
+      </div>
     </div>
   );
 };
+
+interface InfoBoxHeaderProps {
+  title: string;
+}
+
+const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => (
+  <div>
+    <div className={styles.hrHeader}>
+      <hr className={styles.headerLine} />
+      <h1 className={styles.headerTitle}>{title}</h1>
+      <hr className={styles.headerLine} />
+    </div>
+  </div>
+);
 
 export default HomeWorkHelp;
