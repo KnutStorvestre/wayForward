@@ -11,7 +11,7 @@
 }
 
 .topContentBackground {
-  background-color: #fff1d0;
+  /* background-color: #fff1d0; */
   width: 100%;
   text-align: left;
 }
@@ -21,6 +21,46 @@
   width: 100%;
   aspect-ratio: 10 / 6;
   margin: 0 auto;
+}
+
+.topText {
+  margin-bottom: 1rem;
+}
+
+.mainHeader {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.location {
+  font-weight: 300;
+  color: #666;
+  font-size: 1.75rem;
+}
+
+.bodyText {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.apartmentDescription {
+  padding: 1rem 0;
+}
+
+.paddingTop2rem {
+  padding-top: 2rem;
+}
+
+.strongText {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.lightText {
+  font-weight: 300;
+  color: #666;
+  margin: 15px 0;
 }
 
 .containerLists {
@@ -47,11 +87,6 @@
 
 .paddingBottom2rem {
   padding-bottom: 2rem;
-}
-
-.topTextBox {
-  padding-bottom: 1rem;
-  text-align: center;
 }
 
 .centerContent {

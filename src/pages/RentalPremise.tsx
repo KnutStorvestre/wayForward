@@ -26,9 +26,6 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
   data: {
     rentalPremiseName,
     images,
-    mapLink,
-    address,
-    zipCode,
     apartmentDescription,
     keyInfo,
     facilities,
@@ -39,14 +36,15 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
 }) => (
   <div className="page-container">
     <div className={styles.topContentBackground + " padding-top-7rem"}>
-      <div className={styles.wideContainerTop}>
-        <TopText title={rentalPremiseName} />
+      <div className="max-width-container">
         <ImageSliderWrapper images={images} />
-        <MapLink mapLink={mapLink} address={address} zipCode={zipCode} />
-        <ApartmentDescription description={apartmentDescription} />
+        <div className={"horizontal-padding " + styles.paddingTop2rem}>
+          <TopText title={rentalPremiseName} />
+          <ApartmentDescription description={apartmentDescription} />
+        </div>
       </div>
     </div>
-    <div className={styles.wideContainerBottom}>
+    <div className="max-width-container horizontal-padding">
       <InfoSection title="Nøkkelinfo" content={keyInfo} />
       <InfoSection title="Fasiliteter" content={facilities} />
       <CalendarSection link={calendarLink} />
@@ -67,21 +65,6 @@ const ImageSliderWrapper: React.FC<ImageSliderWrapperProps> = ({ images }) => (
   </div>
 );
 
-interface MapLinkProps {
-  mapLink: string;
-  address: string;
-  zipCode: string;
-}
-
-const MapLink: React.FC<MapLinkProps> = ({ mapLink, address, zipCode }) => (
-  <a href={mapLink} target="_blank" rel="noopener noreferrer">
-    <div className={styles.addressContainer}>
-      <span>{address}</span>
-      <span>{zipCode}</span>
-    </div>
-  </a>
-);
-
 interface ApartmentDescriptionProps {
   description: string;
 }
@@ -89,8 +72,27 @@ interface ApartmentDescriptionProps {
 const ApartmentDescription: React.FC<ApartmentDescriptionProps> = ({
   description,
 }) => (
-  <div className={styles.paddingBottom2rem}>
-    <p className="semi-bold-inter">{description}</p>
+  <div className={styles.bodyText}>
+    <p className={styles.strongText}>{description}</p>
+    <p className={styles.lightText}>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
+      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
+      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
+      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
+      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
+    </p>
+    <p className={styles.lightText}>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
+      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
+      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
+      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
+      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum obcaecati
+      quam expedita adipisci. Rerum aut ipsa odio atque, ex ab, accusantium
+      nobis molestias ad error consequuntur expedita exercitationem vel modi.
+    </p>
   </div>
 );
 
@@ -168,7 +170,7 @@ const PriceSection: React.FC<PriceSectionProps> = ({ description }) => (
 
 const LocationSection: React.FC = () => (
   <div>
-    <InfoBoxHeader title="Beliggenhet" />
+    <InfoBoxHeader title="Kart" />
     <div className={styles.bottomInfoBox}>
       <p>Kanskje kart her</p>
     </div>
@@ -180,9 +182,10 @@ interface TopTextProps {
 }
 
 const TopText: React.FC<TopTextProps> = ({ title }) => (
-  <div className={styles.topTextBox}>
-    <h1 className="extra-bold-inter">{title}</h1>
-  </div>
+  <p className={styles.topText}>
+    <span className={styles.mainHeader}>{title},</span>
+    <span className={styles.location}> Landås</span>
+  </p>
 );
 
 interface InfoListsProps {
