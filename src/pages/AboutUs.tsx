@@ -1,7 +1,7 @@
 import EmployeeCard from "../components/common/EmployeeCard";
 import GroupPhoto from "../assets/images/group-people.jpg";
 import employees from "../data/EmployeesData";
-import styles from "./styles/AboutUs.module.css"; // Import CSS module
+import styles from "./styles/AboutUs.module.css";
 
 const AboutUs = () => {
   return (
