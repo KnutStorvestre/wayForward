@@ -37,8 +37,8 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
     priceDescription,
   },
 }) => (
-  <div className={styles.pageContainer}>
-    <div className={styles.topContentBackground}>
+  <div className="page-container">
+    <div className={styles.topContentBackground + " padding-top-7rem"}>
       <div className={styles.wideContainerTop}>
         <TopText title={rentalPremiseName} />
         <ImageSliderWrapper images={images} />

@@ -1,9 +1,3 @@
-.pageContainer {
-  padding-bottom: 90px;
-  background-color: #fcf8f3;
-  min-height: 100vh;
-}
-
 .wideContainerTop {
   max-width: 1200px;
   margin: auto;
@@ -13,7 +7,7 @@
 .wideContainerBottom {
   max-width: 1200px;
   margin: auto;
-  padding: 0 2rem 10rem 2rem;
+  padding: 0 2rem 0 2rem;
 }
 
 .topContentBackground {
@@ -56,7 +50,6 @@
 }
 
 .topTextBox {
-  padding-top: 4rem;
   padding-bottom: 1rem;
   text-align: center;
 }
