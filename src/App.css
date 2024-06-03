@@ -15,15 +15,15 @@ body {
 
 html,
 body {
-  height: 100%; /* Make sure the html and body fill the height of the viewport */
+  height: 100%;
   margin: 0;
 }
 
 #main-container {
-  min-height: 100vh; /* Viewport height */
+  min-height: 100vh;
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  justify-content: space-between; /* Space between content and footer */
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .page-container {
@@ -42,24 +42,20 @@ body {
 
 .extra-bold-inter {
   font-family: "Inter", sans-serif;
-  font-weight: 800; /* Extra Bold */
+  font-weight: 800;
   font-size: 76px;
 }
 
 .semi-bold-inter {
   font-family: "Inter", sans-serif;
-  font-weight: 500; /* Semi Bold */
+  font-weight: 500;
   font-size: 20px;
-  max-width: 1400px;
   margin: auto;
 }
 
 @media (max-width: 1200px) {
   .extra-bold-inter {
     font-size: 54px;
-  }
-  .semi-bold-inter {
-    font-size: 20px;
   }
 }
 
