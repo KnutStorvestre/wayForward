@@ -26,6 +26,7 @@ TODO
 * At some point change the hamburgerMenu.css to hamburgerMenu.module.css
 * Create horizontal padding at footer
 * Maybe have the same header fonts everywhere
+* There should be some standardized top text 
 
 TODO spørsmål til møte 
 * farge på footer

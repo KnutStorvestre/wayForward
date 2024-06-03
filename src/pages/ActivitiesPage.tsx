@@ -63,7 +63,7 @@ const TopText: React.FC<TopTextProps> = ({
   return (
     <div className={styles.topText}>
       <h1 className={styles.extraBoldInter}>{title}</h1>
-      <p className={styles.semiBoldInter}>
+      <p className="semi-bold-inter">
         {topText}{" "}
         <a href={facebookLink} target="_blank" rel="noopener noreferrer">
           Facebook
