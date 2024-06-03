@@ -30,7 +30,7 @@ const AboutUs = () => {
                 dolores odit dolorem architecto sint officiis fugit, qui nulla
               </p>
               <header>
-                <h1 className={styles.ourValuesHeader}>Våre verdier</h1>
+                <h1 className={styles.secondaryHeader}>Våre verdier</h1>
               </header>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
