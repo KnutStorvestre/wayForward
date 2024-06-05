@@ -46,6 +46,7 @@ export interface RentalPremiseData {
 
 export interface Activity {
   activityTitle: string;
+  link: string;
   googleMapsLink: string;
   street: string;
   zipCode: string;

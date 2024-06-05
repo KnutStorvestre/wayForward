@@ -7,29 +7,19 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
     facebookLink: "https://www.facebook.com/",
     activities: [
     {
-      activityTitle: "Leksehjelp 1",
-      googleMapsLink:
-        "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
+      activityTitle: "Leksehjelp",
+      link: "/landaas-aktiviteter/leksehjelp",
+      googleMapsLink: "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
       street: "museplassen 3",
       zipCode: "5007 Bergen",
-      time: "Mandag 16:30 - 17:30",
-      ageGroup: "1 - 4 klasse",
+      time: "Tirsdag 16:00 - 19:00",
+      ageGroup: "1 - 10 klasse",
       description:
-        "Ønsker du hjep med leksene dine eller hjelpe andre med lekser? Da er dette tilbudet for deg. Husk å ta med klær for utelek.",
-    },
-    {
-      activityTitle: "Leksehjelp 2",
-      googleMapsLink:
-        "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-      street: "museplassen 3",
-      zipCode: "5007 Bergen",
-      time: "Mandag 17:30 - 19:00",
-      ageGroup: "5 - 7 klasse",
-      description:
-        "Ønsker du hjep med leksene dine eller hjelpe andre med lekser? Da er dette tilbudet for deg. Husk å ta med klær for utelek.",
+        "Velkommen til gratis leksehjelp med servering av varm mat. Her blir det mulighet for å få hjelp med vanskelige lekser og møtes for å gjøre leksene sammen med venner.",
     },
     {
       activityTitle: "Sykkelverksted",
+      link: "/landaas-aktiviteter/sykkelverksted",
       googleMapsLink:
         "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
       street: "museplassen 3",
@@ -37,29 +27,31 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       time: "Tirsdag 15:00 - 19:00",
       ageGroup: "1 - 7 klasse",
       description:
-        "Kan fikse alle typer sykler. Det er bare å ta med sykkelen din og komme innom. lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Velkommen til vårt sykkelverksted på Sletten. Her hjelper vi barn og ungdom med reparasjoner av egne sykler. Det er også muligheter for sykkelturer om tiden strekker til.",
     },
     {
       activityTitle: "Jentegruppe",
+      link: "/landaas-aktiviteter/jentegruppe",
       googleMapsLink:
         "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
       street: "museplassen 3",
       zipCode: "5007 Bergen",
-      time: "Tirsdag 15:00 - 17:00",
-      ageGroup: "1 - 4 klasse",
+      time: "Annenhver torsdag 16:00 - 19:00",
+      ageGroup: "13 - 20 år",
       description:
-        "Nye aktiviteter hver uke. aktiviteter som gocart, sykling, klatring, og mye mer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Velkommen til vår jentegruppe med gøye aktiviteter og utflukter annenhver torsdag.",
     },
     {
-      activityTitle: "Leksehjelp 2",
+      activityTitle: "Fredagsklubb",
+      link: "/landaas-aktiviteter/fredagsklubb",
       googleMapsLink:
         "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
       street: "museplassen 3",
       zipCode: "5007 Bergen",
-      time: "Tirsdag 15:00 - 17:00",
-      ageGroup: "1 - 4 klasse",
+      time: "Annenhver torsdag 16:00 - 19:00",
+      ageGroup: "13 - 20 år",
       description:
-        "Dette er et åpent tilbud for alle bar i Årstad bydel. Husk å ta med klær for utelek. Dette er et åpent tilbud for alle bar i Årstad bydel. Husk å ta med klær for utelek.",
+        "Velkommen til vår fredagsklubb på Femmeren. Her kan barn og ungdom komme for å henge ut, møte venner og delta på forskjellige aktiviteter på Femmeren.",
     },
   ],
 };

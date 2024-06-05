@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 interface ActivityCardProps {
   activityTitle: string;
+  link: string;
   time: string;
   ageGroup: string;
   description: string;
@@ -15,16 +16,14 @@ interface ActivityCardProps {
 
 const ActivityCard: React.FC<ActivityCardProps> = ({
   activityTitle,
+  link,
   time,
   ageGroup,
   description,
 }) => {
   return (
     <div>
-      <Link
-        to="/landaas-aktiviteter/leksehjelp"
-        className={styles.cardActivityLink}
-      >
+      <Link to={link} className={styles.cardActivityLink}>
         <div className={styles.cardActivity}>
           <img
             src={bergenImage}

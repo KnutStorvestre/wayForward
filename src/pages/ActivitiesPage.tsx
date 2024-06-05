@@ -10,6 +10,7 @@ interface ActivitiesPageProps {
     facebookLink: string;
     activities: {
       activityTitle: string;
+      link: string;
       googleMapsLink: string;
       street: string;
       zipCode: string;
@@ -35,6 +36,7 @@ const ActivitiesPage: React.FC<ActivitiesPageProps> = ({ data }) => {
           {activities.map((activity, index) => (
             <ActivityCard
               key={index}
+              link={activity.link}
               activityTitle={activity.activityTitle}
               time={activity.time}
               ageGroup={activity.ageGroup}
