@@ -15,6 +15,8 @@ import "./App.css";
 import Femmeren from "./pages/Femmeren";
 import SotraRentalPremise from "./pages/SotraRentalPremise";
 import FridayClub from "./pages/landaasAktiviteter/FridayClub";
+import GirlGroupSotra from "./pages/sotraAktivities/GirlGroupSotra";
+import HomeWorkHelpSotra from "./pages/sotraAktivities/HomeworkHelpSotra";
 
 function App() {
   return (
@@ -40,6 +42,14 @@ function App() {
         <Route
           path="/landaas-aktiviteter/fredagsklubb"
           element={<FridayClub />}
+        />
+        <Route
+          path="/sotra-aktiviteter/leksehjelp"
+          element={<HomeWorkHelpSotra />}
+        />
+        <Route
+          path="/sotra-aktiviteter/jentegruppe"
+          element={<GirlGroupSotra />}
         />
         <Route path="/sotra-aktiviteter" element={<SotraActivities />} />
         <Route path="/utleie" element={<RentalChoice />} />
