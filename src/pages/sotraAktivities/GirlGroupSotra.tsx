@@ -1,4 +1,4 @@
-import styles from "../styles/HomeworkHelp.module.css";
+import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
 
 const GirlGroupSotra = () => {
@@ -38,12 +38,11 @@ const GirlGroupSotra = () => {
               Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for
               jentegruppen.
             </p>
+            <InfoBoxHeader title="Info" />
           </div>
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        <InfoBoxHeader title="Info" />
-        Aldersgruppe eks: 1.-4. klasse og møte tidspunkt
         <InfoBoxHeader title="Kart" />
       </div>
     </div>

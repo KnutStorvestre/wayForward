@@ -1,4 +1,4 @@
-import styles from "../styles/HomeworkHelp.module.css";
+import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
 
 const HomeWorkHelp = () => {
@@ -32,12 +32,11 @@ const HomeWorkHelp = () => {
               aktiviteter som bingo, Kahoot, quiz, kanonball eller annet frem
               til aktiviteten er ferdig.
             </p>
+            <InfoBoxHeader title="Info" />
           </div>
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        <InfoBoxHeader title="Info" />
-        Aldersgruppe eks: 1.-4. klasse og møte tidspunkt
         <InfoBoxHeader title="Kart" />
       </div>
     </div>
