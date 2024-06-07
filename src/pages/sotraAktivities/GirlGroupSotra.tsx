@@ -39,8 +39,8 @@ const GirlGroupSotra = () => {
               Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for
               jentegruppen.
             </p>
-            <SectionHeader title="Info" />
           </div>
+          <SectionHeader title="Info" />
         </div>
       </div>
       <div className={styles.wideContainerBottom}>

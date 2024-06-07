@@ -13,16 +13,18 @@ export const InfoBox: React.FC<InfoBoxProps> = ({ Lines }) => {
   return (
     <div>
       <SectionHeader title="Info" />
-      <ul className={styles.infoBoxList}>
-        {Lines.map((line, index) => (
-          <li key={index}>
-            <p>
-              <span className={styles.strongText}>{line.title}</span>
-              <span className={styles.lightText}> {line.text}</span>
-            </p>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.bodyText}>
+        <ul className={styles.infoBoxList}>
+          {Lines.map((line, index) => (
+            <li key={index}>
+              <p>
+                <span className={styles.strongText}>{line.title}</span>
+                <span className={styles.lightText}> {line.text}</span>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

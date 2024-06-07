@@ -36,8 +36,8 @@ const HomeWorkHelpSotra = () => {
               Denne aktiviteten krever ikke påmelding. Det er bare til å møte
               opp ved Grønamyrvegen 6, 5353 Straume
             </p>
-            <SectionHeader title="Info" />
           </div>
+          <SectionHeader title="Info" />
         </div>
       </div>
       <div className={styles.wideContainerBottom}>

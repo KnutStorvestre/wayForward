@@ -38,17 +38,17 @@ const CyclerRepairs = () => {
               Alle reparasjoner og deler er helt gratis, og påmelding er ikke
               nødvendig på denne aktiviteten.
             </p>
-            <InfoBox
-              Lines={[
-                { title: "Tidspunkt:", text: "Tirsdag kl. 15:00-19:00" },
-                { title: "Alder:", text: "6 - 19 år" },
-                {
-                  title: "Kontakt:",
-                  text: " Sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for spørsmål.",
-                },
-              ]}
-            />
           </div>
+          <InfoBox
+            Lines={[
+              { title: "Tidspunkt:", text: "Tirsdag kl. 15:00-19:00" },
+              { title: "Alder:", text: "6 - 19 år" },
+              {
+                title: "Kontakt:",
+                text: " Sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for spørsmål.",
+              },
+            ]}
+          />
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
