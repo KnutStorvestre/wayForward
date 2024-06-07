@@ -35,9 +35,14 @@ const GirlGroup = () => {
               fra alle deltakere om hva dere vil gjøre til neste gang. &lt;3
             </p>
             <InfoBox
-              time="Torsdager kl. 17:00-20:00"
-              ageGroup="13-20 år"
-              registration=" Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen."
+              Lines={[
+                { title: "Tid:", text: "Torsdager kl. 17:00-20:00" },
+                { title: "Alder:", text: "13-20 år" },
+                {
+                  title: "Påmelding:",
+                  text: "Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen.",
+                },
+              ]}
             />
           </div>
         </div>
@@ -49,37 +54,32 @@ const GirlGroup = () => {
   );
 };
 
-interface InfoBoxProps {
-  time: string;
-  ageGroup: string;
-  registration: string;
+interface Line {
+  title: string;
+  text: string;
 }
 
-const InfoBox: React.FC<InfoBoxProps> = ({ time, ageGroup, registration }) => (
-  <div>
-    <InfoBoxHeader title="Info" />
-    <ul className={styles.infoBoxList}>
-      <li>
-        <p>
-          <span className={styles.strongText}>Tidspunkt:</span>
-          <span className={styles.lightText}> {time}</span>
-        </p>
-      </li>
-      <li>
-        <p>
-          <span className={styles.strongText}>Aldersgruppe:</span>
-          <span className={styles.lightText}> {ageGroup}</span>
-        </p>
-      </li>
-      <li>
-        <p>
-          <span className={styles.strongText}>Påmelding:</span>
-          <span className={styles.lightText}>{registration}</span>
-        </p>
-      </li>
-    </ul>
-  </div>
-);
+interface InfoBoxProps {
+  Lines: Line[];
+}
+
+const InfoBox: React.FC<InfoBoxProps> = ({ Lines }) => {
+  return (
+    <div>
+      <InfoBoxHeader title="Info" />
+      <ul className={styles.infoBoxList}>
+        {Lines.map((line, index) => (
+          <li key={index}>
+            <p>
+              <span className={styles.strongText}>{line.title}</span>
+              <span className={styles.lightText}> {line.text}</span>
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 interface InfoBoxHeaderProps {
   title: string;
