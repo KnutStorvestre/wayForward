@@ -1,5 +1,6 @@
 import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
+import { SectionHeader } from "../Util";
 
 const FridayClub = () => {
   return (
@@ -43,28 +44,14 @@ const FridayClub = () => {
               ønsker å delta. Man får plass ca. annenhver uke.
             </p>
           </div>
-          <InfoBoxHeader title="Info" />
+          <SectionHeader title="Info" />
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        <InfoBoxHeader title="Kart" />
+        <SectionHeader title="Kart" />
       </div>
     </div>
   );
 };
-
-interface InfoBoxHeaderProps {
-  title: string;
-}
-
-const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => (
-  <div>
-    <div className={styles.hrHeader}>
-      <hr className={styles.headerLine} />
-      <h1 className={styles.headerTitle}>{title}</h1>
-      <hr className={styles.headerLine} />
-    </div>
-  </div>
-);
 
 export default FridayClub;
