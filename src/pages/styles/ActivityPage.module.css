@@ -36,6 +36,24 @@
   margin: 15px 0;
 }
 
+.lightText {
+  font-weight: 300;
+  color: #666;
+}
+
+.strongText {
+  font-weight: 500;
+}
+
+.infoBoxList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding-left: 30px;
+  list-style-type: none;
+}
+
 .hrHeader {
   display: flex;
   flex-direction: row;
@@ -55,4 +73,10 @@
   height: 1px;
   background: #ddd;
   margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .infoBoxList {
+    gap: 1rem;
+  }
 }
