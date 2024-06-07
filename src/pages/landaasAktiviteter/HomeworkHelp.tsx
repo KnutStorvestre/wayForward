@@ -1,6 +1,6 @@
 import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
-import { SectionHeader } from "../Util";
+import { SectionHeader, InfoBox } from "../Util";
 
 const HomeWorkHelp = () => {
   return (
@@ -33,8 +33,21 @@ const HomeWorkHelp = () => {
               aktiviteter som bingo, Kahoot, quiz, kanonball eller annet frem
               til aktiviteten er ferdig.
             </p>
+            <p className={styles.lightTextParagraph}>
+              Leksehjelpen vår har stor pågang og bare kapasitet til 30 barn.
+              Man må derfor regne med å få plass ca. annenvher uke. Man får
+            </p>
           </div>
-          <SectionHeader title="Info" />
+          <InfoBox
+            Lines={[
+              { title: "Alder:", text: " 1-10 klasse" },
+              { title: "Tidspunkt:", text: " Tirsdager kl. 16:00 - 19:00" },
+              {
+                title: "Påmelding:",
+                text: ` Send "LEKSEHJELP" på SMS til 40 40 60 98. `,
+              },
+            ]}
+          />
         </div>
       </div>
       <div>
