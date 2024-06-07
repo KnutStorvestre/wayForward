@@ -16,7 +16,7 @@ const CyclerRepairs = () => {
             <span className={styles.location}> Landås</span>
           </p>
           <div className={styles.bodyText}>
-            <p className={styles.strongText}>
+            <p className={styles.strongTextParagraph}>
               I sykkelgarasjen vis a vis aktivitetshuset «Femmeren» har EBF gitt
               Way Forward garasjelokaler som har blitt utviklet til et
               gjennomført sykkelverksted. Her kan barn og ungdom komme og få
@@ -24,20 +24,20 @@ const CyclerRepairs = () => {
               aktivitetsledere vil være til stede slik at barn og unge selv kan
               være med på å reparere syklene.
             </p>
-            <p className={styles.lightText}>
+            <p className={styles.lightTextParagraph}>
               Ofte blir det tid til sykkelturer for deltakerne etter at syklene
               er reparert.
             </p>
-            <p className={styles.lightText}>
+            <p className={styles.lightTextParagraph}>
               Vi holder åpent i lokalene hver onsdag mellom kl. 16:00 - 18:00. I
               forbindelse med ferieavvikling og vinterstider vil
               sykkelverkstedet være åpent etter behov.
             </p>
-            <p className={styles.lightText}>
+            <p className={styles.lightTextParagraph}>
               Alle reparasjoner og deler er helt gratis, og påmelding er ikke
               nødvendig på denne aktiviteten.
             </p>
-            <p className={styles.lightText}>
+            <p className={styles.lightTextParagraph}>
               Kontakt sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for
               spørsmål.
             </p>

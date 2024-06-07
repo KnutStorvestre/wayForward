@@ -24,7 +24,7 @@ const CyclerRepairs = () => {
               aktivitetsledere vil være til stede slik at barn og unge selv kan
               være med på å reparere syklene.
             </p>
-            <p className={styles.lightText}>
+            <p className={styles.lightTextParagraph}>
               Ofte blir det tid til sykkelturer for deltakerne etter at syklene
               er reparert.
             </p>
