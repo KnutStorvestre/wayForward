@@ -1,5 +1,6 @@
 import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
+import { InfoBox, SectionHeader } from "../Util";
 
 const GirlGroup = () => {
   return (
@@ -48,51 +49,10 @@ const GirlGroup = () => {
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        <InfoBoxHeader title="Kart" />
+        <SectionHeader title="Kart" />
       </div>
     </div>
   );
 };
-
-interface Line {
-  title: string;
-  text: string;
-}
-
-interface InfoBoxProps {
-  Lines: Line[];
-}
-
-const InfoBox: React.FC<InfoBoxProps> = ({ Lines }) => {
-  return (
-    <div>
-      <InfoBoxHeader title="Info" />
-      <ul className={styles.infoBoxList}>
-        {Lines.map((line, index) => (
-          <li key={index}>
-            <p>
-              <span className={styles.strongText}>{line.title}</span>
-              <span className={styles.lightText}> {line.text}</span>
-            </p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-interface InfoBoxHeaderProps {
-  title: string;
-}
-
-const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => (
-  <div>
-    <div className={styles.hrHeader}>
-      <hr className={styles.headerLine} />
-      <h1 className={styles.headerTitle}>{title}</h1>
-      <hr className={styles.headerLine} />
-    </div>
-  </div>
-);
 
 export default GirlGroup;
