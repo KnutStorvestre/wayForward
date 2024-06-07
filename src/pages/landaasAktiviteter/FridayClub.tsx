@@ -1,4 +1,4 @@
-import styles from "../styles/HomeworkHelp.module.css";
+import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
 
 const FridayClub = () => {
@@ -43,11 +43,10 @@ const FridayClub = () => {
               ønsker å delta. Man får plass ca. annenhver uke.
             </p>
           </div>
+          <InfoBoxHeader title="Info" />
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        <InfoBoxHeader title="Info" />
-        Aldersgruppe eks: 1.-4. klasse og møte tidspunkt
         <InfoBoxHeader title="Kart" />
       </div>
     </div>

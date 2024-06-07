@@ -1,4 +1,4 @@
-import styles from "../styles/HomeworkHelp.module.css";
+import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
 
 const HomeWorkHelpSotra = () => {
@@ -35,12 +35,11 @@ const HomeWorkHelpSotra = () => {
               Denne aktiviteten krever ikke påmelding. Det er bare til å møte
               opp ved Grønamyrvegen 6, 5353 Straume
             </p>
+            <InfoBoxHeader title="Info" />
           </div>
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        <InfoBoxHeader title="Info" />
-        Aldersgruppe eks: 1.-4. klasse og møte tidspunkt
         <InfoBoxHeader title="Kart" />
       </div>
     </div>

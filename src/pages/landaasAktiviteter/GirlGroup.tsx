@@ -1,4 +1,4 @@
-import styles from "../styles/HomeworkHelp.module.css";
+import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
 
 const GirlGroup = () => {
@@ -38,21 +38,46 @@ const GirlGroup = () => {
               Alle reparasjoner og deler er helt gratis, og påmelding er ikke
               nødvendig på denne aktiviteten.
             </p>
-            <p className={styles.lightText}>
-              Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for
-              jentegruppen.
-            </p>
+            <InfoBox
+              time="Torsdager kl. 17:00-20:00"
+              ageGroup="13-20 år"
+              registration="Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen."
+            />
           </div>
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        <InfoBoxHeader title="Info" />
-        Aldersgruppe eks: 1.-4. klasse og møte tidspunkt
         <InfoBoxHeader title="Kart" />
       </div>
     </div>
   );
 };
+
+interface InfoBoxProps {
+  time: string;
+  ageGroup: string;
+  registration: string;
+}
+
+const InfoBox: React.FC<InfoBoxProps> = ({ time, ageGroup, registration }) => (
+  <div>
+    <InfoBoxHeader title="Info" />
+    <ul>
+      <li>
+        <p className={styles.strongText}>Tidspunkt:</p>
+        <p className={styles.lightText}>{time}</p>
+      </li>
+      <li>
+        <p className={styles.strongText}>Aldersgruppe:</p>
+        <p className={styles.lightText}>{ageGroup}</p>
+      </li>
+      <li>
+        <p className={styles.strongText}>Påmelding:</p>
+        <p className={styles.lightText}>{registration}</p>
+      </li>
+    </ul>
+  </div>
+);
 
 interface InfoBoxHeaderProps {
   title: string;
