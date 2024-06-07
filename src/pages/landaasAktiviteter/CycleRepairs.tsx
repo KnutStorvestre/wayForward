@@ -41,11 +41,11 @@ const CyclerRepairs = () => {
               Kontakt sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for
               spørsmål.
             </p>
+            <InfoBoxHeader title="Info" />
           </div>
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        <InfoBoxHeader title="Info" />
         Aldersgruppe eks: 1.-4. klasse og møte tidspunkt
         <InfoBoxHeader title="Kart" />
       </div>

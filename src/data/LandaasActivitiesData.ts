@@ -25,7 +25,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       street: "museplassen 3",
       zipCode: "5007 Bergen",
       time: "Tirsdag 15:00 - 19:00",
-      ageGroup: "1 - 7 klasse",
+      ageGroup: "6 - 19 år",
       description:
         "Velkommen til vårt sykkelverksted på Sletten. Her hjelper vi barn og ungdom med reparasjoner av egne sykler. Det er også muligheter for sykkelturer om tiden strekker til.",
     },
