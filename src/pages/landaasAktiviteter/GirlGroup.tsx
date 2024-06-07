@@ -12,7 +12,7 @@ const GirlGroup = () => {
         />
         <div className="text-container horizontal-padding">
           <p className={styles.topText}>
-            <span className={styles.mainHeader}>Jentgruppe,</span>
+            <span className={styles.mainHeader}>Jentegruppe,</span>
             <span className={styles.location}> Landås</span>
           </p>
           <div className={styles.bodyText}>
@@ -34,14 +34,10 @@ const GirlGroup = () => {
               Vi ønsker å ha Slettens beste jentegruppe, og tar gjerne forslag
               fra alle deltakere om hva dere vil gjøre til neste gang. &lt;3
             </p>
-            <p className={styles.lightTextParagraph}>
-              Alle reparasjoner og deler er helt gratis, og påmelding er ikke
-              nødvendig på denne aktiviteten.
-            </p>
             <InfoBox
               time="Torsdager kl. 17:00-20:00"
               ageGroup="13-20 år"
-              registration="Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen."
+              registration=" Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen."
             />
           </div>
         </div>
@@ -62,18 +58,24 @@ interface InfoBoxProps {
 const InfoBox: React.FC<InfoBoxProps> = ({ time, ageGroup, registration }) => (
   <div>
     <InfoBoxHeader title="Info" />
-    <ul>
+    <ul className={styles.infoBoxList}>
       <li>
-        <p className={styles.strongText}>Tidspunkt:</p>
-        <p className={styles.lightText}>{time}</p>
+        <p>
+          <span className={styles.strongText}>Tidspunkt:</span>
+          <span className={styles.lightText}> {time}</span>
+        </p>
       </li>
       <li>
-        <p className={styles.strongText}>Aldersgruppe:</p>
-        <p className={styles.lightText}>{ageGroup}</p>
+        <p>
+          <span className={styles.strongText}>Aldersgruppe:</span>
+          <span className={styles.lightText}> {ageGroup}</span>
+        </p>
       </li>
       <li>
-        <p className={styles.strongText}>Påmelding:</p>
-        <p className={styles.lightText}>{registration}</p>
+        <p>
+          <span className={styles.strongText}>Påmelding:</span>
+          <span className={styles.lightText}>{registration}</span>
+        </p>
       </li>
     </ul>
   </div>

@@ -46,7 +46,6 @@ const CyclerRepairs = () => {
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        Aldersgruppe eks: 1.-4. klasse og møte tidspunkt
         <InfoBoxHeader title="Kart" />
       </div>
     </div>
