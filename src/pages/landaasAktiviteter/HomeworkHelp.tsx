@@ -33,11 +33,11 @@ const HomeWorkHelp = () => {
               aktiviteter som bingo, Kahoot, quiz, kanonball eller annet frem
               til aktiviteten er ferdig.
             </p>
-            <SectionHeader title="Info" />
           </div>
+          <SectionHeader title="Info" />
         </div>
       </div>
-      <div className={styles.wideContainerBottom}>
+      <div>
         <SectionHeader title="Kart" />
       </div>
     </div>

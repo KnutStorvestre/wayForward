@@ -35,17 +35,17 @@ const GirlGroup = () => {
               Vi ønsker å ha Slettens beste jentegruppe, og tar gjerne forslag
               fra alle deltakere om hva dere vil gjøre til neste gang. &lt;3
             </p>
-            <InfoBox
-              Lines={[
-                { title: "Tidspunkt:", text: "Torsdager kl. 17:00-20:00" },
-                { title: "Alder:", text: "13-20 år" },
-                {
-                  title: "Påmelding:",
-                  text: "Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen.",
-                },
-              ]}
-            />
           </div>
+          <InfoBox
+            Lines={[
+              { title: "Tidspunkt:", text: "Torsdager kl. 17:00-20:00" },
+              { title: "Alder:", text: "13-20 år" },
+              {
+                title: "Påmelding:",
+                text: "Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen.",
+              },
+            ]}
+          />
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
