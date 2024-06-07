@@ -1,4 +1,5 @@
 import styles from "../styles/ActivityPage.module.css";
+import { InfoBox, SectionHeader } from "../Util";
 import homeworkImg from "../../assets/images/homework-books.jpg";
 
 const CyclerRepairs = () => {
@@ -37,33 +38,24 @@ const CyclerRepairs = () => {
               Alle reparasjoner og deler er helt gratis, og påmelding er ikke
               nødvendig på denne aktiviteten.
             </p>
-            <p className={styles.lightTextParagraph}>
-              Kontakt sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for
-              spørsmål.
-            </p>
-            <InfoBoxHeader title="Info" />
+            <InfoBox
+              Lines={[
+                { title: "Tidspunkt:", text: "Tirsdag kl. 15:00-19:00" },
+                { title: "Alder:", text: "6 - 19 år" },
+                {
+                  title: "Kontakt:",
+                  text: " Sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for spørsmål.",
+                },
+              ]}
+            />
           </div>
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
-        <InfoBoxHeader title="Kart" />
+        <SectionHeader title="Kart" />
       </div>
     </div>
   );
 };
-
-interface InfoBoxHeaderProps {
-  title: string;
-}
-
-const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => (
-  <div>
-    <div className={styles.hrHeader}>
-      <hr className={styles.headerLine} />
-      <h1 className={styles.headerTitle}>{title}</h1>
-      <hr className={styles.headerLine} />
-    </div>
-  </div>
-);
 
 export default CyclerRepairs;
