@@ -1,6 +1,6 @@
 import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
-import { SectionHeader } from "../Util";
+import { SectionHeader, InfoBox } from "../Util";
 
 const FridayClub = () => {
   return (
@@ -44,7 +44,16 @@ const FridayClub = () => {
               ønsker å delta. Man får plass ca. annenhver uke.
             </p>
           </div>
-          <SectionHeader title="Info" />
+          <InfoBox
+            Lines={[
+              { title: "Tidspunkt:", text: "Fredag" },
+              { title: "Aldersgruppe:", text: "6 - 19 år" },
+              {
+                title: "Påmelding:",
+                text: "Ring eller send 'FREDAGSKLUBB' på SMS til 40 40 60 98.",
+              },
+            ]}
+          />
         </div>
       </div>
       <div className={styles.wideContainerBottom}>

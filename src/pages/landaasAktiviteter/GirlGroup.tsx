@@ -19,10 +19,10 @@ const GirlGroup = () => {
           <div className={styles.bodyText}>
             <p className={styles.strongTextParagraph}>
               Med base på Sletten arrangerer vi jentegruppe annenhver torsdag
-              for jenter som vil møtes for å gjøre aktiviteter sammen. Her er
-              det fullt mulig å ta med venner eller komme alene. Det er to
-              kvinnelige aktivitetsledere som jobber på denne aktiviteten, og
-              varm mat serveres som oftest.
+              for jenter som vil delta på aktiviteter sammen. Her er det fullt
+              mulig å ta med venner eller komme alene. Det er to kvinnelige
+              aktivitetsledere som jobber på denne aktiviteten, og varm mat
+              serveres som oftest.
             </p>
             <p className={styles.lightTextParagraph}>
               Aktiviteter på huset varierer fra gang til gang, fra tegning,
@@ -33,12 +33,12 @@ const GirlGroup = () => {
             </p>
             <p className={styles.lightTextParagraph}>
               Vi ønsker å ha Slettens beste jentegruppe, og tar gjerne forslag
-              fra alle deltakere om hva dere vil gjøre til neste gang. &lt;3
+              fra alle deltakere om hva vi kan gjøre til neste gang. &lt;3
             </p>
           </div>
           <InfoBox
             Lines={[
-              { title: "Tidspunkt:", text: "Torsdager kl. 17:00-20:00" },
+              { title: "Tidspunkt:", text: "Annh. torsdag kl. 16:00 - 19:00" },
               { title: "Alder:", text: "13-20 år" },
               {
                 title: "Påmelding:",

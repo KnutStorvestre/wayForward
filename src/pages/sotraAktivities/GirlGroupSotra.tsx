@@ -1,6 +1,6 @@
 import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
-import { SectionHeader } from "../Util";
+import { SectionHeader, InfoBox } from "../Util";
 
 const GirlGroupSotra = () => {
   return (
@@ -40,7 +40,16 @@ const GirlGroupSotra = () => {
               jentegruppen.
             </p>
           </div>
-          <SectionHeader title="Info" />
+          <InfoBox
+            Lines={[
+              { title: "Tidspunkt:", text: "Annh. lørdag kl. 12:00 - 16:00" },
+              { title: "Aldersgruppe:", text: "13 - 20 år" },
+              {
+                title: "Påmelding:",
+                text: `Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen.`,
+              },
+            ]}
+          />
         </div>
       </div>
       <div className={styles.wideContainerBottom}>

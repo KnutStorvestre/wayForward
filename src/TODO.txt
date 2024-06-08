@@ -31,7 +31,7 @@ TODO
 TODO spørsmål til møte 
 * farge på footer
 * legge til kart
-* Kan hus leies flere ganger på en dag
+* Kan hus leies flere ganger på en dag. Nei lokalene kan bare leie us en gang om dagen 
 * Hvordan vise sponsorer
 * Legge til fine bilder
 * Hoover bli større eller endre farge

@@ -34,15 +34,15 @@ const CyclerRepairs = () => {
               forbindelse med ferieavvikling og vinterstider vil
               sykkelverkstedet være åpent etter behov.
             </p>
-            <p className={styles.lightTextParagraph}>
-              Alle reparasjoner og deler er helt gratis, og påmelding er ikke
-              nødvendig på denne aktiviteten.
-            </p>
           </div>
           <InfoBox
             Lines={[
-              { title: "Tidspunkt:", text: "Tirsdag kl. 15:00-19:00" },
+              {
+                title: "Tidspunkt:",
+                text: " Onsdag kl. 16:00 - 18:00",
+              },
               { title: "Alder:", text: "6 - 19 år" },
+              { title: "Pris:", text: "Gratis" },
               {
                 title: "Kontakt:",
                 text: " Sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for spørsmål.",

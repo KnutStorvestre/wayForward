@@ -1,6 +1,6 @@
 import styles from "../styles/ActivityPage.module.css";
 import homeworkImg from "../../assets/images/homework-books.jpg";
-import { SectionHeader } from "../Util";
+import { SectionHeader, InfoBox } from "../Util";
 
 const HomeWorkHelpSotra = () => {
   return (
@@ -37,7 +37,16 @@ const HomeWorkHelpSotra = () => {
               opp ved Grønamyrvegen 6, 5353 Straume
             </p>
           </div>
-          <SectionHeader title="Info" />
+          <InfoBox
+            Lines={[
+              { title: "Tidspunkt:", text: "Mandag kl. 16 - 19" },
+              { title: "Aldersgruppe:", text: "1 - 10 klasse" },
+              {
+                title: "Påmelding:",
+                text: `Det er bare til å møte opp ved Grønamyrvegen 6, 5353 Straume`,
+              },
+            ]}
+          />
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
