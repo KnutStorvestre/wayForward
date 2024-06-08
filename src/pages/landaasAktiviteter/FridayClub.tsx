@@ -46,7 +46,7 @@ const FridayClub = () => {
               { title: "Aldersgruppe:", text: "6 - 19 år" },
               {
                 title: "Påmelding:",
-                text: "Ring eller send 'FREDAGSKLUBB' på SMS til 40 40 60 98. Man får plass ca. annenhver uke grunnet stor pågang.",
+                text: "Ring eller send 'FREDAGSKLUBB' på SMS til 40 40 60 98.",
               },
               { title: "Adresse:", text: "XXXX" },
             ]}
