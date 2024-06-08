@@ -10,7 +10,7 @@ body {
   align-items: stretch;
   gap: 2rem;
   padding: 0;
-  height: 120px;
+  height: 0px;
   position: fixed;
   top: 0;
   left: 0;
