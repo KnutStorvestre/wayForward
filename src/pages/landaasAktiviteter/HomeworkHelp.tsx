@@ -40,11 +40,11 @@ const HomeWorkHelp = () => {
           </div>
           <InfoBox
             Lines={[
-              { title: "Alder:", text: " 1-10 klasse" },
               { title: "Tidspunkt:", text: " Tirsdager kl. 16:00 - 19:00" },
+              { title: "Aldersgruppe:", text: " 1 - 10 klasse" },
               {
                 title: "Påmelding:",
-                text: ` Send "LEKSEHJELP" på SMS til 40 40 60 98. `,
+                text: `Send "LEKSEHJELP" på SMS til 40 40 60 98.`,
               },
             ]}
           />
