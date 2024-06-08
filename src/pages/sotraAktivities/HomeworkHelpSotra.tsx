@@ -32,10 +32,6 @@ const HomeWorkHelpSotra = () => {
               aktiviteter som bingo, Kahoot, quiz, kortspill eller annet frem
               til aktiviteten er ferdig.
             </p>
-            <p className={styles.lightTextParagraph}>
-              Denne aktiviteten krever ikke påmelding. Det er bare til å møte
-              opp ved Grønamyrvegen 6, 5353 Straume
-            </p>
           </div>
           <InfoBox
             Lines={[

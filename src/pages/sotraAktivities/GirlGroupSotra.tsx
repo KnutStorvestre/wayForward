@@ -35,10 +35,6 @@ const GirlGroupSotra = () => {
               Vi ønsker å ha Øygardens beste jentegruppe, og tar gjerne forslag
               fra alle deltakere om hva vi kan gjøre til neste gang. &lt;3
             </p>
-            <p className={styles.lightTextParagraph}>
-              Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for
-              jentegruppen.
-            </p>
           </div>
           <InfoBox
             Lines={[
