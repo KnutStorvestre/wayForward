@@ -14,7 +14,7 @@ const HomeWorkHelpSotra = () => {
         <div className="text-container horizontal-padding">
           <p className={styles.topText}>
             <span className={styles.mainHeader}>Leksehjelp,</span>
-            <span className={styles.location}> Sotra/Øygarden</span>
+            <span className={styles.location}> Sotra</span>
           </p>
           <div className={styles.bodyText}>
             <p className={styles.strongTextParagraph}>
@@ -45,6 +45,7 @@ const HomeWorkHelpSotra = () => {
                 title: "Påmelding:",
                 text: `Det er bare til å møte opp ved Grønamyrvegen 6, 5353 Straume`,
               },
+              { title: "Adresse:", text: "XXXX" },
             ]}
           />
         </div>

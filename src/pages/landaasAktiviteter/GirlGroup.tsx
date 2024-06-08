@@ -38,12 +38,16 @@ const GirlGroup = () => {
           </div>
           <InfoBox
             Lines={[
-              { title: "Tidspunkt:", text: "Annh. torsdag kl. 16:00 - 19:00" },
+              {
+                title: "Tidspunkt:",
+                text: "Annenhver torsdag kl. 16:00 - 19:00",
+              },
               { title: "Alder:", text: "13-20 år" },
               {
                 title: "Påmelding:",
                 text: "Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen.",
               },
+              { title: "Adresse:", text: "XXXX" },
             ]}
           />
         </div>

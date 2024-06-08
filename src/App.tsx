@@ -5,7 +5,11 @@ import LandaasActivities from "./pages/LandaasActivities";
 import HomeWorkHelp from "./pages/landaasAktiviteter/HomeworkHelp";
 import CyclerRepairs from "./pages/landaasAktiviteter/CycleRepairs";
 import GirlGroup from "./pages/landaasAktiviteter/GirlGroup";
+import FridayClub from "./pages/landaasAktiviteter/FridayClub";
 import SotraActivities from "./pages/SotraActivities";
+import GirlGroupSotra from "./pages/sotraAktivities/GirlGroupSotra";
+import HomeWorkHelpSotra from "./pages/sotraAktivities/HomeworkHelpSotra";
+import YouthCafe from "./pages/sotraAktivities/YouthCafe";
 import RentalChoice from "./pages/RentalChoice";
 import Partners from "./pages/Partners";
 import Footer from "./components/layout/Footer";
@@ -14,9 +18,6 @@ import ScrollToTop from "./util/ScrollToTop";
 import "./App.css";
 import Femmeren from "./pages/Femmeren";
 import SotraRentalPremise from "./pages/SotraRentalPremise";
-import FridayClub from "./pages/landaasAktiviteter/FridayClub";
-import GirlGroupSotra from "./pages/sotraAktivities/GirlGroupSotra";
-import HomeWorkHelpSotra from "./pages/sotraAktivities/HomeworkHelpSotra";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           path="/sotra-aktiviteter/jentegruppe"
           element={<GirlGroupSotra />}
         />
+        <Route path="/sotra-aktiviteter/ungdomskafe" element={<YouthCafe />} />
         <Route path="/sotra-aktiviteter" element={<SotraActivities />} />
         <Route path="/utleie" element={<RentalChoice />} />
         <Route path="/utleie/femmeren" element={<Femmeren />} />

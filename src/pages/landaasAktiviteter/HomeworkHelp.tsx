@@ -46,6 +46,7 @@ const HomeWorkHelp = () => {
                 title: "Påmelding:",
                 text: `Send "LEKSEHJELP" på SMS til 40 40 60 98.`,
               },
+              { title: "Adresse:", text: "XXXX" },
             ]}
           />
         </div>
