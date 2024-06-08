@@ -45,8 +45,9 @@ const CyclerRepairs = () => {
               { title: "Pris:", text: "Gratis" },
               {
                 title: "Kontakt:",
-                text: " Sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for spørsmål.",
+                text: "Sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for spørsmål.",
               },
+              { title: "Adresse:", text: "XXXX" },
             ]}
           />
         </div>

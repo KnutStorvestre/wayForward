@@ -14,7 +14,7 @@ const GirlGroupSotra = () => {
         <div className="text-container horizontal-padding">
           <p className={styles.topText}>
             <span className={styles.mainHeader}>Jentegruppe,</span>
-            <span className={styles.location}> Sotra/Øygarden</span>
+            <span className={styles.location}> Sotra</span>
           </p>
           <div className={styles.bodyText}>
             <p className={styles.strongTextParagraph}>
@@ -42,12 +42,16 @@ const GirlGroupSotra = () => {
           </div>
           <InfoBox
             Lines={[
-              { title: "Tidspunkt:", text: "Annh. lørdag kl. 12:00 - 16:00" },
+              {
+                title: "Tidspunkt:",
+                text: "Annenhver lørdag kl. 12:00 - 16:00",
+              },
               { title: "Aldersgruppe:", text: "13 - 20 år" },
               {
                 title: "Påmelding:",
                 text: `Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen.`,
               },
+              { title: "Adresse:", text: "XXXX" },
             ]}
           />
         </div>
