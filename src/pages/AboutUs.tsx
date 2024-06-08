@@ -18,27 +18,31 @@ const AboutUs = () => {
             </header>
             <article className={styles.centerText}>
               <p>
-                Har du spørsmål eller ønsker å komme i kontakt med oss? Send oss
-                en melding på e-post eller ring oss.
+                Way Forward er en frivillig organisasjon som hovedsakelig jobber
+                med å integrere og inkludere flerkulturelle barn og ungdom inn i
+                det norske samfunnet med et ekstra fokus på at jenter skal delta
+                i like stor grad som guttene. Organisasjonen ble startet av
+                Richard Kiwanuka i 2004 og bruker nå leksehjelp, sykkelverksted,
+                musikkstudio, jentegruppe og andre fritidsaktiviteter for å nå
+                sine mål. Way Forward har et høyt fokus på å bygge opp et
+                samfunn hvor alle har muligheten til å delta i sosiale
+                aktiviteter uansett bakgrunn og økonomisk situasjon.
               </p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-                id saepe nihil! Voluptatum magnam eligendi aut quisquam iure, ea
-                placeat eaque, aperiam optio sed non qui, nemo laborum doloribus
-                exercitationem. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Animi temporibus harum suscipit quis, quia
-                dolores odit dolorem architecto sint officiis fugit, qui nulla
+                I tillegg til å arrangere egne aktiviteter hjelper også Way
+                Forward barn og unge inn i eksisterende idrettstilbud gjennom å
+                kommunisere med idrettsklubber og hjelpe til økonomisk med
+                kontingenter og innkjøp av idrettsutstyr. Tidligere har også
+                organisasjonen arrangert dansekurs og svømmekurs. Gjennom årene
+                har over 1200 barn og ungdom lært å svømme gjennom kursene.
               </p>
-              <header>
-                <h1 className={styles.secondaryHeader}>Våre verdier</h1>
-              </header>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                inventore ut soluta ad unde odit, tempora obcaecati iure? Est,
-                qui, repellat laborum maxime excepturi optio nobis quidem fuga
-                eveniet molestiae error exercitationem vel autem nostrum debitis
-                sit et. Corrupti ex pariatur facilis eius atque excepturi sequi
-                similique provident dolor dolore!
+                Richard Kiwanuka, leder av Way Forward, har mottatt flere priser
+                gjennom årene. Prisene han har mottatt er Ildsjelprisen,
+                Omsorgsprisen, Årets forbilde, Topp 10 Internasjonal leder,
+                Likestillingsprisen og Barn av Jorden. I 2020 mottok Way Forward
+                Vestlands Barrikadepris fra Fri Vestland for arrangeringen av
+                Black Lives Matter demonstrasjonen i Bergen.
               </p>
             </article>
           </div>
