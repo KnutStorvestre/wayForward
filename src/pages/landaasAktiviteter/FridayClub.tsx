@@ -39,18 +39,14 @@ const FridayClub = () => {
               flere enn 30 personer hver fredag. Alle får derfor plass ca.
               annenhver uke.
             </p>
-            <p className={styles.lightTextParagraph}>
-              Send “FREDAGSKLUBB” på SMS til 40 40 60 98 om du eller dine barn
-              ønsker å delta. Man får plass ca. annenhver uke.
-            </p>
           </div>
           <InfoBox
             Lines={[
-              { title: "Tidspunkt:", text: "Fredag" },
+              { title: "Tidspunkt:", text: "Fredag kl. XXXXXX" },
               { title: "Aldersgruppe:", text: "6 - 19 år" },
               {
                 title: "Påmelding:",
-                text: "Ring eller send 'FREDAGSKLUBB' på SMS til 40 40 60 98.",
+                text: "Ring eller send 'FREDAGSKLUBB' på SMS til 40 40 60 98. Man får plass ca. annenhver uke grunnet stor pågang.",
               },
               { title: "Adresse:", text: "XXXX" },
             ]}

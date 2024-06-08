@@ -10,6 +10,25 @@ interface InfoBoxProps {
 }
 
 export const InfoBox: React.FC<InfoBoxProps> = ({ Lines }) => {
+  const formatText = (text: string) => {
+    const phoneRegex = /(\d{2} \d{2} \d{2} \d{2})/;
+    const match = text.match(phoneRegex);
+
+    if (match) {
+      const phoneNumber = match[0];
+      const parts = text.split(phoneNumber);
+
+      return (
+        <span>
+          {parts[0]}
+          <a href={`tel:${phoneNumber.replace(/\s+/g, "")}`}>{phoneNumber}</a>
+          {parts[1]}
+        </span>
+      );
+    }
+    return <span>{text}</span>;
+  };
+
   return (
     <div>
       <SectionHeader title="Info" />
@@ -19,7 +38,10 @@ export const InfoBox: React.FC<InfoBoxProps> = ({ Lines }) => {
             <li key={index}>
               <p>
                 <span className={styles.strongText}>{line.title}</span>
-                <span className={styles.lightText}> {line.text}</span>
+                <span className={styles.lightText}>
+                  {" "}
+                  {formatText(line.text)}
+                </span>
               </p>
             </li>
           ))}
