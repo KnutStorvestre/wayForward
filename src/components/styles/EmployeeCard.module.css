@@ -58,6 +58,14 @@
   .employeeImage {
     height: 150px;
   }
+
+  .employeeName {
+    font-size: 0.875rem;
+  }
+
+  .employeePosition {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -67,5 +75,13 @@
 
   .employeeImage {
     height: 110px;
+  }
+
+  .employeeName {
+    font-size: 0.75rem;
+  }
+
+  .employeePosition {
+    font-size: 0.625rem;
   }
 }
