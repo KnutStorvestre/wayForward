@@ -25,6 +25,10 @@
   line-height: 1.5;
 }
 
+.bodyText a {
+  color: inherit;
+}
+
 .strongTextParagraph {
   font-weight: 500;
   margin-bottom: 30px;
