@@ -35,22 +35,22 @@ const CyclerRepairs = () => {
               sykkelverkstedet være åpent etter behov.
             </p>
           </div>
+          <InfoBox
+            Lines={[
+              {
+                title: "Tidspunkt:",
+                text: " Onsdag kl. 16:00 - 18:00",
+              },
+              { title: "Alder:", text: "6 - 19 år" },
+              { title: "Pris:", text: "Gratis" },
+              {
+                title: "Kontakt:",
+                text: "Sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for spørsmål.",
+              },
+              { title: "Adresse:", text: "XXXX" },
+            ]}
+          />
         </div>
-        <InfoBox
-          Lines={[
-            {
-              title: "Tidspunkt:",
-              text: " Onsdag kl. 16:00 - 18:00",
-            },
-            { title: "Alder:", text: "6 - 19 år" },
-            { title: "Pris:", text: "Gratis" },
-            {
-              title: "Kontakt:",
-              text: "Sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for spørsmål.",
-            },
-            { title: "Adresse:", text: "XXXX" },
-          ]}
-        />
       </div>
       <div className={styles.wideContainerBottom}>
         <SectionHeader title="Kart" />

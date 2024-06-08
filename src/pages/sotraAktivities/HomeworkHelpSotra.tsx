@@ -43,9 +43,9 @@ const HomeWorkHelpSotra = () => {
               { title: "Aldersgruppe:", text: "1 - 10 klasse" },
               {
                 title: "Påmelding:",
-                text: `Det er bare til å møte opp ved Grønamyrvegen 6, 5353 Straume`,
+                text: `Det er bare å møte opp.`,
               },
-              { title: "Adresse:", text: "XXXX" },
+              { title: "Adresse:", text: "Grønamyrvegen 6, 5353 Straume" },
             ]}
           />
         </div>
