@@ -35,21 +35,42 @@ const CyclerRepairs = () => {
               sykkelverkstedet være åpent etter behov.
             </p>
           </div>
-          <InfoBox
-            Lines={[
-              {
-                title: "Tidspunkt:",
-                text: " Onsdag kl. 16:00 - 18:00",
-              },
-              { title: "Alder:", text: "6 - 19 år" },
-              { title: "Pris:", text: "Gratis" },
-              {
-                title: "Kontakt:",
-                text: "Sykkelreparatør Rasmus Solberg via sms på 40 40 60 98 for spørsmål.",
-              },
-              { title: "Adresse:", text: "XXXX" },
-            ]}
-          />
+        </div>
+        <SectionHeader title="Info" />
+        <div className={styles.bodyText}>
+          <ul className={styles.infoBoxList}>
+            <li>
+              <p>
+                <span className={styles.strongText}>Tidspunkt:</span>
+                <span className={styles.lightText}>
+                  {" "}
+                  Onsdag kl. 16:00 - 18:00
+                </span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span className={styles.strongText}>Alder:</span>
+                <span className={styles.lightText}> 6 - 19 år</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span className={styles.strongText}>Pris:</span>
+                <span className={styles.lightText}> Gratis</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span className={styles.strongText}>Kontakt:</span>
+                <span className={styles.lightText}>
+                  {" "}
+                  Sykkelreparatør Rasmus Solberg via sms på{" "}
+                  <a href="tel: +47 40 40 60 98">40 40 60 98</a> for spørsmål.
+                </span>
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
       <div className={styles.wideContainerBottom}>
