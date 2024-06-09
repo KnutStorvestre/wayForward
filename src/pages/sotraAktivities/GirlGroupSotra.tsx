@@ -6,22 +6,28 @@ const textParagraphs: TextParagraphs = [
   {
     isStrong: true,
     content: `
-      Med base på Kraftsenter for aktivitet på Sotra, arrangerer vi jentegruppe for jenter som vil delta på aktiviteter sammen.
+      Med base på Kraftsenter for aktivitet på Sotra, arrangerer vi
+      jentegruppe for jenter som vil delta på aktiviteter sammen.
       Her er det fullt mulig å ta med venner eller komme alene.
-      Det er to kvinnelige aktivitetsledere som jobber på denne aktiviteten, og varm mat serveres som oftest.
+      Det er to kvinnelige aktivitetsledere som jobber på denne 
+      aktiviteten, og varm mat serveres som oftest.
       `,
   },
   {
     isStrong: false,
     content: `
-      Aktiviteter på huset varierer fra gang til gang, fra tegning, maling, baking, kakesalg, filmvisning, quiz og mye mer!
-      Minst annenhver gang drar vi på utflukt til steder som badeland, Gokart, klatreparken Høyt og Lavt, skøyter, kino, restaurantbesøk, tivoli, bowling, “Fangene på fortet” og mye mye mer!
+      Aktiviteter på huset varierer fra gang til gang, fra tegning,
+      maling, baking, kakesalg, filmvisning, quiz og mye mer!
+      Minst annenhver gang drar vi på utflukt til steder som badeland, Gokart,
+      klatreparken Høyt og Lavt, skøyter, kino, restaurantbesøk, tivoli, bowling,
+      “Fangene på fortet” og mye mye mer!
       `,
   },
   {
     isStrong: false,
     content: `
-      Vi ønsker å ha Øygardens beste jentegruppe, og tar gjerne forslag fra alle deltakere om hva vi kan gjøre til neste gang. <3
+      Vi ønsker å ha Øygardens beste jentegruppe, og tar gjerne forslag fra alle
+      deltakere om hva vi kan gjøre til neste gang. <3
       `,
   },
 ];

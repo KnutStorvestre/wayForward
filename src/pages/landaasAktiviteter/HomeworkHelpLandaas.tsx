@@ -15,7 +15,7 @@ const textParagraphs: TextParagraphs = [
   {
     isStrong: false,
     content: `
-           På leksehjelpen vil det bli servert varm mat før deltakerne begynner med
+      På leksehjelpen vil det bli servert varm mat før deltakerne begynner med
       leksene. Vi har alltid vegetarmat eller vegetaralternativer. Dette ser vi
       på som viktig både for sosialisering, inkludering og for å øke fokuset på
       leksene. Etter alle er ferdig med ukens lekser, arrangerer vi noen felles
@@ -26,7 +26,7 @@ const textParagraphs: TextParagraphs = [
   {
     isStrong: false,
     content: `
-            Leksehjelpen vår har stor pågang og bare kapasitet til 30 barn. Man må
+      Leksehjelpen vår har stor pågang og bare kapasitet til 30 barn. Man må
       derfor regne med å få plass ca. annenhver uke. Man får
       `,
   },
