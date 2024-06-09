@@ -2,10 +2,10 @@ import Navbar from "./components/layout/Navbar";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import LandaasActivities from "./pages/LandaasActivities";
-import HomeWorkHelp from "./pages/landaasAktiviteter/HomeworkHelp";
-import CyclerRepairs from "./pages/landaasAktiviteter/CycleRepairs";
-import GirlGroup from "./pages/landaasAktiviteter/GirlGroup";
-import FridayClub from "./pages/landaasAktiviteter/FridayClub";
+import HomeWorkHelpLandaas from "./pages/landaasAktiviteter/HomeworkHelpLandaas";
+import CyclerRepairsLandaas from "./pages/landaasAktiviteter/CycleRepairsLandaas";
+import GirlGroupLandaas from "./pages/landaasAktiviteter/GirlGroupLandaas";
+import FridayClubLandaas from "./pages/landaasAktiviteter/FridayClubLandaas";
 import SotraActivities from "./pages/SotraActivities";
 import GirlGroupSotra from "./pages/sotraAktivities/GirlGroupSotra";
 import HomeWorkHelpSotra from "./pages/sotraAktivities/HomeworkHelpSotra";
@@ -30,19 +30,19 @@ function App() {
         <Route path="/landaas-aktiviteter" element={<LandaasActivities />} />
         <Route
           path="/landaas-aktiviteter/leksehjelp"
-          element={<HomeWorkHelp />}
+          element={<HomeWorkHelpLandaas />}
         />
         <Route
           path="/landaas-aktiviteter/sykkelverksted"
-          element={<CyclerRepairs />}
+          element={<CyclerRepairsLandaas />}
         />
         <Route
           path="/landaas-aktiviteter/jentegruppe"
-          element={<GirlGroup />}
+          element={<GirlGroupLandaas />}
         />
         <Route
           path="/landaas-aktiviteter/fredagsklubb"
-          element={<FridayClub />}
+          element={<FridayClubLandaas />}
         />
         <Route
           path="/sotra-aktiviteter/leksehjelp"
