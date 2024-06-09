@@ -9,7 +9,7 @@ import FridayClubLandaas from "./pages/landaasAktiviteter/FridayClubLandaas";
 import SotraActivities from "./pages/SotraActivities";
 import GirlGroupSotra from "./pages/sotraAktivities/GirlGroupSotra";
 import HomeWorkHelpSotra from "./pages/sotraAktivities/HomeworkHelpSotra";
-import YouthCafe from "./pages/sotraAktivities/YouthCafe";
+import YouthCafeSotra from "./pages/sotraAktivities/YouthCafeSotra";
 import RentalChoice from "./pages/RentalChoice";
 import Partners from "./pages/Partners";
 import Footer from "./components/layout/Footer";
@@ -52,7 +52,10 @@ function App() {
           path="/sotra-aktiviteter/jentegruppe"
           element={<GirlGroupSotra />}
         />
-        <Route path="/sotra-aktiviteter/ungdomskafe" element={<YouthCafe />} />
+        <Route
+          path="/sotra-aktiviteter/ungdomskafe"
+          element={<YouthCafeSotra />}
+        />
         <Route path="/sotra-aktiviteter" element={<SotraActivities />} />
         <Route path="/utleie" element={<RentalChoice />} />
         <Route path="/utleie/femmeren" element={<Femmeren />} />
