@@ -1,7 +1,8 @@
 import homeworkImg from "../../assets/images/homework-books.jpg";
 import ActivityPage from "../ActivityPage";
+import { InfoLines, TextParagraphs } from "../ActivityPage";
 
-const textParagraphs = [
+const textParagraphs: TextParagraphs = [
   {
     isStrong: true,
     content: `
@@ -25,7 +26,7 @@ const textParagraphs = [
   },
 ];
 
-const infoLines = [
+const infoLines: InfoLines = [
   { title: "Tidspunkt:", text: "Annenhver lørdag kl. 12:00 - 16:00" },
   { title: "Aldersgruppe:", text: "13 - 20 år" },
   {
@@ -35,7 +36,7 @@ const infoLines = [
   { title: "Adresse:", text: "XXXX" },
 ];
 
-const GirlGroupSotra = () => {
+const GirlGroupSotra = () => (
   <ActivityPage
     imgSrc={homeworkImg}
     imgAlt="Large top image"
@@ -43,7 +44,7 @@ const GirlGroupSotra = () => {
     location="Sotra"
     textParagraphs={textParagraphs}
     infoLines={infoLines}
-  />;
-};
+  />
+);
 
 export default GirlGroupSotra;

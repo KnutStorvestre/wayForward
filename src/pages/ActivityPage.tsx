@@ -1,13 +1,27 @@
 import styles from "./styles/ActivityPage.module.css";
 import { SectionHeader, InfoBox } from "./Util";
 
+type InfoLine = {
+  title: string;
+  text: string;
+};
+
+type InfoLines = InfoLine[];
+
+type TextParagraph = {
+  content: string;
+  isStrong: boolean;
+};
+
+type TextParagraphs = TextParagraph[];
+
 interface ActivityPageProps {
   imgSrc: string;
   imgAlt: string;
   header: string;
   location: string;
-  textParagraphs: { content: string; isStrong: boolean }[];
-  infoLines: { title: string; text: string }[];
+  textParagraphs: TextParagraphs;
+  infoLines: InfoLines;
 }
 
 const ActivityPage: React.FC<ActivityPageProps> = ({
@@ -51,4 +65,5 @@ const ActivityPage: React.FC<ActivityPageProps> = ({
   );
 };
 
+export type { InfoLines, TextParagraphs };
 export default ActivityPage;
