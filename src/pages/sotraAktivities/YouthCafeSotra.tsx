@@ -16,13 +16,17 @@ const textParagraphs: TextParagraphs = [
     isStrong: false,
     content: `
       Vi har aktiviteter som Playstation (Fifa), tegning, bordtennis,
-      foosball turnering, Kahoot, Bingo, Uno og mye mer. Om været er fint åpner vi opp for uteaktiviteter som fotballturneringer på Sotra arena eller liknende.
+      foosball turnering, Kahoot, Bingo, Uno og mye mer. Om været er
+      fint åpner vi opp for uteaktiviteter som fotballturneringer på
+      Sotra arena eller liknende.
       `,
   },
   {
     isStrong: false,
     content: `
-      Innimellom drar ungdomscaféen på utflukt til steder som Rush, Gokart Sartor, Megazone, Fangene på fortet, skøyter, badeland, bowling og mye mer.
+      Innimellom drar ungdomscaféen på utflukt til steder som Rush,
+      Gokart Sartor, Megazone, Fangene på fortet, skøyter, badeland,
+      bowling og mye mer.
       `,
   },
 ];
