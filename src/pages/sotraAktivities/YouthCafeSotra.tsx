@@ -7,15 +7,16 @@ const textParagraphs: TextParagraphs = [
     isStrong: true,
     content: `
       Velkommen til vår ungdomscafé på Kraftsenter for aktivitet.
-      Her kan ungdom fra 13 og oppover komme for å henge ut, møte venner og delta på forskjellige aktiviteter på huset.
+      Her kan ungdom fra 13 og oppover komme for å henge ut,
+      møte venner og delta på forskjellige aktiviteter på huset.
       Det blir servert varm mat hver gang.
       `,
   },
   {
     isStrong: false,
     content: `
-      Vi har aktiviteter som Playstation (Fifa), tegning, bordtennis, foosball turnering, Kahoot, Bingo, Uno og mye mer.
-      Om været er fint åpner vi opp for uteaktiviteter som fotballturneringer på Sotra arena eller liknende.
+      Vi har aktiviteter som Playstation (Fifa), tegning, bordtennis,
+      foosball turnering, Kahoot, Bingo, Uno og mye mer. Om været er fint åpner vi opp for uteaktiviteter som fotballturneringer på Sotra arena eller liknende.
       `,
   },
   {

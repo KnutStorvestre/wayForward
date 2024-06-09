@@ -15,7 +15,7 @@ const textParagraphs: TextParagraphs = [
   {
     isStrong: false,
     content: `
-            Aktiviteter på huset varierer fra gang til gang, fra tegning, maling,
+      Aktiviteter på huset varierer fra gang til gang, fra tegning, maling,
       baking, kakesalg, filmvisning, quiz og mye mer! Minst annenhver gang drar
       vi på utflukt til steder som badeland, Gokart, klatreparken Høyt og Lavt,
       skøyter, kino, restaurantbesøk, tivoli, bowling, “Fangene på fortet” og
