@@ -1,30 +1,37 @@
-import ActivityPage, { InfoLine } from "./ActivityPage";
-import styles from "../styles/ActivityPage.module.css";
+import ActivityPage from "../ActivityPage";
 import homeworkImg from "../../assets/images/homework-books.jpg";
+import { InfoLines, TextParagraphs } from "../ActivityPage";
 
-const girlGroupDescription = (
-  <>
-    <p className={styles.strongTextParagraph}>
+const textParagraphs: TextParagraphs = [
+  {
+    isStrong: true,
+    content: `
       Med base på Sletten arrangerer vi jentegruppe annenhver torsdag for jenter
       som vil delta på aktiviteter sammen. Her er det fullt mulig å ta med
       venner eller komme alene. Det er to kvinnelige aktivitetsledere som jobber
       på denne aktiviteten, og varm mat serveres som oftest.
-    </p>
-    <p className={styles.lightTextParagraph}>
-      Aktiviteter på huset varierer fra gang til gang, fra tegning, maling,
+      `,
+  },
+  {
+    isStrong: false,
+    content: `
+            Aktiviteter på huset varierer fra gang til gang, fra tegning, maling,
       baking, kakesalg, filmvisning, quiz og mye mer! Minst annenhver gang drar
       vi på utflukt til steder som badeland, Gokart, klatreparken Høyt og Lavt,
       skøyter, kino, restaurantbesøk, tivoli, bowling, “Fangene på fortet” og
-      mye mye mer!
-    </p>
-    <p className={styles.lightTextParagraph}>
+      mye mye mer!  
+      `,
+  },
+  {
+    isStrong: false,
+    content: `
       Vi ønsker å ha Slettens beste jentegruppe, og tar gjerne forslag fra alle
-      deltakere om hva vi kan gjøre til neste gang. &lt;3
-    </p>
-  </>
-);
+      deltakere om hva vi kan gjøre til neste gang. <3
+      `,
+  },
+];
 
-const girlGroupInfoBoxLines: InfoLine[] = [
+const infoLines: InfoLines = [
   { title: "Tidspunkt:", text: "Annenhver torsdag kl. 16:00 - 19:00" },
   { title: "Alder:", text: "13-20 år" },
   {
@@ -38,10 +45,10 @@ const GirlGroup: React.FC = () => (
   <ActivityPage
     imgSrc={homeworkImg}
     imgAlt="Large top image"
-    title="Jentegruppe"
+    header="Jentegruppe"
     location="Landås"
-    description={girlGroupDescription}
-    infoBoxLines={girlGroupInfoBoxLines}
+    textParagraphs={textParagraphs}
+    infoLines={infoLines}
   />
 );
 

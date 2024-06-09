@@ -1,7 +1,8 @@
 import homeworkImg from "../../assets/images/homework-books.jpg";
 import ActivityPage from "../ActivityPage";
+import { InfoLines, TextParagraphs } from "../ActivityPage";
 
-const bodyText = [
+const textParagraphs: TextParagraphs = [
   {
     isStrong: true,
     content: `
@@ -20,22 +21,22 @@ const bodyText = [
   },
 ];
 
-const infoLines = [
+const infoLines: InfoLines = [
   { title: "Tidspunkt:", text: "Mandag kl. 16 - 19" },
   { title: "Aldersgruppe:", text: "1 - 10 klasse" },
   { title: "Påmelding:", text: "Det er bare å møte opp." },
   { title: "Adresse:", text: "Grønamyrvegen 6, 5353 Straume" },
 ];
 
-const HomeWorkHelpSotra = () => {
+const HomeWorkHelpSotra = () => (
   <ActivityPage
     imgSrc={homeworkImg}
     imgAlt="Large top image"
     header="Leksehjelp"
     location="Sotra"
-    textParagraphs={bodyText}
+    textParagraphs={textParagraphs}
     infoLines={infoLines}
-  />;
-};
+  />
+);
 
 export default HomeWorkHelpSotra;
