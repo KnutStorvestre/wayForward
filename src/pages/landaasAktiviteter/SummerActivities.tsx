@@ -17,13 +17,13 @@ const textParagraphs: TextParagraphs = [
 const infoLines: InfoLines = [
   {
     title: "Tidspunkt:",
-    text: " 24.-28. juni og 01.-05. juli, kl.12:00-16:00",
+    text: " 24. - 28. juni og 01. - 05. juli, kl. 12:00 - 16:00",
   },
   { title: "Aldersgruppe:", text: "  6 - 19 år" },
   { title: "Aldersgruppe:", text: "  Gratis" },
   {
     title: "Påmelding:",
-    text: `Send “SOMMERAKTIVITETER 2024” på SMS til Rasmus (40 40 60 98) for mer info og påmelding.`,
+    text: `Send “SOMMERAKTIVITETER 2024” på SMS til Rasmus 40 40 60 98 for mer info og påmelding.`,
   },
   { title: "Adresse:", text: "Femmeren (Joachim Lampes Vei 5, 5089 Bergen)" },
 ];
@@ -32,7 +32,7 @@ const HomeWorkHelp = () => (
   <ActivityPage
     imgSrc={homeworkImg}
     imgAlt="Large top image"
-    header="Leksehjelp"
+    header="Sommeraktiviteter 2024"
     location="Landås"
     textParagraphs={textParagraphs}
     infoLines={infoLines}
