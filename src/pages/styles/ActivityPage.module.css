@@ -1,11 +1,16 @@
-.mainHeader {
-  font-size: 35px;
-  font-weight: 500;
-  margin-bottom: 1rem;
+.largeImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .topText {
   margin-bottom: 1rem;
+}
+
+.mainHeader {
+  font-size: 35px;
+  font-weight: 500;
 }
 
 .location {
@@ -14,13 +19,8 @@
   font-size: 1.75rem;
 }
 
-.largeImage {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
 .bodyText {
+  padding-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.5;
 }
