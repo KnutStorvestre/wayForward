@@ -58,7 +58,7 @@ const ActivityPage: React.FC<ActivityPageProps> = ({
           <InfoBox Lines={infoLines} />
         </div>
       </div>
-      <div className={styles.wideContainerBottom}>
+      <div>
         <SectionHeader title="Kart" />
       </div>
     </div>

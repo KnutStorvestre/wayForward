@@ -1,43 +1,21 @@
 TODO
-* add languages
-* Partnere endrer farge når du går nedover
+* Hvorfor kommer 404 Not Found fram hele tiden
 * Remove yellow hoover when using phone. Solution remove hoover for screen under a certain with
-* KeyInfo and Fasiliteter fix this for small screens
-* the slideshow should fit the entire image on small laptop screen
-* Legg til fade på hovedside maybe
-* Endre hvitfarge
-* Legge til kart
-* legge til fane ikon
-* legge til margin på toppen av hovedsiden slik at hamburger menyen er mer synlig.
-* legge til padding på toppen av aktiviteter
-* legge til sommeraktiviteter paa hjemmesiden
-* legge til kart 
-* legge til kalender
-* kan et av husene leies ut flere ganger paa en dag
-* gammel farge #A7E198
-* add arrow to activity boxes
-* show that a box is clickable by making it larger
 * make the rental premises choise smaller 
-* Kansje putte overskriften nedenfor image slider
-* Endre bakgrunnsfarge 
-* lage overskrift i lysere farge 
-* legge til at det er paa landaas eller Sotra 
-* make the header smaller for activitis when user has a small phone
 * At some point change the hamburgerMenu.css to hamburgerMenu.module.css
-* Create horizontal padding at footer
-* Maybe have the same header fonts everywhere
-* There should be some standardized top text 
+
+TODO Ting å legge til
+* Kart
+* Sommeraktiviteter
+* Kalender. lokalene leies ut hele dager
+* Språk
 
 TODO spørsmål til møte 
 * farge på footer
-* legge til kart
 * Kan hus leies flere ganger på en dag. Nei lokalene kan bare leie us en gang om dagen 
 * Hvordan vise sponsorer
 * Legge til fine bilder
 * Hoover bli større eller endre farge
-
-
-        "Ønsker du hjep med leksene dine eller hjelpe andre med lekser? Da er dette tilbudet for deg. Husk å ta med klær for utelek.",
 
 TODO generelt viktig
 * add aria-label to everything
@@ -45,44 +23,5 @@ TODO generelt viktig
 * Padding for text on mobile or small screen.
 * Legge til fine bilder
 
-
-
-interface MapLinkProps {
-  mapLink: string;
-  address: string;
-  zipCode: string;
-}
-
-const MapLink: React.FC<MapLinkProps> = ({ mapLink, address, zipCode }) => (
-  <a href={mapLink} target="_blank" rel="noopener noreferrer">
-    <div className={styles.addressContainer}>
-      <span>{address}</span>
-      <span>{zipCode}</span>
-    </div>
-  </a>
-);
-
-
-    },
-    {
-      activityTitle: "Jentegruppe",
-      googleMapsLink:
-        "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-      street: "museplassen 3",
-      zipCode: "5007 Bergen",
-      time: "Tirsdag 15:00 - 17:00",
-      ageGroup: "1 - 4 klasse",
-      description:
-        "Nye aktiviteter hver uke. aktiviteter som gocart, sykling, klatring, og mye mer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      activityTitle: "Leksehjelp 2",
-      googleMapsLink:
-        "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-      street: "museplassen 3",
-      zipCode: "5007 Bergen",
-      time: "Tirsdag 15:00 - 17:00",
-      ageGroup: "1 - 4 klasse",
-      description:
-        "Dette er et åpent tilbud for alle bar i Årstad bydel. Husk å ta med klær for utelek. Dette er et åpent tilbud for alle bar i Årstad bydel. Husk å ta med klær for utelek.",
-    },
+TODO mulighe ideer
+* Partnere endrer farge når du går nedover
