@@ -9,9 +9,6 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
     {
       activityTitle: "Sommeraktiviteter",
       link: "/landaas-aktiviteter/sommeraktiviteter",
-      googleMapsLink: "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-      street: "museplassen 3",
-      zipCode: "5007 Bergen",
       time: "Trykk her for mer info",
       ageGroup: "6 - 19 år",
       description:
@@ -23,9 +20,6 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
     {
       activityTitle: "Leksehjelp",
       link: "/landaas-aktiviteter/leksehjelp",
-      googleMapsLink: "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-      street: "museplassen 3",
-      zipCode: "5007 Bergen",
       time: "Tirsdag 16:00 - 19:00",
       ageGroup: "1 - 10 klasse",
       description:
@@ -37,10 +31,6 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
     {
       activityTitle: "Sykkelverksted",
       link: "/landaas-aktiviteter/sykkelverksted",
-      googleMapsLink:
-        "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-      street: "museplassen 3",
-      zipCode: "5007 Bergen",
       time: "Tirsdag 15:00 - 19:00",
       ageGroup: "6 - 19 år",
       description:
@@ -52,10 +42,6 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
     {
       activityTitle: "Jentegruppe",
       link: "/landaas-aktiviteter/jentegruppe",
-      googleMapsLink:
-        "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-      street: "museplassen 3",
-      zipCode: "5007 Bergen",
       time: "Annh. torsdag 16:00-19:00",
       ageGroup: "13-20 år",
       description:
@@ -64,10 +50,6 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
     {
       activityTitle: "Fredagsklubb",
       link: "/landaas-aktiviteter/fredagsklubb",
-      googleMapsLink:
-        "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-      street: "museplassen 3",
-      zipCode: "5007 Bergen",
       time: "fredag 16:00 - 19:00",
       ageGroup: "13 - 20 år",
       description:

@@ -11,9 +11,6 @@ interface ActivitiesPageProps {
     activities: {
       activityTitle: string;
       link: string;
-      googleMapsLink: string;
-      street: string;
-      zipCode: string;
       time: string;
       ageGroup: string;
       description: string;
