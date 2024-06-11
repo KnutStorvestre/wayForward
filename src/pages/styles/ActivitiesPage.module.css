@@ -11,14 +11,6 @@
   text-align: center;
 }
 
-.extraBoldInter {
-  font-weight: 800;
-}
-
-.semiBoldInter {
-  font-weight: 500;
-}
-
 .centerContent {
   display: flex;
   justify-content: center;
@@ -32,6 +24,14 @@
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+}
+
+.extraBoldInter {
+  font-weight: 800;
+}
+
+.semiBoldInter {
+  font-weight: 500;
 }
 
 @media (max-width: 1200px) {

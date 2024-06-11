@@ -1,4 +1,5 @@
 import { ImageSlider } from "../components/common/ImageSlider";
+import { SectionHeader } from "./Util";
 import styles from "./styles/RentalPremise.module.css";
 import { ArrowRight } from "lucide-react";
 
@@ -38,7 +39,7 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
     <div className={styles.topContentBackground + " padding-top-7rem"}>
       <div className="max-width-container">
         <ImageSliderWrapper images={images} />
-        <div className={"horizontal-padding " + styles.paddingTop2rem}>
+        <div className={"horizontal-padding padding-top-2rem"}>
           <TopText title={rentalPremiseName} />
           <ApartmentDescription description={apartmentDescription} />
         </div>
@@ -103,7 +104,7 @@ interface InfoSectionProps {
 
 const InfoSection: React.FC<InfoSectionProps> = ({ title, content }) => (
   <>
-    <InfoBoxHeader title={title} />
+    <SectionHeader title={title} />
     <InfoLists keyInfo={content} />
   </>
 );
@@ -114,7 +115,7 @@ interface CalendarSectionProps {
 
 const CalendarSection: React.FC<CalendarSectionProps> = ({ link }) => (
   <div>
-    <InfoBoxHeader title="Kalender" />
+    <SectionHeader title="Kalender" />
     <div className={styles.bottomInfoBox}>
       <p>
         Se vår kalender for når lokalet er ledig{" "}
@@ -139,7 +140,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
   email,
 }) => (
   <div>
-    <InfoBoxHeader title="Kontakt" />
+    <SectionHeader title="Kontakt" />
     <div className={styles.bottomInfoBox}>
       <div className={styles.justifySpaceBetween}>
         <div>
@@ -161,7 +162,7 @@ interface PriceSectionProps {
 
 const PriceSection: React.FC<PriceSectionProps> = ({ description }) => (
   <div>
-    <InfoBoxHeader title="Pris" />
+    <SectionHeader title="Pris" />
     <div className={styles.bottomInfoBox}>
       <p>{description}</p>
     </div>
@@ -170,7 +171,7 @@ const PriceSection: React.FC<PriceSectionProps> = ({ description }) => (
 
 const LocationSection: React.FC = () => (
   <div>
-    <InfoBoxHeader title="Kart" />
+    <SectionHeader title="Kart" />
     <div className={styles.bottomInfoBox}>
       <p>Kanskje kart her</p>
     </div>
@@ -213,20 +214,6 @@ const CustomListItem: React.FC<CustomListItemProps> = ({ children }) => (
     <ArrowRight color="black" size={16} />
     {children}
   </li>
-);
-
-interface InfoBoxHeaderProps {
-  title: string;
-}
-
-const InfoBoxHeader: React.FC<InfoBoxHeaderProps> = ({ title }) => (
-  <div>
-    <div className={styles.hrHeader}>
-      <hr className={styles.headerLine} />
-      <h1 className={styles.headerTitle}>{title}</h1>
-      <hr className={styles.headerLine} />
-    </div>
-  </div>
 );
 
 export default RentalPremise;
