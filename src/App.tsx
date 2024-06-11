@@ -6,6 +6,7 @@ import HomeWorkHelpLandaas from "./pages/landaasAktiviteter/HomeworkHelpLandaas"
 import CyclerRepairsLandaas from "./pages/landaasAktiviteter/CycleRepairsLandaas";
 import GirlGroupLandaas from "./pages/landaasAktiviteter/GirlGroupLandaas";
 import FridayClubLandaas from "./pages/landaasAktiviteter/FridayClubLandaas";
+import SummerActivities from "./pages/landaasAktiviteter/SummerActivities";
 import SotraActivities from "./pages/SotraActivities";
 import GirlGroupSotra from "./pages/sotraAktivities/GirlGroupSotra";
 import HomeWorkHelpSotra from "./pages/sotraAktivities/HomeworkHelpSotra";
@@ -28,6 +29,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/om-oss" element={<AboutUs />} />
         <Route path="/landaas-aktiviteter" element={<LandaasActivities />} />
+        <Route
+          path="/landaas-aktiviteter/sommeraktiviteter"
+          element={<SummerActivities />}
+        />
         <Route
           path="/landaas-aktiviteter/leksehjelp"
           element={<HomeWorkHelpLandaas />}

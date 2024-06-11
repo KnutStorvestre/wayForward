@@ -16,13 +16,13 @@ const Home = () => {
         <Card
           image={OldHouse}
           title="Landås"
-          text="Se vårt aktivitetstilbud på Landås."
+          text="Se våre aktiviteter og sommeraktiviteter på Landås."
           path="/landaas-aktiviteter"
         />
         <Card
           image={OldHouse}
           title="Sotra"
-          text="Se vårt aktivitetstilbud på Sotra."
+          text="Se våre aktiviteter og sommeraktiviteter på Sotra."
           path="/sotra-aktiviteter"
         />
       </div>
