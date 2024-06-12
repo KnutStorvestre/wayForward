@@ -1,3 +1,4 @@
+import MapComponent from "../components/common/MapComponent";
 import styles from "./styles/ActivityPage.module.css";
 import { SectionHeader, InfoBox } from "./Util";
 
@@ -60,6 +61,7 @@ const ActivityPage: React.FC<ActivityPageProps> = ({
       </div>
       <div>
         <SectionHeader title="Kart" />
+        <MapComponent />
       </div>
     </div>
   );
