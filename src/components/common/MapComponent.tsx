@@ -1,4 +1,4 @@
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
 
 const mapContainerStyle = {
   width: "100%",
@@ -6,21 +6,24 @@ const mapContainerStyle = {
 };
 
 const center = {
-  lat: -3.745,
-  lng: -38.523,
+  lat: 60.3616738,
+  lng: 5.3612205,
 };
 
 const MapComponent = () => {
   return (
-    <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
-      <GoogleMap
-        mapContainerStyle={mapContainerStyle}
-        center={center}
-        zoom={10}
+    <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+      <Map
+        style={mapContainerStyle}
+        defaultCenter={center}
+        defaultZoom={15}
+        gestureHandling={"greedy"}
+        disableDefaultUI={false}
+        mapId={import.meta.env.VITE_GOOGLE_MAPS_MAP_ID}
       >
-        {/* Other map components like markers, info windows, etc. */}
-      </GoogleMap>
-    </LoadScript>
+        <AdvancedMarker position={center}></AdvancedMarker>
+      </Map>
+    </APIProvider>
   );
 };
 
