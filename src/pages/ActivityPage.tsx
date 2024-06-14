@@ -16,6 +16,11 @@ type TextParagraph = {
 
 type TextParagraphs = TextParagraph[];
 
+type centerMarker = {
+  lat: number;
+  lng: number;
+};
+
 interface ActivityPageProps {
   imgSrc: string;
   imgAlt: string;
@@ -23,6 +28,8 @@ interface ActivityPageProps {
   location: string;
   textParagraphs: TextParagraphs;
   infoLines: InfoLines;
+  renderMapBool: boolean;
+  centerMarker: centerMarker;
 }
 
 const ActivityPage: React.FC<ActivityPageProps> = ({
@@ -32,6 +39,8 @@ const ActivityPage: React.FC<ActivityPageProps> = ({
   location,
   textParagraphs,
   infoLines,
+  renderMapBool,
+  centerMarker,
 }) => {
   return (
     <div className="page-container padding-top-7rem">
@@ -59,10 +68,12 @@ const ActivityPage: React.FC<ActivityPageProps> = ({
           <InfoBox Lines={infoLines} />
         </div>
       </div>
-      <div>
-        <SectionHeader title="Kart" />
-        <MapComponent />
-      </div>
+      {renderMapBool && (
+        <div>
+          <SectionHeader title="Kart" />
+          <MapComponent center={centerMarker} />
+        </div>
+      )}
     </div>
   );
 };

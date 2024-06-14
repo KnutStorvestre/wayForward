@@ -32,6 +32,8 @@ const infoLines: InfoLines = [
   { title: "Adresse:", text: "Grønamyrvegen 6, 5353 Straume" },
 ];
 
+const centerMarker = { lat: 60.3596836, lng: 5.1236062 };
+
 const HomeWorkHelpSotra = () => (
   <ActivityPage
     imgSrc={homeworkImg}
@@ -40,6 +42,8 @@ const HomeWorkHelpSotra = () => (
     location="Sotra"
     textParagraphs={textParagraphs}
     infoLines={infoLines}
+    renderMapBool={true}
+    centerMarker={centerMarker}
   />
 );
 
