@@ -1,3 +1,13 @@
+/* ActivityPage.module.css */
+
+.pageContainer {
+  padding-bottom: 90px;
+}
+
+.pageContainerNoPadding {
+  padding-bottom: 0;
+}
+
 .largeImage {
   max-width: 100%;
   height: auto;

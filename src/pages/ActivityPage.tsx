@@ -43,7 +43,11 @@ const ActivityPage: React.FC<ActivityPageProps> = ({
   centerMarker,
 }) => {
   return (
-    <div className="page-container padding-top-7rem">
+    <div
+      className={`page-container padding-top-7rem ${
+        renderMapBool ? styles.pageContainerNoPadding : styles.pageContainer
+      }`}
+    >
       <div className="max-width-container">
         <img src={imgSrc} alt={imgAlt} className={styles.largeImage} />
         <div className="text-container horizontal-padding">

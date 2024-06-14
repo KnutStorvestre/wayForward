@@ -27,9 +27,12 @@ body {
 }
 
 .page-container {
-  padding-bottom: 90px;
   background-color: #fcf8f3;
   min-height: 100vh;
+}
+
+.padding-bottom-90 {
+  padding-bottom: 90px;
 }
 
 .max-width-container {

@@ -5,7 +5,7 @@ import styles from "./styles/AboutUs.module.css";
 
 const AboutUs = () => {
   return (
-    <div className="page-container">
+    <div className="page-container padding-bottom-90">
       <section
         className={
           styles.topContentBackground + " padding-top-7rem horizontal-padding"
