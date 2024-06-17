@@ -129,7 +129,7 @@
     min-height: 310px;
   }
   .titleActivity {
-    font-size: 34px;
+    font-size: 30px;
   }
   .descriptionActivity {
     font-size: 14px;
@@ -138,7 +138,7 @@
     font-size: 14px;
   }
   .imageActivity {
-    width: 300px;
+    width: 298px;
     height: 250px;
   }
 }
