@@ -28,7 +28,7 @@ const infoLines: InfoLines = [
   { title: "Adresse:", text: "Femmeren (Joachim Lampes Vei 5, 5089 Bergen)" },
 ];
 
-const centerMarker = { lat: 60.3616738, lng: 5.3612205 };
+const centerMarker = { lat: 60.3616806, lng: 5.3637912 };
 
 const HomeWorkHelp = () => (
   <ActivityPage

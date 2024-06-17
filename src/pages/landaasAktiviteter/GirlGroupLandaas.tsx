@@ -41,7 +41,7 @@ const infoLines: InfoLines = [
   { title: "Adresse:", text: "XXXX" },
 ];
 
-const centerMarker = { lat: 60.3616738, lng: 5.3612205 };
+const centerMarker = { lat: 60.3616806, lng: 5.3637912 };
 
 const GirlGroup: React.FC = () => (
   <ActivityPage
