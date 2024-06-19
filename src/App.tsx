@@ -1,72 +1,96 @@
-import Navbar from "./components/layout/Navbar";
-import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
-import LandaasActivities from "./pages/LandaasActivities";
-import HomeWorkHelpLandaas from "./pages/landaasAktiviteter/HomeworkHelpLandaas";
-import CyclerRepairsLandaas from "./pages/landaasAktiviteter/CycleRepairsLandaas";
-import GirlGroupLandaas from "./pages/landaasAktiviteter/GirlGroupLandaas";
-import FridayClubLandaas from "./pages/landaasAktiviteter/FridayClubLandaas";
-import SummerActivities from "./pages/landaasAktiviteter/SummerActivities";
-import SotraActivities from "./pages/SotraActivities";
-import GirlGroupSotra from "./pages/sotraAktivities/GirlGroupSotra";
-import HomeWorkHelpSotra from "./pages/sotraAktivities/HomeworkHelpSotra";
-import YouthCafeSotra from "./pages/sotraAktivities/YouthCafeSotra";
-import RentalChoice from "./pages/RentalChoice";
-import Partners from "./pages/Partners";
-import Footer from "./components/layout/Footer";
+import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import ScrollToTop from "./util/ScrollToTop";
 import "./App.css";
-import Femmeren from "./pages/Femmeren";
-import SotraRentalPremise from "./pages/SotraRentalPremise";
+
+import ScrollToTop from "./util/ScrollToTop";
+
+import Footer from "./components/layout/Footer";
+import Navbar from "./components/layout/Navbar";
+
+const Home = React.lazy(() => import("./pages/Home"));
+const AboutUs = React.lazy(() => import("./pages/AboutUs"));
+const LandaasActivities = React.lazy(() => import("./pages/LandaasActivities"));
+const HomeWorkHelpLandaas = React.lazy(
+  () => import("./pages/landaasAktiviteter/HomeworkHelpLandaas")
+);
+const CyclerRepairsLandaas = React.lazy(
+  () => import("./pages/landaasAktiviteter/CycleRepairsLandaas")
+);
+const GirlGroupLandaas = React.lazy(
+  () => import("./pages/landaasAktiviteter/GirlGroupLandaas")
+);
+const FridayClubLandaas = React.lazy(
+  () => import("./pages/landaasAktiviteter/FridayClubLandaas")
+);
+const SummerActivities = React.lazy(
+  () => import("./pages/landaasAktiviteter/SummerActivities")
+);
+const SotraActivities = React.lazy(() => import("./pages/SotraActivities"));
+const GirlGroupSotra = React.lazy(
+  () => import("./pages/sotraAktivities/GirlGroupSotra")
+);
+const HomeWorkHelpSotra = React.lazy(
+  () => import("./pages/sotraAktivities/HomeworkHelpSotra")
+);
+const YouthCafeSotra = React.lazy(
+  () => import("./pages/sotraAktivities/YouthCafeSotra")
+);
+const RentalChoice = React.lazy(() => import("./pages/RentalChoice"));
+const Partners = React.lazy(() => import("./pages/Partners"));
+const Femmeren = React.lazy(() => import("./pages/Femmeren"));
+const SotraRentalPremise = React.lazy(
+  () => import("./pages/SotraRentalPremise")
+);
 
 function App() {
   return (
     <div id="main-container">
       <Navbar />
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/om-oss" element={<AboutUs />} />
-        <Route path="/landaas-aktiviteter" element={<LandaasActivities />} />
-        <Route
-          path="/landaas-aktiviteter/sommeraktiviteter"
-          element={<SummerActivities />}
-        />
-        <Route
-          path="/landaas-aktiviteter/leksehjelp"
-          element={<HomeWorkHelpLandaas />}
-        />
-        <Route
-          path="/landaas-aktiviteter/sykkelverksted"
-          element={<CyclerRepairsLandaas />}
-        />
-        <Route
-          path="/landaas-aktiviteter/jentegruppe"
-          element={<GirlGroupLandaas />}
-        />
-        <Route
-          path="/landaas-aktiviteter/fredagsklubb"
-          element={<FridayClubLandaas />}
-        />
-        <Route
-          path="/sotra-aktiviteter/leksehjelp"
-          element={<HomeWorkHelpSotra />}
-        />
-        <Route
-          path="/sotra-aktiviteter/jentegruppe"
-          element={<GirlGroupSotra />}
-        />
-        <Route
-          path="/sotra-aktiviteter/ungdomskafe"
-          element={<YouthCafeSotra />}
-        />
-        <Route path="/sotra-aktiviteter" element={<SotraActivities />} />
-        <Route path="/utleie" element={<RentalChoice />} />
-        <Route path="/utleie/femmeren" element={<Femmeren />} />
-        <Route path="/utleie/sotra-utleie" element={<SotraRentalPremise />} />
-        <Route path="/partnere" element={<Partners />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/om-oss" element={<AboutUs />} />
+          <Route path="/landaas-aktiviteter" element={<LandaasActivities />} />
+          <Route
+            path="/landaas-aktiviteter/sommeraktiviteter"
+            element={<SummerActivities />}
+          />
+          <Route
+            path="/landaas-aktiviteter/leksehjelp"
+            element={<HomeWorkHelpLandaas />}
+          />
+          <Route
+            path="/landaas-aktiviteter/sykkelverksted"
+            element={<CyclerRepairsLandaas />}
+          />
+          <Route
+            path="/landaas-aktiviteter/jentegruppe"
+            element={<GirlGroupLandaas />}
+          />
+          <Route
+            path="/landaas-aktiviteter/fredagsklubb"
+            element={<FridayClubLandaas />}
+          />
+          <Route
+            path="/sotra-aktiviteter/leksehjelp"
+            element={<HomeWorkHelpSotra />}
+          />
+          <Route
+            path="/sotra-aktiviteter/jentegruppe"
+            element={<GirlGroupSotra />}
+          />
+          <Route
+            path="/sotra-aktiviteter/ungdomskafe"
+            element={<YouthCafeSotra />}
+          />
+          <Route path="/sotra-aktiviteter" element={<SotraActivities />} />
+          <Route path="/utleie" element={<RentalChoice />} />
+          <Route path="/utleie/femmeren" element={<Femmeren />} />
+          <Route path="/utleie/sotra-utleie" element={<SotraRentalPremise />} />
+          <Route path="/partnere" element={<Partners />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </div>
   );
