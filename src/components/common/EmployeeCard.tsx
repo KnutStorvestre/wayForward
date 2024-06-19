@@ -8,11 +8,11 @@ const EmployeeCard: React.FC<Employee> = ({
   position,
 }: Employee) => {
   return (
-    <div className={styles.employeeCard}>
-      <img src={image.url} alt={image.alt} className={styles.employeeImage} />
-      <div className={styles.employeeInfo}>
-        <h3 className={styles.employeeName}>{name}</h3>
-        <p className={styles.employeePosition}>{position}</p>
+    <div className={styles.card}>
+      <img src={image.url} alt={image.alt} className={styles.image} />
+      <div className={styles.info}>
+        <h3 className={styles.name}>{name}</h3>
+        <p className={styles.position}>{position}</p>
       </div>
     </div>
   );

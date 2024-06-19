@@ -1,107 +1,88 @@
-/* RentalCard.module.css */
-
-.rentalCardContainer {
-  display: flex;
-  justify-content: center;
+.cardLink {
+  text-decoration: none;
+  color: inherit;
 }
 
-.rentalCard {
+.card {
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  width: 700px;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  height: 100%;
+  transition: box-shadow 0.3s ease;
 }
 
-.flexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.card:hover .text {
+  text-decoration: underline;
 }
 
-.flexColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
+.card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.rentalCardText {
+.card:hover .arrowIcon {
+  transform: translateX(5px);
+}
+
+.image {
+  width: 340px;
+  height: 330px;
+}
+
+.text {
   padding: 1rem 16px 1rem 34px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+}
+
+.title {
   color: #000;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.topBottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 1rem;
-  height: 100%;
-}
-
-.bottomInfo {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  padding: 0 16px 1rem 34px;
-}
-
-.button {
-  min-width: 160px;
-  min-height: 90px;
-  color: #000;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  cursor: pointer;
-}
-
-.rentalCardTitle {
-  color: #000;
-  font-size: 50px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
+.location {
+  padding-bottom: 15px;
+  font-weight: 300;
+  color: #666;
+  font-size: 1.25rem;
+}
+
+.bottomArrow {
+  align-self: flex-end;
+  margin-top: auto;
+  margin-right: 16px;
+}
+
+.arrowIcon {
+  transition: transform 0.3s ease;
+}
+
 @media (max-width: 1200px) {
-  .rentalCard {
+  .card {
     flex-direction: column;
     max-width: 300px;
-    min-height: 650px;
   }
-  .rentalCardText {
+  .text {
     padding: 1rem 16px 1rem 16px;
+    min-height: 310px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .description {
     font-size: 14px;
   }
-  .rentalCardTitle {
-    font-size: 34px;
-  }
-  .bottomInfo {
-    flex-wrap: wrap;
-    padding: 0 16px 1rem 16px;
-    gap: 16px;
-  }
-  .contactInfo {
+  .address {
     font-size: 14px;
   }
-  .button {
-    min-width: 80px;
-    min-height: 55px;
-    font-size: 14px;
-    margin-left: 0;
+  .image {
+    width: 298px;
+    height: 250px;
   }
 }

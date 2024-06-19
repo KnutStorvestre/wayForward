@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "../styles/RentalCardN.module.css";
+import styles from "../styles/RentalCard.module.css";
 import { ArrowRight } from "lucide-react";
 
 interface RentalCardProps {
@@ -29,7 +29,7 @@ const RentalCard: React.FC<RentalCardProps> = ({
             <p className={styles.title}>{title}</p>
             <p className={styles.location}>{location}</p>
             <p className={styles.description}>{description}</p>
-            <div className={styles.bottomArrowActivity}>
+            <div className={styles.bottomArrow}>
               <ArrowRight
                 className={styles.arrowIcon}
                 color="black"

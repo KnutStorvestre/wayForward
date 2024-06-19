@@ -23,16 +23,12 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
 }) => {
   return (
     <div>
-      <Link to={link} className={styles.cardActivityLink}>
-        <div className={styles.cardActivity}>
-          <img
-            src={bergenImage}
-            alt="activity"
-            className={styles.imageActivity}
-          />
-          <div className={styles.textActivity}>
-            <p className={styles.titleActivity}>{activityTitle}</p>
-            <div className={styles.timeAgeActivity}>
+      <Link to={link} className={styles.cardLink}>
+        <div className={styles.card}>
+          <img src={bergenImage} alt="activity" className={styles.image} />
+          <div className={styles.text}>
+            <p className={styles.title}>{activityTitle}</p>
+            <div className={styles.timeAge}>
               <div className={styles.time}>
                 <img src={calender} alt="calender" />
                 <p>{time}</p>
@@ -42,8 +38,8 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
                 <p>{ageGroup}</p>
               </div>
             </div>
-            <p className={styles.descriptionActivity}>{description}</p>
-            <div className={styles.bottomArrowActivity}>
+            <p className={styles.description}>{description}</p>
+            <div className={styles.bottomArrow}>
               <ArrowRight
                 className={styles.arrowIcon}
                 color="black"
