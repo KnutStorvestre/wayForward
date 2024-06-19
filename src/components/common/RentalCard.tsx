@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 import { RentalCardData } from "../../types";
-import styles from "../styles/RentalCard.module.css"; // Import CSS module
+import styles from "../styles/RentalCard.module.css";
 
 const RentalCard: React.FC<RentalCardData> = ({
   activityTitle,
   image,
-  googleMapsLink,
-  street,
-  zipCode: postNumber,
   description,
   linkBuilding,
 }) => {
@@ -19,18 +16,6 @@ const RentalCard: React.FC<RentalCardData> = ({
           <div>
             <div className={styles.rentalCardText}>
               <h3 className={styles.rentalCardTitle}>{activityTitle}</h3>{" "}
-              <div className={styles.flexRow}>
-                <a
-                  href={googleMapsLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className={styles.flexColumn}>
-                    <span className={styles.address}>{street}</span>{" "}
-                    <span className={styles.address}>{postNumber}</span>{" "}
-                  </div>
-                </a>
-              </div>
               <p>{description}</p>
             </div>
           </div>

@@ -21,9 +21,7 @@ export type EmployeeArray = Employee[];
 export interface RentalCardData {
   activityTitle: string;
   image: Image;
-  googleMapsLink: string;
-  street: string;
-  zipCode: string;
+  location: string;
   description: string;
   linkBuilding: string;
 }
