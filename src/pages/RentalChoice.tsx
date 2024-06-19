@@ -1,6 +1,5 @@
 import styles from "./styles/RentalChoice.module.css";
 import RentalCard from "../components/common/RentalCard";
-import RentalCardN from "../components/common/RentalCardN";
 import rentalCardsData from "../data/RentalCardsData";
 
 const RentalChoice = () => {
@@ -10,7 +9,7 @@ const RentalChoice = () => {
       <div className={styles.centerContent}>
         <div className={styles.activityCards}>
           {rentalCardsData.map((activity, index) => (
-            <RentalCardN
+            <RentalCard
               key={index}
               title={activity.activityTitle}
               location={activity.location}
