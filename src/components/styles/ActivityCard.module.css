@@ -1,9 +1,9 @@
-.cardActivityLink {
+.cardLink {
   text-decoration: none;
   color: inherit;
 }
 
-.cardActivity {
+.card {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
@@ -14,24 +14,24 @@
   transition: box-shadow 0.3s ease;
 }
 
-.cardActivity:hover .textActivity {
+.card:hover .text {
   text-decoration: underline;
 }
 
-.cardActivity:hover {
+.card:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.cardActivity:hover .arrowIcon {
+.card:hover .arrowIcon {
   transform: translateX(5px);
 }
 
-.imageActivity {
+.image {
   width: 400px;
   height: 330px;
 }
 
-.textActivity {
+.text {
   padding: 1rem 16px 1rem 34px;
   text-align: left;
   display: flex;
@@ -39,7 +39,7 @@
   gap: 16px;
 }
 
-.titleActivity {
+.title {
   color: #000;
   font-size: 40px;
   font-style: normal;
@@ -47,7 +47,7 @@
   line-height: normal;
 }
 
-.timeAgeActivity {
+.timeAge {
   display: flex;
   justify-content: left;
   gap: 10px;
@@ -83,12 +83,12 @@
   font-size: 18px;
 }
 
-.descriptionActivity {
+.description {
   font-size: 20px;
   max-width: 420px;
 }
 
-.bottomArrowActivity {
+.bottomArrow {
   align-self: flex-end;
   margin-top: auto;
   margin-right: 16px;
@@ -99,10 +99,10 @@
 }
 
 @media (max-width: 1200px) {
-  .timeAgeActivity {
+  .timeAge {
     flex-direction: column;
   }
-  .cardActivity {
+  .card {
     flex-direction: column;
     max-width: 300px;
   }
@@ -124,20 +124,20 @@
     padding-top: 5px;
     font-size: 16px;
   }
-  .textActivity {
+  .text {
     padding: 1rem 16px 1rem 16px;
     min-height: 310px;
   }
-  .titleActivity {
+  .title {
     font-size: 30px;
   }
-  .descriptionActivity {
+  .description {
     font-size: 14px;
   }
-  .addressActivity {
+  .address {
     font-size: 14px;
   }
-  .imageActivity {
+  .image {
     width: 298px;
     height: 250px;
   }
