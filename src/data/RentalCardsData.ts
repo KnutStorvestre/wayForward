@@ -5,25 +5,20 @@ import { RentalCardDataArray } from "../types";
 const rentalCardsData: RentalCardDataArray = [
   {
     activityTitle: "Femmeren",
+    location: "Landås",
     image: {url: modernHouse, alt: "Modern house"},
-    googleMapsLink:
-      "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-    street: "museplassen 3",
-    zipCode: "5007 Bergen",
     description:
-      `Ønsker dullam blanditiis adipis porro officiis consequatur. Tempore ipsum incidunt blanditiis molestias et adipis porro officiis consequatur. Tempore ipsum incidunt blanditiis molestias et
-      adipis porro officiis consequatur. Tempore ipsum incidunt blanditiis molestias et`,
+      `Ønsker dullam blanditiis adipis porro officiis consequatur. Tempore ipsum incidunt
+       blanditiis molestias et adipis porro officiis consequatur. Tempore ipsum incidunt 
+       `,
     linkBuilding: "/utleie/femmeren",
   },
   {
-    activityTitle: "Luksusvilla i Italia",
+    activityTitle: "Villa i Italia",
+    location: "Sotra",
     image: {url: italyVilla, alt: "Italy villa"},
-    googleMapsLink:
-      "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-    street: "museplassen 3",
-    zipCode: "5007 Bergen",
     description:
-      `Ønsker du å bo i en`,
+      `Ønsker du å bo i en villa i Italia? Vi har en villa i Italia som du kan leie.`,
     linkBuilding: "/utleie/sotra-utleie",
   },
 ];

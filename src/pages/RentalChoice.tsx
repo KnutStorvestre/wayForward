@@ -1,21 +1,20 @@
 import styles from "./styles/RentalChoice.module.css";
 import RentalCard from "../components/common/RentalCard";
+import RentalCardN from "../components/common/RentalCardN";
 import rentalCardsData from "../data/RentalCardsData";
 
-const Rental = () => {
+const RentalChoice = () => {
   return (
     <div className="page-container padding-top-7rem padding-bottom-90">
       <TopText />
       <div className={styles.centerContent}>
-        <div className={styles.rentalCards}>
+        <div className={styles.activityCards}>
           {rentalCardsData.map((activity, index) => (
-            <RentalCard
+            <RentalCardN
               key={index}
-              activityTitle={activity.activityTitle}
+              title={activity.activityTitle}
+              location={activity.location}
               image={activity.image}
-              googleMapsLink={activity.googleMapsLink}
-              street={activity.street}
-              zipCode={activity.zipCode}
               description={activity.description}
               linkBuilding={activity.linkBuilding}
             />
@@ -40,4 +39,4 @@ function TopText() {
   );
 }
 
-export default Rental;
+export default RentalChoice;
