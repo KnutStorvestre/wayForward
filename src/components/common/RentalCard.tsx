@@ -1,31 +1,44 @@
 import { Link } from "react-router-dom";
-import { RentalCardData } from "../../types";
-import styles from "../styles/RentalCard.module.css";
+import styles from "../styles/RentalCardN.module.css";
+import { ArrowRight } from "lucide-react";
 
-const RentalCard: React.FC<RentalCardData> = ({
-  activityTitle,
+interface RentalCardProps {
+  title: string;
+  location: string;
+  image: {
+    url: string;
+    alt: string;
+  };
+  description: string;
+  linkBuilding: string;
+}
+
+const RentalCard: React.FC<RentalCardProps> = ({
+  title,
+  location,
   image,
   description,
   linkBuilding,
 }) => {
   return (
-    <div className={styles.rentalCardContainer}>
-      <div className={styles.rentalCard}>
-        <img src={image.url} alt={image.alt} />
-        <div className={styles.topBottom}>
-          <div>
-            <div className={styles.rentalCardText}>
-              <h3 className={styles.rentalCardTitle}>{activityTitle}</h3>{" "}
-              <p>{description}</p>
+    <div>
+      <Link to={linkBuilding} className={styles.cardLink}>
+        <div className={styles.card}>
+          <img src={image.url} alt={image.alt} className={styles.image} />
+          <div className={styles.text}>
+            <p className={styles.title}>{title}</p>
+            <p className={styles.location}>{location}</p>
+            <p className={styles.description}>{description}</p>
+            <div className={styles.bottomArrowActivity}>
+              <ArrowRight
+                className={styles.arrowIcon}
+                color="black"
+                size={24}
+              />
             </div>
           </div>
-          <div className={styles.bottomInfo}>
-            <Link to={linkBuilding}>
-              <button className={styles.button}>Les mer</button>{" "}
-            </Link>
-          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
