@@ -41,7 +41,7 @@ const infoLines: InfoLines = [
   { title: "Adresse:", text: "XXXX" },
 ];
 
-const centerMarker = { lat: 60.3616806, lng: 5.3637912 };
+const centerMarker = { lat: 60.36165554826739, lng: 5.363863074396288 };
 
 const CyclerRepairs: React.FC = () => (
   <ActivityPage
