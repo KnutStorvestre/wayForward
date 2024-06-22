@@ -48,6 +48,15 @@
   height: auto;
   width: auto;
   object-fit: contain; /* Ensures the entire image fits within the box */
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.partners-row-bottom img:hover,
+.partners-row img:hover {
+  transform: scale(1.1); /* Zoom effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
 /* Media query for smaller screens */
