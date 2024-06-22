@@ -15,7 +15,7 @@ import fanaBank from "../assets/newLogoes/fana-bank.png";
 
 const Partners = () => {
   return (
-    <div className="page-container padding-bottom-90 padding-top-7rem">
+    <div className="page-container padding-bottom-200 padding-top-7rem">
       <div className="max-width-container">
         <div className="thank-you-section">
           <h1>Thank You to Our Sponsors</h1>
