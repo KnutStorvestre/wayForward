@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./styles/Partners.css";
 import BergenKommune from "../assets/newLogoes/Bergen-kommune.png";
 import Bufdir from "../assets/newLogoes/bufdir-logo.png";
@@ -14,10 +15,19 @@ import oygarden from "../assets/newLogoes/oygarden-logo.png";
 import fanaBank from "../assets/newLogoes/fana-bank.png";
 
 const Partners = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleSectionClick = () => {
+    setIsActive(!isActive);
+  };
+
   return (
     <div className="page-container padding-bottom-200 padding-top-7rem">
       <div className="max-width-container">
-        <div className="thank-you-section">
+        <div
+          className={`thank-you-section ${isActive ? "active" : "inactive"}`}
+          onClick={handleSectionClick}
+        >
           <h1>Thank You to Our Sponsors</h1>
           <p>
             We would like to extend our heartfelt thanks to our generous
