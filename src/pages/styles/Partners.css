@@ -1,6 +1,4 @@
 .thank-you-section {
-  font-family: "Roboto", sans-serif; /* Applying a modern font */
-
   text-align: center;
   margin-bottom: 5rem;
   padding: 2rem;
@@ -21,6 +19,7 @@
   margin: 0 auto;
   max-width: 600px;
   color: #555;
+  font-family: "Roboto", sans-serif; /* Applying a modern font */
 }
 
 .partners {
