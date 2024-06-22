@@ -16,10 +16,37 @@ import fanaBank from "../assets/newLogoes/fana-bank.png";
 
 const Partners = () => {
   const [color, setColor] = useState("#f5f5f5"); // Initial color (blue in this case)
+  const [textColor, setTextColorHead] = useState("#333"); // Initial text color (white in this case)
+  const [textColorP, setTextColorPara] = useState("#555"); // Initial text color (white in this case)
 
-  const handleSectionClick = () => {
+  const handleClick = () => {
+    // Generate a random color for the box
     const newColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     setColor(newColor);
+
+    // Calculate inverse color for text
+    const invertedColor = invertColor(newColor);
+    setTextColorHead(invertedColor);
+    setTextColorPara(invertedColor);
+  };
+
+  // Function to calculate inverse color (for text)
+  const invertColor = (hex: string) => {
+    if (hex.indexOf("#") === 0) {
+      hex = hex.slice(1);
+    }
+    // Convert hex to RGB
+    const r = (255 - parseInt(hex.slice(0, 2), 16)).toString(16);
+    const g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16);
+    const b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
+
+    // Ensure each component has two digits
+    const invertedHex = `${padZero(r)}${padZero(g)}${padZero(b)}`;
+    return `#${invertedHex}`;
+  };
+
+  const padZero = (str: string) => {
+    return str.length === 1 ? `0${str}` : str;
   };
 
   return (
@@ -27,11 +54,11 @@ const Partners = () => {
       <div className="max-width-container">
         <div
           className={`thank-you-section`}
-          style={{ background: color }}
-          onClick={handleSectionClick}
+          style={{ background: color, color: textColor }}
+          onClick={handleClick}
         >
-          <h1>Thank You to Our Sponsors</h1>
-          <p>
+          <h1 style={{ color: textColor }}>Thank You to Our Sponsors</h1>
+          <p style={{ color: textColorP }}>
             We would like to extend our heartfelt thanks to our generous
             sponsors for their support of our afterschool program for kids. Your
             contributions have made a significant impact in enriching the lives
