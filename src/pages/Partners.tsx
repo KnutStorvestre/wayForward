@@ -15,25 +15,35 @@ import fanaBank from "../assets/newLogoes/fana-bank.png";
 
 const Partners = () => {
   return (
-    <div className="page-container padding-bottom-90">
-      <h1 style={{ padding: "6rem 0 2rem 2rem" }}>Partnere</h1>
-      <div className="partners">
-        <div className="partners-row">
-          <img src={BergenKommune} alt="Bergen Kommune" />
-          <img src={Bufdir} alt="Bufdir" />
-          <img src={equinor} alt="Equinor" />
-          <img src={spv} alt="SPV" />
+    <div className="page-container padding-bottom-90 padding-top-7rem">
+      <div className="max-width-container">
+        <div className="thank-you-section">
+          <h1>Thank You to Our Sponsors</h1>
+          <p>
+            We would like to extend our heartfelt thanks to our generous
+            sponsors for their support of our afterschool program for kids. Your
+            contributions have made a significant impact in enriching the lives
+            of the children in our community.
+          </p>
         </div>
-        <div className="partners-row">
-          <img src={damLogo} alt="Dam Logo" />
-          <img src={norskFolkehjelp} alt="Norsk Folkehjelp" />
-          <img src={navLogo} alt="Nav Logo" />
-          <img src={ulvsenoyLogo} alt="Ulvsnesøy Skolehjem" />
-        </div>
-        <div className="partners-row partners-row-bottom">
-          <img src={sparebank1} alt="Sparebank1" />
-          <img src={oygarden} alt="Øygarden" />
-          <img src={fanaBank} alt="Fana Bank" />
+        <div className="partners">
+          <div className="partners-row">
+            <img src={BergenKommune} alt="Bergen Kommune" />
+            <img src={Bufdir} alt="Bufdir" />
+            <img src={equinor} alt="Equinor" />
+            <img src={spv} alt="SPV" />
+          </div>
+          <div className="partners-row">
+            <img src={damLogo} alt="Dam Logo" />
+            <img src={norskFolkehjelp} alt="Norsk Folkehjelp" />
+            <img src={navLogo} alt="Nav Logo" />
+            <img src={ulvsenoyLogo} alt="Ulvsnesøy Skolehjem" />
+          </div>
+          <div className="partners-row partners-row-bottom">
+            <img src={sparebank1} alt="Sparebank1" />
+            <img src={oygarden} alt="Øygarden" />
+            <img src={fanaBank} alt="Fana Bank" />
+          </div>
         </div>
       </div>
     </div>
