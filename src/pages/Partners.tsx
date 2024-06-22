@@ -15,17 +15,19 @@ import oygarden from "../assets/newLogoes/oygarden-logo.png";
 import fanaBank from "../assets/newLogoes/fana-bank.png";
 
 const Partners = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [color, setColor] = useState("#f5f5f5"); // Initial color (blue in this case)
 
   const handleSectionClick = () => {
-    setIsActive(!isActive);
+    const newColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    setColor(newColor);
   };
 
   return (
     <div className="page-container padding-bottom-200 padding-top-7rem">
       <div className="max-width-container">
         <div
-          className={`thank-you-section ${isActive ? "active" : "inactive"}`}
+          className={`thank-you-section`}
+          style={{ background: color }}
           onClick={handleSectionClick}
         >
           <h1>Thank You to Our Sponsors</h1>
