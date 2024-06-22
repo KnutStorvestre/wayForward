@@ -35,6 +35,10 @@ body {
   padding-bottom: 90px;
 }
 
+.padding-bottom-200 {
+  padding-bottom: 200px;
+}
+
 .max-width-container {
   max-width: 1200px;
   margin: auto;
