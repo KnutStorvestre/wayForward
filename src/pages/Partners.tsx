@@ -15,25 +15,25 @@ import fanaBank from "../assets/newLogoes/fana-bank.png";
 
 const Partners = () => {
   return (
-    <div className="page-container">
+    <div className="page-container padding-bottom-90">
       <h1 style={{ padding: "6rem 0 2rem 2rem" }}>Partnere</h1>
       <div className="partners">
         <div className="partners-row">
           <img src={BergenKommune} alt="Bergen Kommune" />
-          <img src={Bufdir} alt="Bergen Kommune" />
-          <img src={equinor} alt="Bergen Kommune" />
-          <img src={spv} alt="Bergen Kommune" />
+          <img src={Bufdir} alt="Bufdir" />
+          <img src={equinor} alt="Equinor" />
+          <img src={spv} alt="SPV" />
         </div>
         <div className="partners-row">
-          <img src={damLogo} alt="Bergen Kommune" />
-          <img src={norskFolkehjelp} alt="Bergen Kommune" />
-          <img src={navLogo} alt="Bergen Kommune" />
-          <img src={ulvsenoyLogo} alt="Bergen Kommune" />
+          <img src={damLogo} alt="Dam Logo" />
+          <img src={norskFolkehjelp} alt="Norsk Folkehjelp" />
+          <img src={navLogo} alt="Nav Logo" />
+          <img src={ulvsenoyLogo} alt="Ulvsnesøy Skolehjem" />
         </div>
-        <div className="partners-row-bottom">
-          <img src={sparebank1} alt="Bergen Kommune" />
-          <img src={oygarden} alt="Bergen Kommune" />
-          <img src={fanaBank} alt="Bergen Kommune" />
+        <div className="partners-row partners-row-bottom">
+          <img src={sparebank1} alt="Sparebank1" />
+          <img src={oygarden} alt="Øygarden" />
+          <img src={fanaBank} alt="Fana Bank" />
         </div>
       </div>
     </div>

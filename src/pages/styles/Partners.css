@@ -38,6 +38,17 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .partners {
+    gap: 150px;
+  }
+
+  .partners-row,
+  .partners-row-bottom {
+    gap: 49px; /* Reduce gap between images */
+  }
+}
+
 @media (max-width: 800px) {
   .partners {
     gap: 100px;
@@ -54,17 +65,16 @@
 }
 
 @media (max-width: 600px) {
-  .partners {
-    gap: 50px;
+  .partners img,
+  .partners-row img {
+    max-height: 150px; /* Reduce the max height of images */
   }
 
   .partners-row {
-    gap: 20px; /* Further reduce gap between images */
+    gap: 100px; /* Further reduce gap between images */
   }
-}
 
-@media (max-width: 500px) {
   .partners-row {
-    max-height: 70px;
+    flex-direction: column;
   }
 }
