@@ -1,43 +1,38 @@
 /* AboutUs.module.css */
 
 .topContentBackground {
-  background-color: #fff1d0; /* Light yellow */
   width: 100%;
-  text-align: center;
 }
 
 .mainHeader {
-  font-size: 3.5rem;
-  font-weight: 800;
-  padding-bottom: 2rem;
-  text-align: center;
-}
-
-.secondaryHeader {
-  font-size: 2.5rem;
-  font-weight: 800;
-  padding-top: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .bottomHeader {
-  font-size: 3.5rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  padding-top: 4rem;
   text-align: center;
 }
 
-.centerText {
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  gap: 2rem;
-  padding-bottom: 2rem;
+/* Styles for paragraphs */
+.mainParagraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
 }
 
-.centerText p {
-  font-size: 20px;
-  font-weight: 400;
-  text-align: left;
+/* Additional styles for emphasis */
+.mainEmphasis {
+  font-weight: bold;
+  color: #444;
 }
 
 .groupPhoto {
@@ -69,12 +64,14 @@
 }
 
 @media (max-width: 600px) {
+  .mainHeader {
+    font-size: 2.2rem;
+  }
+
   .bottomHeader {
     font-size: 2.2rem;
-    font-weight: 800;
-    color: #000;
-    padding: 4rem 0 2rem 0;
-    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 10px;
   }
 }
 
@@ -83,6 +80,8 @@
     gap: 1rem;
   }
   .bottomHeader {
+    padding-top: 0;
     font-size: 25px;
+    margin-bottom: 0;
   }
 }
