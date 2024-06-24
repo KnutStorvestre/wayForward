@@ -20,6 +20,18 @@ interface HrHeaderProps {
 const Home: React.FC = () => {
   return (
     <div className={"page-container padding-top-7rem padding-bottom-90"}>
+      <section className={styles.introSection}>
+        <h1 className={styles.introTitle}>Welcome to Way Forward</h1>
+        <p className={styles.introText}>
+          Way Forward is a non-profit organization dedicated to integrating and
+          including multicultural children and youth into Norwegian society,
+          with a special focus on ensuring equal participation for girls.
+          Founded by Richard Kiwanuka in 2004, we offer a variety of activities
+          such as homework help, bike repair workshops, music studio sessions,
+          and more. Join us in building a community where everyone can
+          participate regardless of their background or financial situation.
+        </p>
+      </section>
       <div className={styles.imageContainer}>
         <img className={styles.mainImg} src={skywoods} alt="Sky Woods" />
       </div>
