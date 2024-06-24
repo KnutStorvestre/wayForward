@@ -1,11 +1,23 @@
+import { Link } from "react-router-dom";
 import skywoods from "../assets/images/sky-woods.jpg";
 import styles from "./styles/Home.module.css";
-import { Link } from "react-router-dom";
 import OldHouse from "../assets/images/old-house.jpg";
 import OldGermanHouse from "../assets/images/old-german-house.jpg";
 import ManOnMountain from "../assets/images/man-on-mountain.jpg";
 
-const Home = () => {
+interface CardProps {
+  image: string;
+  title: string;
+  text: string;
+  path: string;
+  oldStyle?: boolean;
+}
+
+interface HrHeaderProps {
+  title: string;
+}
+
+const Home: React.FC = () => {
   return (
     <div className={"page-container padding-top-7rem padding-bottom-90"}>
       <div className={styles.imageContainer}>
@@ -42,25 +54,26 @@ const Home = () => {
           title="Hvem er vi"
           text="Hva gjør vi og hvorfor gjør vi det"
           path="/om-oss"
+          oldStyle
         />
       </div>
       <HrHeader title="Partnere" />
-      <p>Kan trykke på sponsorer</p>
     </div>
   );
 };
 
-interface CardProps {
-  image: string;
-  title: string;
-  text: string;
-  path: string;
-}
-
-const Card: React.FC<CardProps> = ({ image, title, text, path }) => {
+const Card: React.FC<CardProps> = ({
+  image,
+  title,
+  text,
+  path,
+  oldStyle = false,
+}) => {
   return (
     <Link className={styles.noUnderline} to={path}>
-      <div className={styles.homeCard}>
+      <div
+        className={`${styles.homeCard} ${oldStyle ? styles.oldHomeCard : ""}`}
+      >
         <img src={image} alt={title} className={styles.homeCardImage} />
         <div className={styles.homeCardContent}>
           <h2>{title}</h2>
@@ -70,10 +83,6 @@ const Card: React.FC<CardProps> = ({ image, title, text, path }) => {
     </Link>
   );
 };
-
-interface HrHeaderProps {
-  title: string;
-}
 
 const HrHeader: React.FC<HrHeaderProps> = ({ title }) => {
   return (
