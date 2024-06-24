@@ -47,10 +47,7 @@ const AboutUs = () => {
       <div className="max-width-container">
         <section className={styles.content}>
           <div className={styles.groupPhoto}>
-            <img
-              src={GroupPhoto}
-              alt="Group of people from Way Forward organization"
-            />
+            <img src={GroupPhoto} alt="En gruppe mennesker fra Way Forward" />
           </div>
           <div className="horizontal-padding">
             <header>
