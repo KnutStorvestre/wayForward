@@ -1,9 +1,6 @@
 import { EmployeeArray } from "../types";
 import squareGuy from "../assets/images/square-guy.jpg";
 
-
-/* const placeholderImage = "https://via.placeholder.com/150"; */
-
 const employees: EmployeeArray = [
     {
       image: {url: squareGuy, alt: "placeholder"},
@@ -23,11 +20,6 @@ const employees: EmployeeArray = [
     {
       image: {url: squareGuy, alt: "placeholder"},
       name: "Robel Mengsteab Reda",
-      position: "Aktivitetsleder",
-    },
-    {
-      image: {url: squareGuy, alt: "placeholder"},
-      name: "Abdullahi Ali Ishak",
       position: "Aktivitetsleder",
     },
     {
