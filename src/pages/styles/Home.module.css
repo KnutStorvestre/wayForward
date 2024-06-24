@@ -1,7 +1,7 @@
 .introSection {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 0 1rem;
+  padding: 3rem 2rem 0;
 }
 
 .introTitle {
@@ -57,14 +57,35 @@
   text-transform: uppercase;
 }
 
-.homeCards {
+.homeSection {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
+  flex-direction: row;
+  align-items: center;
   gap: 2rem;
   width: 100%;
   padding: 0 1rem;
+}
+
+.homeCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.textSection {
+  flex: 1;
+}
+
+.sectionHeader {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.sectionText {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
 }
 
 .homeCard {
@@ -155,6 +176,14 @@
   }
 
   .headerLine {
+    width: 100%;
+  }
+
+  .homeSection {
+    flex-direction: column;
+  }
+
+  .textSection {
     width: 100%;
   }
 }
