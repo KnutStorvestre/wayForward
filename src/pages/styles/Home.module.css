@@ -57,7 +57,16 @@
   text-transform: uppercase;
 }
 
-.homeSection {
+.homeSectionTextLast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.homeSectionTextFirst {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -67,6 +76,12 @@
 }
 
 .homeCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rentalCards {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -179,8 +194,12 @@
     width: 100%;
   }
 
-  .homeSection {
+  .homeSectionTextFirst {
     flex-direction: column;
+  }
+
+  .homeSectionTextLast {
+    flex-direction: column-reverse;
   }
 
   .textSection {

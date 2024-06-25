@@ -3,6 +3,8 @@ import skywoods from "../assets/images/sky-woods.jpg";
 import styles from "./styles/Home.module.css";
 import OldHouse from "../assets/images/old-house.jpg";
 import OldGermanHouse from "../assets/images/old-german-house.jpg";
+import RentalCardH from "../components/common/RentalCardH";
+import rentalCardsData from "../data/RentalCardsData";
 
 const ActivityImage2 =
   "https://via.placeholder.com/600x400.png?text=Activity+Image+2";
@@ -39,7 +41,7 @@ const Home: React.FC = () => {
       </section>
       <HrHeader />
       <div className="text-container">
-        <div className={styles.homeSection}>
+        <div className={styles.homeSectionTextLast}>
           <div className={styles.homeCards}>
             <Card
               image={OldHouse}
@@ -61,14 +63,14 @@ const Home: React.FC = () => {
               and educational ways. From sports and outdoor adventures to
               creative arts and technology, we provide a safe and supportive
               environment for everyone. Join us to discover new passions, make
-              friends, and learn new skills.
+              friends, and learn new skills. Vi har også sykkelverksted.
             </p>
           </div>
         </div>
       </div>
       <HrHeader />
       <div className="text-container">
-        <div className={styles.homeSection}>
+        <div className={styles.homeSectionTextFirst}>
           <div className={styles.textSection}>
             <h2 className={styles.sectionHeader}>
               Rental and Loan Information
@@ -82,30 +84,36 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className={styles.homeCards}>
-            <Card
-              image={OldGermanHouse}
-              title="Se våre lokaler"
-              text="Hva kan du leie og hvem kan leie og hvorfor leier vi ut lokaler"
-              path="/utleie"
-            />
-            <Card
-              image={RentalImage1}
-              title="Utleie av utstyr"
-              text="Leie diverse utstyr for aktiviteter og arrangementer."
-              path="/utstyr-utleie"
-            />
+            <div className={styles.rentalCards}>
+              {rentalCardsData.map((activity, index) => (
+                <RentalCardH
+                  key={index}
+                  title={activity.activityTitle}
+                  location={activity.location}
+                  image={activity.image}
+                  description={activity.description}
+                  linkBuilding={activity.linkBuilding}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
       <HrHeader />
       <div className="text-container">
-        <div className={styles.homeSection}>
+        <div className={styles.homeSectionTextLast}>
           <div className={styles.homeCards}>
             <Card
               image={AboutUsImage}
               title="Hvem er vi"
               text="Hva gjør vi og hvorfor gjør vi det"
               path="/om-oss"
+            />
+            <Card
+              image={AboutUsImage}
+              title="Partnere"
+              text="Tusen takk!"
+              path="/partnere"
             />
           </div>
           <div className={styles.textSection}>
