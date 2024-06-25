@@ -2,14 +2,11 @@ import { Link } from "react-router-dom";
 import skywoods from "../assets/images/sky-woods.jpg";
 import styles from "./styles/Home.module.css";
 import OldHouse from "../assets/images/old-house.jpg";
-import OldGermanHouse from "../assets/images/old-german-house.jpg";
 import RentalCardH from "../components/common/RentalCardH";
 import rentalCardsData from "../data/RentalCardsData";
 
 const ActivityImage2 =
   "https://via.placeholder.com/600x400.png?text=Activity+Image+2";
-const RentalImage1 =
-  "https://via.placeholder.com/600x400.png?text=Rental+Image+1";
 const AboutUsImage =
   "https://via.placeholder.com/600x400.png?text=About+Us+Image";
 
@@ -28,15 +25,15 @@ const Home: React.FC = () => {
         <img className={styles.mainImg} src={skywoods} alt="Sky Woods" />
       </div>
       <section className={styles.introSection + " padding-top-4rem"}>
-        <h1 className={styles.introTitle}>Welcome to Way Forward</h1>
+        <h1 className={styles.introTitle}>Velkommen til Way Forward</h1>
         <p className={styles.introText}>
-          Way Forward is a non-profit organization dedicated to integrating and
-          including multicultural children and youth into Norwegian society,
-          with a special focus on ensuring equal participation for girls.
-          Founded by Richard Kiwanuka in 2004, we offer a variety of activities
-          such as homework help, bike repair workshops, music studio sessions,
-          and more. Join us in building a community where everyone can
-          participate regardless of their background or financial situation.
+          Way Forward er en frivillig organisasjon dedikert til å integrere og
+          inkludere flerkulturelle barn og unge i det norske samfunnet, med et
+          spesielt fokus på å sikre lik deltakelse for jenter. Grunnlagt av
+          Richard Kiwanuka i 2004, tilbyr vi en rekke aktiviteter som
+          leksehjelp, sykkelverksted, musikkstudiosesjoner og mer. Bli med oss i
+          å bygge et samfunn der alle kan delta uansett bakgrunn eller økonomisk
+          situasjon.
         </p>
       </section>
       <HrHeader />
@@ -57,13 +54,13 @@ const Home: React.FC = () => {
             />
           </div>
           <div className={styles.textSection}>
-            <h2 className={styles.sectionHeader}>More About Our Activities</h2>
+            <h2 className={styles.sectionHeader}>Mer om våre aktiviteter</h2>
             <p className={styles.sectionText}>
-              Our activities are designed to engage children and youth in fun
-              and educational ways. From sports and outdoor adventures to
-              creative arts and technology, we provide a safe and supportive
-              environment for everyone. Join us to discover new passions, make
-              friends, and learn new skills. Vi har også sykkelverksted.
+              Våre aktiviteter er designet for å engasjere barn og unge på
+              morsomme og lærerike måter. Fra sport og utendørseventyr til
+              kreative kunstner og teknologi, vi tilbyr et trygt og støttende
+              miljø for alle. Bli med oss for å oppdage nye lidenskaper, få
+              venner og lære nye ferdigheter. Vi har også sykkelverksted.
             </p>
           </div>
         </div>
@@ -73,14 +70,14 @@ const Home: React.FC = () => {
         <div className={styles.rentalSection}>
           <div className={styles.textSection}>
             <h2 className={styles.sectionHeader}>
-              Rental and Loan Information
+              Informasjon om utleie og lån
             </h2>
             <p className={styles.sectionText}>
-              We offer a variety of spaces and equipment for rent to support
-              community events and activities. Our facilities are
-              well-maintained and equipped to meet your needs, whether you're
-              hosting a workshop, meeting, or celebration. Contact us to learn
-              more about our rental options and availability.
+              Vi tilbyr en rekke lokaler og utstyr for utleie for å støtte
+              samfunnsarrangementer og aktiviteter. Våre fasiliteter er
+              velholdte og utstyrt for å møte dine behov, enten du arrangerer en
+              workshop, et møte eller en feiring. Kontakt oss for å lære mer om
+              våre utleiemuligheter og tilgjengelighet.
             </p>
           </div>
           <div className={styles.homeCards}>
@@ -117,13 +114,13 @@ const Home: React.FC = () => {
             />
           </div>
           <div className={styles.textSection}>
-            <h2 className={styles.sectionHeader}>About Us</h2>
+            <h2 className={styles.sectionHeader}>Om oss</h2>
             <p className={styles.sectionText}>
-              Way Forward was established with a vision to create an inclusive
-              community where every child and youth can thrive. Our team is
-              passionate about making a difference and providing opportunities
-              for growth and development. Learn more about our mission, values,
-              and the people behind our organization.
+              Way Forward ble etablert med en visjon om å skape et inkluderende
+              samfunn hvor hvert barn og ungdom kan trives. Vårt team er
+              lidenskapelig opptatt av å gjøre en forskjell og gi muligheter for
+              vekst og utvikling. Lær mer om vårt oppdrag, våre verdier og
+              menneskene bak vår organisasjon.
             </p>
           </div>
         </div>

@@ -14,7 +14,6 @@ type centerCoordinates = {
 
 const MapComponent: React.FC<centerCoordinates> = ({ center }) => {
   return (
-    /*
     <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
       <Map
         style={mapContainerStyle}
@@ -27,8 +26,6 @@ const MapComponent: React.FC<centerCoordinates> = ({ center }) => {
         <AdvancedMarker position={center}></AdvancedMarker>
       </Map>
     </APIProvider>
-    */
-    <h1>Dummy component</h1>
   );
 };
 
