@@ -70,7 +70,7 @@ const Home: React.FC = () => {
       </div>
       <HrHeader />
       <div className="text-container">
-        <div className={styles.homeSectionTextFirst}>
+        <div className={styles.rentalSection}>
           <div className={styles.textSection}>
             <h2 className={styles.sectionHeader}>
               Rental and Loan Information
