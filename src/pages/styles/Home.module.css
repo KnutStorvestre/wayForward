@@ -209,8 +209,8 @@
     flex-direction: row;
   }
 
-  .homeCard {
-    max-width: 300px;
+  .homeCardContent {
+    height: 150px;
   }
 
   .headerLine {
@@ -231,11 +231,16 @@
 }
 
 @media (max-width: 480px) {
+  .homeCards {
+    flex-direction: column;
+  }
+
   .homeCardImage {
     height: 150px;
   }
 
   .homeCardContent {
+    height: auto;
     padding: 1rem;
   }
 
