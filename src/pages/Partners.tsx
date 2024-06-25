@@ -57,12 +57,12 @@ const Partners = () => {
           style={{ background: color, color: textColor }}
           onClick={handleClick}
         >
-          <h1 style={{ color: textColor }}>Thank You to Our Sponsors</h1>
+          <h1 style={{ color: textColor }}>Takk til våre sponsorer</h1>
           <p style={{ color: textColorP }}>
-            We would like to extend our heartfelt thanks to our generous
-            sponsors for their support of our afterschool program for kids. Your
-            contributions have made a significant impact in enriching the lives
-            of the children in our community.
+            Vi ønsker å uttrykke vår dype takknemlighet til våre generøse
+            sponsorer for deres støtte til vårt fritidsprogram for barn. Deres
+            bidrag har hatt en betydelig innvirkning på å berike livene til
+            barna i vårt lokalsamfunn.
           </p>
         </div>
         <div className="partners">

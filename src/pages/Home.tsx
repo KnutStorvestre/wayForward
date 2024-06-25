@@ -54,7 +54,9 @@ const Home: React.FC = () => {
             />
           </div>
           <div className={styles.textSection}>
-            <h2 className={styles.sectionHeader}>Mer om våre aktiviteter</h2>
+            <h2 className={styles.sectionHeader}>
+              Aktiviteter og fritidstilbud
+            </h2>
             <p className={styles.sectionText}>
               Våre aktiviteter er designet for å engasjere barn og unge på
               morsomme og lærerike måter. Fra sport og utendørseventyr til
