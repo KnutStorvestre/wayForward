@@ -8,8 +8,7 @@ const rentalCardsData: RentalCardDataArray = [
     location: "Landås",
     image: {url: modernHouse, alt: "Modern house"},
     description:
-      `Ønsker dullam blanditiis adipis porro officiis consequatur. Tempore ipsum incidunt
-       blanditiis molestias et adipis porro officiis consequatur. Tempore ipsum incidunt 
+      `Ønsker dullam blanditiis adipis porro officiis consequatur.  
        `,
     linkBuilding: "/utleie/femmeren",
   },
