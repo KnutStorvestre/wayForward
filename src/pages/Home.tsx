@@ -4,6 +4,7 @@ import styles from "./styles/Home.module.css";
 import OldHouse from "../assets/images/old-house.jpg";
 import RentalCardH from "../components/common/RentalCardH";
 import rentalCardsData from "../data/RentalCardsData";
+import wayForwardLogo from "../assets/wayForwardLogo/default-monochrome.svg";
 
 const ActivityImage2 =
   "https://via.placeholder.com/600x400.png?text=Activity+Image+2";
@@ -29,13 +30,19 @@ const Home: React.FC = () => {
         <p className={styles.introText}>
           Way Forward er en frivillig organisasjon dedikert til å integrere og
           inkludere flerkulturelle barn og unge i det norske samfunnet, med et
-          spesielt fokus på å sikre lik deltakelse for jenter. Grunnlagt av
-          Richard Kiwanuka i 2004, tilbyr vi en rekke aktiviteter som
-          leksehjelp, sykkelverksted, musikkstudiosesjoner og mer. Bli med oss i
-          å bygge et samfunn der alle kan delta uansett bakgrunn eller økonomisk
-          situasjon.
+          spesielt fokus på å sikre lik deltakelse for jenter. Grunnlagt i 2004,
+          tilbyr vi en rekke aktiviteter som leksehjelp, sykkelverksted,
+          musikkstudiosesjoner og mer. Bli med oss i å bygge et samfunn der alle
+          kan delta uansett bakgrunn eller økonomisk situasjon.
         </p>
       </section>
+      <div className="text-container">
+        <img
+          src={wayForwardLogo}
+          alt="Way Forward Logo"
+          className={styles.logo}
+        />
+      </div>
       <HrHeader />
       <div className="text-container">
         <div className={styles.homeSectionTextLast}>
