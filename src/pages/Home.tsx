@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import skywoods from "../assets/images/sky-woods.jpg";
 import styles from "./styles/Home.module.css";
 import OldHouse from "../assets/images/old-house.jpg";
-import RentalCardH from "../components/common/RentalCardH";
+import RentalCardH from "../components/common/RentalCardHome";
 import rentalCardsData from "../data/RentalCardsData";
 import wayForwardLogo from "../assets/wayForwardLogo/default-monochrome.svg";
 
@@ -16,7 +16,6 @@ interface CardProps {
   title: string;
   text: string;
   path: string;
-  oldStyle?: boolean;
 }
 
 const Home: React.FC = () => {
@@ -138,18 +137,10 @@ const Home: React.FC = () => {
   );
 };
 
-const Card: React.FC<CardProps> = ({
-  image,
-  title,
-  text,
-  path,
-  oldStyle = false,
-}) => {
+const Card: React.FC<CardProps> = ({ image, title, text, path }) => {
   return (
     <Link className={styles.noUnderline} to={path}>
-      <div
-        className={`${styles.homeCard} ${oldStyle ? styles.oldHomeCard : ""}`}
-      >
+      <div className={styles.homeCard}>
         <img src={image} alt={title} className={styles.homeCardImage} />
         <div className={styles.homeCardContent}>
           <h2>{title}</h2>
