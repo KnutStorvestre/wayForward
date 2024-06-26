@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import skywoods from "../assets/images/sky-woods.jpg";
 import styles from "./styles/Home.module.css";
 import OldHouse from "../assets/images/old-house.jpg";
+import HomeCard from "../components/common/HomeCard";
 import RentalCardH from "../components/common/RentalCardHome";
 import rentalCardsData from "../data/RentalCardsData";
 import wayForwardLogo from "../assets/wayForwardLogo/default-monochrome.svg";
@@ -10,13 +10,6 @@ const ActivityImage2 =
   "https://via.placeholder.com/600x400.png?text=Activity+Image+2";
 const AboutUsImage =
   "https://via.placeholder.com/600x400.png?text=About+Us+Image";
-
-interface CardProps {
-  image: string;
-  title: string;
-  text: string;
-  path: string;
-}
 
 const Home: React.FC = () => {
   return (
@@ -46,13 +39,13 @@ const Home: React.FC = () => {
       <div className="text-container">
         <div className={styles.homeSectionTextLast}>
           <div className={styles.homeCards}>
-            <Card
+            <HomeCard
               image={OldHouse}
               title="Landås"
               text="Se våre aktiviteter og sommeraktiviteter på Landås."
               path="/landaas-aktiviteter"
             />
-            <Card
+            <HomeCard
               image={ActivityImage2}
               title="Sotra"
               text="Se våre aktiviteter og sommeraktiviteter på Sotra."
@@ -108,13 +101,13 @@ const Home: React.FC = () => {
       <div className="text-container">
         <div className={styles.homeSectionTextLast}>
           <div className={styles.homeCards}>
-            <Card
+            <HomeCard
               image={AboutUsImage}
               title="Hvem er vi"
               text="Hva gjør vi og hvorfor gjør vi det"
               path="/om-oss"
             />
-            <Card
+            <HomeCard
               image={AboutUsImage}
               title="Partnere"
               text="Tusen takk!"
@@ -134,20 +127,6 @@ const Home: React.FC = () => {
         </div>
       </div>
     </div>
-  );
-};
-
-const Card: React.FC<CardProps> = ({ image, title, text, path }) => {
-  return (
-    <Link className={styles.noUnderline} to={path}>
-      <div className={styles.homeCard}>
-        <img src={image} alt={title} className={styles.homeCardImage} />
-        <div className={styles.homeCardContent}>
-          <h2>{title}</h2>
-          <p>{text}</p>
-        </div>
-      </div>
-    </Link>
   );
 };
 

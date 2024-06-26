@@ -1,0 +1,64 @@
+.noUnderline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.homeCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  max-width: 320px;
+  width: 100%;
+}
+
+.homeCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.homeCardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.homeCardContent {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.homeCardContent h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.homeCardContent p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .homeCardContent {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeCardImage {
+    height: 150px;
+  }
+
+  .homeCardContent {
+    height: auto;
+    padding: 1rem;
+  }
+}
