@@ -1,3 +1,16 @@
+.imageContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mainImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 600px;
+  object-fit: cover;
+}
+
 .introSection {
   text-align: center;
   margin-bottom: 2rem;
@@ -16,19 +29,6 @@
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-}
-
-.imageContainer {
-  width: 100%;
-  overflow: hidden;
-}
-
-.mainImg {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-height: 600px;
-  object-fit: cover;
 }
 
 .noUnderline {
@@ -127,8 +127,7 @@
   width: 100%;
 }
 
-.homeCard:hover,
-.oldHomeCard:hover {
+.homeCard:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -153,43 +152,6 @@
 .homeCardContent p {
   margin: 0;
   font-size: 1rem;
-  color: #666;
-}
-
-/* Old style for the bottom card */
-.oldHomeCard {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  transition: transform 0.2s;
-}
-
-.oldHomeCard .homeCardImage {
-  height: 400px;
-  width: 40%;
-  object-fit: cover;
-}
-
-.oldHomeCard .homeCardContent {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: start;
-}
-
-.oldHomeCard .homeCardContent h2 {
-  margin: 0 0 8px;
-  font-size: 1.5em;
-}
-
-.oldHomeCard .homeCardContent p {
-  margin: 0;
-  font-size: 1em;
   color: #666;
 }
 
@@ -242,14 +204,6 @@
   .homeCardContent {
     height: auto;
     padding: 1rem;
-  }
-
-  .oldHomeCard {
-    margin: 0;
-  }
-
-  .oldHomeCard .homeCardImage {
-    height: auto;
   }
 
   .introText {
