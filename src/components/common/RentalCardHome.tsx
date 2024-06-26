@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "../styles/RentalCardH.module.css";
+import styles from "../styles/RentalCardHome.module.css";
 import { ArrowRight } from "lucide-react";
 
 interface RentalCardProps {
