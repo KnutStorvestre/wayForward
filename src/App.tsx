@@ -11,29 +11,29 @@ const Home = React.lazy(() => import("./pages/Home"));
 const AboutUs = React.lazy(() => import("./pages/AboutUs"));
 const LandaasActivities = React.lazy(() => import("./pages/LandaasActivities"));
 const HomeWorkHelpLandaas = React.lazy(
-  () => import("./pages/landaasAktiviteter/HomeworkHelpLandaas")
+  () => import("./pages/landaasActivities/HomeworkHelpLandaas")
 );
 const CyclerRepairsLandaas = React.lazy(
-  () => import("./pages/landaasAktiviteter/CycleRepairsLandaas")
+  () => import("./pages/landaasActivities/CycleRepairsLandaas")
 );
 const GirlGroupLandaas = React.lazy(
-  () => import("./pages/landaasAktiviteter/GirlGroupLandaas")
+  () => import("./pages/landaasActivities/GirlGroupLandaas")
 );
 const FridayClubLandaas = React.lazy(
-  () => import("./pages/landaasAktiviteter/FridayClubLandaas")
+  () => import("./pages/landaasActivities/FridayClubLandaas")
 );
 const SummerActivities = React.lazy(
-  () => import("./pages/landaasAktiviteter/SummerActivities")
+  () => import("./pages/landaasActivities/SummerActivities")
 );
 const SotraActivities = React.lazy(() => import("./pages/SotraActivities"));
 const GirlGroupSotra = React.lazy(
-  () => import("./pages/sotraAktivities/GirlGroupSotra")
+  () => import("./pages/sotraActivities/GirlGroupSotra")
 );
 const HomeWorkHelpSotra = React.lazy(
-  () => import("./pages/sotraAktivities/HomeworkHelpSotra")
+  () => import("./pages/sotraActivities/HomeworkHelpSotra")
 );
 const YouthCafeSotra = React.lazy(
-  () => import("./pages/sotraAktivities/YouthCafeSotra")
+  () => import("./pages/sotraActivities/YouthCafeSotra")
 );
 const RentalChoice = React.lazy(() => import("./pages/RentalChoice"));
 const Partners = React.lazy(() => import("./pages/Partners"));
