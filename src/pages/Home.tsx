@@ -1,4 +1,4 @@
-import skywoods from "../assets/images/sky-woods.jpg";
+import skywoods from "../assets/images/sky-woods-medium.jpg";
 import styles from "./styles/Home.module.css";
 import OldHouse from "../assets/images/old-house.jpg";
 import HomeCard from "../components/common/HomeCard";
@@ -14,20 +14,22 @@ const AboutUsImage =
 const Home: React.FC = () => {
   return (
     <div className={"page-container padding-top-7rem padding-bottom-90"}>
-      <div className={styles.imageContainer}>
-        <img className={styles.mainImg} src={skywoods} alt="Sky Woods" />
+      <div className={styles.hero}>
+        <div className={styles.backgroundImageContainer}>
+          <section className={styles.heroText + " padding-top-4rem"}>
+            <h1 className={styles.heroTitle}>Way Forward</h1>
+            <p className={styles.heroParagraph}>
+              Way Forward er en frivillig organisasjon dedikert til å integrere
+              og inkludere flerkulturelle barn og unge i det norske samfunnet,
+              med et spesielt fokus på å sikre lik deltakelse for jenter.
+              Grunnlagt i 2004, tilbyr vi en rekke aktiviteter som leksehjelp,
+              sykkelverksted, musikkstudiosesjoner og mer. Bli med oss i å bygge
+              et samfunn der alle kan delta uansett bakgrunn eller økonomisk
+              situasjon.
+            </p>
+          </section>
+        </div>
       </div>
-      <section className={styles.introSection + " padding-top-4rem"}>
-        <h1 className={styles.introTitle}>Velkommen til Way Forward</h1>
-        <p className={styles.introText}>
-          Way Forward er en frivillig organisasjon dedikert til å integrere og
-          inkludere flerkulturelle barn og unge i det norske samfunnet, med et
-          spesielt fokus på å sikre lik deltakelse for jenter. Grunnlagt i 2004,
-          tilbyr vi en rekke aktiviteter som leksehjelp, sykkelverksted,
-          musikkstudiosesjoner og mer. Bli med oss i å bygge et samfunn der alle
-          kan delta uansett bakgrunn eller økonomisk situasjon.
-        </p>
-      </section>
       <div className="text-container">
         <img
           src={wayForwardLogo}
