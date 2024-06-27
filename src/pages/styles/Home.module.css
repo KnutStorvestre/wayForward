@@ -4,32 +4,37 @@
 }
 
 .backgroundImageContainer {
-  max-width: 960px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .hero {
   background-color: #074f57;
-  background-image: url("../../assets/images/sky-woods-medium.jpg");
-  padding: 200px 0;
+  background-image: url("../../assets/images/mountain-night-medium.jpg");
+  padding: 200px 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
 }
 
 .heroText {
   text-align: center;
-  margin-bottom: 2rem;
-  padding: 3rem 2rem 0;
 }
 
 .heroTitle {
-  font-size: 2.5rem;
-  color: black;
+  font-size: 3.1rem;
+  color: #f7f7cd;
   margin-bottom: 1rem;
+
+  font-family: "Oswald", "inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1.5px;
 }
 
 .heroParagraph {
-  font-size: 1.2rem;
-  color: black;
+  font-size: 1.3rem;
+  color: #f7f7cd;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
@@ -85,6 +90,7 @@
 }
 
 .headerTitle {
+  max-width: 960px;
   font-size: 2rem;
   color: #333;
   text-transform: uppercase;
@@ -145,13 +151,33 @@
   line-height: 1.6;
 }
 
+@media (max-width: 1400px) {
+  .hero {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    padding-top: 50px;
+  }
+}
+
 @media (max-width: 900px) {
   .rentalSection {
     flex-direction: column;
   }
+  .heroParagraphSecond {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .hrHeader {
     flex-direction: column;
     gap: 1rem;
@@ -179,6 +205,11 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .homeCards {
     flex-direction: column;
   }

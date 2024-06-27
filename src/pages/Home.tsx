@@ -1,4 +1,3 @@
-import skywoods from "../assets/images/sky-woods-medium.jpg";
 import styles from "./styles/Home.module.css";
 import OldHouse from "../assets/images/old-house.jpg";
 import HomeCard from "../components/common/HomeCard";
@@ -16,16 +15,21 @@ const Home: React.FC = () => {
     <div className={"page-container padding-top-7rem padding-bottom-90"}>
       <div className={styles.hero}>
         <div className={styles.backgroundImageContainer}>
-          <section className={styles.heroText + " padding-top-4rem"}>
+          <section className={styles.heroText}>
             <h1 className={styles.heroTitle}>Way Forward</h1>
             <p className={styles.heroParagraph}>
-              Way Forward er en frivillig organisasjon dedikert til å integrere
-              og inkludere flerkulturelle barn og unge i det norske samfunnet,
-              med et spesielt fokus på å sikre lik deltakelse for jenter.
-              Grunnlagt i 2004, tilbyr vi en rekke aktiviteter som leksehjelp,
-              sykkelverksted, musikkstudiosesjoner og mer. Bli med oss i å bygge
-              et samfunn der alle kan delta uansett bakgrunn eller økonomisk
-              situasjon.
+              <span>
+                Way Forward er en frivillig organisasjon dedikert til å
+                integrere og inkludere flerkulturelle barn og unge i det norske
+                samfunnet
+              </span>
+              <span className={styles.heroParagraphSecond}>
+                , med et spesielt fokus på å sikre lik deltakelse for jenter.
+                Grunnlagt i 2004, tilbyr vi en rekke aktiviteter som leksehjelp,
+                sykkelverksted, musikkstudiosesjoner og mer. Bli med oss i å
+                bygge et samfunn der alle kan delta uansett bakgrunn eller
+                økonomisk situasjon.
+              </span>
             </p>
           </section>
         </div>
