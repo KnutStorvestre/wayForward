@@ -14,6 +14,7 @@ interface ActivitiesPageProps {
       time: string;
       ageGroup: string;
       description: string;
+      image: string;
     }[];
   };
 }
@@ -38,6 +39,7 @@ const ActivitiesPage: React.FC<ActivitiesPageProps> = ({ data }) => {
               time={activity.time}
               ageGroup={activity.ageGroup}
               description={activity.description}
+              image={activity.image}
             />
           ))}
         </div>

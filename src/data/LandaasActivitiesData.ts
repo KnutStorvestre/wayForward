@@ -1,4 +1,6 @@
 import { ActivitiesPageData } from "../types";
+import Bergen from "../assets/images/bergen.png";
+
 
 const ActivitiesPageLandaas: ActivitiesPageData = {
     title: "Landås Aktiviteter",
@@ -16,6 +18,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         Årlig arrangerer vi 10 dager i starten av hver sommerferie fylt med masse forskjellige
         aktiviteter! Klikk inn på aktiviteten for påmelding, datoer og mer info.
         `,
+      image: Bergen,
     },
     {
       activityTitle: "Leksehjelp",
@@ -27,6 +30,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         Velkommen til gratis leksehjelp med servering av varm mat. Her blir det mulighet
         for å få hjelp med vanskelige lekser og møtes for å gjøre leksene sammen med venner.
         `,
+      image: Bergen,
     },
     {
       activityTitle: "Sykkelverksted",
@@ -38,6 +42,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         Velkommen til vårt sykkelverksted på Sletten. Her hjelper vi barn og ungdom med
         reparasjoner av egne sykler. Det er også muligheter for sykkelturer om tiden strekker til.
         `,
+      image: Bergen,
     },
     {
       activityTitle: "Jentegruppe",
@@ -46,6 +51,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       ageGroup: "13-20 år",
       description:
         `Velkommen til vår jentegruppe med gøye aktiviteter og utflukter annenhver torsdag.`,
+      image: Bergen,
     },
     {
       activityTitle: "Fredagsklubb",
@@ -57,6 +63,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         Velkommen til vår fredagsklubb på Femmeren. Her kan barn og ungdom komme
         for å henge ut, møte venner og delta på forskjellige aktiviteter på Femmeren.
         `,
+      image: Bergen,
     },
   ],
 };
