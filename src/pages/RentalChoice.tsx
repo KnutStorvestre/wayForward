@@ -29,10 +29,11 @@ function TopText() {
     <div className={styles.topText}>
       <h1 className="extra-bold-inter">Utleie/Utlån av lokaler</h1>
       <p className="semi-bold-inter">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, error,
-        iste vel commodi possimus rem accusantium numquam consectetur magni id
-        hic ullam blanditiis adipisci labore debitis voluptatem ab porro
-        officiis consequatur. Tempore ipsum incidunt blanditiis molestias et
+        Vi tilbyr en rekke lokaler og utstyr for utleie for å støtte
+        samfunnsarrangementer og aktiviteter. Våre fasiliteter er velholdte og
+        utstyrt for å møte dine behov, enten du arrangerer en workshop, et møte
+        eller en feiring. Kontakt oss for å lære mer om våre utleiemuligheter og
+        tilgjengelighet.
       </p>
     </div>
   );

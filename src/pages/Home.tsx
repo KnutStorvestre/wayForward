@@ -1,12 +1,12 @@
 import styles from "./styles/Home.module.css";
 import OldHouse from "../assets/images/old-house.jpg";
+import FemmerenH from "../assets/real-images/femmeren-2-h.png";
 import HomeCard from "../components/common/HomeCard";
 import RentalCardH from "../components/common/RentalCardHome";
 import rentalCardsData from "../data/RentalCardsData";
 import wayForwardLogo from "../assets/wayForwardLogo/default-monochrome.svg";
+import Handshake from "../assets/sponsors/business-handshake.jpeg";
 
-const ActivityImage2 =
-  "https://via.placeholder.com/600x400.png?text=Activity+Image+2";
 const AboutUsImage =
   "https://via.placeholder.com/600x400.png?text=About+Us+Image";
 
@@ -46,13 +46,13 @@ const Home: React.FC = () => {
         <div className={styles.homeSectionTextLast}>
           <div className={styles.homeCards}>
             <HomeCard
-              image={OldHouse}
+              image={FemmerenH}
               title="Landås"
               text="Se våre aktiviteter og sommeraktiviteter på Landås."
               path="/landaas-aktiviteter"
             />
             <HomeCard
-              image={ActivityImage2}
+              image={OldHouse}
               title="Sotra"
               text="Se våre aktiviteter og sommeraktiviteter på Sotra."
               path="/sotra-aktiviteter"
@@ -114,7 +114,7 @@ const Home: React.FC = () => {
               path="/om-oss"
             />
             <HomeCard
-              image={AboutUsImage}
+              image={Handshake}
               title="Partnere"
               text="Tusen takk!"
               path="/partnere"

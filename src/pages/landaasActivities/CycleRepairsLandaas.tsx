@@ -1,5 +1,5 @@
 import ActivityPage from "../ActivityPage";
-import homeworkImg from "../../assets/images/homework-books.jpg";
+import cycleRepairsImg from "../../assets/real-images/sykkel-verksted-h.png";
 import { InfoLines, TextParagraphs } from "../ActivityPage";
 
 const textParagraphs: TextParagraphs = [
@@ -45,7 +45,7 @@ const centerMarker = { lat: 60.36165554826739, lng: 5.363863074396288 };
 
 const CyclerRepairs: React.FC = () => (
   <ActivityPage
-    imgSrc={homeworkImg}
+    imgSrc={cycleRepairsImg}
     imgAlt="Large top image"
     header="Sykkelverksted"
     location="Landås"
