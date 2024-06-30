@@ -1,4 +1,5 @@
 import { ActivitiesPageData } from "../types";
+import Bergen from "../assets/images/bergen.png";
 
 
 
@@ -14,7 +15,11 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       time: "Mandag 16:00 - 19:00",
       ageGroup: "1 - 10 klasse",
       description:
-        "Velkommen til gratis leksehjelp med servering av varm mat. Her blir det mulighet for å få hjelp med vanskelige lekser og møtes for å gjøre leksene sammen med venner.",
+        `
+        Velkommen til gratis leksehjelp med servering av varm mat. Her blir det mulighet
+         for å få hjelp med vanskelige lekser og møtes for å gjøre leksene sammen med venner.
+         `,
+      image: Bergen,
     },
     {
       activityTitle: "Jentegruppe",
@@ -22,7 +27,8 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       time: "Annh. lørdag 12:00-16:00",
       ageGroup: "13-20 år",
       description:
-        "Velkommen til vår jentegruppe med gøye aktiviteter og utflukter annenhver torsdag. Tider kan variere.",
+        `Velkommen til vår jentegruppe med gøye aktiviteter og utflukter annenhver torsdag. Tider kan variere.`,
+      image: Bergen,
     },
     {
       activityTitle: "Ungdomscafè",
@@ -30,7 +36,11 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       time: "XX XX:XX - XX:XX",
       ageGroup: "13 - 20 år",
       description:
-        "Velkommen til vår ungdomscafé på Kraftsenter for aktivitet på Sotra. Her kan ungdom  komme for å henge ut, møte venner og delta på forskjellige aktiviteter.",
+        `
+        Velkommen til vår ungdomscafé på Kraftsenter for aktivitet på Sotra. Her kan ungdom
+          komme for å henge ut, møte venner og delta på forskjellige aktiviteter.
+          `,
+      image: Bergen,
     },
   ],
 };

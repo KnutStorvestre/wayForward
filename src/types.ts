@@ -48,6 +48,7 @@ export interface Activity {
   time: string;
   ageGroup: string;
   description: string;
+  image: string;
 }
 
 export interface ActivitiesPageData {

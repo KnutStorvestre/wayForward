@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/ActivityCard.module.css"; // Import CSS module
-import bergenImage from "../../assets/images/bergen.png";
 import calender from "../../assets/images/calender.png";
 import people from "../../assets/images/people.png";
 import { ArrowRight } from "lucide-react";
@@ -12,6 +11,7 @@ interface ActivityCardProps {
   time: string;
   ageGroup: string;
   description: string;
+  image: string;
 }
 
 const ActivityCard: React.FC<ActivityCardProps> = ({
@@ -20,12 +20,13 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
   time,
   ageGroup,
   description,
+  image,
 }) => {
   return (
     <div>
       <Link to={link} className={styles.cardLink}>
         <div className={styles.card}>
-          <img src={bergenImage} alt="activity" className={styles.image} />
+          <img src={image} alt="activity" className={styles.image} />
           <div className={styles.text}>
             <p className={styles.title}>{activityTitle}</p>
             <div className={styles.timeAge}>
