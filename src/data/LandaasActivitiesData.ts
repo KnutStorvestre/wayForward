@@ -1,5 +1,6 @@
 import { ActivitiesPageData } from "../types";
 import Bergen from "../assets/images/bergen.png";
+import CyclerRepairsH from "../assets/real-images/sykkel-verksted-h.png";
 
 
 const ActivitiesPageLandaas: ActivitiesPageData = {
@@ -42,7 +43,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         Velkommen til vårt sykkelverksted på Sletten. Her hjelper vi barn og ungdom med
         reparasjoner av egne sykler. Det er også muligheter for sykkelturer om tiden strekker til.
         `,
-      image: Bergen,
+      image: CyclerRepairsH,
     },
     {
       activityTitle: "Jentegruppe",

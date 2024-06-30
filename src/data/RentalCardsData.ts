@@ -1,23 +1,26 @@
+import femmerenV from "../assets/real-images/femmeren-2-v-short.png";
 import italyVilla from "../assets/images/italy-house.jpg";
-import modernHouse from "../assets/images/modern-house.jpg";
 import { RentalCardDataArray } from "../types";
 
 const rentalCardsData: RentalCardDataArray = [
   {
     activityTitle: "Femmeren",
     location: "Landås",
-    image: {url: modernHouse, alt: "Modern house"},
+    image: {url: femmerenV, alt: "Femmeren lokale på Landås"},
     description:
-      `Ønsker dullam blanditiis adipis porro officiis consequatur.  
+      `
+      Trykk her for å se vårt leietilbud på Landås.  
        `,
     linkBuilding: "/utleie/femmeren",
   },
   {
-    activityTitle: "Villa i Italia",
+    activityTitle: "Sotra lokale",
     location: "Sotra",
     image: {url: italyVilla, alt: "Italy villa"},
     description:
-      `Ønsker du å bo i en villa i Italia? Vi har en villa i Italia som du kan leie.`,
+      `
+      Trykk her for å se vårt leietilbud på Sotra.
+      `,
     linkBuilding: "/utleie/sotra-utleie",
   },
 ];

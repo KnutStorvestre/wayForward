@@ -1,14 +1,14 @@
-import interior1 from "../assets/rentals/interior-1.jpg";
-import interior2 from "../assets/rentals/interior-2.jpg";
-import interior3 from "../assets/rentals/interior-3.jpg";
+import femmerenHage from "../assets/real-images/femmeren-0-hage.png";
+import femmeren1 from "../assets/real-images/femmeren-1.png";
+import femmeren2H from "../assets/real-images/femmeren-2-h.png";
 import { RentalPremiseData } from "../types";
 
 const femmerenData: RentalPremiseData = {
   rentalPremiseName: "Femmeren",
   images: [
-    { url: interior1, alt: "Interior One" },
-    { url: interior2, alt: "Interior Two" },
-    { url: interior3, alt: "Interior Three" },
+    { url: femmeren2H, alt: "Femmeren lokale sett fra hagen" },
+    { url: femmeren1, alt: "Femmeren lokale sett fra parkeringsplassen" },
+    { url: femmerenHage, alt: "Hage område til Femmeren" },
   ],
   mapLink: "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
   address: "museplassen 3",
