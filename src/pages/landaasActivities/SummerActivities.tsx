@@ -20,7 +20,7 @@ const infoLines: InfoLines = [
     text: " 24. - 28. juni og 01. - 05. juli, kl. 12:00 - 16:00",
   },
   { title: "Aldersgruppe:", text: "  6 - 19 år" },
-  { title: "Aldersgruppe:", text: "  Gratis" },
+  { title: "Pris:", text: "  Gratis" },
   {
     title: "Påmelding:",
     text: `Send “SOMMERAKTIVITETER 2024” på SMS til Rasmus 40 40 60 98 for mer info og påmelding.`,

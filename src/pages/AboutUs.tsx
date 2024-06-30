@@ -38,8 +38,8 @@ const AboutUs = () => {
             og <span className={styles.mainEmphasis}>Barn av Jorden</span>. I
             2020 mottok Way Forward{" "}
             <span className={styles.mainEmphasis}>Vestlands Barrikadepris</span>{" "}
-            fra Fri Vestland for arrangeringen av Black Lives Matter
-            demonstrasjonen i Bergen.
+            fra Fri Vestland for arrangeringen av Black Lives Matter markeringen
+            i Bergen.
           </p>
         </div>
       </section>
