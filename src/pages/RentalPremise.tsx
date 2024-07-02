@@ -2,15 +2,15 @@ import { ImageSlider } from "../components/common/ImageSlider";
 import MapComponent from "../components/common/MapComponent";
 import { SectionHeader } from "./Util";
 import styles from "./styles/RentalPremise.module.css";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 
 interface RentalPremiseProps {
-  rentalPremiseName: string;
   images: { url: string; alt: string }[];
-  textParagraphs: { content: string; isStrong: boolean }[];
-  mapLink: string;
+  rentalPremiseName: string;
+  location: string;
   address: string;
   zipCode: string;
+  textParagraphs: { content: string; isStrong: boolean }[];
   keyInfo: string[][];
   facilities: string[][];
   calendarLink: string;
@@ -24,8 +24,11 @@ interface RentalPremiseProps {
 }
 
 const RentalPremise: React.FC<RentalPremiseProps> = ({
-  rentalPremiseName,
   images,
+  rentalPremiseName,
+  location,
+  address,
+  zipCode,
   textParagraphs,
   keyInfo,
   facilities,
@@ -39,7 +42,12 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
       <div className="max-width-container">
         <ImageSliderWrapper images={images} />
         <div className={"horizontal-padding padding-top-2rem"}>
-          <TopText title={rentalPremiseName} />
+          <TopText
+            title={rentalPremiseName}
+            location={location}
+            address={address}
+            zipCode={zipCode}
+          />
           <TextParagraphCreator textParagraphs={textParagraphs} />
         </div>
       </div>
@@ -53,6 +61,38 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
     </div>
     <SectionHeader title="Kart" />
     <MapComponent center={longLatMarker} />
+  </div>
+);
+
+interface TopTextProps {
+  title: string;
+  location: string;
+  address: string;
+  zipCode: string;
+}
+
+const TopText: React.FC<TopTextProps> = ({
+  title,
+  location,
+  address,
+  zipCode,
+}) => (
+  <div className={styles.topText}>
+    <p>
+      <span className={styles.mainHeader}>{title},</span>
+      <span className={styles.location}> {location}</span>
+    </p>
+    <a
+      aria-label="Gå til WayForward sin Instagram-side"
+      href={`https://www.google.com/maps/place/${address}+${zipCode}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <p className={styles.address}>
+        <MapPin color="black" size={16} />
+        {address}, {zipCode}
+      </p>
+    </a>
   </div>
 );
 
@@ -157,17 +197,6 @@ const PriceSection: React.FC<PriceSectionProps> = ({ description }) => (
       <p>{description}</p>
     </div>
   </div>
-);
-
-interface TopTextProps {
-  title: string;
-}
-
-const TopText: React.FC<TopTextProps> = ({ title }) => (
-  <p className={styles.topText}>
-    <span className={styles.mainHeader}>{title},</span>
-    <span className={styles.location}> Landås</span>
-  </p>
 );
 
 interface InfoListsProps {

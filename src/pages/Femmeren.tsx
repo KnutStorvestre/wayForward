@@ -5,16 +5,15 @@ import RentalPremise from "./RentalPremise";
 import { RentalPremiseProps } from "./RentalPremise";
 
 const femmerenData: RentalPremiseProps = {
-  rentalPremiseName: "Femmeren",
   images: [
     { url: femmeren2H, alt: "Femmeren lokale sett fra hagen" },
     { url: femmeren1, alt: "Femmeren lokale sett fra parkeringsplassen" },
     { url: femmerenHage, alt: "Hage område til Femmeren" },
   ],
-  mapLink:
-    "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
-  address: "museplassen 3",
-  zipCode: "5007 Bergen",
+  rentalPremiseName: "Femmeren",
+  location: "Landås",
+  address: "Joachim Lampes vei 5,",
+  zipCode: "5089 Bergen",
   textParagraphs: [
     {
       isStrong: true,

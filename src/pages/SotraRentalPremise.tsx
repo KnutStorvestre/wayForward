@@ -4,14 +4,13 @@ import interior2 from "../assets/rentals/interior-2.jpg";
 import interior3 from "../assets/rentals/interior-3.jpg";
 
 const sotraRentalPremiseData: RentalPremiseProps = {
-  rentalPremiseName: "Femmeren",
   images: [
     { url: interior1, alt: "Interior One" },
     { url: interior2, alt: "Interior Two" },
     { url: interior3, alt: "Interior Three" },
   ],
-  mapLink:
-    "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
+  rentalPremiseName: "Femmeren",
+  location: "Sotra",
   address: "museplassen 3",
   zipCode: "5007 Bergen",
   textParagraphs: [

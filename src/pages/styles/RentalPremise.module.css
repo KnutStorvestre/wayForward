@@ -38,14 +38,17 @@
   font-size: 1.75rem;
 }
 
+.address {
+  margin-top: 0.2em;
+  font-size: 1em;
+  color: #555;
+  align-items: right;
+}
+
 .bodyText {
   padding-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.5;
-}
-
-.bodyText a {
-  color: inherit;
 }
 
 .strongTextParagraph {
