@@ -16,7 +16,7 @@ type TextParagraph = {
 
 type TextParagraphs = TextParagraph[];
 
-type centerMarker = {
+type longLatMarker = {
   lat: number;
   lng: number;
 };
@@ -28,8 +28,7 @@ interface ActivityPageProps {
   location: string;
   textParagraphs: TextParagraphs;
   infoLines: InfoLines;
-  renderMapBool: boolean;
-  centerMarker: centerMarker;
+  longLatMarker?: longLatMarker;
 }
 
 const ActivityPage: React.FC<ActivityPageProps> = ({
@@ -39,13 +38,12 @@ const ActivityPage: React.FC<ActivityPageProps> = ({
   location,
   textParagraphs,
   infoLines,
-  renderMapBool,
-  centerMarker,
+  longLatMarker,
 }) => {
   return (
     <div
       className={`page-container padding-top-7rem ${
-        renderMapBool ? styles.pageContainerNoPadding : styles.pageContainer
+        longLatMarker ? styles.pageContainerNoPadding : styles.pageContainer
       }`}
     >
       <div className="max-width-container">
@@ -72,10 +70,10 @@ const ActivityPage: React.FC<ActivityPageProps> = ({
           <InfoBox Lines={infoLines} />
         </div>
       </div>
-      {renderMapBool && (
+      {longLatMarker && (
         <div>
           <SectionHeader title="Kart" />
-          <MapComponent center={centerMarker} />
+          <MapComponent center={longLatMarker} />
         </div>
       )}
     </div>

@@ -38,8 +38,7 @@ const HomeWorkHelp = () => (
     location="Landås"
     textParagraphs={textParagraphs}
     infoLines={infoLines}
-    renderMapBool={true}
-    centerMarker={centerMarker}
+    longLatMarker={centerMarker}
   />
 );
 
