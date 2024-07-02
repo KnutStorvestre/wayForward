@@ -42,8 +42,7 @@ const HomeWorkHelpSotra = () => (
     location="Sotra"
     textParagraphs={textParagraphs}
     infoLines={infoLines}
-    renderMapBool={true}
-    centerMarker={centerMarker}
+    longLatMarker={centerMarker}
   />
 );
 

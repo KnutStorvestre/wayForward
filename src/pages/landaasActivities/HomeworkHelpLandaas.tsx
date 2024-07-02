@@ -39,8 +39,6 @@ const infoLines: InfoLines = [
   { title: "Adresse:", text: "XXXX" },
 ];
 
-const centerMarker = { lat: 60.36165554826739, lng: 5.363863074396288 };
-
 const HomeWorkHelp = () => (
   <ActivityPage
     imgSrc={homeworkImg}
@@ -49,8 +47,6 @@ const HomeWorkHelp = () => (
     location="Landås"
     textParagraphs={textParagraphs}
     infoLines={infoLines}
-    renderMapBool={false}
-    centerMarker={centerMarker}
   />
 );
 
