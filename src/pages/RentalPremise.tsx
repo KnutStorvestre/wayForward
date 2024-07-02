@@ -1,6 +1,7 @@
 import React from "react";
 import { ImageSlider } from "../components/common/ImageSlider";
 import MapComponent from "../components/common/MapComponent";
+import RentalCalendar from "../components/common/RentalCalendar";
 import { SectionHeader } from "./Util";
 import { ArrowRight, MapPin } from "lucide-react";
 import styles from "./styles/RentalPremise.module.css";
@@ -57,6 +58,7 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
       <InfoSection title="Nøkkelinfo" content={keyInfo} />
       <InfoSection title="Fasiliteter" content={facilities} />
       <CalendarSection link={calendarLink} />
+      <RentalCalendar />
       <ContactInfo {...contactInfo} />
       <PriceSection description={priceDescription} />
     </div>
