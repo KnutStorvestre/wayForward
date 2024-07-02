@@ -4,44 +4,35 @@ import { SectionHeader } from "./Util";
 import styles from "./styles/RentalPremise.module.css";
 import { ArrowRight } from "lucide-react";
 
-type longLatMarker = {
-  lat: number;
-  lng: number;
-};
-
 interface RentalPremiseProps {
-  data: {
-    rentalPremiseName: string;
-    images: { url: string; alt: string }[];
-    mapLink: string;
-    address: string;
-    zipCode: string;
-    apartmentDescription: string;
-    keyInfo: string[][];
-    facilities: string[][];
-    calendarLink: string;
-    contactInfo: {
-      contactName: string;
-      phoneNumber: string;
-      email: string;
-    };
-    priceDescription: string;
-    longLatMarker: longLatMarker;
+  rentalPremiseName: string;
+  images: { url: string; alt: string }[];
+  mapLink: string;
+  address: string;
+  zipCode: string;
+  apartmentDescription: string;
+  keyInfo: string[][];
+  facilities: string[][];
+  calendarLink: string;
+  contactInfo: {
+    contactName: string;
+    phoneNumber: string;
+    email: string;
   };
+  priceDescription: string;
+  longLatMarker: { lat: number; lng: number };
 }
 
 const RentalPremise: React.FC<RentalPremiseProps> = ({
-  data: {
-    rentalPremiseName,
-    images,
-    apartmentDescription,
-    keyInfo,
-    facilities,
-    calendarLink,
-    contactInfo,
-    priceDescription,
-    longLatMarker,
-  },
+  rentalPremiseName,
+  images,
+  apartmentDescription,
+  keyInfo,
+  facilities,
+  calendarLink,
+  contactInfo,
+  priceDescription,
+  longLatMarker,
 }) => (
   <div className="page-container">
     <div className={styles.topContentBackground + " padding-top-7rem"}>
@@ -216,4 +207,5 @@ const CustomListItem: React.FC<CustomListItemProps> = ({ children }) => (
   </li>
 );
 
+export type { RentalPremiseProps };
 export default RentalPremise;
