@@ -38,7 +38,11 @@ const femmerenData: RentalPremiseData = {
     phoneNumber: "+47 555 55 555",
     email: "post@wayforward.com"
   },
-  priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune"
+  priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune",
+  longLatMarker: {
+    lat: 60.3873984,
+    lng: 5.3220588,
+  },
 };
 
 export default femmerenData;
