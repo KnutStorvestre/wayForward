@@ -1,7 +1,13 @@
 import { ImageSlider } from "../components/common/ImageSlider";
+import MapComponent from "../components/common/MapComponent";
 import { SectionHeader } from "./Util";
 import styles from "./styles/RentalPremise.module.css";
 import { ArrowRight } from "lucide-react";
+
+type longLatMarker = {
+  lat: number;
+  lng: number;
+};
 
 interface RentalPremiseProps {
   data: {
@@ -20,6 +26,7 @@ interface RentalPremiseProps {
       email: string;
     };
     priceDescription: string;
+    longLatMarker: longLatMarker;
   };
 }
 
@@ -33,6 +40,7 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
     calendarLink,
     contactInfo,
     priceDescription,
+    longLatMarker,
   },
 }) => (
   <div className="page-container">
@@ -51,8 +59,9 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
       <CalendarSection link={calendarLink} />
       <ContactInfo {...contactInfo} />
       <PriceSection description={priceDescription} />
-      <LocationSection />
     </div>
+    <SectionHeader title="Kart" />
+    <MapComponent center={longLatMarker} />
   </div>
 );
 
@@ -165,15 +174,6 @@ const PriceSection: React.FC<PriceSectionProps> = ({ description }) => (
     <SectionHeader title="Pris" />
     <div className={styles.bottomInfoBox}>
       <p>{description}</p>
-    </div>
-  </div>
-);
-
-const LocationSection: React.FC = () => (
-  <div>
-    <SectionHeader title="Kart" />
-    <div className={styles.bottomInfoBox}>
-      <p>Kanskje kart her</p>
     </div>
   </div>
 );

@@ -28,6 +28,11 @@ export interface RentalCardData {
 
 export type RentalCardDataArray = RentalCardData[];
 
+type longLatMarker = {
+  lat: number;
+  lng: number;
+};
+
 export interface RentalPremiseData {
   rentalPremiseName: string;
   images: Image[];
@@ -40,6 +45,7 @@ export interface RentalPremiseData {
   calendarLink: string;
   contactInfo: ContactInfo;
   priceDescription: string;
+  longLatMarker: longLatMarker;
 }
 
 export interface Activity {
