@@ -12,7 +12,7 @@ const femmerenData: RentalPremiseProps = {
   ],
   rentalPremiseName: "Femmeren",
   location: "Landås",
-  address: "Joachim Lampes vei 5,",
+  address: "Joachim Lampes vei 5",
   zipCode: "5089 Bergen",
   textParagraphs: [
     {

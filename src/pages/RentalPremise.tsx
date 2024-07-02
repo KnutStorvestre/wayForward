@@ -1,8 +1,9 @@
+import React from "react";
 import { ImageSlider } from "../components/common/ImageSlider";
 import MapComponent from "../components/common/MapComponent";
 import { SectionHeader } from "./Util";
-import styles from "./styles/RentalPremise.module.css";
 import { ArrowRight, MapPin } from "lucide-react";
+import styles from "./styles/RentalPremise.module.css";
 
 interface RentalPremiseProps {
   images: { url: string; alt: string }[];
@@ -38,17 +39,17 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
   longLatMarker,
 }) => (
   <div className="page-container">
-    <div className={styles.topContentBackground + " padding-top-7rem"}>
+    <div className={`${styles.topContentBackground} padding-top-7rem`}>
       <div className="max-width-container">
         <ImageSliderWrapper images={images} />
-        <div className={"horizontal-padding padding-top-2rem"}>
+        <div className="horizontal-padding padding-top-2rem">
           <TopText
             title={rentalPremiseName}
             location={location}
             address={address}
             zipCode={zipCode}
           />
-          <TextParagraphCreator textParagraphs={textParagraphs} />
+          <TextParagraphs textParagraphs={textParagraphs} />
         </div>
       </div>
     </div>
@@ -82,27 +83,26 @@ const TopText: React.FC<TopTextProps> = ({
       <span className={styles.mainHeader}>{title},</span>
       <span className={styles.location}> {location}</span>
     </p>
-    <a
-      aria-label="Gå til WayForward sin Instagram-side"
-      href={`https://www.google.com/maps/place/${address}+${zipCode}`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <p className={styles.address}>
-        <MapPin color="black" size={17} />
+
+    <p className={styles.address}>
+      <a
+        aria-label="Gå til WayForward sin Instagram-side"
+        href={`https://www.google.com/maps/place/${address}+${zipCode}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <MapPin className={styles.mapPinIcon} color="blue" size={17} />
         {address}, {zipCode}
-      </p>
-    </a>
+      </a>
+    </p>
   </div>
 );
 
-interface TextParagraphCreatorProps {
+interface TextParagraphsProps {
   textParagraphs: { content: string; isStrong: boolean }[];
 }
 
-const TextParagraphCreator: React.FC<TextParagraphCreatorProps> = ({
-  textParagraphs,
-}) => (
+const TextParagraphs: React.FC<TextParagraphsProps> = ({ textParagraphs }) => (
   <div className={styles.bodyText}>
     {textParagraphs.map((text, index) => (
       <p

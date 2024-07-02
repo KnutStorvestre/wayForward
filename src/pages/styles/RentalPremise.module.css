@@ -38,12 +38,25 @@
   font-size: 1.75rem;
 }
 
+.mapPinIcon {
+  margin-right: 0.2em;
+}
+
 .address {
   margin-top: 0.2em;
   font-size: 1em;
-  color: #4a4a4a;
+  color: blue;
   display: flex;
   align-items: center;
+}
+
+.address a {
+  color: blue;
+  text-decoration: none;
+}
+
+.address a:hover {
+  text-decoration: underline;
 }
 
 .bodyText {
