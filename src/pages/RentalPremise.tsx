@@ -89,7 +89,7 @@ const TopText: React.FC<TopTextProps> = ({
       rel="noopener noreferrer"
     >
       <p className={styles.address}>
-        <MapPin color="black" size={16} />
+        <MapPin color="black" size={17} />
         {address}, {zipCode}
       </p>
     </a>
