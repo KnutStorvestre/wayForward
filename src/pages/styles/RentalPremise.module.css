@@ -39,19 +39,33 @@
 }
 
 .bodyText {
+  padding-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
-.strongText {
+.bodyText a {
+  color: inherit;
+}
+
+.strongTextParagraph {
   font-weight: 500;
   margin-bottom: 30px;
+}
+
+.lightTextParagraph {
+  font-weight: 300;
+  color: #666;
+  margin: 15px 0;
 }
 
 .lightText {
   font-weight: 300;
   color: #666;
-  margin: 15px 0;
+}
+
+.strongText {
+  font-weight: 500;
 }
 
 .containerLists {

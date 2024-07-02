@@ -15,16 +15,33 @@ const femmerenData: RentalPremiseProps = {
     "https://www.google.com/maps/place/Universitetsaulaen/@60.3874112,5.3222966,18z/data=!4m6!3m5!1s0x463cff4f1413a72f:0x497f992ec2c19fcc!8m2!3d60.3873984!4d5.3220588!16s%2Fg%2F11flrxrvqb?entry=ttu",
   address: "museplassen 3",
   zipCode: "5007 Bergen",
-  apartmentDescription: `
-  Leiligheten er lys og romslig med en gjennomgående god standard. Delikat
-  IKEA-kjøkken med kjøkkenøy og åpen løsning mot stuen. Stor og
-  møbleringsvennlig stue med peisovn og utgang til balkong med kveldssol.
-  Pent, flislagt baderom med både badekar og dusjsone, som ble utvidet og
-  rehabilitert i regi av sameiet i 2022. Tre gode soverom ligger
-  barnevennlig i tilknytning til hverandre. Hovedsoverommet har utgang til
-  sørvestvendt balkong med hyggelig utsyn. Videre har man en praktisk entré
-  med god skapplass. Leiligheten har gode lagringsmuligheter.
-  `,
+  textParagraphs: [
+    {
+      isStrong: true,
+      content: `
+      Leiligheten er lys og romslig med en gjennomgående god standard. Delikat
+      IKEA-kjøkken med kjøkkenøy og åpen løsning mot stuen. Stor og
+      møbleringsvennlig stue med peisovn og utgang til balkong med kveldssol.
+      Pent, flislagt baderom med både badekar og dusjsone, som ble utvidet og
+      rehabilitert i regi av sameiet i 2022. Tre gode soverom ligger
+      barnevennlig i tilknytning til hverandre. Hovedsoverommet har utgang til
+      sørvestvendt balkong med hyggelig`,
+    },
+    {
+      isStrong: false,
+      content: `
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
+      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
+      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
+      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
+      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum obcaecati
+      quam expedita adipisci. Rerum aut ipsa odio atque, ex ab, accusantium
+      nobis molestias ad error consequuntur expedita exercitationem vel modi.
+      `,
+    },
+  ],
   keyInfo: [
     ["Størrelse: 200m²", "Antall rom: 5", "Antall toaletter: 2", "Etasje: 1"],
     [

@@ -7,10 +7,10 @@ import { ArrowRight } from "lucide-react";
 interface RentalPremiseProps {
   rentalPremiseName: string;
   images: { url: string; alt: string }[];
+  textParagraphs: { content: string; isStrong: boolean }[];
   mapLink: string;
   address: string;
   zipCode: string;
-  apartmentDescription: string;
   keyInfo: string[][];
   facilities: string[][];
   calendarLink: string;
@@ -26,7 +26,7 @@ interface RentalPremiseProps {
 const RentalPremise: React.FC<RentalPremiseProps> = ({
   rentalPremiseName,
   images,
-  apartmentDescription,
+  textParagraphs,
   keyInfo,
   facilities,
   calendarLink,
@@ -40,7 +40,7 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
         <ImageSliderWrapper images={images} />
         <div className={"horizontal-padding padding-top-2rem"}>
           <TopText title={rentalPremiseName} />
-          <ApartmentDescription description={apartmentDescription} />
+          <TextParagraphCreator textParagraphs={textParagraphs} />
         </div>
       </div>
     </div>
@@ -56,6 +56,27 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
   </div>
 );
 
+interface TextParagraphCreatorProps {
+  textParagraphs: { content: string; isStrong: boolean }[];
+}
+
+const TextParagraphCreator: React.FC<TextParagraphCreatorProps> = ({
+  textParagraphs,
+}) => (
+  <div className={styles.bodyText}>
+    {textParagraphs.map((text, index) => (
+      <p
+        key={index}
+        className={
+          text.isStrong ? styles.strongTextParagraph : styles.lightTextParagraph
+        }
+      >
+        {text.content}
+      </p>
+    ))}
+  </div>
+);
+
 interface ImageSliderWrapperProps {
   images: { url: string; alt: string }[];
 }
@@ -63,37 +84,6 @@ interface ImageSliderWrapperProps {
 const ImageSliderWrapper: React.FC<ImageSliderWrapperProps> = ({ images }) => (
   <div className={styles.imgSlider}>
     <ImageSlider images={images} />
-  </div>
-);
-
-interface ApartmentDescriptionProps {
-  description: string;
-}
-
-const ApartmentDescription: React.FC<ApartmentDescriptionProps> = ({
-  description,
-}) => (
-  <div className={styles.bodyText}>
-    <p className={styles.strongText}>{description}</p>
-    <p className={styles.lightText}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
-      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
-      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
-      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
-      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
-    </p>
-    <p className={styles.lightText}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
-      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
-      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
-      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
-      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum obcaecati
-      quam expedita adipisci. Rerum aut ipsa odio atque, ex ab, accusantium
-      nobis molestias ad error consequuntur expedita exercitationem vel modi.
-    </p>
   </div>
 );
 
