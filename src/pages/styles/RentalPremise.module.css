@@ -45,13 +45,10 @@
 .address {
   margin-top: 0.2em;
   font-size: 1em;
-  color: blue;
-  display: flex;
-  align-items: center;
 }
 
 .address a {
-  color: blue;
+  color: #0063fb;
   text-decoration: none;
 }
 

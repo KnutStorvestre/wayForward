@@ -91,7 +91,7 @@ const TopText: React.FC<TopTextProps> = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <MapPin className={styles.mapPinIcon} color="blue" size={17} />
+        <MapPin className={styles.mapPinIcon} color="#0063fb" size={17} />
         {address}, {zipCode}
       </a>
     </p>
