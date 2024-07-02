@@ -41,8 +41,9 @@
 .address {
   margin-top: 0.2em;
   font-size: 1em;
-  color: #555;
-  align-items: right;
+  color: #4a4a4a;
+  display: flex;
+  align-items: center;
 }
 
 .bodyText {
