@@ -49,14 +49,18 @@ const RentalCalendar = ({}) => {
   return (
     <div className={styles.descriptionCalendarContainer}>
       <div className={styles.descriptionContainer}>
-        <span className={styles.circleDescription}>Ledig</span>
-        <span className={styles.greenCircle}></span>
-
-        <span className={styles.circleDescription}>Oppdatt</span>
-        <span className={styles.redCircle}></span>
-
-        <span className={styles.circleDescription}>Utilgjengelig</span>
-        <span className={styles.grayCircle}></span>
+        <div className={styles.circleDescription}>
+          <span className={styles.greenCircle}></span>
+          <span>Ledig</span>
+        </div>
+        <div className={styles.circleDescription}>
+          <span className={styles.redCircle}></span>
+          <span>Opptatt</span>
+        </div>
+        <div className={styles.circleDescription}>
+          <span className={styles.grayCircle}></span>
+          <span>Utilgjengelig</span>
+        </div>
       </div>
       <div className={styles.dayPickerContainer}>
         <DayPicker
