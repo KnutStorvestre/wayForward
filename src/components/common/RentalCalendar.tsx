@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { DayPicker } from "react-day-picker";
 import { nb } from "date-fns/locale";
 import "react-day-picker/dist/style.css";
@@ -46,6 +46,18 @@ const modifiersStyles = {
 const RentalCalendar = ({}) => {
   const [selectedDay, setSelectedDay] = useState<Date | undefined>(undefined);
 
+  const [isCompactView, setIsCompactView] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsCompactView(window.innerWidth <= 768); // Adjust the width as needed
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className={styles.descriptionCalendarContainer}>
       <div className={styles.descriptionContainer}>
@@ -64,7 +76,7 @@ const RentalCalendar = ({}) => {
       </div>
       <div className={styles.dayPickerContainer}>
         <DayPicker
-          numberOfMonths={2}
+          numberOfMonths={isCompactView ? 1 : 2}
           fromDate={today}
           toDate={dateSixMonths}
           selected={selectedDay}
