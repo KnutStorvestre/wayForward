@@ -34,7 +34,7 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
   textParagraphs,
   keyInfo,
   facilities,
-  calendarLink,
+
   contactInfo,
   priceDescription,
   longLatMarker,
@@ -57,7 +57,7 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
     <div className={`${styles.padding2remHorizontal} max-width-container`}>
       <InfoSection title="Nøkkelinfo" content={keyInfo} />
       <InfoSection title="Fasiliteter" content={facilities} />
-      <CalendarSection link={calendarLink} />
+      <CalendarSection />
       <RentalCalendar />
       <ContactInfo {...contactInfo} />
       <PriceSection description={priceDescription} />
@@ -141,22 +141,9 @@ const InfoSection: React.FC<InfoSectionProps> = ({ title, content }) => (
   </>
 );
 
-interface CalendarSectionProps {
-  link: string;
-}
-
-const CalendarSection: React.FC<CalendarSectionProps> = ({ link }) => (
+const CalendarSection: React.FC = () => (
   <div>
     <SectionHeader title="Kalender" />
-    <div className={styles.bottomInfoBox}>
-      <p>
-        Se vår kalender for når lokalet er ledig{" "}
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          her
-        </a>
-        .
-      </p>
-    </div>
   </div>
 );
 
@@ -176,7 +163,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
     <div className={styles.bottomInfoBox}>
       <div className={styles.justifySpaceBetween}>
         <div>
-          <p>Noe du lurer på?</p>
+          <p>Ønsker du å leie?</p>
         </div>
         <div className={styles.contactInfoBuilding}>
           <span>Kontakt: {contactName}</span>
