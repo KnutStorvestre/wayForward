@@ -54,7 +54,7 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
         </div>
       </div>
     </div>
-    <div className="max-width-container horizontal-padding">
+    <div className={`${styles.padding2remHorizontal} max-width-container`}>
       <InfoSection title="Nøkkelinfo" content={keyInfo} />
       <InfoSection title="Fasiliteter" content={facilities} />
       <CalendarSection link={calendarLink} />

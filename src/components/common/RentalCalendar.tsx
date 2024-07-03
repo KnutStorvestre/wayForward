@@ -7,7 +7,13 @@ import styles from "../styles/CustomCalendar.module.css";
 const today = new Date();
 
 const dateSixMonths = new Date();
-dateSixMonths.setMonth(today.getMonth() + 6);
+dateSixMonths.setMonth(today.getMonth() + 4);
+
+const dateSixMonthsMinusOne = new Date();
+dateSixMonthsMinusOne.setMonth(today.getMonth() + 4);
+dateSixMonthsMinusOne.setDate(dateSixMonthsMinusOne.getDate() - 1);
+
+const hiddenDates = [{ after: dateSixMonthsMinusOne }];
 
 const modifiers = {
   greenDates: { after: today.getDate() + 1, before: dateSixMonths },
@@ -21,8 +27,6 @@ const modifiers = {
     before: today,
   },
 };
-
-const hiddenDates = [{ after: dateSixMonths }];
 
 const modifiersStyles = {
   redDates: {
@@ -45,13 +49,13 @@ const RentalCalendar = ({}) => {
   return (
     <div className={styles.descriptionCalendarContainer}>
       <div className={styles.descriptionContainer}>
-        <p>
-          Velg en dato for å se tilgjengelige tider. Røde datoer er ikke
-          tilgjengelige.
-        </p>
+        <span className={styles.greenCircle}></span>
+        <span className={styles.redCircle}></span>
+        <span className={styles.grayCircle}></span>
       </div>
       <div className={styles.dayPickerContainer}>
         <DayPicker
+          numberOfMonths={2}
           fromDate={today}
           toDate={dateSixMonths}
           selected={selectedDay}

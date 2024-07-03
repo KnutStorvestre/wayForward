@@ -136,3 +136,13 @@ hr {
   width: 100%;
   border: 1px solid #000;
 }
+
+.padding2remHorizontal {
+  padding: 0 2rem;
+}
+
+@media (max-width: 800px) {
+  .padding2remHorizontal {
+    padding: 0;
+  }
+}
