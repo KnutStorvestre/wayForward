@@ -6,10 +6,9 @@
 }
 
 .descriptionContainer {
-  margin-left: 10px;
-
-  font-size: 1.2rem;
-  font-weight: 500;
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center items vertically */
+  flex-direction: column;
   max-width: 200px;
 }
 
@@ -20,4 +19,25 @@
 
   height: 380px;
   overflow: auto;
+}
+
+.greenCircle,
+.redCircle,
+.grayCircle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.greenCircle {
+  background-color: #ccffcc; /* Light green */
+}
+
+.redCircle {
+  background-color: #ffcccc; /* Light green */
+}
+
+.grayCircle {
+  background-color: #eeeeee;
 }
