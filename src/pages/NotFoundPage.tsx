@@ -4,13 +4,13 @@ import styles from "./styles/NotFoundPage.module.css";
 
 const NotFoundPage: React.FC = () => {
   return (
-    <div className={`${styles.notFoundContainer} padding-top-7rem`}>
-      <h1 className={styles.heading}>404 Not Found</h1>
+    <div className={styles.notFoundContainer}>
+      <h1 className={styles.heading}>404</h1>
       <p className={styles.description}>
-        Sorry, the page you are looking for does not exist.
+        Beklager, siden du leter etter finnes ikke.
       </p>
       <Link to="/" className={styles.styledLink}>
-        Go to Home
+        Gå til Hjem
       </Link>
     </div>
   );
