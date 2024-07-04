@@ -7,10 +7,10 @@ import styles from "../styles/CustomCalendar.module.css";
 const today = new Date();
 
 const dateSixMonths = new Date();
-dateSixMonths.setMonth(today.getMonth() + 4);
+dateSixMonths.setMonth(today.getMonth() + 6);
 
 const dateSixMonthsMinusOne = new Date();
-dateSixMonthsMinusOne.setMonth(today.getMonth() + 4);
+dateSixMonthsMinusOne.setMonth(today.getMonth() + 6);
 dateSixMonthsMinusOne.setDate(dateSixMonthsMinusOne.getDate() - 1);
 
 const hiddenDates = [{ after: dateSixMonthsMinusOne }];
