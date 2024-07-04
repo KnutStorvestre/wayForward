@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - 7rem);
-  background-color: #282c34;
-  color: white;
+  background-color: #fcf8f3;
+  color: #333333;
   text-align: center;
   margin-top: 7rem;
 }
@@ -22,9 +22,9 @@
 
 .styledLink {
   padding: 0.75rem 1.5rem;
-  border: 2px solid #61dafb;
+  border: 2px solid #004080; /* Darker border color */
   border-radius: 5px;
-  color: #61dafb;
+  color: #004080; /* Darker text color */
   text-decoration: none;
   font-size: 1.25rem;
   transition:
@@ -33,6 +33,6 @@
 }
 
 .styledLink:hover {
-  background-color: #61dafb;
-  color: #282c34;
+  background-color: #004080; /* Darker hover background color */
+  color: #fcf8f3;
 }
