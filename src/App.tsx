@@ -8,6 +8,7 @@ import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
 
 const Home = React.lazy(() => import("./pages/Home"));
+const PageNotFound = React.lazy(() => import("./pages/NotFoundPage"));
 const AboutUs = React.lazy(() => import("./pages/AboutUs"));
 const LandaasActivities = React.lazy(() => import("./pages/LandaasActivities"));
 const HomeWorkHelpLandaas = React.lazy(
@@ -50,6 +51,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<PageNotFound />} />
           <Route path="/om-oss" element={<AboutUs />} />
           <Route path="/landaas-aktiviteter" element={<LandaasActivities />} />
           <Route
