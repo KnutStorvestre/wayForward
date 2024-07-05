@@ -3,6 +3,7 @@ import { DayPicker } from "react-day-picker";
 import { nb } from "date-fns/locale";
 import "react-day-picker/dist/style.css";
 import styles from "../styles/CustomCalendar.module.css";
+import axios from "axios"; // Import axios
 
 const today = new Date();
 
@@ -15,38 +16,10 @@ dateSixMonthsMinusOne.setDate(dateSixMonthsMinusOne.getDate() - 1);
 
 const hiddenDates = [{ after: dateSixMonthsMinusOne }];
 
-const modifiers = {
-  greenDates: { after: today.getDate() + 1, before: dateSixMonths },
-  redDates: [
-    new Date(2024, 6, 4), // July 4th, 2024
-    new Date(2024, 6, 5), // July 5th, 2024
-    new Date(2024, 6, 6), // July 6th, 2024
-    new Date(2024, 6, 7), // July 7th, 2024
-  ],
-  previousDays: {
-    before: today,
-  },
-};
-
-const modifiersStyles = {
-  redDates: {
-    backgroundColor: "#ffcccc", // Light red
-    color: "#000000",
-  },
-  greenDates: {
-    backgroundColor: "#ccffcc", // Light green
-    color: "#000000",
-  },
-  previousDays: {
-    backgroundColor: "#eeeeee",
-    color: "#666666",
-  },
-};
-
 const RentalCalendar = ({}) => {
   const [selectedDay, setSelectedDay] = useState<Date | undefined>(undefined);
-
   const [isCompactView, setIsCompactView] = useState(false);
+  const [redDates, setRedDates] = useState<Date[]>([]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -57,6 +30,49 @@ const RentalCalendar = ({}) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    const fetchRedDates = async () => {
+      try {
+        const response = await axios.get(import.meta.env.VITE_JSONBIN_URL, {
+          headers: {
+            "X-Master-Key": import.meta.env.VITE_JSONBIN_X_MASTER_KEY, // Replace with your JSONBin API key
+          },
+        });
+        const dates = response.data.record.redDates.map(
+          (dateString: string | number | Date) => new Date(dateString)
+        ); // Adjust according to your API response structure
+        setRedDates(dates);
+      } catch (error) {
+        console.error("Error fetching red dates:", error);
+      }
+    };
+
+    fetchRedDates();
+  }, []);
+
+  const modifiers = {
+    greenDates: { after: today.getDate() + 1, before: dateSixMonths },
+    redDates: redDates,
+    previousDays: {
+      before: today,
+    },
+  };
+
+  const modifiersStyles = {
+    redDates: {
+      backgroundColor: "#ffcccc", // Light red
+      color: "#000000",
+    },
+    greenDates: {
+      backgroundColor: "#ccffcc", // Light green
+      color: "#000000",
+    },
+    previousDays: {
+      backgroundColor: "#eeeeee",
+      color: "#666666",
+    },
+  };
 
   return (
     <div className={styles.descriptionCalendarContainer}>
