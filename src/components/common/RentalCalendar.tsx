@@ -14,12 +14,17 @@ const dateSixMonthsMinusOne = new Date();
 dateSixMonthsMinusOne.setMonth(today.getMonth() + 6);
 dateSixMonthsMinusOne.setDate(dateSixMonthsMinusOne.getDate() - 1);
 
-const hiddenDates = [{ after: dateSixMonthsMinusOne }];
+const hiddenDates = [{ before: today, after: dateSixMonthsMinusOne }];
 
-const RentalCalendar = ({}) => {
+interface RentalCalendarProps {
+  s3BucketLink: string;
+}
+
+const RentalCalendar: React.FC<RentalCalendarProps> = ({ s3BucketLink }) => {
   const [selectedDay, setSelectedDay] = useState<Date | undefined>(undefined);
   const [isCompactView, setIsCompactView] = useState(false);
   const [redDates, setRedDates] = useState<Date[]>([]);
+  const [grayDates, setGrayDates] = useState<Date[]>([]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,15 +39,17 @@ const RentalCalendar = ({}) => {
   useEffect(() => {
     const fetchRedDates = async () => {
       try {
-        const response = await axios.get(import.meta.env.VITE_JSONBIN_URL, {
-          headers: {
-            "X-Master-Key": import.meta.env.VITE_JSONBIN_X_MASTER_KEY, // Replace with your JSONBin API key
-          },
-        });
-        const dates = response.data.record.redDates.map(
-          (dateString: string | number | Date) => new Date(dateString)
-        ); // Adjust according to your API response structure
-        setRedDates(dates);
+        const response = await axios.get(s3BucketLink);
+        setRedDates(
+          response.data.redDates.map(
+            (dateString: string) => new Date(dateString)
+          )
+        );
+        setGrayDates(
+          response.data.grayDates.map(
+            (dateString: string) => new Date(dateString)
+          )
+        );
       } catch (error) {
         console.error("Error fetching red dates:", error);
       }
@@ -54,9 +61,7 @@ const RentalCalendar = ({}) => {
   const modifiers = {
     greenDates: { after: today.getDate() + 1, before: dateSixMonths },
     redDates: redDates,
-    previousDays: {
-      before: today,
-    },
+    grayDates: grayDates,
   };
 
   const modifiersStyles = {
@@ -68,7 +73,7 @@ const RentalCalendar = ({}) => {
       backgroundColor: "#ccffcc", // Light green
       color: "#000000",
     },
-    previousDays: {
+    grayDates: {
       backgroundColor: "#eeeeee",
       color: "#666666",
     },
