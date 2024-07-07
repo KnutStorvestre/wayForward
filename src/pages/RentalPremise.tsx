@@ -15,7 +15,7 @@ interface RentalPremiseProps {
   textParagraphs: { content: string; isStrong: boolean }[];
   keyInfo: string[][];
   facilities: string[][];
-  calendarLink: string;
+  s3BucketLink: string;
   contactInfo: {
     contactName: string;
     phoneNumber: string;
@@ -34,7 +34,7 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
   textParagraphs,
   keyInfo,
   facilities,
-
+  s3BucketLink,
   contactInfo,
   priceDescription,
   longLatMarker,
@@ -58,7 +58,7 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
       <InfoSection title="Nøkkelinfo" content={keyInfo} />
       <InfoSection title="Fasiliteter" content={facilities} />
       <CalendarSection />
-      <RentalCalendar />
+      <RentalCalendar s3BucketLink={s3BucketLink} />
       <ContactInfo {...contactInfo} />
       <PriceSection description={priceDescription} />
     </div>

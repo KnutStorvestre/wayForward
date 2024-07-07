@@ -55,7 +55,8 @@ const femmerenData: RentalPremiseProps = {
     ["God tilgang for rullestol", "Nært bybane", "Uteområde", "Kjøkken"],
     ["God tilgang for rullestol", "Nært bybane", "Uteområde"],
   ],
-  calendarLink: "https://www.google.com/calendar",
+  s3BucketLink:
+    "https://availability-way-forward.s3.amazonaws.com/femmeren-availability.json",
   contactInfo: {
     contactName: "Rasmus Solberg",
     phoneNumber: "+47 555 55 555",
