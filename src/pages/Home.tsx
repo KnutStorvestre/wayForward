@@ -1,11 +1,11 @@
 import styles from "./styles/Home.module.css";
-import OldHouse from "../assets/images/old-house.jpg";
-import FemmerenH from "../assets/real-images/femmeren-2-h.png";
+import OldHouse from "../assets/home-page/old-house.jpg";
+import FemmerenH from "../assets/rental-premises/femmeren/femmeren-2-h.png";
 import HomeCard from "../components/common/HomeCard";
 import RentalCardH from "../components/common/RentalCardHome";
 import rentalCardsData from "../data/RentalCardsData";
-import wayForwardLogo from "../assets/wayForwardLogo/default-monochrome.svg";
-import Handshake from "../assets/sponsors/business-handshake.jpeg";
+import wayForwardLogo from "../assets/home-page/way-forward-logo.svg";
+import Handshake from "../assets/home-page/partners-handshake.jpeg";
 
 const AboutUsImage =
   "https://via.placeholder.com/600x400.png?text=About+Us+Image";

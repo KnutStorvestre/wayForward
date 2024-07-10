@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/ActivityCard.module.css"; // Import CSS module
-import calender from "../../assets/images/calender.png";
-import people from "../../assets/images/people.png";
+import calender from "../../assets/activities/shared/calender.png";
+import people from "../../assets/activities/shared/people.png";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 import { EmployeeArray } from "../types";
-import squareGuy from "../assets/images/square-guy.jpg";
+import squareGuy from "../assets/about-us/employees/square-guy.jpg";
 
 const employees: EmployeeArray = [
     {

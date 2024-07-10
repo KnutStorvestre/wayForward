@@ -1,6 +1,6 @@
-import femmerenHage from "../assets/real-images/femmeren-0-hage.png";
-import femmeren1 from "../assets/real-images/femmeren-1.png";
-import femmeren2H from "../assets/real-images/femmeren-2-h.png";
+import femmerenHage from "../assets/rental-premises/femmeren/femmeren-0-hage.png";
+import femmeren1 from "../assets/rental-premises/femmeren/femmeren-1.png";
+import femmeren2H from "../assets/rental-premises/femmeren/femmeren-2-h.png";
 import RentalPremise from "./RentalPremise";
 import { RentalPremiseProps } from "./RentalPremise";
 

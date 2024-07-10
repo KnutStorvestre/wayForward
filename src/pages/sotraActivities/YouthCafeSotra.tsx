@@ -1,4 +1,4 @@
-import homeworkImg from "../../assets/images/homework-books.jpg";
+import homeworkImg from "../../assets/activities/sotra/homework-books.jpg";
 import ActivityPage from "../ActivityPage";
 import { InfoLines, TextParagraphs } from "../ActivityPage";
 

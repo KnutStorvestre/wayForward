@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Facebook from "../../assets/logos/facebook-logo.png";
-import Instagram from "../../assets/logos/instagram-logo.png";
-import styles from "../styles/Footer.module.css"; // Import CSS module
+import Facebook from "../../assets/footer-logos/facebook-logo.png";
+import Instagram from "../../assets/footer-logos/instagram-logo.png";
+import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (

@@ -1,27 +1,22 @@
+TODO SEO
+* robots.txt
+* meta description for each page
+    * react-helmet
+* outbound links
+* aria
+
 TODO
-* Hvorfor kommer 404 Not Found fram hele tiden
 * Remove yellow hoover when using phone. Solution remove hoover for screen under a certain with
-* make the rental premises choise smaller 
 * At some point change the hamburgerMenu.css to hamburgerMenu.module.css
 
 TODO Ting å legge til
-* Kart
-* Sommeraktiviteter
-* Kalender. lokalene leies ut hele dager
 * Språk
 
 TODO spørsmål til møte 
 * farge på footer
-* Kan hus leies flere ganger på en dag. Nei lokalene kan bare leie us en gang om dagen 
-* Hvordan vise sponsorer
 * Legge til fine bilder
-* Hoover bli større eller endre farge
 
 TODO generelt viktig
-* add aria-label to everything
 * Stop horizontal scroll
 * Padding for text on mobile or small screen.
 * Legge til fine bilder
-
-TODO mulighe ideer
-* Partnere endrer farge når du går nedover

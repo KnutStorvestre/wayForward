@@ -1,5 +1,5 @@
-import femmerenV from "../assets/real-images/femmeren-2-v-short.png";
-import italyVilla from "../assets/images/italy-house.jpg";
+import femmerenV from "../assets/rental-premises/femmeren/femmeren-2-v-short.png";
+import italyVilla from "../assets/rental-premises/sotra/italy-house.jpg";
 import { RentalCardDataArray } from "../types";
 
 const rentalCardsData: RentalCardDataArray = [

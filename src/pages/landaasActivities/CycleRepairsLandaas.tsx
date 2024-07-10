@@ -1,5 +1,5 @@
 import ActivityPage from "../ActivityPage";
-import cycleRepairsImg from "../../assets/real-images/sykkel-verksted-h.png";
+import cycleRepairsImg from "../../assets/activities/landaas/sykkel-verksted-h.png";
 import { InfoLines, TextParagraphs } from "../ActivityPage";
 
 const textParagraphs: TextParagraphs = [

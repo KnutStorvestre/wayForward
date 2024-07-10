@@ -1,6 +1,6 @@
 import { ActivitiesPageData } from "../types";
-import Bergen from "../assets/images/bergen.png";
-import CyclerRepairsH from "../assets/real-images/sykkel-verksted-h.png";
+import Bergen from "../assets/activities/landaas/bergen.png";
+import CyclerRepairsH from "../assets/activities/landaas/sykkel-verksted-h.png";
 
 
 const ActivitiesPageLandaas: ActivitiesPageData = {
