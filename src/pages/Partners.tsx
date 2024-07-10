@@ -1,18 +1,18 @@
 import { useState } from "react";
 import "./styles/Partners.css";
-import BergenKommune from "../assets/newLogoes/Bergen-kommune.png";
-import Bufdir from "../assets/newLogoes/bufdir-logo.png";
-import equinor from "../assets/newLogoes/equinor-logo.png";
-import spv from "../assets/newLogoes/SPV.png";
+import BergenKommune from "../assets/partner-logos/Bergen-kommune.png";
+import Bufdir from "../assets/partner-logos/bufdir-logo.png";
+import equinor from "../assets/partner-logos/equinor-logo.png";
+import spv from "../assets/partner-logos/SPV.png";
 
-import damLogo from "../assets/newLogoes/dam-logo.png";
-import norskFolkehjelp from "../assets/newLogoes/norsk-folkehjelp-logo.png";
-import navLogo from "../assets/newLogoes/nav-logo.png";
-import ulvsenoyLogo from "../assets/newLogoes/ulvsnesoy-skolehjem-logo.png";
+import damLogo from "../assets/partner-logos/dam-logo.png";
+import norskFolkehjelp from "../assets/partner-logos/norsk-folkehjelp-logo.png";
+import navLogo from "../assets/partner-logos/nav-logo.png";
+import ulvsenoyLogo from "../assets/partner-logos/ulvsnesoy-skolehjem-logo.png";
 
-import sparebank1 from "../assets/newLogoes/sparebank1.png";
-import oygarden from "../assets/newLogoes/oygarden-logo.png";
-import fanaBank from "../assets/newLogoes/fana-bank.png";
+import sparebank1 from "../assets/partner-logos/sparebank1.png";
+import oygarden from "../assets/partner-logos/oygarden-logo.png";
+import fanaBank from "../assets/partner-logos/fana-bank.png";
 
 const Partners = () => {
   const [color, setColor] = useState("#f5f5f5"); // Initial color (blue in this case)

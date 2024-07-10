@@ -1,5 +1,5 @@
 import { ActivitiesPageData } from "../types";
-import Bergen from "../assets/images/bergen.png";
+import Bergen from "../assets/activities/sotra/bergen.png";
 
 
 

@@ -1,5 +1,5 @@
 import EmployeeCard from "../components/common/EmployeeCard";
-import GroupPhoto from "../assets/images/group-people.jpg";
+import GroupPhoto from "../assets/about-us/group-people.jpg";
 import employees from "../data/EmployeesData";
 import styles from "./styles/AboutUs.module.css";
 

@@ -1,7 +1,7 @@
 import RentalPremise, { RentalPremiseProps } from "./RentalPremise";
-import interior1 from "../assets/rentals/interior-1.jpg";
-import interior2 from "../assets/rentals/interior-2.jpg";
-import interior3 from "../assets/rentals/interior-3.jpg";
+import interior1 from "../assets/rental-premises/sotra/interior-1.jpg";
+import interior2 from "../assets/rental-premises/sotra/interior-2.jpg";
+import interior3 from "../assets/rental-premises/sotra/interior-3.jpg";
 
 const sotraRentalPremiseData: RentalPremiseProps = {
   images: [
