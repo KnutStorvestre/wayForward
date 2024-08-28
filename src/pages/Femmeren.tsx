@@ -64,8 +64,8 @@ const femmerenData: RentalPremiseProps = {
   },
   priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune",
   longLatMarker: {
-    lat: 60.3873984,
-    lng: 5.3220588,
+    lat: 60.36165554826739,
+    lng: 5.363863074396288,
   },
 };
 

@@ -1,4 +1,4 @@
-import homeworkImg from "../../assets/activities/sotra/homework-books.jpg";
+import homeworkImg from "../../assets/rasmus-images/jentegruppe-sotra-1-ratio-large.jpg";
 import ActivityPage from "../ActivityPage";
 import { InfoLines, TextParagraphs } from "../ActivityPage";
 
@@ -42,6 +42,8 @@ const infoLines: InfoLines = [
   { title: "Adresse:", text: "XXXX" },
 ];
 
+const centerMarker = { lat: 60.3596836, lng: 5.1236062 };
+
 const GirlGroupSotra = () => (
   <ActivityPage
     imgSrc={homeworkImg}
@@ -50,6 +52,7 @@ const GirlGroupSotra = () => (
     location="Sotra"
     textParagraphs={textParagraphs}
     infoLines={infoLines}
+    longLatMarker={centerMarker}
   />
 );
 

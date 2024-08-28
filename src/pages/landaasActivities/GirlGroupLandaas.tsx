@@ -1,5 +1,5 @@
 import ActivityPage from "../ActivityPage";
-import homeworkImg from "../../assets/activities/landaas/homework-books.jpg";
+import homeworkImg from "../../assets/rasmus-images/jentegruppe-sotra-1-ratio-large.jpg";
 import { InfoLines, TextParagraphs } from "../ActivityPage";
 
 const textParagraphs: TextParagraphs = [

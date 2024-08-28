@@ -13,6 +13,7 @@ TODO
 TODO Ting å legge til
 * Språk
 * Fix loading screen
+* Fix all links.
 
 TODO spørsmål til møte 
 * farge på footer

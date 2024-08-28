@@ -39,6 +39,8 @@ const infoLines: InfoLines = [
   { title: "Adresse:", text: "XXXX" },
 ];
 
+const centerMarker = { lat: 60.3596836, lng: 5.1236062 };
+
 const YouthCafe = () => (
   <ActivityPage
     imgSrc={homeworkImg}
@@ -47,6 +49,7 @@ const YouthCafe = () => (
     location="Sotra"
     textParagraphs={textParagraphs}
     infoLines={infoLines}
+    longLatMarker={centerMarker}
   />
 );
 

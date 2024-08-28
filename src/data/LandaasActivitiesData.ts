@@ -1,9 +1,9 @@
 import { ActivitiesPageData } from "../types";
 import Bergen from "../assets/activities/landaas/bergen.png";
-import FredagsklubbSletten from "../assets/rasmus-images/fredagsklubb-sletten-0-ratio.jpg"
-import CyclerRepairsLandaas from "../assets/rasmus-images/sykkelverksted-1-ratio.jpg";
-import HomeWorkHelp from "../assets/rasmus-images/leksehjelp-sletten-1-ratio.jpg";
-import GirlGroup from "../assets/rasmus-images/jentegruppe-sletten-1-ratio.jpg";
+import FredagsklubbSletten from "../assets/rasmus-images/fredagsklubb-sletten-0-ratio-small.jpg"
+import CyclerRepairsLandaas from "../assets/rasmus-images/sykkelverksted-1-ratio-small.jpg";
+import HomeWorkHelp from "../assets/rasmus-images/leksehjelp-sletten-1-ratio-small.jpg";
+import GirlGroup from "../assets/rasmus-images/jentegruppe-sotra-3-ratio-small.jpg";
 
 
 
