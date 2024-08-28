@@ -41,6 +41,8 @@ const infoLines: InfoLines = [
   { title: "Adresse:", text: "XXXX" },
 ];
 
+const centerMarker = { lat: 60.36165554826739, lng: 5.363863074396288 };
+
 const CyclerRepairs = () => (
   <ActivityPage
     imgSrc={cycleRepairsImg}
@@ -49,6 +51,7 @@ const CyclerRepairs = () => (
     location="Landås"
     textParagraphs={textParagraphs}
     infoLines={infoLines}
+    longLatMarker={centerMarker}
   />
 );
 

@@ -1,5 +1,8 @@
 import { ActivitiesPageData } from "../types";
 import Bergen from "../assets/activities/sotra/bergen.png";
+import GirlGroup from "../assets/rasmus-images/jentegruppe-sotra-3-ratio-small.jpg";
+import HomeWorkHelp from "../assets/rasmus-images/leksehjelp-sletten-1-ratio-small.jpg";
+
 
 
 
@@ -19,7 +22,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         Velkommen til gratis leksehjelp med servering av varm mat. Her blir det mulighet
          for å få hjelp med vanskelige lekser og møtes for å gjøre leksene sammen med venner.
          `,
-      image: Bergen,
+      image: HomeWorkHelp,
     },
     {
       activityTitle: "Jentegruppe",
@@ -28,7 +31,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       ageGroup: "13-20 år",
       description:
         `Velkommen til vår jentegruppe med gøye aktiviteter og utflukter annenhver torsdag. Tider kan variere.`,
-      image: Bergen,
+      image: GirlGroup,
     },
     {
       activityTitle: "Ungdomscafè",

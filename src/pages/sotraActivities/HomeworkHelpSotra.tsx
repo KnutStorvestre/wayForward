@@ -1,4 +1,4 @@
-import homeworkImg from "../../assets/activities/sotra/homework-books.jpg";
+import homeworkImg from "../../assets/rasmus-images/leksehjelp-sletten-0-ratio-large.jpg";
 import ActivityPage from "../ActivityPage";
 import { InfoLines, TextParagraphs } from "../ActivityPage";
 
