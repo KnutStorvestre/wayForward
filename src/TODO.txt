@@ -4,6 +4,7 @@ TODO SEO
     * react-helmet
 * outbound links
 * aria
+* create loading component
 
 TODO
 * Remove yellow hoover when using phone. Solution remove hoover for screen under a certain with
@@ -11,12 +12,15 @@ TODO
 
 TODO Ting å legge til
 * Språk
+* Fix loading screen
 
 TODO spørsmål til møte 
 * farge på footer
-* Legge til fine bilder
+* Legge til bilder
 
-TODO generelt viktig
-* Stop horizontal scroll
-* Padding for text on mobile or small screen.
-* Legge til fine bilder
+TODO oppgaver for WayForward
+* bilder
+    * utleie
+        * femmeren
+        * sotra
+    

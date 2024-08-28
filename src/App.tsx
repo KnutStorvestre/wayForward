@@ -10,7 +10,7 @@ import Navbar from "./components/layout/Navbar";
 const Home = React.lazy(() => import("./pages/Home"));
 const PageNotFound = React.lazy(() => import("./pages/NotFoundPage"));
 const AboutUs = React.lazy(() => import("./pages/AboutUs"));
-const LandaasActivities = React.lazy(() => import("./pages/LandaasActivities"));
+const LandaasActivities = React.lazy(() => import("./pages/ActivitiesLandaas"));
 const HomeWorkHelpLandaas = React.lazy(
   () => import("./pages/landaasActivities/HomeworkHelpLandaas")
 );
@@ -26,7 +26,7 @@ const FridayClubLandaas = React.lazy(
 const SummerActivities = React.lazy(
   () => import("./pages/landaasActivities/SummerActivities")
 );
-const SotraActivities = React.lazy(() => import("./pages/SotraActivities"));
+const SotraActivities = React.lazy(() => import("./pages/ActivitiesSotra"));
 const GirlGroupSotra = React.lazy(
   () => import("./pages/sotraActivities/GirlGroupSotra")
 );
