@@ -1,6 +1,10 @@
 import { ActivitiesPageData } from "../types";
 import Bergen from "../assets/activities/landaas/bergen.png";
-import CyclerRepairsH from "../assets/activities/landaas/sykkel-verksted-h.png";
+import FredagsklubbSletten from "../assets/rasmus-images/fredagsklubb-sletten-0-ratio.jpg"
+import CyclerRepairsLandaas from "../assets/rasmus-images/sykkelverksted-1-ratio.jpg";
+import HomeWorkHelp from "../assets/rasmus-images/leksehjelp-sletten-1-ratio.jpg";
+import GirlGroup from "../assets/rasmus-images/jentegruppe-sletten-1-ratio.jpg";
+
 
 
 const ActivitiesPageLandaas: ActivitiesPageData = {
@@ -31,7 +35,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         Velkommen til gratis leksehjelp med servering av varm mat. Her blir det mulighet
         for å få hjelp med vanskelige lekser og møtes for å gjøre leksene sammen med venner.
         `,
-      image: Bergen,
+      image: HomeWorkHelp,
     },
     {
       activityTitle: "Sykkelverksted",
@@ -43,7 +47,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         Velkommen til vårt sykkelverksted på Sletten. Her hjelper vi barn og ungdom med
         reparasjoner av egne sykler. Det er også muligheter for sykkelturer om tiden strekker til.
         `,
-      image: CyclerRepairsH,
+      image: CyclerRepairsLandaas,
     },
     {
       activityTitle: "Jentegruppe",
@@ -52,7 +56,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       ageGroup: "13-20 år",
       description:
         `Velkommen til vår jentegruppe med gøye aktiviteter og utflukter annenhver torsdag.`,
-      image: Bergen,
+      image: GirlGroup,
     },
     {
       activityTitle: "Fredagsklubb",
@@ -64,7 +68,7 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         Velkommen til vår fredagsklubb på Femmeren. Her kan barn og ungdom komme
         for å henge ut, møte venner og delta på forskjellige aktiviteter på Femmeren.
         `,
-      image: Bergen,
+      image: FredagsklubbSletten,
     },
   ],
 };
