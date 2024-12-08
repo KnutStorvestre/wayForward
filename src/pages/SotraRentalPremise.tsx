@@ -1,18 +1,30 @@
 import RentalPremise, { RentalPremiseProps } from "./RentalPremise";
-import interior1 from "../assets/rental-premises/sotra/interior-1.jpg";
-import interior2 from "../assets/rental-premises/sotra/interior-2.jpg";
-import interior3 from "../assets/rental-premises/sotra/interior-3.jpg";
+import entrance from "../assets/rental-premises/sotra/entrance-0-full.jpg";
+import hallway from "../assets/rental-premises/sotra/hallway.jpg";
+import diningHall from "../assets/rental-premises/sotra/dining-hall.jpg";
+import kitchen0 from "../assets/rental-premises/sotra/kitchen-0.jpg";
+import kitchen1 from "../assets/rental-premises/sotra/kitchen-1.jpg";
+import kitchen2 from "../assets/rental-premises/sotra/kitchen-2.jpg";
+import foosball from "../assets/rental-premises/sotra/foosball-0.jpg";
+import speakerRoom from "../assets/rental-premises/sotra/speaker-room-0.jpg";
+import toilet from "../assets/rental-premises/sotra/toilet-3.jpg";
 
 const sotraRentalPremiseData: RentalPremiseProps = {
   images: [
-    { url: interior1, alt: "Interior One" },
-    { url: interior2, alt: "Interior Two" },
-    { url: interior3, alt: "Interior Three" },
+    { url: entrance, alt: "Inngang" },
+    { url: hallway, alt: "Gang" },
+    { url: diningHall, alt: "Spiserom" },
+    { url: kitchen0, alt: "Kjøkken" },
+    { url: kitchen1, alt: "Kjøkken" },
+    { url: kitchen2, alt: "Kjøkken" },
+    { url: foosball, alt: "Foosball bord" },
+    { url: speakerRoom, alt: "Stort rom med høytalere" },
+    { url: toilet, alt: "Toalett" },
   ],
-  rentalPremiseName: "Femmeren",
+  rentalPremiseName: "Øygarden kraftsenter for aktivitet",
   location: "Sotra",
-  address: "museplassen 3",
-  zipCode: "5007 Bergen",
+  address: "Grønamyrvegen 6",
+  zipCode: "5353 Straume",
   textParagraphs: [
     {
       isStrong: true,
@@ -63,8 +75,8 @@ const sotraRentalPremiseData: RentalPremiseProps = {
   },
   priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune",
   longLatMarker: {
-    lat: 60.3873984,
-    lng: 5.3220588,
+    lat: 60.359691621698374,
+    lng: 5.126184352370146,
   },
 };
 

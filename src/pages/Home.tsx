@@ -1,6 +1,6 @@
 import styles from "./styles/Home.module.css";
-import OldHouse from "../assets/home-page/old-house.jpg";
-import FemmerenH from "../assets/rental-premises/femmeren/femmeren-2-h.png";
+import SotraEntrance from "../assets/home-page/entrance-0-full.jpg";
+import FemmerenH from "../assets/home-page/femmeren-2-h.png";
 import HomeCard from "../components/common/HomeCard";
 import RentalCardH from "../components/common/RentalCardHome";
 import rentalCardsData from "../data/RentalCardsData";
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
               path="/landaas-aktiviteter"
             />
             <HomeCard
-              image={OldHouse}
+              image={SotraEntrance}
               title="Sotra"
               text="Se våre aktiviteter og sommeraktiviteter på Sotra."
               path="/sotra-aktiviteter"
