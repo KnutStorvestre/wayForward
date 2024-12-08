@@ -1,5 +1,5 @@
 import femmerenV from "../assets/rental-premises/femmeren/femmeren-2-v-short.png";
-import italyVilla from "../assets/rental-premises/sotra/italy-house.jpg";
+import italyVilla from "../assets/rental-premises/sotra/entrance-0.jpg";
 import { RentalCardDataArray } from "../types";
 
 const rentalCardsData: RentalCardDataArray = [
@@ -14,7 +14,7 @@ const rentalCardsData: RentalCardDataArray = [
     linkBuilding: "/utleie/femmeren",
   },
   {
-    activityTitle: "Sotra lokale",
+    activityTitle: "Øygarden kraftsenter for aktivitet",
     location: "Sotra",
     image: {url: italyVilla, alt: "Italy villa"},
     description:
