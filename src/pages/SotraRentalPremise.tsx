@@ -62,7 +62,7 @@ const sotraRentalPremiseData: RentalPremiseProps = {
         kommer du til et større rom utstyrt med et imponerende lydanlegg.
         Dette tomme rommet er svært fleksibelt og kan brukes til alt fra
         dans og musikkarrangementer til seremonielle formål, som religiøse
-        feiringer eller spesielle samlinger.
+        feiringer eller spesielle samlinger. Det er også et bordtennisbord der.
       `,
     },
     {
