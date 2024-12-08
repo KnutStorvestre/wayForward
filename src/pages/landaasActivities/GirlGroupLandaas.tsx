@@ -38,7 +38,10 @@ const infoLines: InfoLines = [
     title: "Påmelding:",
     text: "Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen.",
   },
-  { title: "Adresse:", text: "XXXX" },
+  {
+    title: "Adresse:",
+    text: "Kan variere, men vanligvis på Femmeren (Joachim Lampes Vei 5, 5089 Bergen)",
+  },
 ];
 
 const GirlGroup: React.FC = () => (

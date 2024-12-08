@@ -29,26 +29,48 @@ const sotraRentalPremiseData: RentalPremiseProps = {
     {
       isStrong: true,
       content: `
-      Leiligheten er lys og romslig med en gjennomgående god standard. Delikat
-      IKEA-kjøkken med kjøkkenøy og åpen løsning mot stuen. Stor og
-      møbleringsvennlig stue med peisovn og utgang til balkong med kveldssol.
-      Pent, flislagt baderom med både badekar og dusjsone, som ble utvidet og
-      rehabilitert i regi av sameiet i 2022. Tre gode soverom ligger
-      barnevennlig i tilknytning til hverandre. Hovedsoverommet har utgang til
-      sørvestvendt balkong med hyggelig`,
+        Øygarden Kraftsenter er et allsidig lokale som passer til en rekke
+        arrangementer, fra intime samlinger til større feiringer. Når du
+        leier lokalet, får du tilgang til en moderne spisesal med et 
+        tilhørende kjøkken og en sofakrok med monitor, som skaper en hyggelig
+        og funksjonell atmosfære for alle typer arrangementer. Enten du
+        planlegger en romantisk bryllupsfeiring, en fargerik bursdag,
+        eller et viktig møte, gir dette lokalet den perfekte rammen 
+        for en vellykket sammenkomst.
+      `,
     },
     {
       isStrong: false,
       content: `
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
-      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
-      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque
-      accusamus autem nesciunt modi! Doloremque labore fuga quae a. Voluptatem
-      ut architecto beatae obcaecati numquam! Quas laborum ab nulla cumque!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum obcaecati
-      quam expedita adipisci. Rerum aut ipsa odio atque, ex ab, accusantium
-      nobis molestias ad error consequuntur expedita exercitationem vel modi.
+        Kjøkkenet er fullt utstyrt med det du trenger
+        for å tilberede eller servere mat og drikke. Her
+        finner du komfyr, et stort kjøleskap, og alt av
+        nødvendige redskaper, inkludert tallerkener, bestikk,
+        glass og kopper. Dette gjør det enkelt å organisere alt
+        fra en sit-down middag til en buffet. Spisesalen har en
+        komfortabel sofakrok hvor gjester kan slappe av, samtidig
+        som monitoren kan brukes til presentasjoner eller underholdning.
+      `,
+    },
+    {
+      isStrong: false,
+      content: `
+        I tillegg til spiseområdet har Øygarden Kraftsenter flere
+        unike fasiliteter. Til venstre for gangen finner du et rom med
+        to foosball-bord, som tilfører en morsom og avslappet aktivitet
+        for gjestene dine. Fortsetter du videre gjennom dette rommet,
+        kommer du til et større rom utstyrt med et imponerende lydanlegg.
+        Dette tomme rommet er svært fleksibelt og kan brukes til alt fra
+        dans og musikkarrangementer til seremonielle formål, som religiøse
+        feiringer eller spesielle samlinger.
+      `,
+    },
+    {
+      isStrong: false,
+      content: `
+        Lokalet er også tilrettelagt for alle gjester, med to ordinære toaletter og ett handicaptoalett lett
+        tilgjengelig fra gangen. Øygarden Kraftsenter er designet for å være både funksjonelt og inviterende,
+        og vi ser frem til å hjelpe deg med å arrangere et minneverdig event i våre hyggelige omgivelser.
       `,
     },
   ],
@@ -63,8 +85,8 @@ const sotraRentalPremiseData: RentalPremiseProps = {
     ["Byggeår: 1970", "Tomteareal: 6764 m²"],
   ],
   facilities: [
-    ["God tilgang for rullestol", "Nært bybane", "Uteområde", "Kjøkken"],
-    ["God tilgang for rullestol", "Nært bybane", "Uteområde"],
+    ["God tilgang for rullestol", "toaletter", "handicap toalett", "Kjøkken"],
+    ["Spiselokale", "Parkeringsplasser"],
   ],
   s3BucketLink:
     "https://availability-way-forward.s3.amazonaws.com/sotra-availability.json",

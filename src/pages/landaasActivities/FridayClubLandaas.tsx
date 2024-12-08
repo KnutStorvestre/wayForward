@@ -44,7 +44,7 @@ const infoLines: InfoLines = [
     title: "Påmelding:",
     text: "Ring eller send 'FREDAGSKLUBB' på SMS til 40 40 60 98.",
   },
-  { title: "Adresse:", text: "XXXX" },
+  { title: "Adresse:", text: "Femmeren (Joachim Lampes Vei 5, 5089 Bergen)" },
 ];
 
 const centerMarker = { lat: 60.36165554826739, lng: 5.363863074396288 };
