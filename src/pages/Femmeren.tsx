@@ -18,58 +18,78 @@ const femmerenData: RentalPremiseProps = {
     {
       isStrong: true,
       content: `
-      I Joachim Lampes vei 5 kan du leie et koselig lokale som passer perfekt til 
-      arrangementer som bryllup, bursdager, møter og religiøse feiringer. Med sine 
-      fleksible fasiliteter og vakre uteområder, tilbyr dette lokalet en unik ramme 
-      for ditt arrangement, enten du ønsker en dag fylt med utendørsaktiviteter eller 
-      et intimt innendørs selskap.
+      Velkommen til Femmeren, lokalet er ideelt for små og mellomstore sammenkomster med en kapasitet
+      på opptil 35 personer. Femmeren er spesielt tilrettelagt for barnerelaterte
+      arrangementer og aktiviteter, og er et lyst, funksjonelt og inkluderende sted
+      som passer perfekt for barnebursdager, familiefester og andre arrangementer
+      med barn i fokus.
       `,
     },
     {
       isStrong: false,
       content: `
-      Lokalet består av to rom: et spiserom og et fullt utstyrt kjøkken. Spiserommet 
-      gir god plass til dine gjester og er perfekt for måltider, taler eller andre 
-      samlingsaktiviteter. Kjøkkenet er praktisk og utstyrt med alt du trenger, fra 
-      komfyr og kjøleskap til nødvendige redskaper som tallerkener, glass og bestikk. 
-      Dette gjør det enkelt å servere mat og drikke til dine gjester, enten du ordner 
-      alt selv eller bruker catering.
+      Femmeren egner seg ypperlig for feiringer og aktiviteter som setter barna i
+      sentrum. Den romslige spisesalen har nok bord, stoler og barnestoler til å
+      dekke behovene for opptil 35 gjester, og kjøkkenet er fullt utstyrt med alt
+      fra komfyr til bestikk og kjøkkenredskaper. Uteområdet med en liten lekeplass
+      og en overbygd terrasse gir barna mulighet til å leke og utforske i trygge
+      omgivelser, noe som gjør det til et perfekt valg for barnebursdager eller
+      familiearrangementer.
       `,
     },
     {
       isStrong: false,
       content: `
-      De flotte uteområdene er en av lokalets største fordeler. Her finner du en 
-      gressplen som gir en åpen og avslappende atmosfære, utebord med benker for 
-      sosialt samvær, og en lekeplass som gjør det til et familievennlig valg. 
-      Uteområdet gir også gode muligheter for utendørsaktiviteter, fotografering 
-      eller en avslappet pause i frisk luft. Dette gjør lokalet ideelt for 
-      arrangementer som ønsker å kombinere det beste av inne- og utendørsopplevelser.
+      Lokalet er lett tilgjengelig for alle, inkludert rullestolbrukere, med rampe
+      og et handicaptoalett. Femmeren har totalt fem rom, inkludert en romslig gang,
+      et funksjonelt kjøkken, en lys spisesal og to toaletter. Det er også seks
+      gratis parkeringsplasser rett utenfor døren, noe som gjør det enkelt for 
+      gjestene å komme seg til og fra arrangementet. Store vinduer sørger for at
+      lokalet alltid er lyst og innbydende, og skaper en hyggelig atmosfære for
+      barnevennlige aktiviteter.
       `,
     },
     {
       isStrong: false,
       content: `
-      I tillegg til de vakre omgivelsene og de praktiske innendørsfasilitetene, er 
-      lokalet lett tilgjengelig med en sentral beliggenhet i Bergen. Med kombinasjonen 
-      av funksjonalitet, sjarm og idylliske uteområder, er Joachim Lampes vei 5 et 
-      utmerket valg for alle typer feiringer og samlinger.
+      For å leie Femmeren må arrangementet være barnerelatert. Dette gjør lokalet spesielt
+      egnet for bursdagsfeiringer, barnegrupper, familiefester og lignende sammenkomster
+      der barn og familier står i sentrum. Med gode transportforbindelser og et trygt
+      uteområde, er Femmeren tilrettelagt for å gjøre opplevelsen både enkel og hyggelig
+      for små og store gjester.
       `,
     },
   ],
   keyInfo: [
-    ["Størrelse: 200m²", "Antall rom: 5", "Antall toaletter: 2", "Etasje: 1"],
     [
-      "Parkeringsplasser: 10",
-      "Antall stoler: 10",
-      "Antall benker: 12",
-      "Antall bord: 4",
+      "Kapasitet: 35 personer",
+      "Antall rom: 5",
+      "Parkeringsplasser: 6",
+      "Etasje: 1",
     ],
-    ["Byggeår: 1970", "Tomteareal: 6764 m²"],
+    [
+      "Inneområde: 128 m²",
+      "Antall stoler: 35+",
+      "Antall barnestoler: 10+",
+      "Antall bord: 8",
+    ],
+    ["Handicap toalett: 1", "Standard toalett: 1"],
   ],
   facilities: [
-    ["God tilgang for rullestol", "Nært bybane", "Uteområde", "Kjøkken"],
-    ["God tilgang for rullestol", "Nært bybane", "Uteområde"],
+    [
+      "Rullestoltilgang",
+      "God tilgang til kollektivtransport",
+      "Uteområde",
+      "Stort kjøkken",
+    ],
+    ["Spisesal", "Toaletter", "Gang", "Lekeplass"],
+    [
+      "Overbygd terrasse",
+      "Gratis parkering",
+      "Handicaptoalett",
+      "Store vinduer",
+    ],
+    ["Lyst lokale", "Barnevennlig"],
   ],
   s3BucketLink:
     "https://availability-way-forward.s3.amazonaws.com/femmeren-availability.json",
