@@ -95,8 +95,8 @@ const femmerenData: RentalPremiseProps = {
     "https://availability-way-forward.s3.amazonaws.com/femmeren-availability.json",
   contactInfo: {
     contactName: "Rasmus Solberg",
-    phoneNumber: "+47 555 55 555",
-    email: "post@wayforward.com",
+    phoneNumber: "+47 404 06 098",
+    email: "rasmus@wayforward.no",
   },
   priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune",
   longLatMarker: {
