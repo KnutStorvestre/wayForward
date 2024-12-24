@@ -98,7 +98,6 @@ const femmerenData: RentalPremiseProps = {
     phoneNumber: "+47 404 06 098",
     email: "rasmus@wayforward.no",
   },
-  priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune",
   longLatMarker: {
     lat: 60.36165554826739,
     lng: 5.363863074396288,
