@@ -45,10 +45,30 @@ const RentalCalendar: React.FC<RentalCalendarProps> = ({ s3BucketLink }) => {
             (dateString: string) => new Date(dateString)
           )
         );
+        // Generate gray dates for Monday through Friday within the date range
+        const generatedGrayDates: Date[] = [];
+        let currentDate = new Date(today);
+
+        while (currentDate <= dateSixMonthsMinusOne) {
+          const dayOfWeek = currentDate.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+          if (dayOfWeek >= 1 && dayOfWeek <= 5) {
+            // Monday to Friday
+            generatedGrayDates.push(new Date(currentDate));
+          }
+          currentDate.setDate(currentDate.getDate() + 1);
+        }
+
+        const grayDatesFromBucket: Date[] = response.data.grayDates.map(
+          (dateString: string) => new Date(dateString)
+        );
+
         setGrayDates(
-          response.data.grayDates.map(
-            (dateString: string) => new Date(dateString)
-          )
+          Array.from(
+            new Set([
+              ...generatedGrayDates.map((date) => date.toISOString()),
+              ...grayDatesFromBucket.map((date) => date.toISOString()),
+            ])
+          ).map((dateString) => new Date(dateString))
         );
       } catch (error) {
         console.error("Error fetching red dates:", error);
