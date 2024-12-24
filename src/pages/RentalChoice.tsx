@@ -29,11 +29,9 @@ function TopText() {
     <div className={styles.topText}>
       <h1 className="extra-bold-inter">Utleie/Utlån av lokaler</h1>
       <p className="semi-bold-inter">
-        Vi tilbyr en rekke lokaler og utstyr for utleie for å støtte
-        samfunnsarrangementer og aktiviteter. Våre fasiliteter er velholdte og
-        utstyrt for å møte dine behov, enten du arrangerer en workshop, et møte
-        eller en feiring. Kontakt oss for å lære mer om våre utleiemuligheter og
-        tilgjengelighet.
+        Vi leier ut våre to lokaler til barnerelaterte feiringer for de som bor
+        i nærområdet både på Landås og Sotra. Klikk deg videre for å sjekke
+        adresse, fasiliteter, bilder og tilgjengelighet for lokalene.
       </p>
     </div>
   );
