@@ -24,11 +24,11 @@ const Home: React.FC = () => {
                 samfunnet
               </span>
               <span className={styles.heroParagraphSecond}>
-                , med et spesielt fokus på å sikre lik deltakelse for jenter.
-                Grunnlagt i 2004, tilbyr vi en rekke aktiviteter som leksehjelp,
-                sykkelverksted, musikkstudiosesjoner og mer. Bli med oss i å
-                bygge et samfunn der alle kan delta uansett bakgrunn eller
-                økonomisk situasjon.
+                , med et spesielt fokus på å sikre lik deltakelse for jenter i
+                fritidsaktiviteter og idrett. Grunnlagt i 2004, tilbyr vi en
+                rekke aktiviteter som leksehjelp, sykkelverksted, fredagsklubb
+                og mer. Bli med oss å bygge et samfunn der alle kan delta
+                uansett bakgrunn eller økonomisk situasjon.
               </span>
             </p>
           </section>

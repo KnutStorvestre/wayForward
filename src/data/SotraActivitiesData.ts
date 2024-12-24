@@ -34,9 +34,9 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       image: GirlGroup,
     },
     {
-      activityTitle: "Ungdomscafè",
+      activityTitle: "Ungdomskafé",
       link: "/sotra-aktiviteter/ungdomskafe",
-      time: "XX XX:XX - XX:XX",
+      time: "Fredag 17:00 - 20:00",
       ageGroup: "13 - 20 år",
       description:
         `

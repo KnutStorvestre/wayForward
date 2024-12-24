@@ -40,7 +40,7 @@ const infoLines: InfoLines = [
   },
   {
     title: "Adresse:",
-    text: "Kan variere, men vanligvis på Femmeren (Joachim Lampes Vei 5, 5089 Bergen)",
+    text: "Femmeren (Joachim Lampes Vei 5, 5089 Bergen)",
   },
 ];
 

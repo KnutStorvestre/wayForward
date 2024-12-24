@@ -9,7 +9,7 @@ import GirlGroup from "../assets/rasmus-images/jentegruppe-sotra-3-ratio-small.j
 
 const ActivitiesPageLandaas: ActivitiesPageData = {
     title: "Landås Aktiviteter",
-    topText: "Disse aktivitetene er for barn og på Landås.",
+    topText: "Disse aktivitetene er for barn og ungdom på Landås.",
     instagramLink: "https://www.instagram.com/",
     facebookLink: "https://www.facebook.com/",
     activities: [

@@ -39,7 +39,7 @@ const infoLines: InfoLines = [
     title: "Påmelding:",
     text: "Kontakt Rasmus på 40 40 60 98 for info om påmelding og datoer for jentegruppen.",
   },
-  { title: "Adresse:", text: "XXXX" },
+  { title: "Adresse:", text: "Grønamyrvegen 6, 5353 Sotra" },
 ];
 
 const centerMarker = { lat: 60.3596836, lng: 5.1236062 };

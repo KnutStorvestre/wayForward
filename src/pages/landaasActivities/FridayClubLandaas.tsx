@@ -38,7 +38,7 @@ const textParagraphs: TextParagraphs = [
 ];
 
 const infoLines: InfoLines = [
-  { title: "Tidspunkt:", text: "Fredag kl. XXXXXX" },
+  { title: "Tidspunkt:", text: "Fredag kl. 16:00 - 19:00" },
   { title: "Aldersgruppe:", text: "6 - 19 år" },
   {
     title: "Påmelding:",

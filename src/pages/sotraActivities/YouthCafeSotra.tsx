@@ -6,7 +6,7 @@ const textParagraphs: TextParagraphs = [
   {
     isStrong: true,
     content: `
-      Velkommen til vår ungdomscafé på Kraftsenter for aktivitet.
+      Velkommen til vår Ungdomskafé på Kraftsenter for aktivitet.
       Her kan ungdom fra 13 og oppover komme for å henge ut,
       møte venner og delta på forskjellige aktiviteter på huset.
       Det blir servert varm mat hver gang.
@@ -24,7 +24,7 @@ const textParagraphs: TextParagraphs = [
   {
     isStrong: false,
     content: `
-      Innimellom drar ungdomscaféen på utflukt til steder som Rush,
+      Innimellom drar Ungdomskaféen på utflukt til steder som Rush,
       Gokart Sartor, Megazone, Fangene på fortet, skøyter, badeland,
       bowling og mye mer.
       `,
@@ -32,11 +32,11 @@ const textParagraphs: TextParagraphs = [
 ];
 
 const infoLines: InfoLines = [
-  { title: "Tidspunkt:", text: "XXXXX" },
+  { title: "Tidspunkt:", text: "kl. 17:00 - 20:00" },
   { title: "Aldersgruppe:", text: "13 - 20 år" },
   { title: "Pris:", text: "Gratis" },
   { title: "Påmelding:", text: "Det er bare å møte opp." },
-  { title: "Adresse:", text: "XXXX" },
+  { title: "Adresse:", text: "Grønamyrvegen 6, 5353 Sotra" },
 ];
 
 const centerMarker = { lat: 60.3596836, lng: 5.1236062 };
@@ -45,7 +45,7 @@ const YouthCafe = () => (
   <ActivityPage
     imgSrc={homeworkImg}
     imgAlt="Large top image"
-    header="Ungdomscafé"
+    header="Ungdomskafé"
     location="Sotra"
     textParagraphs={textParagraphs}
     infoLines={infoLines}

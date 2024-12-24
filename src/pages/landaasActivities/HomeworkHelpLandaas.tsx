@@ -27,7 +27,7 @@ const textParagraphs: TextParagraphs = [
     isStrong: false,
     content: `
       Leksehjelpen vår har stor pågang og bare kapasitet til 30 barn. Man må
-      derfor regne med å få plass ca. annenhver uke. Man får
+      derfor regne med å få plass ca. annenhver uke.
       `,
   },
 ];
