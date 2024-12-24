@@ -104,7 +104,6 @@ const sotraRentalPremiseData: RentalPremiseProps = {
     phoneNumber: "+47 404 06 098",
     email: "rasmus@wayforward.no",
   },
-  priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune",
   longLatMarker: {
     lat: 60.359691621698374,
     lng: 5.126184352370146,

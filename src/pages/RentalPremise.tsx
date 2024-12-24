@@ -21,7 +21,6 @@ interface RentalPremiseProps {
     phoneNumber: string;
     email: string;
   };
-  priceDescription: string;
   longLatMarker: { lat: number; lng: number };
 }
 
@@ -36,7 +35,6 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
   facilities,
   s3BucketLink,
   contactInfo,
-  priceDescription,
   longLatMarker,
 }) => (
   <div className="page-container">
@@ -60,7 +58,6 @@ const RentalPremise: React.FC<RentalPremiseProps> = ({
       <CalendarSection />
       <RentalCalendar s3BucketLink={s3BucketLink} />
       <ContactInfo {...contactInfo} />
-      <PriceSection description={priceDescription} />
     </div>
     <SectionHeader title="Kart" />
     <MapComponent center={longLatMarker} />
@@ -171,19 +168,6 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
           <span>e-post: {email}</span>
         </div>
       </div>
-    </div>
-  </div>
-);
-
-interface PriceSectionProps {
-  description: string;
-}
-
-const PriceSection: React.FC<PriceSectionProps> = ({ description }) => (
-  <div>
-    <SectionHeader title="Pris" />
-    <div className={styles.bottomInfoBox}>
-      <p>{description}</p>
     </div>
   </div>
 );
