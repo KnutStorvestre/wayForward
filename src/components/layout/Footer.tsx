@@ -16,7 +16,7 @@ const Footer = () => {
               <span>Partnere</span>
             </Link>
             <a href="mailto:post@wayforward.no">post@wayforward.no</a>
-            <a href="tel:+47 55 55 55 55">+47 55 55 55 55</a>
+            <a href="tel:+47 404 06 098">+47 404 06 098</a>
           </div>
           <div className={styles.socialMedia}>
             <a
