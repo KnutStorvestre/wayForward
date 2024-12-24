@@ -1,14 +1,43 @@
-import femmerenHage from "../assets/rental-premises/femmeren/femmeren-0-hage.png";
-import femmeren1 from "../assets/rental-premises/femmeren/femmeren-1.png";
 import femmeren2H from "../assets/rental-premises/femmeren/femmeren-2-h.png";
+import outside1 from "../assets/rental-premises/femmeren/outside-1.jpg";
+import outside2 from "../assets/rental-premises/femmeren/outside-2.jpg";
+import parking from "../assets/rental-premises/femmeren/parking.png";
+import entrance from "../assets/rental-premises/femmeren/entrance.jpg";
+import kitchen1 from "../assets/rental-premises/femmeren/kitchen-1.jpg";
+import kitchen0 from "../assets/rental-premises/femmeren/kitchen-0.jpg";
+import diningRoom0 from "../assets/rental-premises/femmeren/dining-room-0.jpg";
+import diningRoom2 from "../assets/rental-premises/femmeren/dining-room-2.jpg";
+import diningRoom1 from "../assets/rental-premises/femmeren/dining-room-1.jpg";
+import entryway from "../assets/rental-premises/femmeren/entryway.jpg";
+import toiletStandard from "../assets/rental-premises/femmeren/toilet-standard.jpg";
+import toiletHandicap1 from "../assets/rental-premises/femmeren/toilet-handicap-1.jpg";
+import toiletHandicap0 from "../assets/rental-premises/femmeren/toilet-handicap-0.jpg";
+
 import RentalPremise from "./RentalPremise";
 import { RentalPremiseProps } from "./RentalPremise";
 
 const femmerenData: RentalPremiseProps = {
   images: [
     { url: femmeren2H, alt: "Femmeren lokale sett fra hagen" },
-    { url: femmeren1, alt: "Femmeren lokale sett fra parkeringsplassen" },
-    { url: femmerenHage, alt: "Hage område til Femmeren" },
+    { url: outside1, alt: "Femmeren lokale sett fra parkeringsplassen" },
+    { url: outside2, alt: "Hage område til Femmeren" },
+    { url: parking, alt: "Femmeren from parking area" },
+    { url: entrance, alt: "Stairs to entrance" },
+    { url: kitchen1, alt: "Image of the kitchen" },
+    { url: kitchen0, alt: "Image of the kitchen" },
+    {
+      url: diningRoom0,
+      alt: "Mange stoler langs et bord med stoler, 1 TV og 2 sofaer",
+    },
+    { url: diningRoom2, alt: "Mange stoler langs et bord med stoler" },
+    { url: diningRoom1, alt: "2 sofaer" },
+    { url: entryway, alt: "inngangsparti" },
+    { url: toiletStandard, alt: "Vanlig toalett" },
+    { url: toiletHandicap1, alt: "Handicap toalett" },
+    {
+      url: toiletHandicap0,
+      alt: "Handicap toalett og bord for å skifte bleier",
+    },
   ],
   rentalPremiseName: "Femmeren",
   location: "Landås",
