@@ -42,58 +42,67 @@ const sotraRentalPremiseData: RentalPremiseProps = {
     {
       isStrong: false,
       content: `
-        Kjøkkenet er fullt utstyrt med det du trenger
-        for å tilberede eller servere mat og drikke. Her
-        finner du komfyr, et stort kjøleskap, og alt av
-        nødvendige redskaper, inkludert tallerkener, bestikk,
-        glass og kopper. Dette gjør det enkelt å organisere alt
-        fra en sit-down middag til en buffet. Spisesalen har en
-        komfortabel sofakrok hvor gjester kan slappe av, samtidig
-        som monitoren kan brukes til presentasjoner eller underholdning.
+        Lokalet er praktisk inndelt, med hovedgangen som knutepunkt.
+        På høyre side finner du en stor spisesal med nok bord og stoler 
+        til over 40 personer, samt et velutstyrt kjøkken. Kjøkkenet har
+        et stort kjøleskap med fryseboks, komfyr og alt av nødvendig 
+        kjøkkenutstyr, fra bestikk til skjærebrett. Ved siden av kjøkkenet 
+        ligger en hyggelig sofakrok, perfekt for pauser og uformelle samtaler.
       `,
     },
     {
       isStrong: false,
       content: `
-        I tillegg til spiseområdet har Øygarden Kraftsenter flere
-        unike fasiliteter. Til venstre for gangen finner du et rom med
-        to foosball-bord, som tilfører en morsom og avslappet aktivitet
-        for gjestene dine. Fortsetter du videre gjennom dette rommet,
-        kommer du til et større rom utstyrt med et imponerende lydanlegg.
-        Dette tomme rommet er svært fleksibelt og kan brukes til alt fra
-        dans og musikkarrangementer til seremonielle formål, som religiøse
-        feiringer eller spesielle samlinger. Det er også et bordtennisbord der.
+        På venstre side av gangen finner du et aktivitetsrom med to foosball-bord,
+        som er populære blant gjester i alle aldre. Videre ligger en romslig
+        dansesal med speil på veggene og et stort lydanlegg, perfekt for feiringer
+        som ønsker musikk og dans som en del av opplevelsen. I enden av gangen
+        finner du tre toaletter, inkludert ett handicaptoalett, som sikrer god
+        tilgjengelighet for alle.
       `,
     },
     {
       isStrong: false,
       content: `
-        Lokalet er også tilrettelagt for alle gjester, med to ordinære toaletter og ett handicaptoalett lett
-        tilgjengelig fra gangen. Øygarden Kraftsenter er designet for å være både funksjonelt og inviterende,
-        og vi ser frem til å hjelpe deg med å arrangere et minneverdig event i våre hyggelige omgivelser.
+        Øygarden Kraftsenter tilbyr rikelig med parkeringsplasser
+        (ca. 23 mot betaling), og den sentrale beliggenheten gjør det enkelt
+        å organisere arrangementer uten logistiske utfordringer. Lokalet passer
+        ypperlig til elegante bryllup, livlige bursdagsfester eller produktive
+        møter, og gir en komfortabel og funksjonell ramme for enhver anledning.
       `,
     },
   ],
   keyInfo: [
-    ["Størrelse: 200m²", "Antall rom: 5", "Antall toaletter: 2", "Etasje: 1"],
     [
-      "Parkeringsplasser: 10",
-      "Antall stoler: 10",
-      "Antall benker: 12",
-      "Antall bord: 4",
+      "Størrelse inneområde: 200m²",
+      "Antall rom: 8",
+      "Kapasitet: 40 personer",
+      "Etasje: 1",
     ],
-    ["Byggeår: 1970", "Tomteareal: 6764 m²"],
+    [
+      "Parkeringsplasser: 23+",
+      "Antall bord: 8+",
+      "Antall stoler: 40+",
+      "Foosball-bord: 2",
+    ],
+    ["Standard toaletter: 2", "Handicap toalett: 1"],
   ],
   facilities: [
-    ["God tilgang for rullestol", "toaletter", "handicap toalett", "Kjøkken"],
-    ["Spiselokale", "Parkeringsplasser"],
+    [
+      "Rullestoltilgang",
+      "God tillgang kollektivtransport",
+      "Parkeringsplasser",
+      "Kjøkken",
+    ],
+    ["Spisesal", "Gang", "Dansesal", "Foosball-rom"],
+    ["Sofoakrok", "Standard toaletter", "Handicap toalett", "Lydanlegg"],
   ],
   s3BucketLink:
     "https://availability-way-forward.s3.amazonaws.com/sotra-availability.json",
   contactInfo: {
     contactName: "Rasmus Solberg",
-    phoneNumber: "+47 555 55 555",
-    email: "post@wayforward.com",
+    phoneNumber: "+47 404 06 098",
+    email: "rasmus@wayforward.no",
   },
   priceDescription: "Dette er et 100% gratis tilbud av Bergen kommune",
   longLatMarker: {
