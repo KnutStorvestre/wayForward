@@ -70,6 +70,18 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
         `,
       image: FredagsklubbSletten,
     },
+    {
+      activityTitle: "Silketrykk",
+      link: "/landaas-aktiviteter/silketrykk",
+      time: "fredag 16:00 - 19:00",
+      ageGroup: "13 - 20 år",
+      description:
+        `
+        Velkommen til vår fredagsklubb på Femmeren. Her kan barn og ungdom komme
+        for å henge ut, møte venner og delta på forskjellige aktiviteter på Femmeren.
+        `,
+      image: FredagsklubbSletten,
+    },
   ],
 };
 
