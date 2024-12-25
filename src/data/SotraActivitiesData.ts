@@ -4,8 +4,6 @@ import GirlGroup from "../assets/rasmus-images/jentegruppe-sotra-3-ratio-small.j
 import HomeWorkHelp from "../assets/rasmus-images/leksehjelp-sletten-1-ratio-small.jpg";
 
 
-
-
 const ActivitiesPageLandaas: ActivitiesPageData = {
     title: "Sotra Aktiviteter",
     topText: "Disse aktivitetene er for barn og unge på Sotra.",
@@ -20,8 +18,8 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       description:
         `
         Velkommen til gratis leksehjelp med servering av varm mat. Her blir det mulighet
-         for å få hjelp med vanskelige lekser og møtes for å gjøre leksene sammen med venner.
-         `,
+        for å få hjelp med vanskelige lekser og møtes for å gjøre leksene sammen med venner.
+        `,
       image: HomeWorkHelp,
     },
     {
@@ -41,8 +39,32 @@ const ActivitiesPageLandaas: ActivitiesPageData = {
       description:
         `
         Velkommen til vår ungdomscafé på Kraftsenter for aktivitet på Sotra. Her kan ungdom
-          komme for å henge ut, møte venner og delta på forskjellige aktiviteter.
-          `,
+        komme for å henge ut, møte venner og delta på forskjellige aktiviteter.
+        `,
+      image: Bergen,
+    },
+    {
+      activityTitle: "Tabala trommekurs",
+      link: "/sotra-aktiviteter/tabla-trommekurs",
+      time: "Fredag 17:00 - 20:00",
+      ageGroup: "13 - 20 år",
+      description:
+        `
+        Velkommen til vår ungdomscafé på Kraftsenter for aktivitet på Sotra. Her kan ungdom
+        komme for å henge ut, møte venner og delta på forskjellige aktiviteter.
+        `,
+      image: Bergen,
+    },
+    {
+      activityTitle: "Ferieaktiviteter",
+      link: "/sotra-aktiviteter/ferieaktiviteter",
+      time: "Fredag 17:00 - 20:00",
+      ageGroup: "13 - 20 år",
+      description:
+        `
+        Velkommen til vår ungdomscafé på Kraftsenter for aktivitet på Sotra. Her kan ungdom
+        komme for å henge ut, møte venner og delta på forskjellige aktiviteter.
+        `,
       image: Bergen,
     },
   ],

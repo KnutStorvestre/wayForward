@@ -26,6 +26,9 @@ const FridayClubLandaas = React.lazy(
 const SummerActivities = React.lazy(
   () => import("./pages/landaasActivities/SummerActivities")
 );
+const Silkscreen = React.lazy(
+  () => import("./pages/landaasActivities/Silkscreen")
+);
 const SotraActivities = React.lazy(() => import("./pages/ActivitiesSotra"));
 const GirlGroupSotra = React.lazy(
   () => import("./pages/sotraActivities/GirlGroupSotra")
@@ -35,6 +38,12 @@ const HomeWorkHelpSotra = React.lazy(
 );
 const YouthCafeSotra = React.lazy(
   () => import("./pages/sotraActivities/YouthCafeSotra")
+);
+const DrumLessons = React.lazy(
+  () => import("./pages/sotraActivities/DrumLessons")
+);
+const HolidayActivities = React.lazy(
+  () => import("./pages/sotraActivities/HolidayActivities")
 );
 const RentalChoice = React.lazy(() => import("./pages/RentalChoice"));
 const Partners = React.lazy(() => import("./pages/Partners"));
@@ -75,6 +84,10 @@ function App() {
             element={<FridayClubLandaas />}
           />
           <Route
+            path="/landaas-aktiviteter/silketrykk"
+            element={<Silkscreen />}
+          />
+          <Route
             path="/sotra-aktiviteter/leksehjelp"
             element={<HomeWorkHelpSotra />}
           />
@@ -85,6 +98,14 @@ function App() {
           <Route
             path="/sotra-aktiviteter/ungdomskafe"
             element={<YouthCafeSotra />}
+          />
+          <Route
+            path="/sotra-aktiviteter/tabla-trommekurs"
+            element={<DrumLessons />}
+          />
+          <Route
+            path="/sotra-aktiviteter/ferieaktiviteter"
+            element={<HolidayActivities />}
           />
           <Route path="/sotra-aktiviteter" element={<SotraActivities />} />
           <Route path="/utleie" element={<RentalChoice />} />
