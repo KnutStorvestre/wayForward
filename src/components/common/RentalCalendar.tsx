@@ -3,7 +3,7 @@ import { DayPicker } from "react-day-picker";
 import { nb } from "date-fns/locale";
 import "react-day-picker/dist/style.css";
 import styles from "../styles/CustomCalendar.module.css";
-import axios from "axios"; // Import axios
+import axios from "axios";
 
 const today = new Date();
 

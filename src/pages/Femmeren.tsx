@@ -1,3 +1,6 @@
+import RentalPremise, { RentalPremiseProps } from "./RentalPremise";
+
+// Images
 import femmeren2H from "../assets/rental-premises/femmeren/femmeren-2-h.png";
 import outside1 from "../assets/rental-premises/femmeren/outside-1.jpg";
 import outside2 from "../assets/rental-premises/femmeren/outside-2.jpg";
@@ -12,9 +15,6 @@ import entryway from "../assets/rental-premises/femmeren/entryway.jpg";
 import toiletStandard from "../assets/rental-premises/femmeren/toilet-standard.jpg";
 import toiletHandicap1 from "../assets/rental-premises/femmeren/toilet-handicap-1.jpg";
 import toiletHandicap0 from "../assets/rental-premises/femmeren/toilet-handicap-0.jpg";
-
-import RentalPremise from "./RentalPremise";
-import { RentalPremiseProps } from "./RentalPremise";
 
 const femmerenData: RentalPremiseProps = {
   images: [

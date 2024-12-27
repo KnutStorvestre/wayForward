@@ -1,4 +1,6 @@
 import RentalPremise, { RentalPremiseProps } from "./RentalPremise";
+
+// images
 import entrance from "../assets/rental-premises/sotra/entrance-0-full.jpg";
 import hallway from "../assets/rental-premises/sotra/hallway.jpg";
 import diningHall from "../assets/rental-premises/sotra/dining-hall.jpg";
