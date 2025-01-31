@@ -6,9 +6,7 @@ import RentalCardH from "../components/common/RentalCardHome";
 import rentalCardsData from "../data/RentalCardsData";
 import wayForwardLogo from "../assets/home-page/way-forward-logo.svg";
 import Handshake from "../assets/home-page/partners-handshake.jpeg";
-
-const AboutUsImage =
-  "https://via.placeholder.com/600x400.png?text=About+Us+Image";
+import AboutUsImage from "../assets/home-page/people-keith-haring.jpg";
 
 const Home: React.FC = () => {
   return (
