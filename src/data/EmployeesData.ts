@@ -1,14 +1,16 @@
 import { EmployeeArray } from "../types";
 import squareGuy from "../assets/about-us/employees/square-guy.jpg";
+import rasmus from "../assets/about-us/employees/rasmus.jpg";
+import richard from "../assets/about-us/employees/richard.jpg";
 
 const employees: EmployeeArray = [
     {
-      image: {url: squareGuy, alt: "placeholder"},
+      image: {url: richard, alt: "placeholder"},
       name: "Richard Kiwanuka",
       position: "Organisasjonsleder",
     },
     {
-      image: {url: squareGuy, alt: "placeholder"},
+      image: {url: rasmus, alt: "placeholder"},
       name: "Rasmus Solberg",
       position: "Prosjektkoordinator",
     },
@@ -54,9 +56,14 @@ const employees: EmployeeArray = [
     },   
     {
       image: {url: squareGuy, alt: "placeholder"},
-      name: "Mohamed Abdulrahman",
-      position: "Aktivitetsleder",
+      name: "NAVN",
+      position: "STILLING",
     },      
+    {
+      image: {url: squareGuy, alt: "placeholder"},
+      name: "NAVN",
+      position: "STILLING",
+    }, 
   ];
 
   export default employees;
