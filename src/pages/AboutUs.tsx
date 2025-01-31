@@ -1,5 +1,4 @@
 import EmployeeCard from "../components/common/EmployeeCard";
-import GroupPhoto from "../assets/about-us/group-people.jpg";
 import employees from "../data/EmployeesData";
 import styles from "./styles/AboutUs.module.css";
 
@@ -46,9 +45,6 @@ const AboutUs = () => {
 
       <div className="max-width-container">
         <section className={styles.content}>
-          <div className={styles.groupPhoto}>
-            <img src={GroupPhoto} alt="En gruppe mennesker fra Way Forward" />
-          </div>
           <div className="horizontal-padding">
             <header>
               <h1 className={styles.bottomHeader}>Ansatte/Frivillige</h1>
