@@ -7,13 +7,23 @@
   margin: 0 auto;
 }
 
+.heroCard {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blurry effect */
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .hero {
   background-color: #074f57;
-  background-image: url("../../assets/home-page/mountain-night-medium.jpg");
+  background-image: url("../../assets/home-page/ulriken.jpg");
   padding: 200px 4rem;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right top;
+  background-position: left bottom;
 }
 
 .heroText {
@@ -22,7 +32,7 @@
 
 .heroTitle {
   font-size: 3.1rem;
-  color: #f7f7cd;
+  color: black;
   margin-bottom: 1rem;
 
   font-family: "Oswald", "inter", sans-serif;
@@ -34,7 +44,7 @@
 
 .heroParagraph {
   font-size: 1.3rem;
-  color: #f7f7cd;
+  color: black;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
@@ -169,6 +179,11 @@
   }
   .heroParagraphSecond {
     display: none;
+  }
+  .heroCard {
+    background: none;
+    backdrop-filter: none;
+    box-shadow: none;
   }
 }
 

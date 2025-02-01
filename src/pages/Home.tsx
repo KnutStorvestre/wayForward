@@ -14,21 +14,23 @@ const Home: React.FC = () => {
       <div className={styles.hero}>
         <div className={styles.backgroundImageContainer}>
           <section className={styles.heroText}>
-            <h1 className={styles.heroTitle}>Way Forward</h1>
-            <p className={styles.heroParagraph}>
-              <span>
-                Way Forward er en frivillig organisasjon dedikert til å
-                integrere og inkludere flerkulturelle barn og unge i det norske
-                samfunnet
-              </span>
-              <span className={styles.heroParagraphSecond}>
-                , med et spesielt fokus på å sikre lik deltakelse for jenter i
-                fritidsaktiviteter og idrett. Grunnlagt i 2004, tilbyr vi en
-                rekke aktiviteter som leksehjelp, sykkelverksted, fredagsklubb
-                og mer. Bli med oss å bygge et samfunn der alle kan delta
-                uansett bakgrunn eller økonomisk situasjon.
-              </span>
-            </p>
+            <div className={styles.heroCard}>
+              <h1 className={styles.heroTitle}>Way Forward</h1>
+              <p className={styles.heroParagraph}>
+                <span>
+                  Way Forward er en frivillig organisasjon dedikert til å
+                  integrere og inkludere flerkulturelle barn og unge i det
+                  norske samfunnet
+                </span>
+                <span className={styles.heroParagraphSecond}>
+                  , med et spesielt fokus på å sikre lik deltakelse for jenter i
+                  fritidsaktiviteter og idrett. Grunnlagt i 2004, tilbyr vi en
+                  rekke aktiviteter som leksehjelp, sykkelverksted, fredagsklubb
+                  og mer. Bli med oss å bygge et samfunn der alle kan delta
+                  uansett bakgrunn eller økonomisk situasjon.
+                </span>
+              </p>
+            </div>
           </section>
         </div>
       </div>
