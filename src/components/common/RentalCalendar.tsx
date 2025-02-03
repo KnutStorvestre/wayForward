@@ -39,7 +39,9 @@ const RentalCalendar: React.FC<RentalCalendarProps> = ({ s3BucketLink }) => {
   useEffect(() => {
     const fetchRedDates = async () => {
       try {
-        const response = await axios.get(s3BucketLink);
+        const response = await axios.get(
+          `${s3BucketLink}?t=${new Date().getTime()}`
+        );
         setRedDates(
           response.data.redDates.map(
             (dateString: string) => new Date(dateString)

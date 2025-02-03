@@ -16,6 +16,7 @@ TODO Ting å legge til
 * Fix all links.
 * Node js
 * Static site rendering
+* Make sure that none of the images are too large to prevent long loading time
 
 TODO spørsmål til møte 
 * farge på footer
