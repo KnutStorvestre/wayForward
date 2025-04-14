@@ -1,5 +1,4 @@
 import { EmployeeArray } from "../types";
-import squareGuy from "../assets/about-us/employees/square-guy.jpg";
 import rasmus from "../assets/about-us/employees/rasmus.jpg";
 import richard from "../assets/about-us/employees/richard.jpg";
 import blankUserIcon from "../assets/about-us/employees/blank-user.png";

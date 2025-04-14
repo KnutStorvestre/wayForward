@@ -19,8 +19,7 @@ TODO Ting å legge til
 * Make sure that none of the images are too large to prevent long loading time
 
 TODO spørsmål til møte 
-* farge på footer
-* Legge til bilder
+* Finne en logo som passer
 
 TODO oppgaver for WayForward
 * bilder
