@@ -1,3 +1,7 @@
+![Vite](https://img.shields.io/badge/built%20with-Vite-646CFF.svg?style=flat&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-20232a?style=flat&logo=react&logoColor=61dafb)
+
+
 # Way Forward - Website
 Way Forward is a non-profit organization dedicated to integrating and including multicultural children and youth in Norwegian society, with a special focus on ensuring equal participation for girls in leisure activities and sports. Founded in 2004, we offer a variety of activities such as homework help, bike workshops, Friday club, and more.
 ## Table of Contents
@@ -52,13 +56,18 @@ Way Forward is a non-profit organization dedicated to integrating and including 
     * `.env.development` (for local development)
     * `.env.production` (for production builds)
 
+    You can do this by using the .env.example file:
+
+    ```bash
+    cp .env.example .env.development
+    cp .env.example .env.production
+    ```
+
     Add the following keys to each file:
 
     ```env
-    VITE_GOOGLE_MAPS_API_KEY=your-google-maps-api-key
-    VITE_GOOGLE_MAPS_MAP_ID=your-google-map-id
-    VITE_JSONBIN_X_MASTER_KEY=your-jsonbin-master-key
-    VITE_JSONBIN_URL=https://api.jsonbin.io/...
+    VITE_GOOGLE_MAPS_API_KEY=your-google-maps-api-key-here
+    VITE_GOOGLE_MAPS_MAP_ID=your-google-maps-map-id-here
     ```
 
     > ⚠️ Make sure not to commit your `.env` files to version control. These should be added to `.gitignore`.
