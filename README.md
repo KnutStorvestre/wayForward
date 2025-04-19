@@ -1,30 +1,58 @@
-# React + TypeScript + Vite
+# Way Forward - Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Way Forward is a non-profit organization dedicated to integrating and including multicultural children and youth in Norwegian society, with a special focus on ensuring equal participation for girls in leisure activities and sports. Founded in 2004, we offer a variety of activities such as homework help, bike workshops, Friday club, and more.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Getting Started](#getting-started)
+4. [Screenshots](#screenshots)
+5. [Deployment](#deployment)
+6. [Contributing](#contributing)
+7. [License](#license)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
+- **React** for building the user interface
+- **TypeScript** for type safety
+- **CSS** for styling
+- **Vite** for fast development and build tools
+- **AWS** for deployment
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Getting Started
+
+### Prerequisites
+- Node.js (version 22.12.0 or later)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/KnutStorvestre/wayForward.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd wayForward
+   ```
+
+3. Install depencencies
+
+   ```bash
+   npm install
+   ```
+   
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and visit http://localhost:3000.   
+
+## Deployment
+This project is deployed on [AWS](https://aws.amazon.com/). Visit the live site [here](https://www.wayforward.no/).
