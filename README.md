@@ -4,12 +4,14 @@ Way Forward is a non-profit organization dedicated to integrating and including 
 1. [Features](#features)
 2. [Technologies Used](#technologies-used)
 3. [Getting Started](#getting-started)
-4. [Screenshots](#screenshots)
-5. [Deployment](#deployment)
-6. [Contributing](#contributing)
-7. [License](#license)
+4. [Deployment](#deployment)
+5. [Contributing](#contributing)
+6. [License](#license)
 
-
+## Features
+- Interactive map powered by Google Maps
+- Clean, responsive UI
+- Fast local development with Vite
 
 ## Technologies Used
 - **React** for building the user interface
@@ -43,12 +45,31 @@ Way Forward is a non-profit organization dedicated to integrating and including 
    npm install
    ```
 
-4. Start the development server:
+4. Set up environment variables (Optional):
+
+    Create two environment files in the root of the project:
+
+    * `.env.development` (for local development)
+    * `.env.production` (for production builds)
+
+    Add the following keys to each file:
+
+    ```env
+    VITE_GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+    VITE_GOOGLE_MAPS_MAP_ID=your-google-map-id
+    VITE_JSONBIN_X_MASTER_KEY=your-jsonbin-master-key
+    VITE_JSONBIN_URL=https://api.jsonbin.io/...
+    ```
+
+    > ⚠️ Make sure not to commit your `.env` files to version control. These should be added to `.gitignore`.
+
+5. Start the development server:
 
    ```bash
    npm run dev
    ```
-5. Open your browser and visit the local server. Note that the port may vary depending on system availability. Typically, it will be displayed in the terminal after running the development server (e.g., http://localhost:5173).
+
+6. Open your browser and visit the local server. Note that the port may vary depending on system availability. Typically, it will be displayed in the terminal after running the development server (e.g., http://localhost:5173).
 
 
 ## Deployment
