@@ -1,5 +1,4 @@
 # Way Forward - Website
-
 Way Forward is a non-profit organization dedicated to integrating and including multicultural children and youth in Norwegian society, with a special focus on ensuring equal participation for girls in leisure activities and sports. Founded in 2004, we offer a variety of activities such as homework help, bike workshops, Friday club, and more.
 
 
@@ -21,7 +20,6 @@ Way Forward is a non-profit organization dedicated to integrating and including 
 - **AWS** for deployment
 
 
-
 ## Getting Started
 
 ### Prerequisites
@@ -41,7 +39,7 @@ Way Forward is a non-profit organization dedicated to integrating and including 
    cd wayForward
    ```
 
-3. Install depencencies
+3. Install dependencies
 
    ```bash
    npm install
@@ -52,7 +50,8 @@ Way Forward is a non-profit organization dedicated to integrating and including 
    ```bash
    npm run dev
    ```
-5. Open your browser and visit http://localhost:3000.   
+5. Open your browser and visit the local server. Note that the port may vary depending on system availability. Typically, it will be displayed in the terminal after running the development server (e.g., http://localhost:5173).
+   
 
 ## Deployment
 This project is deployed on [AWS](https://aws.amazon.com/). Visit the live site [here](https://www.wayforward.no/).
