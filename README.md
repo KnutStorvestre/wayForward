@@ -56,3 +56,6 @@ Way Forward is a non-profit organization dedicated to integrating and including 
 
 ## Deployment
 This project is deployed on [AWS](https://aws.amazon.com/). Visit the live site [here](https://www.wayforward.no/).
+
+## Contributing
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
