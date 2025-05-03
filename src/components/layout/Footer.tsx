@@ -21,7 +21,7 @@ const Footer = () => {
           <div className={styles.socialMedia}>
             <a
               aria-label="Gå til WayForward sin Facebook-side"
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="https://www.facebook.com/WayForwardBergen/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -29,7 +29,7 @@ const Footer = () => {
             </a>
             <a
               aria-label="Gå til WayForward sin Instagram-side"
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="https://www.instagram.com/wayforward_bergen/"
               target="_blank"
               rel="noopener noreferrer"
             >
